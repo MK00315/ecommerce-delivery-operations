@@ -28,6 +28,10 @@ jobs:
       - name: Verify the bundled dashboard
         run: python run_delivery_dashboard.py --check
       - name: Check JavaScript syntax
-        run: node --check dashboard/assets/app.js
+        run: |
+          node --check dashboard/assets/app.js
+          node --check dashboard/assets/connection.js
+      - name: Check server startup and recovery
+        run: node --test tests/connection.test.cjs
       - name: Run the project tests
         run: python -m pytest tests -q --junitxml=reports/ci/qa.xml
