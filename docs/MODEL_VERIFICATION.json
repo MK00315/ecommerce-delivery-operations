@@ -1,0 +1,669 @@
+{
+  "run_id": "20261024T205105365739Z_rolling",
+  "modeling_version": "2.0.0",
+  "completed_at": "2026-10-25T02:22:05.947291+05:30",
+  "actual_execution": "Local laptop CPU",
+  "feature_version": "1.0.0",
+  "feature_count": 45,
+  "feature_run": "20261024T203757326225Z",
+  "source_orders": 99441,
+  "valid_decisions": 98647,
+  "selection": {
+    "candidate": {
+      "name": "logistic_static",
+      "family": "logistic",
+      "history": false,
+      "parameters": {
+        "C": 0.3,
+        "max_iter": 1000
+      }
+    },
+    "criterion": "Equal-month mean of average_precision divided by that month's observed late rate",
+    "folds": [
+      "March",
+      "April",
+      "May",
+      "June"
+    ],
+    "comparison": [
+      {
+        "candidate": "constant_prior",
+        "mean_ap_over_prevalence": 1.0,
+        "mean_average_precision": 0.07790346948204271,
+        "mean_roc_auc": 0.5,
+        "minimum_ap_over_prevalence": 1.0
+      },
+      {
+        "candidate": "logistic_static",
+        "mean_ap_over_prevalence": 4.54487742966793,
+        "mean_average_precision": 0.19048347366449392,
+        "mean_roc_auc": 0.7487342144523066,
+        "minimum_ap_over_prevalence": 1.8379081646672835
+      },
+      {
+        "candidate": "logistic_history",
+        "mean_ap_over_prevalence": 3.5489306527799633,
+        "mean_average_precision": 0.1935604231836925,
+        "mean_roc_auc": 0.7575861326304807,
+        "minimum_ap_over_prevalence": 1.929487797514488
+      },
+      {
+        "candidate": "boosted_15",
+        "mean_ap_over_prevalence": 3.3799221471306464,
+        "mean_average_precision": 0.16139476761170146,
+        "mean_roc_auc": 0.708120020284178,
+        "minimum_ap_over_prevalence": 1.7386801762958772
+      },
+      {
+        "candidate": "boosted_31",
+        "mean_ap_over_prevalence": 2.533259864959372,
+        "mean_average_precision": 0.14585558904037735,
+        "mean_roc_auc": 0.6914328596686986,
+        "minimum_ap_over_prevalence": 1.6624354750522763
+      },
+      {
+        "candidate": "boosted_static_15",
+        "mean_ap_over_prevalence": 2.749895042798601,
+        "mean_average_precision": 0.14923865961164678,
+        "mean_roc_auc": 0.7170963360755173,
+        "minimum_ap_over_prevalence": 1.6066674692383611
+      }
+    ],
+    "fold_metrics": [
+      {
+        "candidate": "constant_prior",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.19200903571932798,
+        "roc_auc": 0.5,
+        "ap_over_prevalence": 1.0
+      },
+      {
+        "candidate": "constant_prior",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.04605163823040918,
+        "roc_auc": 0.5,
+        "ap_over_prevalence": 1.0
+      },
+      {
+        "candidate": "constant_prior",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.06514845776880945,
+        "roc_auc": 0.5,
+        "ap_over_prevalence": 1.0
+      },
+      {
+        "candidate": "constant_prior",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.008404746209624258,
+        "roc_auc": 0.5,
+        "ap_over_prevalence": 1.0
+      },
+      {
+        "candidate": "logistic_static",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.352894974438445,
+        "roc_auc": 0.6824891305465047,
+        "ap_over_prevalence": 1.8379081646672835
+      },
+      {
+        "candidate": "logistic_static",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.16450589581575836,
+        "roc_auc": 0.7799070052257666,
+        "ap_over_prevalence": 3.5722050753697303
+      },
+      {
+        "candidate": "logistic_static",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.15753263705508472,
+        "roc_auc": 0.7462717520923214,
+        "ap_over_prevalence": 2.418056274088889
+      },
+      {
+        "candidate": "logistic_static",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.08700038734868766,
+        "roc_auc": 0.7862689699446339,
+        "ap_over_prevalence": 10.351340204545819
+      },
+      {
+        "candidate": "logistic_history",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.3704790914329668,
+        "roc_auc": 0.7065720364679159,
+        "ap_over_prevalence": 1.929487797514488
+      },
+      {
+        "candidate": "logistic_history",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.17187239927719383,
+        "roc_auc": 0.7937555462145626,
+        "ap_over_prevalence": 3.732166886599524
+      },
+      {
+        "candidate": "logistic_history",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.1838865750177823,
+        "roc_auc": 0.7570045352958994,
+        "ap_over_prevalence": 2.8225775607818
+      },
+      {
+        "candidate": "logistic_history",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.048003627006826984,
+        "roc_auc": 0.773012412543545,
+        "ap_over_prevalence": 5.711490366224042
+      },
+      {
+        "candidate": "boosted_15",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.3338423040748826,
+        "roc_auc": 0.6775699961969761,
+        "ap_over_prevalence": 1.7386801762958772
+      },
+      {
+        "candidate": "boosted_15",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.0917624155220319,
+        "roc_auc": 0.6698223654507808,
+        "ap_over_prevalence": 1.992598288532516
+      },
+      {
+        "candidate": "boosted_15",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.15810182811540263,
+        "roc_auc": 0.7209895922872682,
+        "ap_over_prevalence": 2.4267931050103173
+      },
+      {
+        "candidate": "boosted_15",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.061872522734488726,
+        "roc_auc": 0.7640981272016867,
+        "ap_over_prevalence": 7.361617018683875
+      },
+      {
+        "candidate": "boosted_31",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.3192026325103905,
+        "roc_auc": 0.6609588759494712,
+        "ap_over_prevalence": 1.6624354750522763
+      },
+      {
+        "candidate": "boosted_31",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.08264125515890489,
+        "roc_auc": 0.6585368891379819,
+        "ap_over_prevalence": 1.7945345341554988
+      },
+      {
+        "candidate": "boosted_31",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.1440517968463053,
+        "roc_auc": 0.7009812148153,
+        "ap_over_prevalence": 2.211131341857669
+      },
+      {
+        "candidate": "boosted_31",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.03752667164590873,
+        "roc_auc": 0.7452544587720414,
+        "ap_over_prevalence": 4.464938108772042
+      },
+      {
+        "candidate": "boosted_static_15",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.30849467149007076,
+        "roc_auc": 0.6717435322897286,
+        "ap_over_prevalence": 1.6066674692383611
+      },
+      {
+        "candidate": "boosted_static_15",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.12376951788776758,
+        "roc_auc": 0.7036429872495447,
+        "ap_over_prevalence": 2.6876246458055237
+      },
+      {
+        "candidate": "boosted_static_15",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.12438041441980446,
+        "roc_auc": 0.6931539408228479,
+        "ap_over_prevalence": 1.9091843257623968
+      },
+      {
+        "candidate": "boosted_static_15",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.04031003464894432,
+        "roc_auc": 0.7998448839399479,
+        "ap_over_prevalence": 4.796103730388121
+      }
+    ],
+    "august_used": false
+  },
+  "cohorts": {
+    "forward_folds": {
+      "March": {
+        "fit": {
+          "approval_start": "2016-01-01",
+          "approval_end": "2018-02-01",
+          "outcomes_before": "2018-03-01",
+          "valid_decisions": 51959,
+          "observed_evaluable_orders": 50412,
+          "not_evaluable_by_cutoff": 1547,
+          "observed_outcome_coverage": 0.9702265247599069,
+          "late_orders": 2695
+        },
+        "validation": {
+          "approval_start": "2018-03-01",
+          "approval_end": "2018-04-01",
+          "outcomes_before": "2018-08-01",
+          "valid_decisions": 7269,
+          "observed_evaluable_orders": 7083,
+          "not_evaluable_by_cutoff": 186,
+          "observed_outcome_coverage": 0.974411886091622,
+          "late_orders": 1360
+        }
+      },
+      "April": {
+        "fit": {
+          "approval_start": "2016-01-01",
+          "approval_end": "2018-03-01",
+          "outcomes_before": "2018-04-01",
+          "valid_decisions": 58634,
+          "observed_evaluable_orders": 56814,
+          "not_evaluable_by_cutoff": 1820,
+          "observed_outcome_coverage": 0.9689599890848313,
+          "late_orders": 3427
+        },
+        "validation": {
+          "approval_start": "2018-04-01",
+          "approval_end": "2018-05-01",
+          "outcomes_before": "2018-08-01",
+          "valid_decisions": 6772,
+          "observed_evaluable_orders": 6623,
+          "not_evaluable_by_cutoff": 149,
+          "observed_outcome_coverage": 0.9779976373301831,
+          "late_orders": 305
+        }
+      },
+      "May": {
+        "fit": {
+          "approval_start": "2016-01-01",
+          "approval_end": "2018-04-01",
+          "outcomes_before": "2018-05-01",
+          "valid_decisions": 65903,
+          "observed_evaluable_orders": 63998,
+          "not_evaluable_by_cutoff": 1905,
+          "observed_outcome_coverage": 0.9710938803999818,
+          "late_orders": 4891
+        },
+        "validation": {
+          "approval_start": "2018-05-01",
+          "approval_end": "2018-06-01",
+          "outcomes_before": "2018-08-01",
+          "valid_decisions": 7047,
+          "observed_evaluable_orders": 6938,
+          "not_evaluable_by_cutoff": 109,
+          "observed_outcome_coverage": 0.9845324251454519,
+          "late_orders": 452
+        }
+      },
+      "June": {
+        "fit": {
+          "approval_start": "2016-01-01",
+          "approval_end": "2018-05-01",
+          "outcomes_before": "2018-06-01",
+          "valid_decisions": 72675,
+          "observed_evaluable_orders": 70757,
+          "not_evaluable_by_cutoff": 1918,
+          "observed_outcome_coverage": 0.9736085311317509,
+          "late_orders": 5328
+        },
+        "validation": {
+          "approval_start": "2018-06-01",
+          "approval_end": "2018-07-01",
+          "outcomes_before": "2018-08-01",
+          "valid_decisions": 6157,
+          "observed_evaluable_orders": 6068,
+          "not_evaluable_by_cutoff": 89,
+          "observed_outcome_coverage": 0.9855449082345298,
+          "late_orders": 51
+        }
+      }
+    },
+    "final_refit": {
+      "approval_start": "2016-01-01",
+      "approval_end": "2018-07-01",
+      "outcomes_before": "2018-08-01",
+      "valid_decisions": 85879,
+      "observed_evaluable_orders": 83848,
+      "not_evaluable_by_cutoff": 2031,
+      "observed_outcome_coverage": 0.97635044655853,
+      "late_orders": 5909
+    },
+    "august_diagnostic": {
+      "approval_start": "2018-08-01",
+      "approval_end": "2018-09-01",
+      "outcomes_before": "2018-10-01",
+      "valid_decisions": 6603,
+      "observed_evaluable_orders": 6495,
+      "not_evaluable_by_cutoff": 108,
+      "observed_outcome_coverage": 0.983643798273512,
+      "late_orders": 406
+    }
+  },
+  "calibration": {
+    "source": "May/June out-of-time development predictions",
+    "orders": 13006,
+    "late_orders": 503,
+    "slope": 1.2409371830629525,
+    "intercept": 0.6825830206919041,
+    "f2_diagnostic_threshold": 0.06900164431039471,
+    "august_brier_improved_over_raw": false
+  },
+  "august_diagnostic": {
+    "orders": 6495,
+    "late_orders": 406,
+    "late_rate": 0.06250962278675905,
+    "average_precision": 0.09010847209195047,
+    "roc_auc": 0.6177403813870931,
+    "brier_score": 0.06087338060712848,
+    "log_loss": 0.24019366249952473,
+    "threshold": 0.06900164431039471,
+    "precision": 0.07369101486748546,
+    "recall": 0.28078817733990147,
+    "f2": 0.17975402081362346,
+    "flagged_orders": 1547,
+    "flagged_share": 0.23818321785989222,
+    "confusion_matrix": {
+      "true_negative": 4656,
+      "false_positive": 1433,
+      "false_negative": 292,
+      "true_positive": 114
+    },
+    "top_10_percent": {
+      "reviewed_orders": 650,
+      "late_orders_captured": 59,
+      "precision": 0.09076923076923077,
+      "recall": 0.14532019704433496,
+      "lift_over_prevalence": 1.452084122773778
+    }
+  },
+  "raw_august_diagnostic": {
+    "orders": 6495,
+    "late_orders": 406,
+    "late_rate": 0.06250962278675905,
+    "average_precision": 0.09010847209195047,
+    "roc_auc": 0.6177403813870931,
+    "brier_score": 0.059300993965995995,
+    "log_loss": 0.23438447658630904,
+    "threshold": 0.5,
+    "precision": 0.2,
+    "recall": 0.0024630541871921183,
+    "f2": 0.003069367710251688,
+    "flagged_orders": 5,
+    "flagged_share": 0.0007698229407236335,
+    "confusion_matrix": {
+      "true_negative": 6085,
+      "false_positive": 4,
+      "false_negative": 405,
+      "true_positive": 1
+    },
+    "top_10_percent": {
+      "reviewed_orders": 650,
+      "late_orders_captured": 59,
+      "precision": 0.09076923076923077,
+      "recall": 0.14532019704433496,
+      "lift_over_prevalence": 1.452084122773778
+    }
+  },
+  "august_baselines": {
+    "static_logistic": {
+      "orders": 6495,
+      "late_orders": 406,
+      "late_rate": 0.06250962278675905,
+      "average_precision": 0.09010847209195047,
+      "roc_auc": 0.6177403813870931,
+      "brier_score": 0.06087338060712848,
+      "log_loss": 0.24019366249952473,
+      "threshold": 0.06900164431039471,
+      "precision": 0.07369101486748546,
+      "recall": 0.28078817733990147,
+      "f2": 0.17975402081362346,
+      "flagged_orders": 1547,
+      "flagged_share": 0.23818321785989222,
+      "confusion_matrix": {
+        "true_negative": 4656,
+        "false_positive": 1433,
+        "false_negative": 292,
+        "true_positive": 114
+      },
+      "top_10_percent": {
+        "reviewed_orders": 650,
+        "late_orders_captured": 59,
+        "precision": 0.09076923076923077,
+        "recall": 0.14532019704433496,
+        "lift_over_prevalence": 1.452084122773778
+      }
+    },
+    "constant_calibration_rate": {
+      "orders": 6495,
+      "late_orders": 406,
+      "late_rate": 0.06250962278675905,
+      "average_precision": 0.06250962278675905,
+      "roc_auc": 0.5,
+      "brier_score": 0.0591702849289697,
+      "log_loss": 0.24029395100945936,
+      "threshold": 0.06900164431039471,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f2": 0.0,
+      "flagged_orders": 0,
+      "flagged_share": 0.0,
+      "confusion_matrix": {
+        "true_negative": 6089,
+        "false_positive": 0,
+        "false_negative": 406,
+        "true_positive": 0
+      },
+      "top_10_percent": {
+        "reviewed_orders": 650,
+        "late_orders_captured": 39,
+        "precision": 0.06,
+        "recall": 0.0960591133004926,
+        "lift_over_prevalence": 0.9598522167487684
+      }
+    }
+  },
+  "august_day_block_intervals": {
+    "method": "Approval-calendar-day block bootstrap; within-day clustering retained, between-day dependence not modeled",
+    "calendar_day_blocks": 28,
+    "requested_repetitions": 400,
+    "valid_repetitions": 400,
+    "confidence": 0.95,
+    "intervals": {
+      "average_precision": {
+        "low": 0.07685054253541475,
+        "high": 0.10791200113953871
+      },
+      "roc_auc": {
+        "low": 0.5941700014534278,
+        "high": 0.6494837454674325
+      },
+      "brier_score": {
+        "low": 0.045238893897625816,
+        "high": 0.07651656446713809
+      },
+      "top_10_percent_recall": {
+        "low": 0.10369255881180224,
+        "high": 0.19699714536671056
+      }
+    }
+  },
+  "august_evaluation_status": "Already inspected in the failed version-1 test. Reused diagnostic only, not a fresh independent test of version 2.",
+  "first_prototype": {
+    "run_id": "20261024T203757326225Z",
+    "candidate": "boosted_15",
+    "independent_august_test": {
+      "orders": 6495,
+      "late_orders": 406,
+      "late_rate": 0.06250962278675905,
+      "average_precision": 0.06439647185456569,
+      "roc_auc": 0.5071513113771341,
+      "brier_score": 0.061058427654950606,
+      "log_loss": 0.2511260290954247,
+      "threshold": 0.04846602726258371,
+      "precision": 0.052878965922444184,
+      "recall": 0.33251231527093594,
+      "f2": 0.16159923389992817,
+      "flagged_orders": 2553,
+      "flagged_share": 0.3930715935334873,
+      "confusion_matrix": {
+        "true_negative": 3671,
+        "false_positive": 2418,
+        "false_negative": 271,
+        "true_positive": 135
+      },
+      "top_10_percent": {
+        "reviewed_orders": 650,
+        "late_orders_captured": 36,
+        "precision": 0.055384615384615386,
+        "recall": 0.08866995073891626,
+        "lift_over_prevalence": 0.886017430845017
+      }
+    },
+    "status": "Rejected for poor temporal generalization"
+  },
+  "independent_new_period_validation_available": false,
+  "production_qualified": false,
+  "artifact_status": "Portfolio research model; retain evaluation limitations in reports and UI",
+  "verification": {
+    "model_reload_predictions_match": true,
+    "same_audited_feature_artifacts": true,
+    "future_outcome_fields_in_features": [],
+    "strict_history_time_checks": true,
+    "independent_history_audit": {
+      "passed": true,
+      "method": "Direct source-table SQL independent of the NumPy history implementation",
+      "orders_checked": 50,
+      "feature_values_checked": 700
+    },
+    "unseen_categories_and_missing_numeric_inference": "Passed",
+    "serialized_model_hash_verified": true,
+    "archived_training_source_hashes_verified": true,
+    "probability_adjustment_preserves_review_ranking": true,
+    "full_local_test_suite": {
+      "tests": 40,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 40,
+      "python_high_signal_lint": "Passed"
+    }
+  },
+  "artifacts": {
+    "model": "models/20261024T205105365739Z_rolling/delivery_risk.joblib",
+    "model_sha256": "157982e44a788bd57eb4d23f77693a64c54a06633a6242058be155f67dd1d5d5",
+    "report_directory": "reports/modeling/20261024T205105365739Z_rolling",
+    "feature_directory": "data/processed/ml/20261024T203757326225Z",
+    "august_replay_scores": "reports/modeling/20261024T205105365739Z_rolling/risk_scores_august_replay.parquet"
+  },
+  "source_code_sha256": {
+    "delivery_features.py": "ccbf8ac5a571ebdb63d89f0a44e03311aed078a43235e94e4e9ffc937e177308",
+    "delivery_risk.py": "ba106c58acc4f6d1848613677dc8f7f8d71f9fad029b34521badfbce74115689",
+    "train_delivery_model.py": "422616619b1ded0c41793041524bbad58dc7f8f57306f15cbb2299bff32e63fe",
+    "train_delivery_rolling.py": "0093205ec32fa454f9272081ea5e94c78076cf31c5bea2a4a6a175c6c1b28e18",
+    "modeling_protocol_rolling.json": "f2106b2fffe39ef41209f9458c60ab4909f69ad92114054d9de6219897ba058a"
+  },
+  "protocol_sha256": "f2106b2fffe39ef41209f9458c60ab4909f69ad92114054d9de6219897ba058a",
+  "warnings": [],
+  "elapsed_seconds": 60.81,
+  "limitations": [
+    "August rows or labels cannot select the candidate, feature set, calibration method or threshold.",
+    "The original failed August result remains archived and visible.",
+    "Source basket/promise/catalog availability assumptions and conditional observed-outcome coverage limits still apply.",
+    "The updated model is a portfolio research artifact, not a production-qualified predictor. Independent new-period evidence is unavailable.",
+    "Forward validation scores are development estimates used to select the candidate, not independent test estimates.",
+    "OOF sigmoid calibration transfers between month-specific fits and the final refit; reliability under changing prevalence is not guaranteed.",
+    "Outcome coverage is conditional on valid completed deliveries before each cutoff; unobserved/cancelled orders have no measured accuracy.",
+    "Top-10-percent capture and day-block intervals describe a retrospective ranking diagnostic, not avoided delays or causal savings."
+  ],
+  "post_training_verified_at": "2026-10-25T02:35:03.743198+05:30",
+  "serving_policy": "Rank-based experimental review priority. Do not use absolute probability estimates, automatic customer actions or claimed avoided-delay/cost benefits.",
+  "model_training_completed": true,
+  "statistical_hypothesis_testing_completed": false,
+  "prescriptive_planner_completed": false
+}
