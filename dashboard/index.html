@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Ops | Delivery Risk &amp; Operations Planning</title>
+
+
+  <link rel="stylesheet" href="/assets/app.css?v=20261025-scroll-nav">
+  <meta name="description" content="Explore historical delivery performance and constrained operations review planning using verified Olist data.">
+  <script src="/assets/app.js?v=20261025-scroll-nav-2" defer></script>
+</head>
+<body>
+<div class="app">
+  <nav class="topbar" aria-label="Main navigation">
+    <div class="shell nav-inner">
+      <a href="#overview" id="nav-delivery-wordmark" class="wordmark">DELIVERY <span>/</span> OPS</a>
+      <div class="nav-links">
+        <a href="#overview" id="nav-overview" class="active">Overview</a>
+        <a href="#patterns" id="nav-patterns">Delivery patterns</a>
+        <a href="#review-planner" id="nav-planner">Review planner</a>
+        <a href="#evidence" id="nav-evidence">Evidence</a>
+      </div>
+      <div class="context-pill">Historical snapshot</div>
+    </div>
+  </nav>
+  <main class="shell">
+    <header class="intro reveal" id="overview">
+      <div>
+        <div class="eyebrow">Olist <span class="slash">/</span> delivery intelligence <span class="slash">/</span> 2016-2018</div>
+        <h1 class="hero-title">/delivery</h1>
+        <p>Understand delivery patterns. Plan a focused review queue.</p>
+      </div>
+      <div class="intro-actions">
+        <a href="#evidence" id="hero-evidence-link" class="button secondary">View evidence <svg viewBox="0 0 24 24" class="ui-icon" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+        <a href="#review-planner" id="hero-planner-link" class="button primary">Explore review planning <svg viewBox="0 0 24 24" class="ui-icon" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+      </div>
+    </header>
+    <div id="app-notice" class="notice" role="status" aria-live="polite">Loading the verified historical snapshot…</div>
+    <form id="view-filters" class="filter-bar" aria-describedby="filter-help">
+      <label>Customer state<select id="state-filter" name="state"><option value="ALL">All customer states</option></select></label>
+      <label>Purchased from<input id="start-filter" type="date" name="start" required></label>
+      <label>Purchased through<input id="end-filter" type="date" name="end" required></label>
+      <div class="filter-actions"><button class="button primary" id="apply-filters" type="submit">Apply filters</button><button class="button secondary" id="reset-filters" type="button">Reset</button></div>
+      <a id="export-view" href="/api/export" class="export-link">Export view <svg viewBox="0 0 24 24" class="ui-icon" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg></a>
+    </form>
+    <p class="filter-help" id="filter-help">Purchase-date and state filters affect the overview and delivery patterns. The August planning replay and evidence keep their own fixed cohorts.</p>
+    <section class="metrics reveal" aria-label="Selected cohort delivery metrics" id="view-metrics">
+      <article class="metric"><div class="metric-label">Source orders</div><div class="metric-value" id="metric-orders">—</div><div class="metric-sub" id="orders-sub">In the selected purchase cohort</div></article>
+      <article class="metric"><div class="metric-label">Eligible deliveries</div><div class="metric-value" id="metric-eligible">—</div><div class="metric-sub">Completed orders in the SLA cohort</div></article>
+      <article class="metric"><div class="metric-label">Late rate</div><div class="metric-value coral" id="metric-rate">—</div><div class="metric-sub" id="rate-sub">Among eligible completed deliveries</div></article>
+      <article class="metric"><div class="metric-label">Mean delivery time</div><div class="metric-value" id="metric-days">—</div><div class="metric-sub" id="days-sub">Among eligible completed deliveries</div></article>
+    </section>
+    <div class="coverage-line" aria-live="polite"><span><span class="rule"></span><span id="view-scope">Historical snapshot.</span> <strong>No row sampling.</strong></span><span id="outside-cohort">Unknown outcomes stay outside the rate denominator.</span></div>
+    <section class="charts reveal" id="patterns" aria-label="Historical delivery patterns">
+      <article class="panel">
+        <div class="panel-top"><div><h2 id="trend-heading">Late deliveries by purchase month</h2><p class="panel-note" id="trend-period">Observed completed-order outcomes</p></div><div class="segmented" role="group" aria-label="Monthly chart measure"><button id="trend-count" type="button" aria-pressed="true">Count</button><button id="trend-rate" type="button" aria-pressed="false">Rate</button></div></div>
+        <div class="trend-wrap" id="trend-chart">
+          <svg class="trend" viewBox="0 0 820 260" role="img" aria-labelledby="trend-title trend-desc">
+            <title id="trend-title">Late deliveries by purchase month, January to August 2018</title>
+            <desc id="trend-desc">January 403, February 926, March 1328, April 306, May 443, June 71, July 208, August 393.</desc>
+            <defs><linearGradient id="trend-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FF6B50" stop-opacity=".2"/><stop offset="100%" stop-color="#FF6B50" stop-opacity="0"/></linearGradient></defs>
+            <g stroke="#222222" stroke-width="1"><path d="M52 44H790M52 102.67H790M52 161.33H790M52 220H790"/></g>
+            <g fill="#888888" font-size="11"><text x="0" y="48">1,500</text><text x="0" y="106.67">1,000</text><text x="12" y="165.33">500</text><text x="29" y="224">0</text></g>
+            <path d="M52 172.71L156 111.35L260 64.18L364 184.10L468 168.02L572 211.67L676 195.59L780 173.89L780 220H52Z" fill="url(#trend-fill)"/>
+            <path d="M52 172.71L156 111.35L260 64.18L364 184.10L468 168.02L572 211.67L676 195.59L780 173.89" fill="none" stroke="#FF6B50" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/>
+            <g fill="#111111" stroke="#FF6B50" stroke-width="2"><circle cx="52" cy="172.71" r="4"><title>Jan: 403 late orders</title></circle><circle cx="156" cy="111.35" r="4"><title>Feb: 926 late orders</title></circle><circle cx="260" cy="64.18" r="5"><title>Mar: 1,328 late orders</title></circle><circle cx="364" cy="184.10" r="4"><title>Apr: 306 late orders</title></circle><circle cx="468" cy="168.02" r="4"><title>May: 443 late orders</title></circle><circle cx="572" cy="211.67" r="4"><title>Jun: 71 late orders</title></circle><circle cx="676" cy="195.59" r="4"><title>Jul: 208 late orders</title></circle><circle cx="780" cy="173.89" r="4"><title>Aug: 393 late orders</title></circle></g>
+            <g fill="#888888" text-anchor="middle" font-size="12"><text x="52" y="250">Jan</text><text x="156" y="250">Feb</text><text x="260" y="250">Mar</text><text x="364" y="250">Apr</text><text x="468" y="250">May</text><text x="572" y="250">Jun</text><text x="676" y="250">Jul</text><text x="780" y="250">Aug</text></g>
+            <text x="260" y="45" fill="#FF6B50" font-size="12" text-anchor="middle" font-weight="700">1,328</text>
+          </svg>
+        </div>
+        <div class="chart-bottom"><span id="trend-insight">Loading monthly outcomes…</span><span>Purchase cohorts · historical outcomes</span></div>
+      </article>
+      <article class="panel">
+        <div class="panel-top"><div><h2>Where orders are delivered</h2><p class="panel-note">Top customer states by eligible order volume</p></div></div>
+        <div class="states" aria-label="Eligible completed orders by state" id="state-bars">
+          <div><div class="state-label"><span>SP</span><span>40,494</span></div><div class="state-track"><div class="state-fill" style="width:100%"></div></div></div>
+          <div><div class="state-label"><span>RJ</span><span>12,350</span></div><div class="state-track"><div class="state-fill" style="width:30.50%;opacity:.82"></div></div></div>
+          <div><div class="state-label"><span>MG</span><span>11,354</span></div><div class="state-track"><div class="state-fill" style="width:28.04%;opacity:.70"></div></div></div>
+          <div><div class="state-label"><span>RS</span><span>5,344</span></div><div class="state-track"><div class="state-fill" style="width:13.20%;opacity:.60"></div></div></div>
+          <div><div class="state-label"><span>PR</span><span>4,923</span></div><div class="state-track"><div class="state-fill" style="width:12.16%;opacity:.50"></div></div></div>
+          <div><div class="state-label"><span>SC</span><span>3,546</span></div><div class="state-track"><div class="state-fill" style="width:8.76%;opacity:.42"></div></div></div>
+        </div>
+        <div class="states-note">Counts show volume, not the likelihood of delay.</div>
+      </article>
+    </section>
+    <section class="pattern-grid" aria-label="Descriptive delivery comparisons">
+      <article class="panel"><div class="panel-top"><div><h3>Distance &amp; delivery outcomes</h3><p class="panel-note">Descriptive late rates. Distance is a postcode-centroid approximation.</p></div></div><div id="distance-bars" class="group-bars"></div><p id="distance-coverage" class="group-note"></p></article>
+      <article class="panel"><div class="panel-top"><div><h3>Basket size &amp; delivery outcomes</h3><p class="panel-note">Descriptive late rates, using eligible completed orders.</p></div></div><div id="basket-bars" class="group-bars"></div><p class="group-note">Group comparisons are associations, not intervention effects.</p></article>
+    </section>
+    <section id="review-planner" aria-labelledby="planner-heading">
+      <div class="section-head"><div><div class="eyebrow">02 <span class="slash">/</span> experimental review scenario</div><h2 id="planner-heading">/review planning</h2></div><p>One focused queue, under the same limits.<br>Saved August 2018 replay · 28 daily batches.</p></div>
+      <div class="planning-toolbar"><div class="segmented" role="group" aria-label="Planning mode"><button id="saved-mode" type="button" aria-pressed="true">Saved scenarios</button><button id="custom-mode" type="button" aria-pressed="false">Custom batch</button></div><span class="muted-text">Fixed August approval cohort · independent of overview filters</span></div>
+      <form id="saved-plan-form" class="filter-bar planner-controls"><label>Executed scenario<select id="scenario-filter" name="scenario"></select></label><label>Screening batch<select id="batch-filter" name="batch"><option value="all">All 28 screening batches</option></select></label><span id="plan-status" class="plan-status" role="status" aria-live="polite">Loading saved results…</span></form>
+      <form id="custom-plan-form" class="filter-bar planner-controls" hidden><label>Screening batch<select id="custom-batch" name="batch"></select></label><label>Pooled minutes<input id="custom-minutes" type="number" min="0" max="480" step="1" value="120" required></label><label>Maximum reviews<input id="custom-count" type="number" min="0" max="60" step="1" value="30" required></label><label>Per primary seller<input id="custom-seller" type="number" min="0" max="10" step="1" value="5" required></label><button id="run-plan" type="submit" class="button primary">Calculate batch</button></form>
+      <div id="planner-notice" class="notice" role="status" aria-live="polite" hidden></div>
+      <div class="planner-grid">
+        <article class="planner-summary" aria-live="polite"><div class="planner-label" id="plan-kind">Constrained optimizer</div><div class="planner-number" id="plan-reviews">—</div><h3>orders queued for review</h3><p id="plan-caption">Historical screening batches. Review durations are illustrative.</p><div class="planner-small"><div><strong id="plan-known-late">—</strong><span>known late outcomes reviewed</span></div><div><strong id="plan-unknown">—</strong><span>unknown outcomes reviewed</span></div></div></article>
+        <article class="panel policy-panel">
+          <div class="panel-top"><div><h3>Compare review policies</h3><p class="panel-note">Same scenario and candidate pool for every policy</p></div><span class="tag" id="plan-badge">Saved run</span></div>
+          <div class="limits" id="plan-limits"><div class="limit">120 min <span>/ batch</span></div><div class="limit">30 reviews <span>max / batch</span></div><div class="limit">5 <span>max / primary seller</span></div></div>
+          <div class="policy-table-wrap"><table class="policy-table"><thead><tr><th scope="col">Policy</th><th scope="col">Reviewed</th><th scope="col">Minutes</th><th scope="col">Priority points</th><th scope="col">Known late</th></tr></thead><tbody id="policy-rows"></tbody></table></div>
+          <div class="planner-foot"><strong id="plan-total-scope">Totals cover the selected screening batches.</strong> The optimizer maximizes ordinal model priority. Known late counts are retrospective outcomes, not prevented delays or savings.</div>
+        </article>
+      </div>
+      <details class="panel detail-panel" id="daily-detail"><summary>Daily optimized review totals</summary><div class="detail-table-wrap"><table class="policy-table"><thead><tr><th scope="col">Screening date</th><th scope="col">Reviewed</th><th scope="col">Minutes</th><th scope="col">Unknown</th><th scope="col">Known late</th></tr></thead><tbody id="daily-rows"></tbody></table></div></details>
+      <details class="panel detail-panel" id="queue-detail"><summary id="queue-summary">Inspect the optimized review queue</summary><p class="detail-help">First 25 selected orders by within-batch priority. Observed outcomes are joined after selection; they do not enter the solver.</p><div class="detail-table-wrap"><table class="policy-table queue-table"><thead><tr><th scope="col">Order reference</th><th scope="col">Priority points</th><th scope="col">Review min</th><th scope="col">State</th><th scope="col">Observed outcome</th></tr></thead><tbody id="queue-rows"></tbody></table></div></details>
+    </section>
+    <section id="evidence" aria-labelledby="evidence-heading">
+      <div class="section-head"><div><div class="eyebrow">03 <span class="slash">/</span> understand the evidence</div><h2 id="evidence-heading">/beyond the numbers</h2></div><p>Historical associations and experimental ranks.<br>Clear boundaries for every finding.</p></div>
+      <div class="evidence-grid">
+        <article class="panel evidence-card"><div class="label">Delivery pattern</div><h3>Longer distances, a <span class="value">+4.89 pp</span><br>adjusted late-rate difference.</h3><p>Baskets above 1,000 km compared with those at 500 km or less. 95% marginal interval: +3.35 to +6.44 percentage points.</p><details><summary>How to interpret this association</summary><p>The comparison uses completed eligible orders, purchase-month adjustment and purchase-week clustered uncertainty. The four exploratory p values use Holm correction. This association does not establish that distance causes the difference.</p></details></article>
+        <article class="panel evidence-card"><div class="label">Experimental model</div><h3>A useful question.<br><span class="value">A modest ranking gain.</span></h3><p>Average precision 0.0901, versus a 0.0625 constant baseline. Updated August results reuse an inspected period; absolute probabilities remain unreliable.</p><details><summary>Model and validation boundaries</summary><p>Static logistic regression with 31 inputs, refitted on 83,848 mature observed orders. Diagnostic ROC-AUC: 0.6177. The first independent August experiment failed; the updated result is not a new independent test. There is no real intervention evidence or established production accuracy.</p></details></article>
+      </div>
+      <details class="panel detail-panel"><summary>All four adjusted statistical comparisons</summary><p class="detail-help">Fixed full-cohort evidence. Percentage-point differences adjust for purchase month; marginal intervals cluster by purchase week. Four p values use Holm correction.</p><div class="detail-table-wrap"><table class="policy-table stats-table"><thead><tr><th scope="col">Comparison</th><th scope="col">Difference</th><th scope="col">95% interval</th><th scope="col">Holm p</th></tr></thead><tbody id="stat-rows"></tbody></table></div></details>
+      <details class="panel detail-panel"><summary>Data, methods &amp; model limitations</summary><div class="method-notes" id="method-notes"><p>Historical public Olist data. Model training and planning ran locally.</p></div></details>
+    </section>
+    <footer class="source-footer"><div><span class="brand">DELIVERY / OPS</span><br>E-commerce Delivery Risk &amp; Operations Planning</div><div>Full-snapshot reports<br><a href="/api/downloads/excel" id="download-excel">Excel workbook ↗</a><span class="footer-separator"> / </span><a href="/api/downloads/powerbi" id="download-powerbi">Power BI report ↗</a></div><div>Historical public Olist data · 2016-2018<br>Portfolio research project · local analysis and saved report snapshots</div></footer>
+  </main>
+  <div class="dock-lane"><nav class="glass-dock" aria-label="Dashboard sections">
+    <a href="#overview" id="dock-overview" class="dock-link active"><svg viewBox="0 0 24 24" class="ui-icon" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg><span>Overview</span></a>
+    <a href="#patterns" id="dock-patterns" class="dock-link"><svg viewBox="0 0 24 24" class="ui-icon" aria-hidden="true"><path d="m3 12 5-5 4 4 8-8M16 3h4v4M4 21v-5m5 5V11m5 10v-5m5 5V10"/></svg><span>Patterns</span></a>
+    <a href="#review-planner" id="dock-planner" class="dock-link"><svg viewBox="0 0 24 24" class="ui-icon" aria-hidden="true"><path d="M3 6h18M6 12h12m-9 6h6"/></svg><span>Review planner</span></a>
+    <a href="#evidence" id="dock-evidence" class="dock-link"><svg viewBox="0 0 24 24" class="ui-icon" aria-hidden="true"><path d="M4 8V4h4m8 0h4v4m0 8v4h-4M8 20H4v-4m4-8h8m-8 4h8m-8 4h5"/></svg><span>Evidence</span></a>
+  </nav></div>
+</div>
+</body>
+</html>
