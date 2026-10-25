@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "scope": "Exploratory historical associations and a research review-queue simulation; no causal or intervention-benefit claim",
+  "statistics": {
+    "cohort": "All SLA-eligible completed historical orders; unknown outcomes excluded explicitly",
+    "hypotheses": [
+      {"id": "distance", "label": "Distance >1,000 km vs <=500 km", "definition": "Fully geocoded baskets only; exclude the middle band"},
+      {"id": "basket", "label": "Two or more items vs one item", "definition": "Exclude missing baskets"},
+      {"id": "promise", "label": "Promise <=14 days vs >14 days", "definition": "Purchase-to-promised calendar days"},
+      {"id": "interstate", "label": "Any interstate seller vs all same-state", "definition": "All item seller/customer states must be known"}
+    ],
+    "method": "Separate linear probability contrasts with purchase-month fixed effects and CR1 purchase-week clustered standard errors; two-sided Student t with G-1 df",
+    "multiplicity": "Holm correction over exactly four primary week-clustered p-values, alpha 0.05",
+    "sensitivity": "Purchase-day clustered intervals; descriptive group rates and explicit exclusions",
+    "limits": "Thresholds fixed for this analysis after prior exploration, not preregistered. Monthly adjustment is not full confounder control. Week clusters assume independence across weeks; repeat sellers/customers and longer serial dependence remain. Conditional on completed observed deliveries."
+  },
+  "planner": {
+    "input": "Saved August approval-time scores; August has already been inspected and is a reused diagnostic",
+    "batch": "All previous calendar day's approvals; screen at 09:00 the next day, source timestamps as recorded",
+    "known_completion_rule": "Exclude only deliveries with a recorded delivered_at strictly before the screening cutoff; never inspect future status or late labels to select",
+    "carryover": "None. Each approval is offered once; unselected orders leave this simulation",
+    "capacity_minutes_per_batch": 120,
+    "maximum_reviews_per_batch": 30,
+    "maximum_reviews_per_primary_seller": 5,
+    "capacity_pool": "Pooled team minutes, not an individual reviewer shift schedule",
+    "review_minutes": {"base": 4, "multiple_items_extra": 2, "multiple_sellers_extra": 3, "interstate_or_unknown_extra": 1},
+    "cost_assumption": "Illustrative review durations, not measured Olist staffing data; integer ceiling after sensitivity multiplier",
+    "priority": "100 * (n - within-batch rank + 1) / n; raw model score descending, order ID breaks ties; no whole-August percentile used",
+    "objective": "Maximize sum of ordinal review-priority points under time, count and primary-seller limits; points are not calibrated expected late orders",
+    "baselines": ["risk_first", "priority_per_minute", "oldest_first"],
+    "sensitivity_capacity_minutes": [0, 60, 120, 180, 240],
+    "sensitivity_cost_multipliers": [0.75, 1.0, 1.25],
+    "solver_seconds_per_batch": 10,
+    "solver_relative_gap": 0.0,
+    "evaluation": "Join nullable known outcomes only after selection. Unknown outcomes consume time and never become on-time labels. Compare realized counts descriptively; no tuning or policy choice using these results.",
+    "limits": "Model probabilities unreliable; ranking gain modest. No dispatch, fleet routing, prevented delays, causal uplift, monetary savings or production qualification. Seller cap is a declared concentration limit, not a fairness guarantee; it covers the primary seller only."
+  }
+}

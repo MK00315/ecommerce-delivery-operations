@@ -1,0 +1,200 @@
+{
+  "verified_at": "2026-10-25T14:15:14.867633+05:30",
+  "run_id": "20261025T084432413713Z",
+  "source_and_frozen_code_hashes_match": true,
+  "independent_screening_membership_match": true,
+  "all_scenario_batch_policy_feasibility_checks": 784,
+  "real_batch_subsets_exhaustively_checked": 28,
+  "subset_results": [
+    {
+      "batch_cutoff": "2018-08-02 09:00:00",
+      "orders": 10,
+      "objective": 302.7692307692308
+    },
+    {
+      "batch_cutoff": "2018-08-03 09:00:00",
+      "orders": 10,
+      "objective": 265.04559270516717
+    },
+    {
+      "batch_cutoff": "2018-08-04 09:00:00",
+      "orders": 10,
+      "objective": 271.8213058419244
+    },
+    {
+      "batch_cutoff": "2018-08-05 09:00:00",
+      "orders": 10,
+      "objective": 266.1710037174721
+    },
+    {
+      "batch_cutoff": "2018-08-06 09:00:00",
+      "orders": 10,
+      "objective": 276.59574468085106
+    },
+    {
+      "batch_cutoff": "2018-08-07 09:00:00",
+      "orders": 10,
+      "objective": 239.344262295082
+    },
+    {
+      "batch_cutoff": "2018-08-08 09:00:00",
+      "orders": 10,
+      "objective": 272.2972972972973
+    },
+    {
+      "batch_cutoff": "2018-08-09 09:00:00",
+      "orders": 10,
+      "objective": 250.74183976261128
+    },
+    {
+      "batch_cutoff": "2018-08-10 09:00:00",
+      "orders": 10,
+      "objective": 252.3489932885906
+    },
+    {
+      "batch_cutoff": "2018-08-11 09:00:00",
+      "orders": 10,
+      "objective": 250.59760956175296
+    },
+    {
+      "batch_cutoff": "2018-08-12 09:00:00",
+      "orders": 10,
+      "objective": 269.41747572815535
+    },
+    {
+      "batch_cutoff": "2018-08-13 09:00:00",
+      "orders": 10,
+      "objective": 270.0
+    },
+    {
+      "batch_cutoff": "2018-08-14 09:00:00",
+      "orders": 10,
+      "objective": 259.8455598455598
+    },
+    {
+      "batch_cutoff": "2018-08-15 09:00:00",
+      "orders": 10,
+      "objective": 255.16224188790562
+    },
+    {
+      "batch_cutoff": "2018-08-16 09:00:00",
+      "orders": 10,
+      "objective": 287.5432525951557
+    },
+    {
+      "batch_cutoff": "2018-08-17 09:00:00",
+      "orders": 10,
+      "objective": 226.8041237113402
+    },
+    {
+      "batch_cutoff": "2018-08-18 09:00:00",
+      "orders": 10,
+      "objective": 268.83561643835617
+    },
+    {
+      "batch_cutoff": "2018-08-19 09:00:00",
+      "orders": 10,
+      "objective": 308.2125603864734
+    },
+    {
+      "batch_cutoff": "2018-08-21 09:00:00",
+      "orders": 10,
+      "objective": 249.52380952380952
+    },
+    {
+      "batch_cutoff": "2018-08-22 09:00:00",
+      "orders": 10,
+      "objective": 272.85223367697597
+    },
+    {
+      "batch_cutoff": "2018-08-23 09:00:00",
+      "orders": 10,
+      "objective": 269.39890710382514
+    },
+    {
+      "batch_cutoff": "2018-08-24 09:00:00",
+      "orders": 10,
+      "objective": 334.93150684931504
+    },
+    {
+      "batch_cutoff": "2018-08-25 09:00:00",
+      "orders": 10,
+      "objective": 317.51824817518246
+    },
+    {
+      "batch_cutoff": "2018-08-26 09:00:00",
+      "orders": 10,
+      "objective": 277.77777777777777
+    },
+    {
+      "batch_cutoff": "2018-08-27 09:00:00",
+      "orders": 10,
+      "objective": 314.2857142857143
+    },
+    {
+      "batch_cutoff": "2018-08-28 09:00:00",
+      "orders": 10,
+      "objective": 270.3125
+    },
+    {
+      "batch_cutoff": "2018-08-29 09:00:00",
+      "orders": 10,
+      "objective": 360.7142857142857
+    },
+    {
+      "batch_cutoff": "2018-08-30 09:00:00",
+      "orders": 10,
+      "objective": 333.3333333333333
+    }
+  ],
+  "independent_sql_and_full_matrix_statistical_checks": [
+    {
+      "contrast": "distance",
+      "sql_group_counts_match": true,
+      "full_matrix_coefficient_and_cr1_match": true
+    },
+    {
+      "contrast": "basket",
+      "sql_group_counts_match": true,
+      "full_matrix_coefficient_and_cr1_match": true
+    },
+    {
+      "contrast": "promise",
+      "sql_group_counts_match": true,
+      "full_matrix_coefficient_and_cr1_match": true
+    },
+    {
+      "contrast": "interstate",
+      "sql_group_counts_match": true,
+      "full_matrix_coefficient_and_cr1_match": true
+    }
+  ],
+  "unknown_outcomes_preserved": true,
+  "full_local_test_suite": {
+    "tests": 62,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 62
+  },
+  "all_optimized_batches_reported_optimal": true,
+  "production_qualified": false,
+  "independent_new_period_validation": false,
+  "rendered_charts_visually_inspected": [
+    "delivery_associations.png",
+    "review_policy_comparison.png",
+    "capacity_sensitivity.png"
+  ],
+  "python_high_signal_lint": "Passed (E9,F63,F7,F82)",
+  "pip_check": "No broken requirements found",
+  "public_artifact_sha256": {
+    "capacity_sensitivity.png": "f097774a5d7c67cdec93e3f0d5a4c8b9b6a43dba72c2caaed947f0621ca2f88e",
+    "daily_policy_results.csv": "91cce152b8105f593f78596c4ab269696c557b06f95899ac6facb6e85fd650c2",
+    "delivery_associations.png": "7612bbdd6e6ae7323d0935e58226d214598014450b427f4514beccfb4bab93e8",
+    "descriptive_groups.csv": "1a1d7ae3aefec124e8c372602c850e36d2cca05712264ff96416297af4784817",
+    "Operations_Results_Summary.md": "4ec312b1b36800bd855fe9ab137fdf327422f916095225e303876f257f4bc89c",
+    "review_policy_comparison.png": "75b8aa8539ccd5a8127ecc20f008760a485ce820c5c9b5a4553d2a23d6e142d4",
+    "scenario_summary.csv": "5adad79340121465eca2cf151015e9a8a68d1f74d377c891be135cb1b63f3209",
+    "statistical_contrasts.csv": "1a57ef4488b651e41d2dc2a0b6c089a10bbbbb3de6a0b3fb388da0d0626a2512"
+  }
+}
