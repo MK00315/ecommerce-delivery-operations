@@ -1,0 +1,123 @@
+{
+  "checked_at": "2026-10-25T01:02:22.371747+05:30",
+  "status": "Historical estimate only; obtain fresh local approval and current pricing before running cloud work",
+  "region": "centralindia",
+  "currency": "INR",
+  "pricing_source": "https://prices.azure.com/api/retail/prices",
+  "source_filters": {
+    "factory": "productName eq 'Azure Data Factory v2' and armRegionName eq 'centralindia'",
+    "storage": "productName eq 'General Block Blob v2 Hierarchical Namespace' and skuName eq 'Hot LRS' and armRegionName eq 'centralindia'"
+  },
+  "assumptions": {
+    "manual_attempts_max": 3,
+    "copy_dius": 4,
+    "activity_timeout_minutes": 5,
+    "activity_retries": 0,
+    "storage_gb_month": "0.5",
+    "scheduled_triggers": 0,
+    "mapping_data_flows": 0,
+    "free_allowances_applied": false,
+    "tax_or_network_charges_included": false
+  },
+  "components": [
+    {
+      "component": "copy_compute",
+      "meter_id": "9d6f5dbf-90a1-46bc-85b7-e9c3f92bae35",
+      "product_name": "Azure Data Factory v2",
+      "meter_name": "Cloud Data Movement",
+      "unit": "1 Hour",
+      "rate_inr": "23.9974",
+      "quantity_in_meter_units": "1",
+      "estimated_inr": "23.9974",
+      "is_primary_meter_region": false,
+      "effective_start_date": "2018-08-01T00:00:00Z"
+    },
+    {
+      "component": "orchestration",
+      "meter_id": "04f2be54-5cfe-4ad7-97f3-0badfc1dc247",
+      "product_name": "Azure Data Factory v2",
+      "meter_name": "Cloud Orchestration Activity Run",
+      "unit": "1K",
+      "rate_inr": "95.9894",
+      "quantity_in_meter_units": "0.003",
+      "estimated_inr": "0.2879682",
+      "is_primary_meter_region": false,
+      "effective_start_date": "2018-08-01T00:00:00Z"
+    },
+    {
+      "component": "stored_data",
+      "meter_id": "a6292b36-df7b-4a61-8465-c6cb6cc103b9",
+      "product_name": "General Block Blob v2 Hierarchical Namespace",
+      "meter_name": "Hot LRS Data Stored",
+      "unit": "1 GB/Month",
+      "rate_inr": "1.9198",
+      "quantity_in_meter_units": "0.5",
+      "estimated_inr": "0.95990",
+      "is_primary_meter_region": true,
+      "effective_start_date": "2020-03-01T00:00:00Z"
+    },
+    {
+      "component": "storage_writes",
+      "meter_id": "b50ecd4f-30c6-4835-bd28-c7dca44716fb",
+      "product_name": "General Block Blob v2 Hierarchical Namespace",
+      "meter_name": "Hot LRS Write Operations",
+      "unit": "10K",
+      "rate_inr": "6.9112",
+      "quantity_in_meter_units": "0.1",
+      "estimated_inr": "0.69112",
+      "is_primary_meter_region": true,
+      "effective_start_date": "2020-03-01T00:00:00Z"
+    },
+    {
+      "component": "storage_reads",
+      "meter_id": "347b4ea1-5e9f-425c-a629-f2fe9c183f4b",
+      "product_name": "General Block Blob v2 Hierarchical Namespace",
+      "meter_name": "Hot LRS Read Operations",
+      "unit": "10K",
+      "rate_inr": "0.5759",
+      "quantity_in_meter_units": "0.1",
+      "estimated_inr": "0.05759",
+      "is_primary_meter_region": true,
+      "effective_start_date": "2020-03-01T00:00:00Z"
+    },
+    {
+      "component": "factory_authoring",
+      "meter_id": "d87c061a-44b8-4898-a94c-60355ea7a2f7",
+      "product_name": "Azure Data Factory v2",
+      "meter_name": "Cloud Read Write Operations",
+      "unit": "50K",
+      "rate_inr": "47.9947",
+      "quantity_in_meter_units": "0.02",
+      "estimated_inr": "0.959894",
+      "is_primary_meter_region": false,
+      "effective_start_date": "2018-08-01T00:00:00Z"
+    },
+    {
+      "component": "factory_monitoring",
+      "meter_id": "7af5dfee-4745-4c26-85b1-221cd14b00cd",
+      "product_name": "Azure Data Factory v2",
+      "meter_name": "Cloud Monitoring Operations",
+      "unit": "50K",
+      "rate_inr": "23.9974",
+      "quantity_in_meter_units": "0.02",
+      "estimated_inr": "0.479948",
+      "is_primary_meter_region": false,
+      "effective_start_date": "2018-08-01T00:00:00Z"
+    }
+  ],
+  "subtotal_inr": "27.4338202",
+  "working_budget_inr": "100",
+  "budget_approved": false,
+  "automatic_hard_cap": false,
+  "paid_spending_authorized": false,
+  "subscription_upgrade_authorized": false,
+  "approval_source": "User replied yes. continue to the explicit INR 100 trial-credit proposal",
+  "observed_execution": {
+    "pipeline_attempts": 1,
+    "pipeline_status": "Succeeded",
+    "copy_billable_diu_hours": "0.06666666666666667",
+    "copy_compute_meter_estimate_inr": "1.5998",
+    "estimate_is_final_bill": false,
+    "final_total_charge_verified": false
+  }
+}
