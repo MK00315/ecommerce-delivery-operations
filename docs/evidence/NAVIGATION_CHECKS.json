@@ -1,0 +1,631 @@
+{
+  "checked_at": "2026-10-25T11:09:07.492Z",
+  "fix": "Navigation highlights follow the visible section in the main scroll container, with matching aria-current in both menus.",
+  "checks": [
+    {
+      "test": "Manual scroll at the end selects evidence",
+      "expected": "evidence",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#evidence"
+          }
+        ],
+        "hash": "#overview",
+        "remaining": 0,
+        "scrollTop": 2408,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -2273
+          },
+          {
+            "id": "patterns",
+            "top": -1715.796875
+          },
+          {
+            "id": "review-planner",
+            "top": -870.609375
+          },
+          {
+            "id": "evidence",
+            "top": 24.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#evidence"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Manual scroll up from evidence to planner",
+      "expected": "review-planner",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#review-planner"
+          }
+        ],
+        "hash": "#overview",
+        "remaining": 720,
+        "scrollTop": 1688,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -1553
+          },
+          {
+            "id": "patterns",
+            "top": -995.796875
+          },
+          {
+            "id": "review-planner",
+            "top": -150.609375
+          },
+          {
+            "id": "evidence",
+            "top": 744.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#review-planner"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Manual scroll up from planner to patterns",
+      "expected": "patterns",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#patterns"
+          }
+        ],
+        "hash": "#overview",
+        "remaining": 1440,
+        "scrollTop": 968,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -833
+          },
+          {
+            "id": "patterns",
+            "top": -275.796875
+          },
+          {
+            "id": "review-planner",
+            "top": 569.390625
+          },
+          {
+            "id": "evidence",
+            "top": 1464.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#patterns"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Manual scroll returns to overview",
+      "expected": "overview",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgba(255, 107, 80, 0.996)",
+            "href": "#overview"
+          }
+        ],
+        "hash": "#overview",
+        "remaining": 2408,
+        "scrollTop": 0,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": 135
+          },
+          {
+            "id": "patterns",
+            "top": 692.203125
+          },
+          {
+            "id": "review-planner",
+            "top": 1537.390625
+          },
+          {
+            "id": "evidence",
+            "top": 2432.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#overview"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Top navigation click to evidence",
+      "expected": "evidence",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#evidence"
+          }
+        ],
+        "hash": "#evidence",
+        "remaining": 92,
+        "scrollTop": 2316,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -2181
+          },
+          {
+            "id": "patterns",
+            "top": -1623.796875
+          },
+          {
+            "id": "review-planner",
+            "top": -778.609375
+          },
+          {
+            "id": "evidence",
+            "top": 116.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#evidence"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Manual scrolling overrides the previous evidence anchor",
+      "expected": "patterns",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#patterns"
+          }
+        ],
+        "hash": "#evidence",
+        "remaining": 1532,
+        "scrollTop": 876,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -741
+          },
+          {
+            "id": "patterns",
+            "top": -183.796875
+          },
+          {
+            "id": "review-planner",
+            "top": 661.390625
+          },
+          {
+            "id": "evidence",
+            "top": 1556.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#patterns"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Bottom dock click to review planner",
+      "expected": "review-planner",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#review-planner"
+          }
+        ],
+        "hash": "#review-planner",
+        "remaining": 988,
+        "scrollTop": 1420,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -1285
+          },
+          {
+            "id": "patterns",
+            "top": -727.796875
+          },
+          {
+            "id": "review-planner",
+            "top": 117.390625
+          },
+          {
+            "id": "evidence",
+            "top": 1012.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#review-planner"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Review planner deep link after reload and data load",
+      "expected": "review-planner",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#review-planner"
+          }
+        ],
+        "hash": "#review-planner",
+        "remaining": 988,
+        "scrollTop": 1420,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -1285
+          },
+          {
+            "id": "patterns",
+            "top": -727.796875
+          },
+          {
+            "id": "review-planner",
+            "top": 117.390625
+          },
+          {
+            "id": "evidence",
+            "top": 1012.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#review-planner"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Keyboard Enter on dock overview link",
+      "expected": "overview",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#overview"
+          }
+        ],
+        "hash": "#overview",
+        "remaining": 2390,
+        "scrollTop": 18,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": 117
+          },
+          {
+            "id": "patterns",
+            "top": 674.203125
+          },
+          {
+            "id": "review-planner",
+            "top": 1519.390625
+          },
+          {
+            "id": "evidence",
+            "top": 2414.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#overview"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Final manual scroll down to patterns",
+      "expected": "patterns",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#patterns"
+          }
+        ],
+        "hash": "#overview",
+        "remaining": 1670,
+        "scrollTop": 738,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -603
+          },
+          {
+            "id": "patterns",
+            "top": -45.796875
+          },
+          {
+            "id": "review-planner",
+            "top": 799.390625
+          },
+          {
+            "id": "evidence",
+            "top": 1694.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#patterns"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Final manual scroll down to planner",
+      "expected": "review-planner",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#review-planner"
+          }
+        ],
+        "hash": "#overview",
+        "remaining": 950,
+        "scrollTop": 1458,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -1323
+          },
+          {
+            "id": "patterns",
+            "top": -765.796875
+          },
+          {
+            "id": "review-planner",
+            "top": 79.390625
+          },
+          {
+            "id": "evidence",
+            "top": 974.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#review-planner"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Final manual scroll down to evidence",
+      "expected": "evidence",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#evidence"
+          }
+        ],
+        "hash": "#overview",
+        "remaining": 0,
+        "scrollTop": 2408,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -2273
+          },
+          {
+            "id": "patterns",
+            "top": -1715.796875
+          },
+          {
+            "id": "review-planner",
+            "top": -870.609375
+          },
+          {
+            "id": "evidence",
+            "top": 24.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#evidence"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Final manual scroll up to planner",
+      "expected": "review-planner",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#review-planner"
+          }
+        ],
+        "hash": "#overview",
+        "remaining": 720,
+        "scrollTop": 1688,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -1553
+          },
+          {
+            "id": "patterns",
+            "top": -995.796875
+          },
+          {
+            "id": "review-planner",
+            "top": -150.609375
+          },
+          {
+            "id": "evidence",
+            "top": 744.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#review-planner"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Final manual scroll up to patterns",
+      "expected": "patterns",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#patterns"
+          }
+        ],
+        "hash": "#overview",
+        "remaining": 1440,
+        "scrollTop": 968,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": -833
+          },
+          {
+            "id": "patterns",
+            "top": -275.796875
+          },
+          {
+            "id": "review-planner",
+            "top": 569.390625
+          },
+          {
+            "id": "evidence",
+            "top": 1464.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#patterns"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Final manual scroll up to overview",
+      "expected": "overview",
+      "actual": {
+        "dock": [
+          {
+            "aria": "location",
+            "background": "rgb(255, 107, 80)",
+            "href": "#overview"
+          }
+        ],
+        "hash": "#overview",
+        "remaining": 2408,
+        "scrollTop": 0,
+        "sectionTops": [
+          {
+            "id": "overview",
+            "top": 135
+          },
+          {
+            "id": "patterns",
+            "top": 692.203125
+          },
+          {
+            "id": "review-planner",
+            "top": 1537.390625
+          },
+          {
+            "id": "evidence",
+            "top": 2432.578125
+          }
+        ],
+        "top": [
+          {
+            "aria": "location",
+            "href": "#overview"
+          }
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "normal_app_errors": [],
+  "source_sha256": {
+    "dashboard/index.html": "fe70bc0d25a17076456c80e8772cb08d6ad8b60707bf6d8ab4bf9d528e9addc5",
+    "dashboard/assets/app.css": "625323c104cf3a23cc46d41f6272f12a3fc204722dca6ed9d85a784e518188b3",
+    "dashboard/assets/app.js": "a63bb395440fd2550201cc007e29679e19a822e8fc76e768baa162dc47e9d45a"
+  },
+  "api_checks_passed": 37,
+  "javascript_syntax_check_passed": true,
+  "restored_section": "overview",
+  "screenshot": "screenshots/Scroll_Navigation.png"
+}

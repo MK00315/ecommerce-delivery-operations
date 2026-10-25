@@ -1,0 +1,113 @@
+{
+  "checks": [
+    {
+      "test": "SP filter with independent planner",
+      "actual": {
+        "eligible": "40,494",
+        "lateRate": "4.49%",
+        "orders": "41,746",
+        "planningReviews": "721"
+      }
+    },
+    {
+      "test": "March 2018 purchase cohort",
+      "actual": {
+        "eligible": "7,003",
+        "late": "1,328 late / 7,003 eligible deliveries",
+        "orders": "7,211"
+      }
+    },
+    {
+      "test": "Empty cohort",
+      "actual": {
+        "lateRate": "n/a",
+        "mean": "n/a",
+        "message": "No source orders match these filters. Choose another date range or reset to all data.",
+        "orders": "0"
+      }
+    },
+    {
+      "test": "Saved 60-minute scenario",
+      "actual": {
+        "badge": "Optimal priority allocation",
+        "knownLate": "46",
+        "reviews": "378",
+        "unknown": "18"
+      }
+    },
+    {
+      "test": "Saved zero-capacity scenario",
+      "actual": {
+        "knownLate": "0",
+        "queue": "No orders selected under these limits.",
+        "reviews": "0"
+      }
+    },
+    {
+      "test": "Custom August 2 batch at 40 minutes, 9 reviews, seller cap 1",
+      "actual": {
+        "badge": "Optimal priority allocation",
+        "knownLate": "2",
+        "limits": "40 min / batch9 reviews max / batch1 max / primary seller",
+        "policyRows": "Constrained optimizer9402Highest risk first8401Priority per minute9384Oldest approval first9391",
+        "reviews": "9",
+        "status": "Calculation complete. The selected queue meets the time, review-count and primary-seller limits."
+      }
+    },
+    {
+      "test": "Keyboard-accessible rate chart",
+      "actual": {
+        "focusedPoint": "Sept 16: 100.00%; 1 eligible of 4 source orders",
+        "mode": "true",
+        "tooltip": "Sept 161 late · 100.00%1 eligible / 4 orders"
+      }
+    },
+    {
+      "test": "Unknown-only cohort has unavailable rates",
+      "actual": {
+        "chart": "No eligible completed deliveries in this cohort.Monthly late rates are unavailable; unknown outcomes are not on-time deliveries.",
+        "eligible": "0",
+        "orders": "20",
+        "rate": "n/a"
+      }
+    },
+    {
+      "test": "Final month labels have clear spacing",
+      "actual": {
+        "lastLabels": [
+          "Jun 18",
+          "Oct 18"
+        ],
+        "spacingPixels": 72.86187744140625
+      }
+    }
+  ],
+  "responsiveViewports": [
+    {
+      "width": 797,
+      "height": 930,
+      "kind": "direct in-app browser"
+    },
+    {
+      "width": 1440,
+      "height": 1200,
+      "kind": "actual responsive iframe viewport, screenshot scaled to fit"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "kind": "actual responsive iframe viewport"
+    }
+  ],
+  "mobilePolicyTable": "All five columns visually reviewed after wrapping labels; no horizontal scrolling required for policy comparison",
+  "normalAppErrors": [],
+  "restoredDefaults": {
+    "batch": "all",
+    "chartMode": "true",
+    "end": "2018-10-17",
+    "reviews": "721",
+    "scenario": "capacity_120_cost_1",
+    "start": "2016-09-04",
+    "state": "ALL"
+  }
+}

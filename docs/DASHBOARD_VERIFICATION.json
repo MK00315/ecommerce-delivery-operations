@@ -1,0 +1,834 @@
+{
+  "checked_at": "2026-10-25T16:39:44.839933+05:30",
+  "completed": true,
+  "stage": "Approved design implemented and verified locally; GitHub/live publication remains pending",
+  "local_url": "http://127.0.0.1:8125",
+  "publicly_deployed": false,
+  "design": {
+    "user_selected_template": "Midnight Editorial Style",
+    "adapted_design_approved": true,
+    "project_id": "eab076dd-28a2-452e-a97d-4329c1c1a803",
+    "draft_id": "0c0e017f-c7d6-43d5-bd58-3bf78e8a194f",
+    "approved_version": 4,
+    "canvas": "https://superdesign.dev/teams/4c16666b-9de5-4e29-8075-d59290c79393/projects/eab076dd-28a2-452e-a97d-4329c1c1a803"
+  },
+  "implementation": {
+    "frontend": "Standalone HTML/CSS/JavaScript, inline SVG charts/icons",
+    "backend": "FastAPI and read-only DuckDB snapshot",
+    "source_orders": 99441,
+    "eligible_deliveries": 96470,
+    "late_deliveries": 6534,
+    "candidate_orders": 6590,
+    "saved_scenarios": 7,
+    "screening_batches": 28,
+    "policy_count": 4,
+    "source_data_sampled": false,
+    "custom_solver": "Actual scipy/HiGHS mixed-integer optimizer",
+    "custom_solver_scope": "One historical batch; 3-second solver limit; same constraints for all policies",
+    "input_storage": "Read-only source; filter/custom calculations held in memory, not persisted"
+  },
+  "verification": {
+    "full_project_tests_passed": 99,
+    "new_api_checks_passed": 37,
+    "failures": 0,
+    "full_project_test_run_timestamp": "2026-10-25T16:09:15.658115+05:30",
+    "original_csv_cohort_reconciliation": true,
+    "unknown_only_and_empty_cohorts": true,
+    "future_outcomes_excluded_from_solver_inputs": true,
+    "constraint_and_solver_status_checks": true,
+    "read_only_snapshot_hash_unchanged": true,
+    "native_excel_powerbi_hashes_unchanged": true,
+    "original_database_and_model_hashes_unchanged": true,
+    "browser_checks": {
+      "checks": [
+        {
+          "test": "SP filter with independent planner",
+          "actual": {
+            "eligible": "40,494",
+            "lateRate": "4.49%",
+            "orders": "41,746",
+            "planningReviews": "721"
+          }
+        },
+        {
+          "test": "March 2018 purchase cohort",
+          "actual": {
+            "eligible": "7,003",
+            "late": "1,328 late / 7,003 eligible deliveries",
+            "orders": "7,211"
+          }
+        },
+        {
+          "test": "Empty cohort",
+          "actual": {
+            "lateRate": "n/a",
+            "mean": "n/a",
+            "message": "No source orders match these filters. Choose another date range or reset to all data.",
+            "orders": "0"
+          }
+        },
+        {
+          "test": "Saved 60-minute scenario",
+          "actual": {
+            "badge": "Optimal priority allocation",
+            "knownLate": "46",
+            "reviews": "378",
+            "unknown": "18"
+          }
+        },
+        {
+          "test": "Saved zero-capacity scenario",
+          "actual": {
+            "knownLate": "0",
+            "queue": "No orders selected under these limits.",
+            "reviews": "0"
+          }
+        },
+        {
+          "test": "Custom August 2 batch at 40 minutes, 9 reviews, seller cap 1",
+          "actual": {
+            "badge": "Optimal priority allocation",
+            "knownLate": "2",
+            "limits": "40 min / batch9 reviews max / batch1 max / primary seller",
+            "policyRows": "Constrained optimizer9402Highest risk first8401Priority per minute9384Oldest approval first9391",
+            "reviews": "9",
+            "status": "Calculation complete. The selected queue meets the time, review-count and primary-seller limits."
+          }
+        },
+        {
+          "test": "Keyboard-accessible rate chart",
+          "actual": {
+            "focusedPoint": "Sept 16: 100.00%; 1 eligible of 4 source orders",
+            "mode": "true",
+            "tooltip": "Sept 161 late \u00b7 100.00%1 eligible / 4 orders"
+          }
+        },
+        {
+          "test": "Unknown-only cohort has unavailable rates",
+          "actual": {
+            "chart": "No eligible completed deliveries in this cohort.Monthly late rates are unavailable; unknown outcomes are not on-time deliveries.",
+            "eligible": "0",
+            "orders": "20",
+            "rate": "n/a"
+          }
+        },
+        {
+          "test": "Final month labels have clear spacing",
+          "actual": {
+            "lastLabels": [
+              "Jun 18",
+              "Oct 18"
+            ],
+            "spacingPixels": 72.86187744140625
+          }
+        }
+      ],
+      "responsiveViewports": [
+        {
+          "width": 797,
+          "height": 930,
+          "kind": "direct in-app browser"
+        },
+        {
+          "width": 1440,
+          "height": 1200,
+          "kind": "actual responsive iframe viewport, screenshot scaled to fit"
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "kind": "actual responsive iframe viewport"
+        }
+      ],
+      "mobilePolicyTable": "All five columns visually reviewed after wrapping labels; no horizontal scrolling required for policy comparison",
+      "normalAppErrors": [],
+      "restoredDefaults": {
+        "batch": "all",
+        "chartMode": "true",
+        "end": "2018-10-17",
+        "reviews": "721",
+        "scenario": "capacity_120_cost_1",
+        "start": "2016-09-04",
+        "state": "ALL"
+      }
+    },
+    "launcher_start_reuse_stop_restart": {
+      "FinalPid": 25868,
+      "ExistingInstanceReused": true,
+      "RestartPassed": true,
+      "OwnedStopPassed": true,
+      "Url": "http://127.0.0.1:8125",
+      "StartPassed": true
+    },
+    "navigation_fix": {
+      "checked_at": "2026-10-25T11:09:07.492Z",
+      "fix": "Navigation highlights follow the visible section in the main scroll container, with matching aria-current in both menus.",
+      "checks": [
+        {
+          "test": "Manual scroll at the end selects evidence",
+          "expected": "evidence",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#evidence"
+              }
+            ],
+            "hash": "#overview",
+            "remaining": 0,
+            "scrollTop": 2408,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -2273
+              },
+              {
+                "id": "patterns",
+                "top": -1715.796875
+              },
+              {
+                "id": "review-planner",
+                "top": -870.609375
+              },
+              {
+                "id": "evidence",
+                "top": 24.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#evidence"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Manual scroll up from evidence to planner",
+          "expected": "review-planner",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#review-planner"
+              }
+            ],
+            "hash": "#overview",
+            "remaining": 720,
+            "scrollTop": 1688,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -1553
+              },
+              {
+                "id": "patterns",
+                "top": -995.796875
+              },
+              {
+                "id": "review-planner",
+                "top": -150.609375
+              },
+              {
+                "id": "evidence",
+                "top": 744.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#review-planner"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Manual scroll up from planner to patterns",
+          "expected": "patterns",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#patterns"
+              }
+            ],
+            "hash": "#overview",
+            "remaining": 1440,
+            "scrollTop": 968,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -833
+              },
+              {
+                "id": "patterns",
+                "top": -275.796875
+              },
+              {
+                "id": "review-planner",
+                "top": 569.390625
+              },
+              {
+                "id": "evidence",
+                "top": 1464.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#patterns"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Manual scroll returns to overview",
+          "expected": "overview",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgba(255, 107, 80, 0.996)",
+                "href": "#overview"
+              }
+            ],
+            "hash": "#overview",
+            "remaining": 2408,
+            "scrollTop": 0,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": 135
+              },
+              {
+                "id": "patterns",
+                "top": 692.203125
+              },
+              {
+                "id": "review-planner",
+                "top": 1537.390625
+              },
+              {
+                "id": "evidence",
+                "top": 2432.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#overview"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Top navigation click to evidence",
+          "expected": "evidence",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#evidence"
+              }
+            ],
+            "hash": "#evidence",
+            "remaining": 92,
+            "scrollTop": 2316,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -2181
+              },
+              {
+                "id": "patterns",
+                "top": -1623.796875
+              },
+              {
+                "id": "review-planner",
+                "top": -778.609375
+              },
+              {
+                "id": "evidence",
+                "top": 116.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#evidence"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Manual scrolling overrides the previous evidence anchor",
+          "expected": "patterns",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#patterns"
+              }
+            ],
+            "hash": "#evidence",
+            "remaining": 1532,
+            "scrollTop": 876,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -741
+              },
+              {
+                "id": "patterns",
+                "top": -183.796875
+              },
+              {
+                "id": "review-planner",
+                "top": 661.390625
+              },
+              {
+                "id": "evidence",
+                "top": 1556.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#patterns"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Bottom dock click to review planner",
+          "expected": "review-planner",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#review-planner"
+              }
+            ],
+            "hash": "#review-planner",
+            "remaining": 988,
+            "scrollTop": 1420,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -1285
+              },
+              {
+                "id": "patterns",
+                "top": -727.796875
+              },
+              {
+                "id": "review-planner",
+                "top": 117.390625
+              },
+              {
+                "id": "evidence",
+                "top": 1012.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#review-planner"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Review planner deep link after reload and data load",
+          "expected": "review-planner",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#review-planner"
+              }
+            ],
+            "hash": "#review-planner",
+            "remaining": 988,
+            "scrollTop": 1420,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -1285
+              },
+              {
+                "id": "patterns",
+                "top": -727.796875
+              },
+              {
+                "id": "review-planner",
+                "top": 117.390625
+              },
+              {
+                "id": "evidence",
+                "top": 1012.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#review-planner"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Keyboard Enter on dock overview link",
+          "expected": "overview",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#overview"
+              }
+            ],
+            "hash": "#overview",
+            "remaining": 2390,
+            "scrollTop": 18,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": 117
+              },
+              {
+                "id": "patterns",
+                "top": 674.203125
+              },
+              {
+                "id": "review-planner",
+                "top": 1519.390625
+              },
+              {
+                "id": "evidence",
+                "top": 2414.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#overview"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Final manual scroll down to patterns",
+          "expected": "patterns",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#patterns"
+              }
+            ],
+            "hash": "#overview",
+            "remaining": 1670,
+            "scrollTop": 738,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -603
+              },
+              {
+                "id": "patterns",
+                "top": -45.796875
+              },
+              {
+                "id": "review-planner",
+                "top": 799.390625
+              },
+              {
+                "id": "evidence",
+                "top": 1694.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#patterns"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Final manual scroll down to planner",
+          "expected": "review-planner",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#review-planner"
+              }
+            ],
+            "hash": "#overview",
+            "remaining": 950,
+            "scrollTop": 1458,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -1323
+              },
+              {
+                "id": "patterns",
+                "top": -765.796875
+              },
+              {
+                "id": "review-planner",
+                "top": 79.390625
+              },
+              {
+                "id": "evidence",
+                "top": 974.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#review-planner"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Final manual scroll down to evidence",
+          "expected": "evidence",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#evidence"
+              }
+            ],
+            "hash": "#overview",
+            "remaining": 0,
+            "scrollTop": 2408,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -2273
+              },
+              {
+                "id": "patterns",
+                "top": -1715.796875
+              },
+              {
+                "id": "review-planner",
+                "top": -870.609375
+              },
+              {
+                "id": "evidence",
+                "top": 24.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#evidence"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Final manual scroll up to planner",
+          "expected": "review-planner",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#review-planner"
+              }
+            ],
+            "hash": "#overview",
+            "remaining": 720,
+            "scrollTop": 1688,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -1553
+              },
+              {
+                "id": "patterns",
+                "top": -995.796875
+              },
+              {
+                "id": "review-planner",
+                "top": -150.609375
+              },
+              {
+                "id": "evidence",
+                "top": 744.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#review-planner"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Final manual scroll up to patterns",
+          "expected": "patterns",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#patterns"
+              }
+            ],
+            "hash": "#overview",
+            "remaining": 1440,
+            "scrollTop": 968,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": -833
+              },
+              {
+                "id": "patterns",
+                "top": -275.796875
+              },
+              {
+                "id": "review-planner",
+                "top": 569.390625
+              },
+              {
+                "id": "evidence",
+                "top": 1464.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#patterns"
+              }
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Final manual scroll up to overview",
+          "expected": "overview",
+          "actual": {
+            "dock": [
+              {
+                "aria": "location",
+                "background": "rgb(255, 107, 80)",
+                "href": "#overview"
+              }
+            ],
+            "hash": "#overview",
+            "remaining": 2408,
+            "scrollTop": 0,
+            "sectionTops": [
+              {
+                "id": "overview",
+                "top": 135
+              },
+              {
+                "id": "patterns",
+                "top": 692.203125
+              },
+              {
+                "id": "review-planner",
+                "top": 1537.390625
+              },
+              {
+                "id": "evidence",
+                "top": 2432.578125
+              }
+            ],
+            "top": [
+              {
+                "aria": "location",
+                "href": "#overview"
+              }
+            ]
+          },
+          "passed": true
+        }
+      ],
+      "normal_app_errors": [],
+      "source_sha256": {
+        "dashboard/index.html": "fe70bc0d25a17076456c80e8772cb08d6ad8b60707bf6d8ab4bf9d528e9addc5",
+        "dashboard/assets/app.css": "625323c104cf3a23cc46d41f6272f12a3fc204722dca6ed9d85a784e518188b3",
+        "dashboard/assets/app.js": "a63bb395440fd2550201cc007e29679e19a822e8fc76e768baa162dc47e9d45a"
+      },
+      "api_checks_passed": 37,
+      "javascript_syntax_check_passed": true,
+      "restored_section": "overview",
+      "screenshot": "screenshots/Scroll_Navigation.png"
+    },
+    "normal_app_browser_errors": [],
+    "temporary_qa_pages_removed": true,
+    "test_warning": "Pinned Starlette TestClient emits a transport deprecation warning; all tests pass"
+  },
+  "snapshot": {
+    "bytes": 13643776,
+    "sha256": "b066a067cd145b4765f0fa4df6eb0e88392ea9c751a1833fe34ba4e7b3b65cea",
+    "operations_run": "20261025T084432413713Z",
+    "model_run": "20261024T205105365739Z_rolling"
+  },
+  "source_sha256": {
+    "build_dashboard_data.py": "91bb462943fb689ffbc4f9d823bfe04ae62afd546957ce54a3c84ae73905e1ac",
+    "delivery_dashboard.py": "55a87328ccf8b8dd91e73096ec17f8271ff1c20245e76996a15b740e5e239e8d",
+    "delivery_planner.py": "89e5f455d90d1f6c0e3d99db23facc6029f87308a64f2d976ddb14268423036e",
+    "run_delivery_dashboard.py": "22e82acb37e3fdd0bb3821c7322e752ae39b8ea7d909e1cd35b3008c1338c6de",
+    "launch_delivery_dashboard.py": "051fccf33f25b417a56f978bc2d7ee8d6cdf649ea1d6124c2f226e41dd282996",
+    "START_Delivery_Dashboard.cmd": "5f9e11dd8b902e855b6f3d5902a98d9c1226dc5946bcfd20f78ebc796762baec",
+    "STOP_Delivery_Dashboard.cmd": "e17ccf91e9a02c9327088fd7c2c4751676dc36627ec63337c0180cf5a45a47c4",
+    "dashboard/index.html": "fe70bc0d25a17076456c80e8772cb08d6ad8b60707bf6d8ab4bf9d528e9addc5",
+    "dashboard/assets/app.css": "625323c104cf3a23cc46d41f6272f12a3fc204722dca6ed9d85a784e518188b3",
+    "dashboard/assets/app.js": "a63bb395440fd2550201cc007e29679e19a822e8fc76e768baa162dc47e9d45a"
+  },
+  "screenshots": {
+    "Desktop_1440.png": "02d970e82de3235ae7b147e76d053489c233b9034d8b67fde96c7bc3271a8ab8",
+    "Mobile_390.png": "7394e950c0fb54b81f97a0a179086c2e4a5a2cd7b1ad381526418fc616a5f3d3",
+    "Mobile_Policy_Table.png": "8baf79ca2509aa5c8e4e6f079a16346a28f8526923d18c5ffb8939466563412b",
+    "Overview.png": "1037afd51cce49c865d0a47e5305579417a881745b4244a662c1ed0a424adbe6",
+    "Rate_Chart_Keyboard.png": "cadcc257df8fd93ae8f16179ac24dbde51eeb749ed2e8f82205abdb7a6210bff",
+    "Review_Planner.png": "f817941bab1cc0e5edf3b65531acbdbbea0047057ae5300495b3f9ff8b107a67",
+    "Scroll_Navigation.png": "772cb8a41e9dd3078320c70b0d70f7aa00bb0844e76688ed9cced655dbc55038"
+  },
+  "limits": [
+    "Historical public Olist data, not live courier telemetry",
+    "Experimental frozen model ranks; reused August diagnostic; unreliable absolute probabilities",
+    "Illustrative review times; ordinal-priority objective, not prevented delays or savings",
+    "Statistics are exploratory associations; fixed evidence is independent of overview filters",
+    "Responsive iframe/desktop browser checks are not physical-phone tests",
+    "No additional cloud compute, model retraining, account setup or publication in this stage"
+  ],
+  "next": "GitHub and live hosting; joint interview practice and resume wording remain deferred"
+}
