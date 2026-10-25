@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: delivery-ops-api
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: python -m pip install -r requirements-api.txt
+    startCommand: uvicorn delivery_dashboard:app --host 0.0.0.0 --port $PORT --workers 1 --limit-concurrency 16
+    healthCheckPath: /api/health
+    autoDeploy: false
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.15
+      - key: OPENBLAS_NUM_THREADS
+        value: '1'
+      - key: OMP_NUM_THREADS
+        value: '1'
+      - key: NUMEXPR_NUM_THREADS
+        value: '1'

@@ -1,0 +1,10 @@
+# Serving only; research, notebook, cloud and authoring tools stay out of the host.
+fastapi==0.162.0
+starlette==1.9.0
+pydantic==2.14.1
+uvicorn==0.54.0
+duckdb==1.5.6
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+threadpoolctl==3.7.0

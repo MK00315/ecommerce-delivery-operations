@@ -32,7 +32,7 @@ SOLVER_SLOT = threading.BoundedSemaphore(1)
 
 @contextmanager
 def connection():
-    con = duckdb.connect(str(DATABASE), read_only=True, config={"threads": 2})
+    con = duckdb.connect(str(DATABASE), read_only=True, config={"threads": 2, "memory_limit": "96MB"})
     try:
         yield con
     finally:
@@ -191,6 +191,9 @@ app = FastAPI(title="Delivery Ops", version="1.0.0", docs_url=None, redoc_url=No
 @app.middleware("http")
 async def response_headers(request, call_next):
     response = await call_next(request)
+    if request.url.path.startswith("/api/"):
+        response.headers["Cache-Control"] = "no-store"
+        response.headers["CDN-Cache-Control"] = "no-store"
     response.headers["X-Content-Type-Options"] = "nosniff"
     response.headers["Referrer-Policy"] = "same-origin"
     response.headers["Content-Security-Policy"] = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com https://vgbujcuwptvheqijyjbe.supabase.co; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"
