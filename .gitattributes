@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.duckdb binary
+*.joblib binary
+*.parquet binary
+*.xlsx binary
+*.pbix binary
+*.png binary
+*.jpg binary
+*.cmd text eol=crlf
