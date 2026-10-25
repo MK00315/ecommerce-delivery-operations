@@ -1,0 +1,135 @@
+{
+  "checks": [
+    {
+      "test": "Controlled unavailable API keeps branded screen visible",
+      "actual": {
+        "covered": true,
+        "elapsed": "0:00",
+        "mode": "connecting",
+        "note": "After a quiet period, the server may need a minute to wake up.Historical Olist data · 2016–2018",
+        "status": "Connecting to Delivery Ops"
+      },
+      "passed": true
+    },
+    {
+      "test": "Actual 390 by 844 responsive connection screen",
+      "actual": {
+        "elapsed": "0:14",
+        "panel": {
+          "bottom": 751.328125,
+          "height": 658.65625,
+          "left": 12,
+          "right": 378,
+          "top": 92.671875,
+          "width": 366,
+          "x": 12,
+          "y": 92.671875
+        },
+        "screenWidth": 390,
+        "scrollWidth": 390,
+        "viewport": 390
+      },
+      "passed": true
+    },
+    {
+      "test": "Controlled startup recovers automatically once API becomes ready",
+      "actual": {
+        "orders": "99,441",
+        "reviews": "721",
+        "screenHidden": true,
+        "workspaceHidden": false
+      },
+      "passed": true
+    },
+    {
+      "test": "Controlled persistent failure, accelerated 1-second QA deadline only",
+      "actual": {
+        "covered": true,
+        "mode": "error",
+        "retryVisible": true,
+        "status": "The connection is taking longer"
+      },
+      "passed": true
+    },
+    {
+      "test": "Retry button recovers to actual initialized data",
+      "actual": {
+        "focus": "BODY",
+        "orders": "99,441",
+        "visible": true
+      },
+      "passed": true
+    },
+    {
+      "test": "Page-local simulated offline state; actual network settings unchanged",
+      "actual": {
+        "covered": true,
+        "mode": "offline",
+        "status": "No connection detected"
+      },
+      "passed": true
+    },
+    {
+      "test": "Live Vercel alias SP filter with independent planner",
+      "actual": {
+        "hidden": true,
+        "orders": "41,746",
+        "rate": "4.49%",
+        "reviews": "721"
+      },
+      "passed": true
+    },
+    {
+      "test": "Live 60-minute saved scenario",
+      "actual": {
+        "knownLate": "46",
+        "reviews": "378"
+      },
+      "passed": true
+    },
+    {
+      "test": "Live refresh preserves deep-linked section after startup",
+      "actual": {
+        "dock": [
+          "#review-planner"
+        ],
+        "offset": 28.03125,
+        "top": [
+          "#review-planner"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "test": "Actual 1440 by 1000 two-column startup layout",
+      "actual": {
+        "columns": "522.531px 435.469px",
+        "mode": "connecting",
+        "overflow": false,
+        "panelWidth": 958,
+        "width": 1440
+      },
+      "passed": true
+    },
+    {
+      "test": "Live desktop workspace restored to full default cohort",
+      "actual": {
+        "active": [
+          "nav-overview",
+          "dock-overview"
+        ],
+        "horizontalOverflow": false,
+        "orders": "99,441",
+        "rate": "6.77%",
+        "reviews": "721"
+      },
+      "passed": true
+    }
+  ],
+  "normalProductionErrors": [],
+  "testingLimits": [
+    "Waiting and timeout state visuals used a controlled localhost API; timeout was accelerated only in that QA fixture.",
+    "Offline state was simulated inside a temporary QA page; computer network settings were unchanged.",
+    "Responsive viewports are browser checks, not physical mobile-device tests."
+  ]
+}

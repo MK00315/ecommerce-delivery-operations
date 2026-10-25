@@ -113,3 +113,6 @@ address works on this laptop while its server runs; it is not a public live link
 References: [FastAPI static files](https://fastapi.tiangolo.com/tutorial/static-files/),
 [SciPy mixed-integer optimization](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.milp.html),
 [Olist public dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+
+
+The current live deployment and server-connection flow are recorded in [HOSTING_GUIDE.md](HOSTING_GUIDE.md) and [SPLIT_HOSTING_VERIFICATION.json](SPLIT_HOSTING_VERIFICATION.json).

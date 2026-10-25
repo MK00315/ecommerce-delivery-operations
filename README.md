@@ -6,7 +6,7 @@ Explore why deliveries arrive late, compare approval-time risk models, and alloc
 
 ![Delivery Ops dashboard](docs/images/Overview.png)
 
-The dashboard and reports are complete and run locally. **Public hosting is pending.** The GitHub repository contains the runnable app and completed artifacts; no Azure or Databricks account is needed to use them.
+**[Open the live dashboard](https://delivery-ops-mk.vercel.app/)** — Vercel hosts the frontend and Render hosts the Python API. A matching connection screen stays visible while the analysis server starts, with real elapsed time, bounded retries and an offline fallback. No Azure or Databricks account is needed to use it. See the [hosting guide](docs/HOSTING_GUIDE.md).
 
 ## Try the dashboard
 
@@ -97,7 +97,7 @@ python -m pytest tests -q
 
 If Kaggle requests access, obtain version 2 from the [original dataset page](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) and run `python scripts/download_dataset.py --source <folder-containing-the-nine-CSVs>`.
 
-The test suite checks source reconciliations, date definitions, temporal leakage, statistical uncertainty, solver constraints, API boundaries and actual report downloads. GitHub Actions uses the same versioned public source, rebuilds the SQL foundation and runs the tests; it performs no cloud-resource creation, model training or deployment.
+The 99 Python tests check source reconciliations, date definitions, temporal leakage, statistical uncertainty, solver constraints, API boundaries and actual report downloads. Another 13 frontend tests check startup, timeouts, cancellation, recovery and offline behavior (`node --test tests/connection.test.cjs`). GitHub Actions uses the same versioned public source, rebuilds the SQL foundation and runs both suites; it performs no cloud-resource creation, model training or deployment.
 
 To rerun the modeling and planning stages after preparing the foundation:
 

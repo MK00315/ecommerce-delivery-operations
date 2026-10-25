@@ -1,0 +1,51 @@
+{
+  "base": "https://delivery-ops-dusky.vercel.app",
+  "checks": [
+    {
+      "check": "Published asset parity",
+      "file": "app.js",
+      "status": 200
+    },
+    {
+      "check": "Published asset parity",
+      "file": "app.css",
+      "status": 200
+    },
+    {
+      "check": "Published asset parity",
+      "file": "connection.js",
+      "status": 200
+    },
+    {
+      "check": "Published asset parity",
+      "file": "mark.svg",
+      "status": 200
+    },
+    {
+      "check": "Scoped CSV export",
+      "rows": 1,
+      "status": 200
+    },
+    {
+      "check": "Native download hash parity",
+      "kind": "excel",
+      "bytes": 97720,
+      "sha256": "a0aebaf10fc519f44529c7a9d0a56dd94831060b4d4f1f9a191e222f107aebd4",
+      "status": 200
+    },
+    {
+      "check": "Native download hash parity",
+      "kind": "powerbi",
+      "bytes": 14522523,
+      "sha256": "a428c9b1e5ca2d20adbeeca9dc45dedb8513596f17b45e1cdda428d868a63246",
+      "status": 200
+    },
+    {
+      "check": "Hosted custom optimizer",
+      "reviews": 9,
+      "minutes": 40,
+      "optimal": true,
+      "status": 200
+    }
+  ]
+}

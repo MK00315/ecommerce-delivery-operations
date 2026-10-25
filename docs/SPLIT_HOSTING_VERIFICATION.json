@@ -1,0 +1,252 @@
+{
+  "checked_at": "2026-10-25T20:34:45.926627+05:30",
+  "deployed": true,
+  "frontend_url": "https://delivery-ops-mk.vercel.app/",
+  "frontend_secondary_url": "https://delivery-ops-dusky.vercel.app/",
+  "frontend_deployment_url": "https://delivery-c8m6ainqa-mk00315.vercel.app",
+  "frontend_deployment_id": "dpl_GTVyn1cunPYN2epRvEbRPRE7vxiN",
+  "frontend_source_commit": "feb8d8b5507f46a3cb7de1517eb1601a28f6dee5",
+  "backend_url": "https://delivery-ops-api.onrender.com",
+  "backend_source_commit": "772b19d01f5a0f6fd3061f059107bd39257f4630",
+  "backend_service_id": "srv-dbf17h29lscs738enle0",
+  "backend_deploy_id": "dep-dbf17hq9lscs738enon0",
+  "backend_status_observed": "Deploy succeeded | Live",
+  "backend_plan_observed": "Free, $0/month, 0.1 CPU, 512 MB, Singapore",
+  "frontend_plan_observed": "Vercel Hobby",
+  "design": {
+    "project_id": "eab076dd-28a2-452e-a97d-4329c1c1a803",
+    "draft_id": "0c0e017f-c7d6-43d5-bd58-3bf78e8a194f",
+    "connection_version": 6,
+    "dashboard_approved_version": 4,
+    "connection_design_user_approved": true
+  },
+  "startup": {
+    "static_html_is_independent_of_backend": true,
+    "expected_health_application": "delivery-ops",
+    "expected_source_orders": 99441,
+    "budget_seconds": 180,
+    "per_health_request_seconds_max": 15,
+    "per_workspace_request_seconds_max": 20,
+    "requires_initial_data_before_reveal": true,
+    "fake_progress_percentage": false,
+    "continuous_keep_alive": false,
+    "retry_and_offline_states": true,
+    "same_origin_proxy": true,
+    "wildcard_cors_added": false,
+    "upstream_cache_bypassed": true
+  },
+  "verification": {
+    "python_tests_passed": 99,
+    "frontend_startup_tests_passed": 13,
+    "github_actions_url": "https://github.com/MK00315/ecommerce-delivery-operations/actions/runs/40204344393",
+    "github_actions_conclusion": "success",
+    "anonymous_friendly_url_http_status": 200,
+    "anonymous_friendly_url_authentication_redirect": false,
+    "live_http_checks": {
+      "base": "https://delivery-ops-dusky.vercel.app",
+      "checks": [
+        {
+          "check": "Published asset parity",
+          "file": "app.js",
+          "status": 200
+        },
+        {
+          "check": "Published asset parity",
+          "file": "app.css",
+          "status": 200
+        },
+        {
+          "check": "Published asset parity",
+          "file": "connection.js",
+          "status": 200
+        },
+        {
+          "check": "Published asset parity",
+          "file": "mark.svg",
+          "status": 200
+        },
+        {
+          "check": "Scoped CSV export",
+          "rows": 1,
+          "status": 200
+        },
+        {
+          "check": "Native download hash parity",
+          "kind": "excel",
+          "bytes": 97720,
+          "sha256": "a0aebaf10fc519f44529c7a9d0a56dd94831060b4d4f1f9a191e222f107aebd4",
+          "status": 200
+        },
+        {
+          "check": "Native download hash parity",
+          "kind": "powerbi",
+          "bytes": 14522523,
+          "sha256": "a428c9b1e5ca2d20adbeeca9dc45dedb8513596f17b45e1cdda428d868a63246",
+          "status": 200
+        },
+        {
+          "check": "Hosted custom optimizer",
+          "reviews": 9,
+          "minutes": 40,
+          "optimal": true,
+          "status": 200
+        }
+      ]
+    },
+    "browser_checks": {
+      "checks": [
+        {
+          "test": "Controlled unavailable API keeps branded screen visible",
+          "actual": {
+            "covered": true,
+            "elapsed": "0:00",
+            "mode": "connecting",
+            "note": "After a quiet period, the server may need a minute to wake up.Historical Olist data \u00b7 2016\u20132018",
+            "status": "Connecting to Delivery Ops"
+          },
+          "passed": true
+        },
+        {
+          "test": "Actual 390 by 844 responsive connection screen",
+          "actual": {
+            "elapsed": "0:14",
+            "panel": {
+              "bottom": 751.328125,
+              "height": 658.65625,
+              "left": 12,
+              "right": 378,
+              "top": 92.671875,
+              "width": 366,
+              "x": 12,
+              "y": 92.671875
+            },
+            "screenWidth": 390,
+            "scrollWidth": 390,
+            "viewport": 390
+          },
+          "passed": true
+        },
+        {
+          "test": "Controlled startup recovers automatically once API becomes ready",
+          "actual": {
+            "orders": "99,441",
+            "reviews": "721",
+            "screenHidden": true,
+            "workspaceHidden": false
+          },
+          "passed": true
+        },
+        {
+          "test": "Controlled persistent failure, accelerated 1-second QA deadline only",
+          "actual": {
+            "covered": true,
+            "mode": "error",
+            "retryVisible": true,
+            "status": "The connection is taking longer"
+          },
+          "passed": true
+        },
+        {
+          "test": "Retry button recovers to actual initialized data",
+          "actual": {
+            "focus": "BODY",
+            "orders": "99,441",
+            "visible": true
+          },
+          "passed": true
+        },
+        {
+          "test": "Page-local simulated offline state; actual network settings unchanged",
+          "actual": {
+            "covered": true,
+            "mode": "offline",
+            "status": "No connection detected"
+          },
+          "passed": true
+        },
+        {
+          "test": "Live Vercel alias SP filter with independent planner",
+          "actual": {
+            "hidden": true,
+            "orders": "41,746",
+            "rate": "4.49%",
+            "reviews": "721"
+          },
+          "passed": true
+        },
+        {
+          "test": "Live 60-minute saved scenario",
+          "actual": {
+            "knownLate": "46",
+            "reviews": "378"
+          },
+          "passed": true
+        },
+        {
+          "test": "Live refresh preserves deep-linked section after startup",
+          "actual": {
+            "dock": [
+              "#review-planner"
+            ],
+            "offset": 28.03125,
+            "top": [
+              "#review-planner"
+            ]
+          },
+          "passed": true
+        },
+        {
+          "test": "Actual 1440 by 1000 two-column startup layout",
+          "actual": {
+            "columns": "522.531px 435.469px",
+            "mode": "connecting",
+            "overflow": false,
+            "panelWidth": 958,
+            "width": 1440
+          },
+          "passed": true
+        },
+        {
+          "test": "Live desktop workspace restored to full default cohort",
+          "actual": {
+            "active": [
+              "nav-overview",
+              "dock-overview"
+            ],
+            "horizontalOverflow": false,
+            "orders": "99,441",
+            "rate": "6.77%",
+            "reviews": "721"
+          },
+          "passed": true
+        }
+      ],
+      "normalProductionErrors": [],
+      "testingLimits": [
+        "Waiting and timeout state visuals used a controlled localhost API; timeout was accelerated only in that QA fixture.",
+        "Offline state was simulated inside a temporary QA page; computer network settings were unchanged.",
+        "Responsive viewports are browser checks, not physical mobile-device tests."
+      ]
+    }
+  },
+  "data": {
+    "source_orders": 99441,
+    "snapshot_sha256": "b066a067cd145b4765f0fa4df6eb0e88392ea9c751a1833fe34ba4e7b3b65cea",
+    "snapshot_unchanged": true,
+    "inputs_persisted": false,
+    "new_training_performed": false,
+    "new_azure_or_databricks_compute": false
+  },
+  "files": {
+    "dashboard/index.html": "b7bec11eb7c1092da4445c5b90213e1da48f85c4ef42aa2986c9a9704a9b6c91",
+    "dashboard/assets/app.css": "77c792887ba360507c52406ec5cf3fca8746f39c263219c1a72435ff478fef50",
+    "dashboard/assets/app.js": "95c3c477eaafebf43c02294f5b1d95d04909ae8556e563d7745bd2b24d5fb209",
+    "dashboard/assets/connection.js": "33c0a45d71e43a4c441f9c4b6e3481790e287ff34293bb0d6f2d82bae44aa1cc",
+    "dashboard/assets/mark.svg": "24df01e3360ee71dce6fabc0766c033f99b7d58491645bfc8721814207d90d62",
+    "dashboard/vercel.json": "c39c30f3114fa0bc435e8bf864d800f3d6d1c026c9b566793506c791fbe72086",
+    "delivery_dashboard.py": "8852d3874ab2f87a3a5e62e009a765b0735ac68eaf2a01fbefcc562e1a10fa43",
+    "requirements-api.txt": "6d76ed7e125476eca7226175d1e98391925010b16daace54b5e08075bf1176c7",
+    "render.yaml": "f4f04b50a4bd9264e6cd91b41b3c58acc0e2c7a7b8d48e05ecdb7d05f745a259"
+  },
+  "future_updates": "GitHub checks do not deploy. Render uses manual deploys; redeploy the Vercel dashboard project for frontend changes."
+}

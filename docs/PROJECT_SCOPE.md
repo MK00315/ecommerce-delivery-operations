@@ -17,7 +17,7 @@ The supplied Straive Data Analyst Trainee description emphasizes problem structu
 | Web interface | Approved Midnight Editorial dashboard, cohort filters, SQL comparisons, saved scenarios and a bounded one-batch optimizer | Implemented and executed locally; 37 API checks and browser flows passed; all-source snapshot, no real delivery actions or persistent user-input collection |
 | Databricks | Free Edition CLI/SQL API; verified volume handoff; 9 bronze Delta tables, silver order table and gold view | Implemented, executed and independently reconciled; SQL notebook imported, no notebook job run claimed |
 | Azure | Protected Free Trial; private storage and one bounded manual Data Factory copy | Implemented and executed; all 9 file hashes verified; no scheduled triggers or paid upgrade |
-| DevOps/publication | Tests, reproducible instructions, GitHub and live demo | 99 local tests passed; local launchers and usage guide completed; GitHub source published; live hosting pending |
+| DevOps/publication | Tests, reproducible instructions, GitHub and live demo | 99 local tests passed; local launchers and usage guide completed; GitHub source and Vercel frontend/Render API published |
 
 Azure Databricks and the existing standalone Databricks Free Edition workspace are different offerings. The executed path uses Azure Data Factory followed by a hash-verified local file handoff into a Databricks volume. Native Data Factory-to-Azure-Databricks execution is not claimed. The actual SQL API execution, reconciliations, trial protection and stopped warehouse are recorded in `CLOUD_VERIFICATION.json`.
 
@@ -34,7 +34,10 @@ Statistics and review planning are recorded in `OPERATIONS_RESULTS.md` and
 historical daily batches under 120 pooled minutes, 30 reviews and 5 reviews per
 primary seller. The 79 known late outcomes found in that queue are a retrospective
 diagnostic, not delays prevented. Excel and Power BI reporting are now complete;
-the approved web dashboard is also implemented locally. Live hosting remains pending.
+the approved web dashboard is also implemented locally. The frontend is live at https://delivery-ops-mk.vercel.app/ with its API on Render.
 Reporting evidence and usage instructions are in `REPORTING_VERIFICATION.json` and
 `REPORTING_GUIDE.md`; dashboard evidence and usage are in `DASHBOARD_VERIFICATION.json`
 and `DASHBOARD_GUIDE.md`.
+
+
+The current live deployment and server-connection flow are recorded in [HOSTING_GUIDE.md](HOSTING_GUIDE.md) and [SPLIT_HOSTING_VERIFICATION.json](SPLIT_HOSTING_VERIFICATION.json).
