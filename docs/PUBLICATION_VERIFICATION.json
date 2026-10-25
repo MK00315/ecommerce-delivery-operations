@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-25T19:48:29.531346+05:30",
+  "stage": "Prepared and locally verified for GitHub publication; public hosting is pending",
+  "deployed": false,
+  "repository_name": "MK00315/ecommerce-delivery-operations",
+  "source_tests": {
+    "passed": 99,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "report": "docs/evidence/publication_qa.xml"
+  },
+  "source_dataset": {
+    "version": 2,
+    "files": 9,
+    "rows": 1550922,
+    "orders": 99441,
+    "eligible": 96470,
+    "late": 6534,
+    "fresh_sql_rebuild_passed": true
+  },
+  "dashboard": {
+    "snapshot_sha256": "b066a067cd145b4765f0fa4df6eb0e88392ea9c751a1833fe34ba4e7b3b65cea",
+    "source_orders": 99441,
+    "readiness_passed": true,
+    "native_downloads_repository_local": true,
+    "javascript_syntax_passed": true,
+    "original_navigation_checks": "docs/evidence/NAVIGATION_CHECKS.json"
+  },
+  "published_native_files": {
+    "excel": {
+      "path": "reports/native/Delivery_Operations.xlsx",
+      "sha256": "a0aebaf10fc519f44529c7a9d0a56dd94831060b4d4f1f9a191e222f107aebd4",
+      "metadata_change": "Only the cached local absolute-path element in xl/workbook.xml was removed from the public copy. All sheets, source cells, formulas, charts, controls and saved values were checked again; original workspace file unchanged."
+    },
+    "powerbi": {
+      "path": "reports/native/Ecommerce_Delivery_Operations.pbix",
+      "sha256": "a428c9b1e5ca2d20adbeeca9dc45dedb8513596f17b45e1cdda428d868a63246",
+      "unchanged_from_native_saved_original": true
+    }
+  },
+  "privacy_checks": {
+    "known_token_private_key_storage_key_patterns": 0,
+    "personal_home_paths_and_private_email_domains": 0,
+    "live_workspace_hosts_and_subscription_paths": 0,
+    "native_zip_metadata_included_in_scan": true,
+    "raw_cloud_account_responses_and_local_caches_excluded": true
+  },
+  "portability_changes": [
+    "Native report downloads resolve inside the repository.",
+    "Power BI and Excel authoring outputs resolve inside the repository.",
+    "Public Azure budget approval is false; CI and app startup never run cloud scripts.",
+    "Dated original verification records keep their historical source hashes; this record verifies publication changes separately."
+  ],
+  "cloud_compute_or_training_performed_for_publication": false,
+  "ci": {
+    "definition": ".github/workflows/checks.yml",
+    "scope": "Download hash-verified version-2 public data, rebuild SQL foundation and run tests. No deployment or cloud creation.",
+    "remote_run_status": "See the repository Actions tab for the actual run result."
+  }
+}
