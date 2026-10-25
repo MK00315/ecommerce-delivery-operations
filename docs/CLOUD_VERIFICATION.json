@@ -1,0 +1,102 @@
+{
+  "verified_at": "2026-10-25T01:34:25.070413+05:30",
+  "stage": "Executed Azure ingestion and Databricks Delta/SLA foundation",
+  "azure": {
+    "subscription_type": "FreeTrial",
+    "spending_limit": "On",
+    "approved_trial_credit_budget_inr": 100,
+    "paid_upgrade_performed": false,
+    "region": "centralindia",
+    "resource_groups_created": 1,
+    "top_level_resources_created": 2,
+    "private_containers": 2,
+    "anonymous_blob_access": false,
+    "shared_key_authentication": false,
+    "pipeline_attempts": 1,
+    "pipeline_status": "Succeeded",
+    "activity_status": "Succeeded",
+    "files_read": 9,
+    "files_written": 9,
+    "bytes_read": 126186995,
+    "bytes_written": 126186995,
+    "copy_duration_seconds": 19,
+    "copy_dius": 4,
+    "billable_diu_hours": "0.06666666666666667",
+    "all_destination_sha256_hashes_match": true,
+    "scheduled_triggers": 0,
+    "automatic_activity_retries": 0,
+    "copy_compute_meter_estimate_inr": "1.5998",
+    "cost_limitations": "Meter-derived copy compute estimate only; excludes other operations/storage/taxes. The Cost Management API rejected this offer type; final total and credit deduction are unverified.",
+    "retention_review_date": "2026-10-31"
+  },
+  "databricks": {
+    "verified_at": "2026-10-24T19:59:33.083050+00:00",
+    "edition": "Free Edition",
+    "interface": "Official CLI and SQL Statement Execution API; no console automation",
+    "transfer": "Azure bronze -> hash-verified local handoff -> hash-verified Unity Catalog volume",
+    "source_files_verified": 9,
+    "source_bytes_verified": 126186995,
+    "bronze_delta_tables": 9,
+    "bronze_rows": 1550922,
+    "table_row_counts": {
+      "bronze_customers": 99441,
+      "bronze_geolocation": 1000163,
+      "bronze_order_items": 112650,
+      "bronze_order_payments": 103886,
+      "bronze_order_reviews": 99224,
+      "bronze_orders": 99441,
+      "bronze_products": 32951,
+      "bronze_sellers": 3095,
+      "bronze_categories": 71
+    },
+    "silver_orders": 99441,
+    "sla_eligible": 96470,
+    "late_orders": 6534,
+    "on_time_orders": 89936,
+    "late_rate_pct": "6.77309007981756",
+    "money_totals_source_units": {
+      "item_value": "13591643.70",
+      "freight_value": "2251909.54",
+      "payment_value": "16008872.12"
+    },
+    "independent_checks": [
+      "Original/Azure/Databricks downloaded-file SHA-256 hashes",
+      "All nine source-manifest row counts",
+      "Separate DuckDB order and calendar-day SLA counts",
+      "Decimal sums over original CSV money fields",
+      "Exact all-order, SLA-eligible, late and on-time membership SHA-256 hashes"
+    ],
+    "native_adf_to_azure_databricks_integration": false,
+    "sql_notebook_imported": true,
+    "notebook_path": "/Shared/Delivery_Operations/01_Bronze_And_SLA",
+    "sql_execution": "The supplied SQL definitions were executed through the SQL API; no notebook job run is claimed",
+    "model_training": false,
+    "exact_order_and_label_membership_verified": true
+  },
+  "handoff": "ADF Azure bronze -> independently hash-verified local download -> independently hash-verified Databricks Unity Catalog volume",
+  "native_adf_to_azure_databricks_connection": false,
+  "warehouse_end_state": "STOPPED",
+  "warehouse_active_sessions_at_end": 0,
+  "cloud_budget_guard_tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "model_training_completed": false,
+  "pending_project_stages": [
+    "Approval-time feature engineering and chronological model evaluation",
+    "Statistical analysis",
+    "Capacity-constrained review planning",
+    "Excel workbook",
+    "Power BI report",
+    "Professional web dashboard",
+    "Publication"
+  ],
+  "complete_local_test_suite": {
+    "tests": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 25,
+    "python_high_signal_lint": "Passed"
+  }
+}
