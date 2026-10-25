@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "purpose": "More recent model fitting and several forward validation months after the first prototype failed its August test",
+  "feature_version": "1.0.0",
+  "seed": 42,
+  "threads": 4,
+  "development_outcomes_before": "2018-08-01",
+  "folds": [
+    {"name": "March", "fit_approval_end": "2018-02-01", "fit_outcomes_before": "2018-03-01", "validation_start": "2018-03-01", "validation_end": "2018-04-01"},
+    {"name": "April", "fit_approval_end": "2018-03-01", "fit_outcomes_before": "2018-04-01", "validation_start": "2018-04-01", "validation_end": "2018-05-01"},
+    {"name": "May", "fit_approval_end": "2018-04-01", "fit_outcomes_before": "2018-05-01", "validation_start": "2018-05-01", "validation_end": "2018-06-01"},
+    {"name": "June", "fit_approval_end": "2018-05-01", "fit_outcomes_before": "2018-06-01", "validation_start": "2018-06-01", "validation_end": "2018-07-01"}
+  ],
+  "selection_metric": "Equal-month mean of average_precision divided by that month's observed late rate",
+  "tie_rule": "Keep the earlier listed candidate on exact ties",
+  "final_refit": {"approval_start": "2016-01-01", "approval_end": "2018-07-01", "outcomes_before": "2018-08-01"},
+  "calibration": "Fixed sigmoid on the selected family's May/June out-of-time development predictions, not in-sample refit predictions",
+  "diagnostic_threshold": "F2 on the same May/June development predictions; no capacity/cost guarantee",
+  "august_replay": {"approval_start": "2018-08-01", "approval_end": "2018-09-01", "outcomes_before": "2018-10-01"},
+  "august_status": "Already inspected in the failed version-1 test. Reused diagnostic only, not a fresh independent test of version 2.",
+  "independent_future_validation_available": false,
+  "bootstrap_repetitions": 400,
+  "candidates": [
+    {"name": "constant_prior", "family": "dummy", "history": false, "parameters": {}},
+    {"name": "logistic_static", "family": "logistic", "history": false, "parameters": {"C": 0.3, "max_iter": 1000}},
+    {"name": "logistic_history", "family": "logistic", "history": true, "parameters": {"C": 0.3, "max_iter": 1000}},
+    {"name": "boosted_15", "family": "hist_gradient_boosting", "history": true, "parameters": {"learning_rate": 0.06, "max_iter": 200, "max_leaf_nodes": 15, "min_samples_leaf": 80, "l2_regularization": 10.0, "early_stopping": false}},
+    {"name": "boosted_31", "family": "hist_gradient_boosting", "history": true, "parameters": {"learning_rate": 0.06, "max_iter": 250, "max_leaf_nodes": 31, "min_samples_leaf": 80, "l2_regularization": 10.0, "early_stopping": false}},
+    {"name": "boosted_static_15", "family": "hist_gradient_boosting", "history": false, "parameters": {"learning_rate": 0.06, "max_iter": 200, "max_leaf_nodes": 15, "min_samples_leaf": 80, "l2_regularization": 10.0, "early_stopping": false}}
+  ],
+  "constraints": [
+    "August rows or labels cannot select the candidate, feature set, calibration method or threshold.",
+    "The original failed August result remains archived and visible.",
+    "Source basket/promise/catalog availability assumptions and conditional observed-outcome coverage limits still apply.",
+    "The updated model is a portfolio research artifact, not a production-qualified predictor. Independent new-period evidence is unavailable."
+  ]
+}

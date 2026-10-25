@@ -1,0 +1,16 @@
+{
+  "locked_at": "2026-10-25T02:21:54.312006+05:30",
+  "candidate": {
+    "name": "logistic_static",
+    "family": "logistic",
+    "history": false,
+    "parameters": {
+      "C": 0.3,
+      "max_iter": 1000
+    }
+  },
+  "criterion": "Equal-month mean of average_precision divided by that month's observed late rate",
+  "august_used_in_selection": false,
+  "august_status": "Already inspected in the failed version-1 test. Reused diagnostic only, not a fresh independent test of version 2.",
+  "protocol_sha256": "f2106b2fffe39ef41209f9458c60ab4909f69ad92114054d9de6219897ba058a"
+}

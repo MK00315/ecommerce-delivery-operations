@@ -1,0 +1,323 @@
+{
+  "run_id": "20261024T203757326225Z",
+  "completed_at": "2026-10-25T02:10:00.739420+05:30",
+  "actual_execution": "Local laptop CPU; no Colab or additional cloud training",
+  "python": "3.13.15",
+  "scikit_learn": "1.9.1",
+  "pandas": "3.1.0",
+  "numpy": "2.5.4",
+  "feature_version": "1.0.0",
+  "feature_count": 45,
+  "source_orders": 99441,
+  "valid_approval_decisions": 98647,
+  "cohorts": {
+    "selection_train": {
+      "approval_start": "2016-01-01",
+      "approval_end": "2018-01-01",
+      "outcomes_before": "2018-02-01",
+      "valid_decisions": 44819,
+      "observed_evaluable_orders": 43528,
+      "not_evaluable_by_cutoff": 1291,
+      "observed_outcome_coverage": 0.971195252013655,
+      "late_orders": 2376
+    },
+    "selection_validation": {
+      "approval_start": "2018-02-01",
+      "approval_end": "2018-03-01",
+      "outcomes_before": "2018-05-01",
+      "valid_decisions": 6675,
+      "observed_evaluable_orders": 6502,
+      "not_evaluable_by_cutoff": 173,
+      "observed_outcome_coverage": 0.9740823970037453,
+      "late_orders": 858
+    },
+    "final_refit": {
+      "approval_start": "2016-01-01",
+      "approval_end": "2018-03-01",
+      "outcomes_before": "2018-05-01",
+      "valid_decisions": 58634,
+      "observed_evaluable_orders": 57099,
+      "not_evaluable_by_cutoff": 1535,
+      "observed_outcome_coverage": 0.9738206501347341,
+      "late_orders": 3704
+    },
+    "calibration_and_threshold_development": {
+      "approval_start": "2018-05-01",
+      "approval_end": "2018-07-01",
+      "outcomes_before": "2018-08-01",
+      "valid_decisions": 13204,
+      "observed_evaluable_orders": 13006,
+      "not_evaluable_by_cutoff": 198,
+      "observed_outcome_coverage": 0.9850045440775522,
+      "late_orders": 503
+    },
+    "holdout_test": {
+      "approval_start": "2018-08-01",
+      "approval_end": "2018-09-01",
+      "outcomes_before": "2018-10-01",
+      "valid_decisions": 6603,
+      "observed_evaluable_orders": 6495,
+      "not_evaluable_by_cutoff": 108,
+      "observed_outcome_coverage": 0.983643798273512,
+      "late_orders": 406
+    }
+  },
+  "selected_candidate": {
+    "name": "boosted_15",
+    "family": "hist_gradient_boosting",
+    "history": true,
+    "parameters": {
+      "learning_rate": 0.06,
+      "max_iter": 200,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 80,
+      "l2_regularization": 10.0,
+      "early_stopping": false
+    }
+  },
+  "selection_metric": "Validation average precision",
+  "validation_selected_metrics": {
+    "orders": 6502,
+    "late_orders": 858,
+    "late_rate": 0.13195939710858198,
+    "average_precision": 0.3307752723935158,
+    "roc_auc": 0.7308946811515913,
+    "brier_score": 0.10593759745962254,
+    "log_loss": 0.3653591869532765,
+    "threshold": 0.5,
+    "precision": 0.5714285714285714,
+    "recall": 0.009324009324009324,
+    "f2": 0.011607661056297156,
+    "flagged_orders": 14,
+    "flagged_share": 0.002153183635804368,
+    "confusion_matrix": {
+      "true_negative": 5638,
+      "false_positive": 6,
+      "false_negative": 850,
+      "true_positive": 8
+    },
+    "top_10_percent": {
+      "reviewed_orders": 651,
+      "late_orders_captured": 266,
+      "precision": 0.40860215053763443,
+      "recall": 0.31002331002331,
+      "lift_over_prevalence": 3.096423289971677
+    },
+    "candidate": "boosted_15",
+    "family": "hist_gradient_boosting",
+    "history": true,
+    "fit_seconds": 1.217
+  },
+  "holdout": {
+    "orders": 6495,
+    "late_orders": 406,
+    "late_rate": 0.06250962278675905,
+    "average_precision": 0.06439647185456569,
+    "roc_auc": 0.5071513113771341,
+    "brier_score": 0.061058427654950606,
+    "log_loss": 0.2511260290954247,
+    "threshold": 0.04846602726258371,
+    "precision": 0.052878965922444184,
+    "recall": 0.33251231527093594,
+    "f2": 0.16159923389992817,
+    "flagged_orders": 2553,
+    "flagged_share": 0.3930715935334873,
+    "confusion_matrix": {
+      "true_negative": 3671,
+      "false_positive": 2418,
+      "false_negative": 271,
+      "true_positive": 135
+    },
+    "top_10_percent": {
+      "reviewed_orders": 650,
+      "late_orders_captured": 36,
+      "precision": 0.055384615384615386,
+      "recall": 0.08866995073891626,
+      "lift_over_prevalence": 0.886017430845017
+    }
+  },
+  "raw_model_holdout": {
+    "orders": 6495,
+    "late_orders": 406,
+    "late_rate": 0.06250962278675905,
+    "average_precision": 0.06439647185456569,
+    "roc_auc": 0.5071513113771341,
+    "brier_score": 0.07136508065683297,
+    "log_loss": 0.27423370663005353,
+    "threshold": 0.5,
+    "precision": 0.09523809523809523,
+    "recall": 0.0049261083743842365,
+    "f2": 0.0060790273556231,
+    "flagged_orders": 21,
+    "flagged_share": 0.003233256351039261,
+    "confusion_matrix": {
+      "true_negative": 6070,
+      "false_positive": 19,
+      "false_negative": 404,
+      "true_positive": 2
+    },
+    "top_10_percent": {
+      "reviewed_orders": 650,
+      "late_orders_captured": 36,
+      "precision": 0.055384615384615386,
+      "recall": 0.08866995073891626,
+      "lift_over_prevalence": 0.886017430845017
+    }
+  },
+  "baselines": {
+    "calibration_period_constant": {
+      "orders": 6495,
+      "late_orders": 406,
+      "late_rate": 0.06250962278675905,
+      "average_precision": 0.06250962278675905,
+      "roc_auc": 0.5,
+      "brier_score": 0.0591702849289697,
+      "log_loss": 0.24029395100945936,
+      "threshold": 0.04846602726258371,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f2": 0.0,
+      "flagged_orders": 0,
+      "flagged_share": 0.0,
+      "confusion_matrix": {
+        "true_negative": 6089,
+        "false_positive": 0,
+        "false_negative": 406,
+        "true_positive": 0
+      },
+      "top_10_percent": {
+        "reviewed_orders": 650,
+        "late_orders_captured": 39,
+        "precision": 0.06,
+        "recall": 0.0960591133004926,
+        "lift_over_prevalence": 0.9598522167487684
+      }
+    },
+    "rolling_90d_global_rate": {
+      "orders": 6495,
+      "late_orders": 406,
+      "late_rate": 0.06250962278675905,
+      "average_precision": 0.04404452173253977,
+      "roc_auc": 0.35266069719521675,
+      "brier_score": 0.05900205425095772,
+      "log_loss": 0.2380058951515127,
+      "threshold": 0.04846602726258371,
+      "precision": 0.02584493041749503,
+      "recall": 0.16009852216748768,
+      "f2": 0.07852138197632279,
+      "flagged_orders": 2515,
+      "flagged_share": 0.3872209391839877,
+      "confusion_matrix": {
+        "true_negative": 3639,
+        "false_positive": 2450,
+        "false_negative": 341,
+        "true_positive": 65
+      },
+      "top_10_percent": {
+        "reviewed_orders": 650,
+        "late_orders_captured": 7,
+        "precision": 0.010769230769230769,
+        "recall": 0.017241379310344827,
+        "lift_over_prevalence": 0.1722811671087533
+      }
+    },
+    "static_logistic_sigmoid": {
+      "orders": 6495,
+      "late_orders": 406,
+      "late_rate": 0.06250962278675905,
+      "average_precision": 0.09499178139022693,
+      "roc_auc": 0.6342896461114162,
+      "brier_score": 0.060728289413336065,
+      "log_loss": 0.23468500967249106,
+      "threshold": 0.04846602726258371,
+      "precision": 0.08623503808487486,
+      "recall": 0.7807881773399015,
+      "f2": 0.2990566037735849,
+      "flagged_orders": 3676,
+      "flagged_share": 0.5659738260200154,
+      "confusion_matrix": {
+        "true_negative": 2730,
+        "false_positive": 3359,
+        "false_negative": 89,
+        "true_positive": 317
+      },
+      "top_10_percent": {
+        "reviewed_orders": 650,
+        "late_orders_captured": 49,
+        "precision": 0.07538461538461538,
+        "recall": 0.1206896551724138,
+        "lift_over_prevalence": 1.2059681697612732
+      }
+    }
+  },
+  "holdout_day_block_intervals": {
+    "method": "Approval-calendar-day block bootstrap; within-day clustering retained, between-day dependence not modeled",
+    "calendar_day_blocks": 28,
+    "requested_repetitions": 400,
+    "valid_repetitions": 400,
+    "confidence": 0.95,
+    "intervals": {
+      "average_precision": {
+        "low": 0.052451947471071445,
+        "high": 0.07842226624902358
+      },
+      "roc_auc": {
+        "low": 0.4676289302762759,
+        "high": 0.5515303856234333
+      },
+      "brier_score": {
+        "low": 0.04476764394030199,
+        "high": 0.0770810218429804
+      },
+      "top_10_percent_recall": {
+        "low": 0.06834897643388042,
+        "high": 0.1179192948406922
+      }
+    }
+  },
+  "calibration": {
+    "method": "Fixed sigmoid",
+    "slope": 0.9558628441089132,
+    "intercept": -0.9736188235298304,
+    "development_late_rate": 0.03867445794248808,
+    "diagnostic_threshold": 0.04846602726258371,
+    "threshold_objective": "F2 on calibration/development cohort only; no capacity or financial effect assumed",
+    "holdout_brier_improved_over_raw": true
+  },
+  "integrity": {
+    "protocol_sha256": "ed6cbe3b9c5de2b12dcf4516b52d08d5e5c0c36c30a9d69617542d5d5e1064bb",
+    "model_sha256": "d253d2f6cae31e127ce6caa8049fca9f33cc59bf92416679abec6e16c4f306b0",
+    "model_reload_predictions_match": true,
+    "feature_artifact_hashes_verified": true,
+    "source_code_sha256": {
+      "delivery_features.py": "ccbf8ac5a571ebdb63d89f0a44e03311aed078a43235e94e4e9ffc937e177308",
+      "delivery_risk.py": "ba106c58acc4f6d1848613677dc8f7f8d71f9fad029b34521badfbce74115689",
+      "train_delivery_model.py": "eeecc2096b4ef61ad69ef7932aa71a0c95c02a4e0d5a7993a59bb503b90f53c1",
+      "modeling_protocol.json": "ed6cbe3b9c5de2b12dcf4516b52d08d5e5c0c36c30a9d69617542d5d5e1064bb"
+    },
+    "future_outcome_fields_in_features": [],
+    "all_history_events_strictly_before_approval": true,
+    "holdout_used_for_model_selection": false,
+    "explanations_use_holdout_after_model_lock": true
+  },
+  "artifacts": {
+    "model": "models/20261024T203757326225Z/delivery_risk.joblib",
+    "report_directory": "reports/modeling/20261024T203757326225Z",
+    "feature_directory": "data/processed/ml/20261024T203757326225Z",
+    "august_replay_scores": "data/processed/ml/20261024T203757326225Z/risk_scores_august_replay.parquet"
+  },
+  "warnings": [],
+  "elapsed_training_and_evaluation_seconds": 15.94,
+  "limitations": [
+    "The final source basket, quoted freight and promised date are assumed to match their approval-time values; the source has no revision log.",
+    "Catalog attributes and postcode centroids are treated as available static reference data; historical versions are unavailable.",
+    "Payment aggregates, carrier handover, actual delivery, reviews and final order status are excluded from model inputs.",
+    "Dates are simulated historical availability cutoffs; actual training occurs now on the laptop, not in 2018.",
+    "Evaluation is conditional on usable, observed delivery outcomes before each stated cutoff. Unknown, cancelled and incomplete outcomes are not labeled on time. Coverage and excluded counts are reported.",
+    "Probability calibration can shift under later-period prevalence changes; holdout reliability is reported, not guaranteed.",
+    "Top-10-percent capture is a ranking diagnostic within evaluable orders; it is not measured avoided delays or an implemented daily review policy.",
+    "Permutation importance is post-hoc and noncausal. It does not select features or trigger holdout-driven retraining.",
+    "Day-block intervals preserve within-day clustering but not correlation between successive days."
+  ],
+  "release_status": "Research prototype rejected for poor newer-month generalization; retained as the first independent test"
+}

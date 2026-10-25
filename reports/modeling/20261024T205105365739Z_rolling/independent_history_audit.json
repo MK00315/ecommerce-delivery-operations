@@ -1,0 +1,358 @@
+{
+  "passed": true,
+  "method": "Direct source-table SQL independent of the NumPy history implementation",
+  "orders_checked": 50,
+  "feature_values_checked": 700,
+  "samples": [
+    {
+      "order_id": "bfbd0f9bdef84302105ad712db648a6c",
+      "approved_at": "2016-09-15 12:16:38",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "89ed66ec9a5952690d30aeb514f46dc7",
+      "approved_at": "2017-02-23 18:05:11",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "d3a20ccc02c906dea8bd172dbfa1d31d",
+      "approved_at": "2017-03-27 20:43:07",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "80188fc06b9703f7d2f6f5fac4e11984",
+      "approved_at": "2017-04-28 13:01:09",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "1ca9b19a39f0b18a4a1470eba6eb5cda",
+      "approved_at": "2017-05-20 11:15:20",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "d92723535a5a2d4b8c5d0763d2d94a63",
+      "approved_at": "2017-06-11 05:02:43",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "9df520859ce9b45d0374814efd12f9fd",
+      "approved_at": "2017-07-05 17:43:50",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "9e1516d69461cbce6204729191230717",
+      "approved_at": "2017-07-25 03:30:13",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "eb5201600668a3cd864c0b28f54c212a",
+      "approved_at": "2017-08-12 02:55:24",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "02c8a77069dc7fd1cf273312c3a6e499",
+      "approved_at": "2017-08-31 00:05:03",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "0af0621c001cb61ae1559c8f6417e1c6",
+      "approved_at": "2017-09-17 15:27:58",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "1aca9e580244f9953137f85a9eb5d143",
+      "approved_at": "2017-10-05 06:49:19",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "c6c8efeaf2205f11be796833a750f49e",
+      "approved_at": "2017-10-22 10:35:18",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "b3c1851a1730d45ed539eec30414e580",
+      "approved_at": "2017-11-09 04:31:11",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "3dee10a1bffcabb51920d1aa6f2779a8",
+      "approved_at": "2017-11-22 16:59:47",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "95c3381db0f673aa125e10b942d1ddac",
+      "approved_at": "2017-11-27 23:10:46",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "774398c3ac79463f502a2fff60e2518f",
+      "approved_at": "2017-12-06 02:39:31",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "6dc6a1816b2df736c34fd4041af68068",
+      "approved_at": "2017-12-18 14:12:29",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "ca17ff805d3509fc245f7b04f0db93bb",
+      "approved_at": "2018-01-05 01:32:26",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "f3cde82f7a131aa2747f919aebb3cc95",
+      "approved_at": "2018-01-15 18:09:48",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "ed14a836c4b4a6f1a8c140c79ad86642",
+      "approved_at": "2018-01-25 13:18:23",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "e32d1cdb3683251a688c82d4a2dabb47",
+      "approved_at": "2018-02-06 04:33:15",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "a1d206a791daa08f58c1fb8e3ab028ff",
+      "approved_at": "2018-02-17 02:07:46",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "8f150b9a5714c94537d31215f638db5d",
+      "approved_at": "2018-02-27 11:50:27",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "3eb18430be4502566fc9ac46bdce44b1",
+      "approved_at": "2018-03-09 02:10:27",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "392e29240c299001aa7052bf0dd61133",
+      "approved_at": "2018-03-20 03:48:46",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "274c7b7da7ae1faaf4a98f2e39902b7f",
+      "approved_at": "2018-03-31 08:15:14",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "dbf6877228cc3660405cab36ede2947e",
+      "approved_at": "2018-04-11 15:12:09",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "aac52878fd693aeeb3efce3e0e0a3ce2",
+      "approved_at": "2018-04-24 18:28:07",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "d308807f231cc2e9a4e2ee71b86fbebd",
+      "approved_at": "2018-05-03 03:55:18",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "c3ea366b4645392afd2903b2955a5151",
+      "approved_at": "2018-05-11 19:50:42",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "2d260d3f0b13b0bde48ceb29fdc05931",
+      "approved_at": "2018-05-22 09:36:32",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "1bb86f8d6d2967cbf88b8a487d536e43",
+      "approved_at": "2018-06-07 13:17:32",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "e6fbfeadc1ab2b90921179e56bbc6e3d",
+      "approved_at": "2018-06-19 10:55:51",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "845f40ca6f1b315562f20fd125f93330",
+      "approved_at": "2018-07-01 22:49:58",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "2dc5825eb69b865a9c9b8fbfa69c340d",
+      "approved_at": "2018-07-17 13:30:15",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "168181560f9cbee863926c0d0957c56a",
+      "approved_at": "2018-07-27 15:44:29",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "ef7c5d4791639dc1862b7bb3bacb3d48",
+      "approved_at": "2018-08-06 11:45:14",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "5a42abf0eee65d3a1e361aa49561a521",
+      "approved_at": "2018-08-15 03:10:18",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "54282e97f61c23b78330c15b154c867d",
+      "approved_at": "2018-09-03 17:40:06",
+      "distinct_sellers": 1,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "2fd1c83dd4714cf3cf796fffb6c8de62",
+      "approved_at": "2016-10-06 15:55:40",
+      "distinct_sellers": 2,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "14b01335f19b97fce1437168032ae388",
+      "approved_at": "2016-10-06 15:59:18",
+      "distinct_sellers": 2,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "d3a84031db6c5de813d5a3a3489712ca",
+      "approved_at": "2016-10-10 11:03:08",
+      "distinct_sellers": 2,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "6e5fe7366a2e1bfbf3257dba0af1267f",
+      "approved_at": "2016-10-10 12:02:19",
+      "distinct_sellers": 2,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "9d57e7a9c3dae94772187f73e97d9854",
+      "approved_at": "2017-01-26 14:02:11",
+      "distinct_sellers": 2,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "df56136b8031ecd28e200bb18e6ddb2e",
+      "approved_at": "2017-01-27 03:05:27",
+      "distinct_sellers": 2,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "d01c0baa4630bdd8a5d0266931837209",
+      "approved_at": "2017-01-27 14:31:48",
+      "distinct_sellers": 2,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "b866af202be0692766081310cd4085e1",
+      "approved_at": "2017-01-27 15:30:46",
+      "distinct_sellers": 2,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "d5558a097766363b8e76b38c43332e8a",
+      "approved_at": "2017-02-04 19:31:12",
+      "distinct_sellers": 2,
+      "history_features_checked": 14,
+      "passed": true
+    },
+    {
+      "order_id": "8a98b899923f5a4f37a74af5c8b1d774",
+      "approved_at": "2017-02-05 15:05:08",
+      "distinct_sellers": 2,
+      "history_features_checked": 14,
+      "passed": true
+    }
+  ]
+}

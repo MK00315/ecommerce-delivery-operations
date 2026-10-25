@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "decision_time": "order approval",
+  "target": "Promised-calendar-date lateness among valid, observed delivered orders",
+  "source_timezone": "Unspecified local source timestamps; no invented UTC conversion",
+  "selection_metric": "average_precision",
+  "seed": 42,
+  "threads": 4,
+  "selection_train": {
+    "approval_start": "2016-01-01", "approval_end": "2018-01-01", "outcomes_before": "2018-02-01"
+  },
+  "selection_validation": {
+    "approval_start": "2018-02-01", "approval_end": "2018-03-01", "outcomes_before": "2018-05-01"
+  },
+  "final_refit": {
+    "approval_start": "2016-01-01", "approval_end": "2018-03-01", "outcomes_before": "2018-05-01"
+  },
+  "calibration_and_threshold_development": {
+    "approval_start": "2018-05-01", "approval_end": "2018-07-01", "outcomes_before": "2018-08-01"
+  },
+  "holdout_test": {
+    "approval_start": "2018-08-01", "approval_end": "2018-09-01", "outcomes_before": "2018-10-01"
+  },
+  "probability_calibration": "One fixed sigmoid of the final model's raw log odds; fit only on the later calibration/development cohort",
+  "diagnostic_threshold": "Maximize F2 only on calibration/development data; this is not a capacity or cost guarantee",
+  "capacity_diagnostic_fraction": 0.1,
+  "seller_history_window_days": 90,
+  "seller_prior_pseudo_orders": 20,
+  "global_prior": "Beta(1,1); never estimated from future or whole-dataset prevalence",
+  "bootstrap": {"unit": "approval calendar day", "repetitions": 400, "confidence": 0.95},
+  "candidates": [
+    {"name": "constant_prior", "family": "dummy", "history": false, "parameters": {}},
+    {"name": "logistic_static", "family": "logistic", "history": false, "parameters": {"C": 0.3, "max_iter": 1000}},
+    {"name": "logistic_history", "family": "logistic", "history": true, "parameters": {"C": 0.3, "max_iter": 1000}},
+    {"name": "boosted_15", "family": "hist_gradient_boosting", "history": true, "parameters": {"learning_rate": 0.06, "max_iter": 200, "max_leaf_nodes": 15, "min_samples_leaf": 80, "l2_regularization": 10.0, "early_stopping": false}},
+    {"name": "boosted_31", "family": "hist_gradient_boosting", "history": true, "parameters": {"learning_rate": 0.06, "max_iter": 250, "max_leaf_nodes": 31, "min_samples_leaf": 80, "l2_regularization": 10.0, "early_stopping": false}}
+  ],
+  "evaluation_rule": "Choose the candidate on selection validation only. Refit once, calibrate and set the diagnostic threshold before evaluating the holdout. Holdout outcomes never select models, hyperparameters, features, calibration method or threshold.",
+  "historical_replay": "Model parameters are frozen before August. Rolling history may update with an outcome only after that order's observed delivery, strictly before the current approval.",
+  "coverage_limit": "Evaluation is conditional on usable, observed delivery outcomes before each stated cutoff. Unknown, cancelled and incomplete outcomes are not labeled on time. Coverage and excluded counts are reported.",
+  "as_of_assumptions": [
+    "The final source basket, quoted freight and promised date are assumed to match their approval-time values; the source has no revision log.",
+    "Catalog attributes and postcode centroids are treated as available static reference data; historical versions are unavailable.",
+    "Payment aggregates, carrier handover, actual delivery, reviews and final order status are excluded from model inputs.",
+    "Dates are simulated historical availability cutoffs; actual training occurs now on the laptop, not in 2018."
+  ]
+}

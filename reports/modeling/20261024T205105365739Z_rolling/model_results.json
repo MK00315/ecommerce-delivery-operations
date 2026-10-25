@@ -1,0 +1,1018 @@
+{
+  "run_id": "20261024T205105365739Z_rolling",
+  "modeling_version": "2.0.0",
+  "completed_at": "2026-10-25T02:22:05.947291+05:30",
+  "actual_execution": "Local laptop CPU",
+  "feature_version": "1.0.0",
+  "feature_count": 45,
+  "feature_run": "20261024T203757326225Z",
+  "source_orders": 99441,
+  "valid_decisions": 98647,
+  "selection": {
+    "candidate": {
+      "name": "logistic_static",
+      "family": "logistic",
+      "history": false,
+      "parameters": {
+        "C": 0.3,
+        "max_iter": 1000
+      }
+    },
+    "criterion": "Equal-month mean of average_precision divided by that month's observed late rate",
+    "folds": [
+      "March",
+      "April",
+      "May",
+      "June"
+    ],
+    "comparison": [
+      {
+        "candidate": "constant_prior",
+        "mean_ap_over_prevalence": 1.0,
+        "mean_average_precision": 0.07790346948204271,
+        "mean_roc_auc": 0.5,
+        "minimum_ap_over_prevalence": 1.0
+      },
+      {
+        "candidate": "logistic_static",
+        "mean_ap_over_prevalence": 4.54487742966793,
+        "mean_average_precision": 0.19048347366449392,
+        "mean_roc_auc": 0.7487342144523066,
+        "minimum_ap_over_prevalence": 1.8379081646672835
+      },
+      {
+        "candidate": "logistic_history",
+        "mean_ap_over_prevalence": 3.5489306527799633,
+        "mean_average_precision": 0.1935604231836925,
+        "mean_roc_auc": 0.7575861326304807,
+        "minimum_ap_over_prevalence": 1.929487797514488
+      },
+      {
+        "candidate": "boosted_15",
+        "mean_ap_over_prevalence": 3.3799221471306464,
+        "mean_average_precision": 0.16139476761170146,
+        "mean_roc_auc": 0.708120020284178,
+        "minimum_ap_over_prevalence": 1.7386801762958772
+      },
+      {
+        "candidate": "boosted_31",
+        "mean_ap_over_prevalence": 2.533259864959372,
+        "mean_average_precision": 0.14585558904037735,
+        "mean_roc_auc": 0.6914328596686986,
+        "minimum_ap_over_prevalence": 1.6624354750522763
+      },
+      {
+        "candidate": "boosted_static_15",
+        "mean_ap_over_prevalence": 2.749895042798601,
+        "mean_average_precision": 0.14923865961164678,
+        "mean_roc_auc": 0.7170963360755173,
+        "minimum_ap_over_prevalence": 1.6066674692383611
+      }
+    ],
+    "fold_metrics": [
+      {
+        "candidate": "constant_prior",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.19200903571932798,
+        "roc_auc": 0.5,
+        "ap_over_prevalence": 1.0
+      },
+      {
+        "candidate": "constant_prior",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.04605163823040918,
+        "roc_auc": 0.5,
+        "ap_over_prevalence": 1.0
+      },
+      {
+        "candidate": "constant_prior",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.06514845776880945,
+        "roc_auc": 0.5,
+        "ap_over_prevalence": 1.0
+      },
+      {
+        "candidate": "constant_prior",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.008404746209624258,
+        "roc_auc": 0.5,
+        "ap_over_prevalence": 1.0
+      },
+      {
+        "candidate": "logistic_static",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.352894974438445,
+        "roc_auc": 0.6824891305465047,
+        "ap_over_prevalence": 1.8379081646672835
+      },
+      {
+        "candidate": "logistic_static",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.16450589581575836,
+        "roc_auc": 0.7799070052257666,
+        "ap_over_prevalence": 3.5722050753697303
+      },
+      {
+        "candidate": "logistic_static",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.15753263705508472,
+        "roc_auc": 0.7462717520923214,
+        "ap_over_prevalence": 2.418056274088889
+      },
+      {
+        "candidate": "logistic_static",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.08700038734868766,
+        "roc_auc": 0.7862689699446339,
+        "ap_over_prevalence": 10.351340204545819
+      },
+      {
+        "candidate": "logistic_history",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.3704790914329668,
+        "roc_auc": 0.7065720364679159,
+        "ap_over_prevalence": 1.929487797514488
+      },
+      {
+        "candidate": "logistic_history",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.17187239927719383,
+        "roc_auc": 0.7937555462145626,
+        "ap_over_prevalence": 3.732166886599524
+      },
+      {
+        "candidate": "logistic_history",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.1838865750177823,
+        "roc_auc": 0.7570045352958994,
+        "ap_over_prevalence": 2.8225775607818
+      },
+      {
+        "candidate": "logistic_history",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.048003627006826984,
+        "roc_auc": 0.773012412543545,
+        "ap_over_prevalence": 5.711490366224042
+      },
+      {
+        "candidate": "boosted_15",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.3338423040748826,
+        "roc_auc": 0.6775699961969761,
+        "ap_over_prevalence": 1.7386801762958772
+      },
+      {
+        "candidate": "boosted_15",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.0917624155220319,
+        "roc_auc": 0.6698223654507808,
+        "ap_over_prevalence": 1.992598288532516
+      },
+      {
+        "candidate": "boosted_15",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.15810182811540263,
+        "roc_auc": 0.7209895922872682,
+        "ap_over_prevalence": 2.4267931050103173
+      },
+      {
+        "candidate": "boosted_15",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.061872522734488726,
+        "roc_auc": 0.7640981272016867,
+        "ap_over_prevalence": 7.361617018683875
+      },
+      {
+        "candidate": "boosted_31",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.3192026325103905,
+        "roc_auc": 0.6609588759494712,
+        "ap_over_prevalence": 1.6624354750522763
+      },
+      {
+        "candidate": "boosted_31",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.08264125515890489,
+        "roc_auc": 0.6585368891379819,
+        "ap_over_prevalence": 1.7945345341554988
+      },
+      {
+        "candidate": "boosted_31",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.1440517968463053,
+        "roc_auc": 0.7009812148153,
+        "ap_over_prevalence": 2.211131341857669
+      },
+      {
+        "candidate": "boosted_31",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.03752667164590873,
+        "roc_auc": 0.7452544587720414,
+        "ap_over_prevalence": 4.464938108772042
+      },
+      {
+        "candidate": "boosted_static_15",
+        "fold": "March",
+        "orders": 7083,
+        "late_orders": 1360,
+        "late_rate": 0.19200903571932798,
+        "average_precision": 0.30849467149007076,
+        "roc_auc": 0.6717435322897286,
+        "ap_over_prevalence": 1.6066674692383611
+      },
+      {
+        "candidate": "boosted_static_15",
+        "fold": "April",
+        "orders": 6623,
+        "late_orders": 305,
+        "late_rate": 0.04605163823040918,
+        "average_precision": 0.12376951788776758,
+        "roc_auc": 0.7036429872495447,
+        "ap_over_prevalence": 2.6876246458055237
+      },
+      {
+        "candidate": "boosted_static_15",
+        "fold": "May",
+        "orders": 6938,
+        "late_orders": 452,
+        "late_rate": 0.06514845776880945,
+        "average_precision": 0.12438041441980446,
+        "roc_auc": 0.6931539408228479,
+        "ap_over_prevalence": 1.9091843257623968
+      },
+      {
+        "candidate": "boosted_static_15",
+        "fold": "June",
+        "orders": 6068,
+        "late_orders": 51,
+        "late_rate": 0.008404746209624258,
+        "average_precision": 0.04031003464894432,
+        "roc_auc": 0.7998448839399479,
+        "ap_over_prevalence": 4.796103730388121
+      }
+    ],
+    "august_used": false
+  },
+  "cohorts": {
+    "forward_folds": {
+      "March": {
+        "fit": {
+          "approval_start": "2016-01-01",
+          "approval_end": "2018-02-01",
+          "outcomes_before": "2018-03-01",
+          "valid_decisions": 51959,
+          "observed_evaluable_orders": 50412,
+          "not_evaluable_by_cutoff": 1547,
+          "observed_outcome_coverage": 0.9702265247599069,
+          "late_orders": 2695
+        },
+        "validation": {
+          "approval_start": "2018-03-01",
+          "approval_end": "2018-04-01",
+          "outcomes_before": "2018-08-01",
+          "valid_decisions": 7269,
+          "observed_evaluable_orders": 7083,
+          "not_evaluable_by_cutoff": 186,
+          "observed_outcome_coverage": 0.974411886091622,
+          "late_orders": 1360
+        }
+      },
+      "April": {
+        "fit": {
+          "approval_start": "2016-01-01",
+          "approval_end": "2018-03-01",
+          "outcomes_before": "2018-04-01",
+          "valid_decisions": 58634,
+          "observed_evaluable_orders": 56814,
+          "not_evaluable_by_cutoff": 1820,
+          "observed_outcome_coverage": 0.9689599890848313,
+          "late_orders": 3427
+        },
+        "validation": {
+          "approval_start": "2018-04-01",
+          "approval_end": "2018-05-01",
+          "outcomes_before": "2018-08-01",
+          "valid_decisions": 6772,
+          "observed_evaluable_orders": 6623,
+          "not_evaluable_by_cutoff": 149,
+          "observed_outcome_coverage": 0.9779976373301831,
+          "late_orders": 305
+        }
+      },
+      "May": {
+        "fit": {
+          "approval_start": "2016-01-01",
+          "approval_end": "2018-04-01",
+          "outcomes_before": "2018-05-01",
+          "valid_decisions": 65903,
+          "observed_evaluable_orders": 63998,
+          "not_evaluable_by_cutoff": 1905,
+          "observed_outcome_coverage": 0.9710938803999818,
+          "late_orders": 4891
+        },
+        "validation": {
+          "approval_start": "2018-05-01",
+          "approval_end": "2018-06-01",
+          "outcomes_before": "2018-08-01",
+          "valid_decisions": 7047,
+          "observed_evaluable_orders": 6938,
+          "not_evaluable_by_cutoff": 109,
+          "observed_outcome_coverage": 0.9845324251454519,
+          "late_orders": 452
+        }
+      },
+      "June": {
+        "fit": {
+          "approval_start": "2016-01-01",
+          "approval_end": "2018-05-01",
+          "outcomes_before": "2018-06-01",
+          "valid_decisions": 72675,
+          "observed_evaluable_orders": 70757,
+          "not_evaluable_by_cutoff": 1918,
+          "observed_outcome_coverage": 0.9736085311317509,
+          "late_orders": 5328
+        },
+        "validation": {
+          "approval_start": "2018-06-01",
+          "approval_end": "2018-07-01",
+          "outcomes_before": "2018-08-01",
+          "valid_decisions": 6157,
+          "observed_evaluable_orders": 6068,
+          "not_evaluable_by_cutoff": 89,
+          "observed_outcome_coverage": 0.9855449082345298,
+          "late_orders": 51
+        }
+      }
+    },
+    "final_refit": {
+      "approval_start": "2016-01-01",
+      "approval_end": "2018-07-01",
+      "outcomes_before": "2018-08-01",
+      "valid_decisions": 85879,
+      "observed_evaluable_orders": 83848,
+      "not_evaluable_by_cutoff": 2031,
+      "observed_outcome_coverage": 0.97635044655853,
+      "late_orders": 5909
+    },
+    "august_diagnostic": {
+      "approval_start": "2018-08-01",
+      "approval_end": "2018-09-01",
+      "outcomes_before": "2018-10-01",
+      "valid_decisions": 6603,
+      "observed_evaluable_orders": 6495,
+      "not_evaluable_by_cutoff": 108,
+      "observed_outcome_coverage": 0.983643798273512,
+      "late_orders": 406
+    }
+  },
+  "calibration": {
+    "source": "May/June out-of-time development predictions",
+    "orders": 13006,
+    "late_orders": 503,
+    "slope": 1.2409371830629525,
+    "intercept": 0.6825830206919041,
+    "f2_diagnostic_threshold": 0.06900164431039471,
+    "august_brier_improved_over_raw": false
+  },
+  "august_diagnostic": {
+    "orders": 6495,
+    "late_orders": 406,
+    "late_rate": 0.06250962278675905,
+    "average_precision": 0.09010847209195047,
+    "roc_auc": 0.6177403813870931,
+    "brier_score": 0.06087338060712848,
+    "log_loss": 0.24019366249952473,
+    "threshold": 0.06900164431039471,
+    "precision": 0.07369101486748546,
+    "recall": 0.28078817733990147,
+    "f2": 0.17975402081362346,
+    "flagged_orders": 1547,
+    "flagged_share": 0.23818321785989222,
+    "confusion_matrix": {
+      "true_negative": 4656,
+      "false_positive": 1433,
+      "false_negative": 292,
+      "true_positive": 114
+    },
+    "top_10_percent": {
+      "reviewed_orders": 650,
+      "late_orders_captured": 59,
+      "precision": 0.09076923076923077,
+      "recall": 0.14532019704433496,
+      "lift_over_prevalence": 1.452084122773778
+    }
+  },
+  "raw_august_diagnostic": {
+    "orders": 6495,
+    "late_orders": 406,
+    "late_rate": 0.06250962278675905,
+    "average_precision": 0.09010847209195047,
+    "roc_auc": 0.6177403813870931,
+    "brier_score": 0.059300993965995995,
+    "log_loss": 0.23438447658630904,
+    "threshold": 0.5,
+    "precision": 0.2,
+    "recall": 0.0024630541871921183,
+    "f2": 0.003069367710251688,
+    "flagged_orders": 5,
+    "flagged_share": 0.0007698229407236335,
+    "confusion_matrix": {
+      "true_negative": 6085,
+      "false_positive": 4,
+      "false_negative": 405,
+      "true_positive": 1
+    },
+    "top_10_percent": {
+      "reviewed_orders": 650,
+      "late_orders_captured": 59,
+      "precision": 0.09076923076923077,
+      "recall": 0.14532019704433496,
+      "lift_over_prevalence": 1.452084122773778
+    }
+  },
+  "august_baselines": {
+    "static_logistic": {
+      "orders": 6495,
+      "late_orders": 406,
+      "late_rate": 0.06250962278675905,
+      "average_precision": 0.09010847209195047,
+      "roc_auc": 0.6177403813870931,
+      "brier_score": 0.06087338060712848,
+      "log_loss": 0.24019366249952473,
+      "threshold": 0.06900164431039471,
+      "precision": 0.07369101486748546,
+      "recall": 0.28078817733990147,
+      "f2": 0.17975402081362346,
+      "flagged_orders": 1547,
+      "flagged_share": 0.23818321785989222,
+      "confusion_matrix": {
+        "true_negative": 4656,
+        "false_positive": 1433,
+        "false_negative": 292,
+        "true_positive": 114
+      },
+      "top_10_percent": {
+        "reviewed_orders": 650,
+        "late_orders_captured": 59,
+        "precision": 0.09076923076923077,
+        "recall": 0.14532019704433496,
+        "lift_over_prevalence": 1.452084122773778
+      }
+    },
+    "constant_calibration_rate": {
+      "orders": 6495,
+      "late_orders": 406,
+      "late_rate": 0.06250962278675905,
+      "average_precision": 0.06250962278675905,
+      "roc_auc": 0.5,
+      "brier_score": 0.0591702849289697,
+      "log_loss": 0.24029395100945936,
+      "threshold": 0.06900164431039471,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f2": 0.0,
+      "flagged_orders": 0,
+      "flagged_share": 0.0,
+      "confusion_matrix": {
+        "true_negative": 6089,
+        "false_positive": 0,
+        "false_negative": 406,
+        "true_positive": 0
+      },
+      "top_10_percent": {
+        "reviewed_orders": 650,
+        "late_orders_captured": 39,
+        "precision": 0.06,
+        "recall": 0.0960591133004926,
+        "lift_over_prevalence": 0.9598522167487684
+      }
+    }
+  },
+  "august_day_block_intervals": {
+    "method": "Approval-calendar-day block bootstrap; within-day clustering retained, between-day dependence not modeled",
+    "calendar_day_blocks": 28,
+    "requested_repetitions": 400,
+    "valid_repetitions": 400,
+    "confidence": 0.95,
+    "intervals": {
+      "average_precision": {
+        "low": 0.07685054253541475,
+        "high": 0.10791200113953871
+      },
+      "roc_auc": {
+        "low": 0.5941700014534278,
+        "high": 0.6494837454674325
+      },
+      "brier_score": {
+        "low": 0.045238893897625816,
+        "high": 0.07651656446713809
+      },
+      "top_10_percent_recall": {
+        "low": 0.10369255881180224,
+        "high": 0.19699714536671056
+      }
+    }
+  },
+  "august_evaluation_status": "Already inspected in the failed version-1 test. Reused diagnostic only, not a fresh independent test of version 2.",
+  "first_prototype": {
+    "run_id": "20261024T203757326225Z",
+    "candidate": "boosted_15",
+    "independent_august_test": {
+      "orders": 6495,
+      "late_orders": 406,
+      "late_rate": 0.06250962278675905,
+      "average_precision": 0.06439647185456569,
+      "roc_auc": 0.5071513113771341,
+      "brier_score": 0.061058427654950606,
+      "log_loss": 0.2511260290954247,
+      "threshold": 0.04846602726258371,
+      "precision": 0.052878965922444184,
+      "recall": 0.33251231527093594,
+      "f2": 0.16159923389992817,
+      "flagged_orders": 2553,
+      "flagged_share": 0.3930715935334873,
+      "confusion_matrix": {
+        "true_negative": 3671,
+        "false_positive": 2418,
+        "false_negative": 271,
+        "true_positive": 135
+      },
+      "top_10_percent": {
+        "reviewed_orders": 650,
+        "late_orders_captured": 36,
+        "precision": 0.055384615384615386,
+        "recall": 0.08866995073891626,
+        "lift_over_prevalence": 0.886017430845017
+      }
+    },
+    "status": "Rejected for poor temporal generalization"
+  },
+  "independent_new_period_validation_available": false,
+  "production_qualified": false,
+  "artifact_status": "Portfolio research model; retain evaluation limitations in reports and UI",
+  "verification": {
+    "model_reload_predictions_match": true,
+    "same_audited_feature_artifacts": true,
+    "future_outcome_fields_in_features": [],
+    "strict_history_time_checks": true,
+    "independent_history_audit": {
+      "passed": true,
+      "method": "Direct source-table SQL independent of the NumPy history implementation",
+      "orders_checked": 50,
+      "feature_values_checked": 700,
+      "samples": [
+        {
+          "order_id": "bfbd0f9bdef84302105ad712db648a6c",
+          "approved_at": "2016-09-15 12:16:38",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "89ed66ec9a5952690d30aeb514f46dc7",
+          "approved_at": "2017-02-23 18:05:11",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "d3a20ccc02c906dea8bd172dbfa1d31d",
+          "approved_at": "2017-03-27 20:43:07",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "80188fc06b9703f7d2f6f5fac4e11984",
+          "approved_at": "2017-04-28 13:01:09",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "1ca9b19a39f0b18a4a1470eba6eb5cda",
+          "approved_at": "2017-05-20 11:15:20",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "d92723535a5a2d4b8c5d0763d2d94a63",
+          "approved_at": "2017-06-11 05:02:43",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "9df520859ce9b45d0374814efd12f9fd",
+          "approved_at": "2017-07-05 17:43:50",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "9e1516d69461cbce6204729191230717",
+          "approved_at": "2017-07-25 03:30:13",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "eb5201600668a3cd864c0b28f54c212a",
+          "approved_at": "2017-08-12 02:55:24",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "02c8a77069dc7fd1cf273312c3a6e499",
+          "approved_at": "2017-08-31 00:05:03",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "0af0621c001cb61ae1559c8f6417e1c6",
+          "approved_at": "2017-09-17 15:27:58",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "1aca9e580244f9953137f85a9eb5d143",
+          "approved_at": "2017-10-05 06:49:19",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "c6c8efeaf2205f11be796833a750f49e",
+          "approved_at": "2017-10-22 10:35:18",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "b3c1851a1730d45ed539eec30414e580",
+          "approved_at": "2017-11-09 04:31:11",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "3dee10a1bffcabb51920d1aa6f2779a8",
+          "approved_at": "2017-11-22 16:59:47",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "95c3381db0f673aa125e10b942d1ddac",
+          "approved_at": "2017-11-27 23:10:46",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "774398c3ac79463f502a2fff60e2518f",
+          "approved_at": "2017-12-06 02:39:31",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "6dc6a1816b2df736c34fd4041af68068",
+          "approved_at": "2017-12-18 14:12:29",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "ca17ff805d3509fc245f7b04f0db93bb",
+          "approved_at": "2018-01-05 01:32:26",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "f3cde82f7a131aa2747f919aebb3cc95",
+          "approved_at": "2018-01-15 18:09:48",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "ed14a836c4b4a6f1a8c140c79ad86642",
+          "approved_at": "2018-01-25 13:18:23",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "e32d1cdb3683251a688c82d4a2dabb47",
+          "approved_at": "2018-02-06 04:33:15",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "a1d206a791daa08f58c1fb8e3ab028ff",
+          "approved_at": "2018-02-17 02:07:46",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "8f150b9a5714c94537d31215f638db5d",
+          "approved_at": "2018-02-27 11:50:27",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "3eb18430be4502566fc9ac46bdce44b1",
+          "approved_at": "2018-03-09 02:10:27",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "392e29240c299001aa7052bf0dd61133",
+          "approved_at": "2018-03-20 03:48:46",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "274c7b7da7ae1faaf4a98f2e39902b7f",
+          "approved_at": "2018-03-31 08:15:14",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "dbf6877228cc3660405cab36ede2947e",
+          "approved_at": "2018-04-11 15:12:09",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "aac52878fd693aeeb3efce3e0e0a3ce2",
+          "approved_at": "2018-04-24 18:28:07",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "d308807f231cc2e9a4e2ee71b86fbebd",
+          "approved_at": "2018-05-03 03:55:18",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "c3ea366b4645392afd2903b2955a5151",
+          "approved_at": "2018-05-11 19:50:42",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "2d260d3f0b13b0bde48ceb29fdc05931",
+          "approved_at": "2018-05-22 09:36:32",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "1bb86f8d6d2967cbf88b8a487d536e43",
+          "approved_at": "2018-06-07 13:17:32",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "e6fbfeadc1ab2b90921179e56bbc6e3d",
+          "approved_at": "2018-06-19 10:55:51",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "845f40ca6f1b315562f20fd125f93330",
+          "approved_at": "2018-07-01 22:49:58",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "2dc5825eb69b865a9c9b8fbfa69c340d",
+          "approved_at": "2018-07-17 13:30:15",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "168181560f9cbee863926c0d0957c56a",
+          "approved_at": "2018-07-27 15:44:29",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "ef7c5d4791639dc1862b7bb3bacb3d48",
+          "approved_at": "2018-08-06 11:45:14",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "5a42abf0eee65d3a1e361aa49561a521",
+          "approved_at": "2018-08-15 03:10:18",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "54282e97f61c23b78330c15b154c867d",
+          "approved_at": "2018-09-03 17:40:06",
+          "distinct_sellers": 1,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "2fd1c83dd4714cf3cf796fffb6c8de62",
+          "approved_at": "2016-10-06 15:55:40",
+          "distinct_sellers": 2,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "14b01335f19b97fce1437168032ae388",
+          "approved_at": "2016-10-06 15:59:18",
+          "distinct_sellers": 2,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "d3a84031db6c5de813d5a3a3489712ca",
+          "approved_at": "2016-10-10 11:03:08",
+          "distinct_sellers": 2,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "6e5fe7366a2e1bfbf3257dba0af1267f",
+          "approved_at": "2016-10-10 12:02:19",
+          "distinct_sellers": 2,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "9d57e7a9c3dae94772187f73e97d9854",
+          "approved_at": "2017-01-26 14:02:11",
+          "distinct_sellers": 2,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "df56136b8031ecd28e200bb18e6ddb2e",
+          "approved_at": "2017-01-27 03:05:27",
+          "distinct_sellers": 2,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "d01c0baa4630bdd8a5d0266931837209",
+          "approved_at": "2017-01-27 14:31:48",
+          "distinct_sellers": 2,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "b866af202be0692766081310cd4085e1",
+          "approved_at": "2017-01-27 15:30:46",
+          "distinct_sellers": 2,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "d5558a097766363b8e76b38c43332e8a",
+          "approved_at": "2017-02-04 19:31:12",
+          "distinct_sellers": 2,
+          "history_features_checked": 14,
+          "passed": true
+        },
+        {
+          "order_id": "8a98b899923f5a4f37a74af5c8b1d774",
+          "approved_at": "2017-02-05 15:05:08",
+          "distinct_sellers": 2,
+          "history_features_checked": 14,
+          "passed": true
+        }
+      ]
+    },
+    "unseen_categories_and_missing_numeric_inference": "Passed",
+    "serialized_model_hash_verified": true,
+    "archived_training_source_hashes_verified": true,
+    "probability_adjustment_preserves_review_ranking": true,
+    "full_local_test_suite": {
+      "tests": 40,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 40,
+      "python_high_signal_lint": "Passed"
+    }
+  },
+  "artifacts": {
+    "model": "models/20261024T205105365739Z_rolling/delivery_risk.joblib",
+    "model_sha256": "157982e44a788bd57eb4d23f77693a64c54a06633a6242058be155f67dd1d5d5",
+    "report_directory": "reports/modeling/20261024T205105365739Z_rolling",
+    "feature_directory": "data/processed/ml/20261024T203757326225Z",
+    "august_replay_scores": "reports/modeling/20261024T205105365739Z_rolling/risk_scores_august_replay.parquet"
+  },
+  "source_code_sha256": {
+    "delivery_features.py": "ccbf8ac5a571ebdb63d89f0a44e03311aed078a43235e94e4e9ffc937e177308",
+    "delivery_risk.py": "ba106c58acc4f6d1848613677dc8f7f8d71f9fad029b34521badfbce74115689",
+    "train_delivery_model.py": "422616619b1ded0c41793041524bbad58dc7f8f57306f15cbb2299bff32e63fe",
+    "train_delivery_rolling.py": "0093205ec32fa454f9272081ea5e94c78076cf31c5bea2a4a6a175c6c1b28e18",
+    "modeling_protocol_rolling.json": "f2106b2fffe39ef41209f9458c60ab4909f69ad92114054d9de6219897ba058a"
+  },
+  "protocol_sha256": "f2106b2fffe39ef41209f9458c60ab4909f69ad92114054d9de6219897ba058a",
+  "warnings": [],
+  "elapsed_seconds": 60.81,
+  "limitations": [
+    "August rows or labels cannot select the candidate, feature set, calibration method or threshold.",
+    "The original failed August result remains archived and visible.",
+    "Source basket/promise/catalog availability assumptions and conditional observed-outcome coverage limits still apply.",
+    "The updated model is a portfolio research artifact, not a production-qualified predictor. Independent new-period evidence is unavailable.",
+    "Forward validation scores are development estimates used to select the candidate, not independent test estimates.",
+    "OOF sigmoid calibration transfers between month-specific fits and the final refit; reliability under changing prevalence is not guaranteed.",
+    "Outcome coverage is conditional on valid completed deliveries before each cutoff; unobserved/cancelled orders have no measured accuracy.",
+    "Top-10-percent capture and day-block intervals describe a retrospective ranking diagnostic, not avoided delays or causal savings."
+  ],
+  "post_training_verified_at": "2026-10-25T02:35:03.743198+05:30",
+  "serving_policy": "Rank-based experimental review priority. Do not use absolute probability estimates, automatic customer actions or claimed avoided-delay/cost benefits."
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "orders": 6502,
+    "late_orders": 858,
+    "late_rate": 0.13195939710858198,
+    "average_precision": 0.13195939710858198,
+    "roc_auc": 0.5,
+    "brier_score": 0.12053282620120241,
+    "log_loss": 0.4324608318241545,
+    "threshold": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f2": 0.0,
+    "flagged_orders": 0,
+    "flagged_share": 0.0,
+    "confusion_matrix": {
+      "true_negative": 5644,
+      "false_positive": 0,
+      "false_negative": 858,
+      "true_positive": 0
+    },
+    "top_10_percent": {
+      "reviewed_orders": 651,
+      "late_orders_captured": 103,
+      "precision": 0.15821812596006143,
+      "recall": 0.12004662004662005,
+      "lift_over_prevalence": 1.1989909731845214
+    },
+    "candidate": "constant_prior",
+    "family": "dummy",
+    "history": false,
+    "fit_seconds": 0.083
+  },
+  {
+    "orders": 6502,
+    "late_orders": 858,
+    "late_rate": 0.13195939710858198,
+    "average_precision": 0.28708955263693076,
+    "roc_auc": 0.7032415965796546,
+    "brier_score": 0.10846726311375651,
+    "log_loss": 0.3682883353244618,
+    "threshold": 0.5,
+    "precision": 0.625,
+    "recall": 0.005827505827505828,
+    "f2": 0.007267441860465116,
+    "flagged_orders": 8,
+    "flagged_share": 0.0012303906490310674,
+    "confusion_matrix": {
+      "true_negative": 5641,
+      "false_positive": 3,
+      "false_negative": 853,
+      "true_positive": 5
+    },
+    "top_10_percent": {
+      "reviewed_orders": 651,
+      "late_orders_captured": 238,
+      "precision": 0.3655913978494624,
+      "recall": 0.2773892773892774,
+      "lift_over_prevalence": 2.770483996290448
+    },
+    "candidate": "logistic_static",
+    "family": "logistic",
+    "history": false,
+    "fit_seconds": 0.505
+  },
+  {
+    "orders": 6502,
+    "late_orders": 858,
+    "late_rate": 0.13195939710858198,
+    "average_precision": 0.30514233654839357,
+    "roc_auc": 0.7252746072731898,
+    "brier_score": 0.10470010360638866,
+    "log_loss": 0.3520146475544858,
+    "threshold": 0.5,
+    "precision": 0.49137931034482757,
+    "recall": 0.06643356643356643,
+    "f2": 0.08032694475760992,
+    "flagged_orders": 116,
+    "flagged_share": 0.017840664410950478,
+    "confusion_matrix": {
+      "true_negative": 5585,
+      "false_positive": 59,
+      "false_negative": 801,
+      "true_positive": 57
+    },
+    "top_10_percent": {
+      "reviewed_orders": 651,
+      "late_orders_captured": 244,
+      "precision": 0.37480798771121354,
+      "recall": 0.28438228438228436,
+      "lift_over_prevalence": 2.840328130650711
+    },
+    "candidate": "logistic_history",
+    "family": "logistic",
+    "history": true,
+    "fit_seconds": 0.66
+  },
+  {
+    "orders": 6502,
+    "late_orders": 858,
+    "late_rate": 0.13195939710858198,
+    "average_precision": 0.3307752723935158,
+    "roc_auc": 0.7308946811515913,
+    "brier_score": 0.10593759745962254,
+    "log_loss": 0.3653591869532765,
+    "threshold": 0.5,
+    "precision": 0.5714285714285714,
+    "recall": 0.009324009324009324,
+    "f2": 0.011607661056297156,
+    "flagged_orders": 14,
+    "flagged_share": 0.002153183635804368,
+    "confusion_matrix": {
+      "true_negative": 5638,
+      "false_positive": 6,
+      "false_negative": 850,
+      "true_positive": 8
+    },
+    "top_10_percent": {
+      "reviewed_orders": 651,
+      "late_orders_captured": 266,
+      "precision": 0.40860215053763443,
+      "recall": 0.31002331002331,
+      "lift_over_prevalence": 3.096423289971677
+    },
+    "candidate": "boosted_15",
+    "family": "hist_gradient_boosting",
+    "history": true,
+    "fit_seconds": 1.217
+  },
+  {
+    "orders": 6502,
+    "late_orders": 858,
+    "late_rate": 0.13195939710858198,
+    "average_precision": 0.3037489286457363,
+    "roc_auc": 0.7142248549938132,
+    "brier_score": 0.1086132503957695,
+    "log_loss": 0.37936339767650284,
+    "threshold": 0.5,
+    "precision": 0.6,
+    "recall": 0.017482517482517484,
+    "f2": 0.021695111368238356,
+    "flagged_orders": 25,
+    "flagged_share": 0.0038449707782220854,
+    "confusion_matrix": {
+      "true_negative": 5634,
+      "false_positive": 10,
+      "false_negative": 843,
+      "true_positive": 15
+    },
+    "top_10_percent": {
+      "reviewed_orders": 651,
+      "late_orders_captured": 255,
+      "precision": 0.391705069124424,
+      "recall": 0.2972027972027972,
+      "lift_over_prevalence": 2.9683757103111943
+    },
+    "candidate": "boosted_31",
+    "family": "hist_gradient_boosting",
+    "history": true,
+    "fit_seconds": 2.179
+  }
+]

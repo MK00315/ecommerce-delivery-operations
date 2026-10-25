@@ -1,0 +1,19 @@
+{
+  "selected_at": "2026-10-25T02:09:50.264784+05:30",
+  "candidate": {
+    "name": "boosted_15",
+    "family": "hist_gradient_boosting",
+    "history": true,
+    "parameters": {
+      "learning_rate": 0.06,
+      "max_iter": 200,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 80,
+      "l2_regularization": 10.0,
+      "early_stopping": false
+    }
+  },
+  "criterion": "Largest selection-validation average precision only",
+  "protocol_sha256": "ed6cbe3b9c5de2b12dcf4516b52d08d5e5c0c36c30a9d69617542d5d5e1064bb",
+  "holdout_evaluated_before_lock": false
+}

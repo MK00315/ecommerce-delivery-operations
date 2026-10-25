@@ -1,0 +1,90 @@
+{
+  "March": {
+    "fit": {
+      "approval_start": "2016-01-01",
+      "approval_end": "2018-02-01",
+      "outcomes_before": "2018-03-01",
+      "valid_decisions": 51959,
+      "observed_evaluable_orders": 50412,
+      "not_evaluable_by_cutoff": 1547,
+      "observed_outcome_coverage": 0.9702265247599069,
+      "late_orders": 2695
+    },
+    "validation": {
+      "approval_start": "2018-03-01",
+      "approval_end": "2018-04-01",
+      "outcomes_before": "2018-08-01",
+      "valid_decisions": 7269,
+      "observed_evaluable_orders": 7083,
+      "not_evaluable_by_cutoff": 186,
+      "observed_outcome_coverage": 0.974411886091622,
+      "late_orders": 1360
+    }
+  },
+  "April": {
+    "fit": {
+      "approval_start": "2016-01-01",
+      "approval_end": "2018-03-01",
+      "outcomes_before": "2018-04-01",
+      "valid_decisions": 58634,
+      "observed_evaluable_orders": 56814,
+      "not_evaluable_by_cutoff": 1820,
+      "observed_outcome_coverage": 0.9689599890848313,
+      "late_orders": 3427
+    },
+    "validation": {
+      "approval_start": "2018-04-01",
+      "approval_end": "2018-05-01",
+      "outcomes_before": "2018-08-01",
+      "valid_decisions": 6772,
+      "observed_evaluable_orders": 6623,
+      "not_evaluable_by_cutoff": 149,
+      "observed_outcome_coverage": 0.9779976373301831,
+      "late_orders": 305
+    }
+  },
+  "May": {
+    "fit": {
+      "approval_start": "2016-01-01",
+      "approval_end": "2018-04-01",
+      "outcomes_before": "2018-05-01",
+      "valid_decisions": 65903,
+      "observed_evaluable_orders": 63998,
+      "not_evaluable_by_cutoff": 1905,
+      "observed_outcome_coverage": 0.9710938803999818,
+      "late_orders": 4891
+    },
+    "validation": {
+      "approval_start": "2018-05-01",
+      "approval_end": "2018-06-01",
+      "outcomes_before": "2018-08-01",
+      "valid_decisions": 7047,
+      "observed_evaluable_orders": 6938,
+      "not_evaluable_by_cutoff": 109,
+      "observed_outcome_coverage": 0.9845324251454519,
+      "late_orders": 452
+    }
+  },
+  "June": {
+    "fit": {
+      "approval_start": "2016-01-01",
+      "approval_end": "2018-05-01",
+      "outcomes_before": "2018-06-01",
+      "valid_decisions": 72675,
+      "observed_evaluable_orders": 70757,
+      "not_evaluable_by_cutoff": 1918,
+      "observed_outcome_coverage": 0.9736085311317509,
+      "late_orders": 5328
+    },
+    "validation": {
+      "approval_start": "2018-06-01",
+      "approval_end": "2018-07-01",
+      "outcomes_before": "2018-08-01",
+      "valid_decisions": 6157,
+      "observed_evaluable_orders": 6068,
+      "not_evaluable_by_cutoff": 89,
+      "observed_outcome_coverage": 0.9855449082345298,
+      "late_orders": 51
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "selection_train": {
+    "approval_start": "2016-01-01",
+    "approval_end": "2018-01-01",
+    "outcomes_before": "2018-02-01",
+    "valid_decisions": 44819,
+    "observed_evaluable_orders": 43528,
+    "not_evaluable_by_cutoff": 1291,
+    "observed_outcome_coverage": 0.971195252013655,
+    "late_orders": 2376
+  },
+  "selection_validation": {
+    "approval_start": "2018-02-01",
+    "approval_end": "2018-03-01",
+    "outcomes_before": "2018-05-01",
+    "valid_decisions": 6675,
+    "observed_evaluable_orders": 6502,
+    "not_evaluable_by_cutoff": 173,
+    "observed_outcome_coverage": 0.9740823970037453,
+    "late_orders": 858
+  },
+  "final_refit": {
+    "approval_start": "2016-01-01",
+    "approval_end": "2018-03-01",
+    "outcomes_before": "2018-05-01",
+    "valid_decisions": 58634,
+    "observed_evaluable_orders": 57099,
+    "not_evaluable_by_cutoff": 1535,
+    "observed_outcome_coverage": 0.9738206501347341,
+    "late_orders": 3704
+  },
+  "calibration_and_threshold_development": {
+    "approval_start": "2018-05-01",
+    "approval_end": "2018-07-01",
+    "outcomes_before": "2018-08-01",
+    "valid_decisions": 13204,
+    "observed_evaluable_orders": 13006,
+    "not_evaluable_by_cutoff": 198,
+    "observed_outcome_coverage": 0.9850045440775522,
+    "late_orders": 503
+  },
+  "holdout_test": {
+    "approval_start": "2018-08-01",
+    "approval_end": "2018-09-01",
+    "outcomes_before": "2018-10-01",
+    "valid_decisions": 6603,
+    "observed_evaluable_orders": 6495,
+    "not_evaluable_by_cutoff": 108,
+    "observed_outcome_coverage": 0.983643798273512,
+    "late_orders": 406
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "locked_at": "2026-10-25T02:09:51.752945+05:30",
+  "method": "Predeclared sigmoid calibration",
+  "slope": 0.9558628441089132,
+  "intercept": -0.9736188235298304,
+  "f2_diagnostic_threshold": 0.04846602726258371,
+  "orders": 13006,
+  "late_orders": 503,
+  "holdout_evaluated_before_lock": false
+}
