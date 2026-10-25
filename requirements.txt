@@ -1,0 +1,2 @@
+# Full research and local application environment (Python 3.13).
+-r requirements-lock.txt
