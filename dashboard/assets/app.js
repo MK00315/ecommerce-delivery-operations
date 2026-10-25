@@ -12,13 +12,7 @@ const dateLabel = value => new Date(`${shortDate(value)}T00:00:00`).toLocaleDate
 const monthLabel = (value, year = false) => new Date(`${shortDate(value)}T00:00:00`).toLocaleDateString("en-GB", {month:"short", ...(year ? {year:"2-digit"} : {})});
 
 async function api(path, options = {}) {
-  const response = await fetch(path, {...options, headers: {Accept: "application/json", ...options.headers}});
-  if (!response.ok) {
-    let message = "The data could not be loaded. Please try again.";
-    try { const body = await response.json(); if (typeof body.detail === "string") message = body.detail; else if (body.detail) message = "Check the selected dates and limits, then try again."; } catch (_) { /* Retain the useful fallback. */ }
-    throw new Error(message);
-  }
-  return response.json();
+  return window.DeliveryConnection.request(path, options);
 }
 
 function notice(id, message = "", error = false, retry = null) {
@@ -44,8 +38,10 @@ async function loadView() {
     if (number !== appState.request) return;
     appState.view = data; renderView(); notice("app-notice");
     if (!data.metrics.orders) notice("app-notice", "No source orders match these filters. Choose another date range or reset to all data.");
+    return true;
   } catch (error) {
     if (error.name !== "AbortError" && number === appState.request) notice("app-notice", `${error.message}${appState.view ? " The previous view is still shown." : ""}`, true, loadView);
+    return false;
   } finally {
     if (number === appState.request) { $("apply-filters").disabled = false; $("view-filters").setAttribute("aria-busy", "false"); $("view-metrics").classList.remove("data-loading"); }
   }
@@ -196,7 +192,9 @@ async function loadSavedPlan() {
     renderPolicies(data.policies,{custom:false,batch:data.batch,minutes:opt.capacity_minutes,count:30,seller:5,optimal:opt.all_batches_optimal}); renderQueue(queue);
     $("daily-rows").innerHTML=data.daily.map(r=>`<tr><td>${esc(dateLabel(r.screening_date))}</td><td>${num(r.selected_orders)}</td><td>${num(r.used_minutes)}</td><td>${num(r.selected_unknown_outcomes)}</td><td>${num(r.selected_known_late)}</td></tr>`).join("");
     $("plan-status").textContent=`${num(opt.batches)} saved ${opt.batches===1?"batch":"batches"} · no reoptimization`;
+    return true;
   } catch(error) { if(error.name!=="AbortError"&&request===appState.planRequest) { $("plan-status").textContent="Scenario not updated"; notice("planner-notice",`${error.message} Previous planning results remain visible.`,true,loadSavedPlan); } }
+  return false;
 }
 
 async function runCustomPlan() {
@@ -227,6 +225,7 @@ let navigationFrame = 0;
 let initialNavigationPending = true;
 
 function updateNavigation() {
+  if ($("workspace").hidden) return;
   // The content scrolls inside main, while the header and dock stay in place.
   const inset = parseFloat(getComputedStyle(navigationScroller).scrollPaddingTop) || 0;
   const boundary = navigationScroller.getBoundingClientRect().top + inset + 1;
@@ -260,7 +259,6 @@ navigationResize.observe(navigationScroller);
 for (const child of navigationScroller.children) navigationResize.observe(child);
 
 async function initialize() {
-  try {
     appState.meta=await api("/api/meta"); const m=appState.meta;
     $("state-filter").innerHTML='<option value="ALL">All customer states</option>'+m.states.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join("");
     for(const id of ["start-filter","end-filter"]) { $(id).min=m.start; $(id).max=m.end; }
@@ -270,15 +268,19 @@ async function initialize() {
     const options=m.batches.map(b=>`<option value="${b}">${esc(dateLabel(b))} · 09:00</option>`).join("");
     $("batch-filter").innerHTML='<option value="all">All 28 screening batches</option>'+options; $("custom-batch").innerHTML=options;
     for(const kind of ["excel","powerbi"]) $("download-"+kind).hidden=!m.downloads[kind];
-    await Promise.all([loadView(),loadSavedPlan(),api("/api/evidence").then(renderEvidence)]);
-    if (initialNavigationPending) {
-      initialNavigationPending = false;
-      const section = navigationSections.find(section => `#${section.id}` === location.hash);
-      section?.scrollIntoView({block: "start", behavior: "instant"});
-    }
-    scheduleNavigation();
-  } catch(error) { notice("app-notice",error.message,true,initialize); }
+    const [viewReady, planReady] = await Promise.all([loadView(),loadSavedPlan(),api("/api/evidence").then(renderEvidence)]);
+    if (!viewReady || !planReady) throw new Error("The initial workspace data could not be loaded.");
 }
+
+$("workspace").addEventListener("delivery:ready", () => {
+  renderTrend();
+  if (initialNavigationPending) {
+    initialNavigationPending = false;
+    const section = navigationSections.find(section => `#${section.id}` === location.hash);
+    section?.scrollIntoView({block: "start", behavior: "instant"});
+  }
+  scheduleNavigation();
+});
 
 $("view-filters").addEventListener("submit",event=>{event.preventDefault();loadView();});
 $("reset-filters").addEventListener("click",()=>{if(!appState.meta)return;$("state-filter").value="ALL";$("start-filter").value=appState.meta.start;$("end-filter").value=appState.meta.end;loadView();});
@@ -290,4 +292,4 @@ $("saved-mode").addEventListener("click",()=>setMode("saved")); $("custom-mode")
 $("custom-plan-form").addEventListener("submit",event=>{event.preventDefault();runCustomPlan();});
 scheduleNavigation();
 let resizeTimer; new ResizeObserver(()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(renderTrend,120);}).observe($("trend-chart"));
-initialize();
+window.DeliveryConnection.start(initialize);

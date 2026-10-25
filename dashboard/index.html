@@ -4,14 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delivery Ops | Delivery Risk &amp; Operations Planning</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/mark.svg">
 
 
-  <link rel="stylesheet" href="/assets/app.css?v=20261025-scroll-nav">
+  <link rel="stylesheet" href="/assets/app.css?v=20261025-connection-1">
   <meta name="description" content="Explore historical delivery performance and constrained operations review planning using verified Olist data.">
-  <script src="/assets/app.js?v=20261025-scroll-nav-2" defer></script>
+  <script src="/assets/connection.js?v=20261025-connection-1" defer></script>
+  <script src="/assets/app.js?v=20261025-connection-1" defer></script>
 </head>
 <body>
-<div class="app">
+<section id="connection-screen" class="connection-screen" aria-labelledby="connection-heading" aria-busy="true" data-state="connecting">
+  <div class="connection-panel">
+    <div class="connection-left">
+      <div class="wordmark">DELIVERY <span>/</span> OPS</div>
+      <div>
+        <div class="eyebrow">Workspace connection</div>
+        <h1 id="connection-heading" class="connection-heading">/getting ready</h1>
+        <h2 id="connection-status" class="connection-status" role="status" aria-live="polite">Connecting to Delivery Ops</h2>
+        <p id="connection-description" class="connection-description">The dashboard is ready. We are connecting to the analysis server.</p>
+        <button id="connection-retry" class="button primary connection-retry" type="button" hidden>Try again <span aria-hidden="true">↻</span></button>
+      </div>
+      <p class="connection-note">After a quiet period, the server may need a minute to wake up.<br>Historical Olist data · 2016–2018</p>
+    </div>
+    <div class="connection-right">
+      <ol class="connection-steps" aria-label="Workspace startup progress">
+        <li class="connection-step completed"><span class="connection-icon" aria-hidden="true">✓</span><div><h3>Website loaded</h3><p>Your dashboard interface is ready</p></div></li>
+        <li class="connection-step current" id="connection-server-step"><span class="connection-icon" id="connection-server-icon" aria-hidden="true">2</span><div><h3>Connecting to server</h3><p>Waiting for the workspace service</p></div></li>
+        <li class="connection-step pending" id="connection-workspace-step"><span class="connection-icon" id="connection-workspace-icon" aria-hidden="true">3</span><div><h3>Preparing workspace</h3><p>Loading charts and review scenarios</p></div></li>
+      </ol>
+      <div class="connection-timer"><span id="connection-elapsed">0:00</span><span>Elapsed time</span></div>
+    </div>
+  </div>
+</section>
+<noscript><style>#connection-screen{display:none}</style><p class="notice">Delivery Ops needs JavaScript to connect to the analysis server and display the dashboard. Enable JavaScript, then reload this page.</p></noscript>
+<div class="app" id="workspace" hidden>
   <nav class="topbar" aria-label="Main navigation">
     <div class="shell nav-inner">
       <a href="#overview" id="nav-delivery-wordmark" class="wordmark">DELIVERY <span>/</span> OPS</a>
