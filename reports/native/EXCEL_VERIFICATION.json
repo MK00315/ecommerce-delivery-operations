@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-25T17:08:03.468959+05:30",
+  "passed": true,
+  "check_scope": "Read-only verification of the published saved workbook; no native Excel UI was rerun",
+  "historical_native_evidence": "docs/REPORTING_VERIFICATION.json records the original native authoring and scenario checks",
+  "worksheets": 5,
+  "native_charts": 3,
+  "native_tables": 5,
+  "data_validation_rules": 5,
+  "source_orders_represented": 99441,
+  "eligible_orders": 96470,
+  "late_orders": 6534,
+  "saved_formula_errors": [],
+  "reconciliation_checks_passed": 6,
+  "chart_bindings": [
+    {
+      "chart": "xl/charts/chart1.xml",
+      "formulas": [
+        "Overview!$B$14:$B$38",
+        "Overview!$E$14:$E$38"
+      ]
+    },
+    {
+      "chart": "xl/charts/chart2.xml",
+      "formulas": [
+        "Overview!$B$44:$B$51",
+        "Overview!$F$44:$F$51"
+      ]
+    },
+    {
+      "chart": "xl/charts/chart3.xml",
+      "formulas": [
+        "'Review capacity'!$B$13:$B$16",
+        "'Review capacity'!$F$13:$F$16"
+      ]
+    }
+  ],
+  "source_data_sampled": false,
+  "snapshot_limit": "Scenario selector reads executed Python runs. Uniform staffing calculator recalculates; no live optimizer or cloud refresh in the workbook.",
+  "sha256": "a0aebaf10fc519f44529c7a9d0a56dd94831060b4d4f1f9a191e222f107aebd4",
+  "bytes": 97720
+}
