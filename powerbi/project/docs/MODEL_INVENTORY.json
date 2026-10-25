@@ -1,0 +1,417 @@
+{
+  "Orders": {
+    "rows": 99441,
+    "columns": [
+      [
+        "Order ID",
+        "string"
+      ],
+      [
+        "Purchase Date",
+        "dateTime"
+      ],
+      [
+        "Customer State",
+        "string"
+      ],
+      [
+        "Final Status",
+        "string"
+      ],
+      [
+        "SLA Eligible",
+        "int64"
+      ],
+      [
+        "Late Flag",
+        "int64"
+      ],
+      [
+        "Delivery Days",
+        "double"
+      ],
+      [
+        "Item Count",
+        "int64"
+      ],
+      [
+        "Seller Count",
+        "int64"
+      ],
+      [
+        "Promised Days",
+        "int64"
+      ],
+      [
+        "Distance Km",
+        "double"
+      ],
+      [
+        "Distance Complete",
+        "int64"
+      ],
+      [
+        "Distance Group",
+        "string"
+      ],
+      [
+        "Basket Group",
+        "string"
+      ]
+    ],
+    "measures": [
+      [
+        "Source Orders",
+        "COUNTROWS('Orders')",
+        "#,##0"
+      ],
+      [
+        "Eligible Deliveries",
+        "SUM('Orders'[SLA Eligible])",
+        "#,##0"
+      ],
+      [
+        "Late Deliveries",
+        "SUM('Orders'[Late Flag])",
+        "#,##0"
+      ],
+      [
+        "On-time Deliveries",
+        "[Eligible Deliveries]-[Late Deliveries]",
+        "#,##0"
+      ],
+      [
+        "Late Rate",
+        "DIVIDE([Late Deliveries],[Eligible Deliveries])",
+        "0.00%"
+      ],
+      [
+        "Outside SLA Cohort",
+        "[Source Orders]-[Eligible Deliveries]",
+        "#,##0"
+      ],
+      [
+        "Mean Delivery Days",
+        "AVERAGE('Orders'[Delivery Days])",
+        "0.00"
+      ],
+      [
+        "Median Delivery Days",
+        "MEDIAN('Orders'[Delivery Days])",
+        "0.00"
+      ],
+      [
+        "Complete Distance Share",
+        "DIVIDE(CALCULATE([Eligible Deliveries],'Orders'[Distance Complete]=1),[Eligible Deliveries])",
+        "0.0%"
+      ]
+    ]
+  },
+  "Calendar": {
+    "rows": 774,
+    "columns": [
+      [
+        "Date",
+        "dateTime"
+      ],
+      [
+        "Month",
+        "string"
+      ],
+      [
+        "Month Key",
+        "int64"
+      ],
+      [
+        "Year",
+        "int64"
+      ]
+    ],
+    "measures": []
+  },
+  "States": {
+    "rows": 27,
+    "columns": [
+      [
+        "State",
+        "string"
+      ]
+    ],
+    "measures": []
+  },
+  "Scenarios": {
+    "rows": 7,
+    "columns": [
+      [
+        "Scenario Key",
+        "string"
+      ],
+      [
+        "Scenario",
+        "string"
+      ],
+      [
+        "Minutes per Batch",
+        "int64"
+      ],
+      [
+        "Time Multiplier",
+        "double"
+      ]
+    ],
+    "measures": [
+      [
+        "Selected Scenario",
+        "SELECTEDVALUE('Scenarios'[Scenario Key],\"capacity_120_cost_1\")",
+        ""
+      ],
+      [
+        "Scenario Minutes",
+        "VAR s=[Selected Scenario] RETURN CALCULATE(MAX('Scenarios'[Minutes per Batch]),'Scenarios'[Scenario Key]=s)",
+        "#,##0"
+      ]
+    ]
+  },
+  "Policies": {
+    "rows": 4,
+    "columns": [
+      [
+        "Policy Key",
+        "string"
+      ],
+      [
+        "Policy",
+        "string"
+      ],
+      [
+        "Policy Order",
+        "int64"
+      ]
+    ],
+    "measures": []
+  },
+  "Daily Reviews": {
+    "rows": 784,
+    "columns": [
+      [
+        "Scenario Key",
+        "string"
+      ],
+      [
+        "Policy Key",
+        "string"
+      ],
+      [
+        "Screening Date",
+        "dateTime"
+      ],
+      [
+        "Candidates",
+        "int64"
+      ],
+      [
+        "Candidate Known Late",
+        "int64"
+      ],
+      [
+        "Selected",
+        "int64"
+      ],
+      [
+        "Used Minutes",
+        "int64"
+      ],
+      [
+        "Unknown Selected",
+        "int64"
+      ],
+      [
+        "Known Late Selected",
+        "int64"
+      ],
+      [
+        "Priority Points",
+        "double"
+      ],
+      [
+        "Selected Known Outcomes",
+        "int64"
+      ],
+      [
+        "Unused Minutes",
+        "int64"
+      ]
+    ],
+    "measures": [
+      [
+        "Review Count",
+        "VAR s=[Selected Scenario] RETURN CALCULATE(SUM('Daily Reviews'[Selected]),'Scenarios'[Scenario Key]=s)",
+        "#,##0"
+      ],
+      [
+        "Review Minutes",
+        "VAR s=[Selected Scenario] RETURN CALCULATE(SUM('Daily Reviews'[Used Minutes]),'Scenarios'[Scenario Key]=s)",
+        "#,##0"
+      ],
+      [
+        "Unknown Reviews",
+        "VAR s=[Selected Scenario] RETURN CALCULATE(SUM('Daily Reviews'[Unknown Selected]),'Scenarios'[Scenario Key]=s)",
+        "#,##0"
+      ],
+      [
+        "Known Late Reviewed",
+        "VAR s=[Selected Scenario] RETURN CALCULATE(SUM('Daily Reviews'[Known Late Selected]),'Scenarios'[Scenario Key]=s)",
+        "#,##0"
+      ],
+      [
+        "Review Priority Points",
+        "VAR s=[Selected Scenario] RETURN CALCULATE(SUM('Daily Reviews'[Priority Points]),'Scenarios'[Scenario Key]=s)",
+        "#,##0.0"
+      ],
+      [
+        "Queue Known Late",
+        "VAR s=[Selected Scenario] RETURN CALCULATE(SUMX(VALUES('Daily Reviews'[Screening Date]),CALCULATE(MAX('Daily Reviews'[Candidate Known Late]))),'Scenarios'[Scenario Key]=s)",
+        "#,##0"
+      ],
+      [
+        "Known Late Capture",
+        "DIVIDE([Known Late Reviewed],[Queue Known Late])",
+        "0.0%"
+      ],
+      [
+        "Optimized Reviews",
+        "CALCULATE([Review Count],'Policies'[Policy Key]=\"optimized\")",
+        "#,##0"
+      ],
+      [
+        "Optimized Known Late",
+        "CALCULATE([Known Late Reviewed],'Policies'[Policy Key]=\"optimized\")",
+        "#,##0"
+      ],
+      [
+        "Optimized Unknown",
+        "CALCULATE([Unknown Reviews],'Policies'[Policy Key]=\"optimized\")",
+        "#,##0"
+      ],
+      [
+        "Optimized Minutes",
+        "CALCULATE([Review Minutes],'Policies'[Policy Key]=\"optimized\")",
+        "#,##0"
+      ]
+    ]
+  },
+  "Statistics": {
+    "rows": 4,
+    "columns": [
+      [
+        "Comparison",
+        "string"
+      ],
+      [
+        "Adjusted pp",
+        "double"
+      ],
+      [
+        "Lower Bound pp",
+        "double"
+      ],
+      [
+        "Upper Bound pp",
+        "double"
+      ],
+      [
+        "Holm p",
+        "double"
+      ],
+      [
+        "Contrast Orders",
+        "int64"
+      ],
+      [
+        "Excluded",
+        "int64"
+      ]
+    ],
+    "measures": [
+      [
+        "Adjusted Difference pp",
+        "MAX('Statistics'[Adjusted pp])",
+        "+0.00;-0.00;0.00"
+      ],
+      [
+        "CI Low pp",
+        "MAX('Statistics'[Lower Bound pp])",
+        "+0.00;-0.00;0.00"
+      ],
+      [
+        "CI High pp",
+        "MAX('Statistics'[Upper Bound pp])",
+        "+0.00;-0.00;0.00"
+      ],
+      [
+        "Holm p Value",
+        "MAX('Statistics'[Holm p])",
+        "0.00E+00"
+      ]
+    ]
+  },
+  "Model Evidence": {
+    "rows": 1,
+    "columns": [
+      [
+        "AP",
+        "double"
+      ],
+      [
+        "Baseline AP",
+        "double"
+      ],
+      [
+        "ROC AUC",
+        "double"
+      ],
+      [
+        "Adjusted Brier",
+        "double"
+      ],
+      [
+        "Raw Brier",
+        "double"
+      ],
+      [
+        "Constant Brier",
+        "double"
+      ],
+      [
+        "Refit Orders",
+        "int64"
+      ],
+      [
+        "Inputs",
+        "int64"
+      ]
+    ],
+    "measures": [
+      [
+        "Diagnostic AP",
+        "MAX('Model Evidence'[AP])",
+        "0.0000"
+      ],
+      [
+        "Constant AP",
+        "MAX('Model Evidence'[Baseline AP])",
+        "0.0000"
+      ],
+      [
+        "Diagnostic ROC AUC",
+        "MAX('Model Evidence'[ROC AUC])",
+        "0.0000"
+      ],
+      [
+        "Diagnostic Brier",
+        "MAX('Model Evidence'[Adjusted Brier])",
+        "0.0000"
+      ]
+    ]
+  }
+}

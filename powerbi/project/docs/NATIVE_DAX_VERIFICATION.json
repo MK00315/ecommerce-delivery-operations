@@ -1,0 +1,122 @@
+{
+  "CheckedAt": "2026-10-25T14:43:51.7855337+05:30",
+  "Passed": true,
+  "NativeEngine": "Power BI Desktop Analysis Services",
+  "AuthoredTables": 8,
+  "DAXMeasures": 30,
+  "ReadOnlyQueries": 9,
+  "Results": {
+    "Headlines": [
+      {
+        "Orders": 99441,
+        "Eligible": 96470,
+        "Late": 6534,
+        "Unknown": 2971,
+        "LateRate": 0.06773090079817559,
+        "MeanDays": 12.558217098051964
+      }
+    ],
+    "StateSP": [
+      {
+        "Orders": 41746,
+        "Eligible": 40494,
+        "Late": 1820,
+        "APFixed": 0.09010847209195047
+      }
+    ],
+    "March2018": [
+      {
+        "Orders": 7211,
+        "Eligible": 7003,
+        "Late": 1328
+      }
+    ],
+    "DefaultPlan": [
+      {
+        "Reviews": 721,
+        "KnownLate": 79,
+        "Unknown": 24,
+        "Minutes": 3314,
+        "Denominator": 406
+      }
+    ],
+    "SixtyMinutes": [
+      {
+        "Reviews": 378,
+        "KnownLate": 46,
+        "Minutes": 1676
+      }
+    ],
+    "ZeroCapacity": [
+      {
+        "Reviews": 0,
+        "KnownLate": 0,
+        "Minutes": 0
+      }
+    ],
+    "Policies": [
+      {
+        "Policies[Policy": "Constrained optimizer",
+        "Reviews": 721,
+        "KnownLate": 79,
+        "Capture": 0.19458128078817735
+      },
+      {
+        "Policies[Policy": "Highest risk first",
+        "Reviews": 662,
+        "KnownLate": 47,
+        "Capture": 0.11576354679802955
+      },
+      {
+        "Policies[Policy": "Priority per minute",
+        "Reviews": 711,
+        "KnownLate": 78,
+        "Capture": 0.1921182266009852
+      },
+      {
+        "Policies[Policy": "Oldest approval first",
+        "Reviews": 696,
+        "KnownLate": 42,
+        "Capture": 0.10344827586206896
+      }
+    ],
+    "Statistics": [
+      {
+        "Statistics[Comparison": "Distance >1,000 km vs <=500 km",
+        "Adjusted": 4.8943383739755,
+        "Low": 3.3514379466168,
+        "High": 6.4372388013342,
+        "HolmP": 4.3715744E-08
+      },
+      {
+        "Statistics[Comparison": "Two or more items vs one item",
+        "Adjusted": -1.7254340818639,
+        "Low": -2.417102906746,
+        "High": -1.0337652569817999,
+        "HolmP": 1.0079477439E-05
+      },
+      {
+        "Statistics[Comparison": "Promise <=14 days vs >14 days",
+        "Adjusted": -0.9200038123258999,
+        "Low": -3.9762436418959997,
+        "High": 2.1362360172441996,
+        "HolmP": 0.551316424845471
+      },
+      {
+        "Statistics[Comparison": "Any interstate seller vs all same-state",
+        "Adjusted": 3.4775923606882,
+        "Low": 1.7336115829504,
+        "High": 5.2215731384259,
+        "HolmP": 0.000297620579033
+      }
+    ],
+    "Evidence": [
+      {
+        "AP": 0.09010847209195047,
+        "BaselineAP": 0.06250962278675905,
+        "ROC": 0.6177403813870931,
+        "Brier": 0.06087338060712848
+      }
+    ]
+  }
+}

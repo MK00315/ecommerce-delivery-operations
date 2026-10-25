@@ -1,0 +1,109 @@
+{
+  "checked_at": "2026-10-25T14:53:18.794379+05:30",
+  "passed": true,
+  "stage": "Native Excel and Power BI reporting completed; web dashboard/publication remain pending",
+  "source_orders": 99441,
+  "eligible_deliveries": 96470,
+  "late_deliveries": 6534,
+  "outside_sla_cohort": 2971,
+  "source_data_sampled": false,
+  "operations_run": "20261025T084432413713Z",
+  "provenance": {
+    "database_sha256": "229b745db68fa54bc5fc376b5f6df47446b962efec0a83efa824a3f7d916b62b",
+    "operations_verification_sha256": "f47190ef5bc65bf3bbfcc14983ac66219118813b93fe1e0e91316588b570c2c7",
+    "model_sha256": "157982e44a788bd57eb4d23f77693a64c54a06633a6242058be155f67dd1d5d5"
+  },
+  "excel": {
+    "file": "<workspace>\\outputs\\Delivery_Reporting_20261025\\Delivery_Operations.xlsx",
+    "bytes": 113767,
+    "sha256": "790dd11f15bef69d024a280790ab8610e70e6af05575553db8e13cab300c5873",
+    "worksheets": 5,
+    "editable_charts": 3,
+    "native_tables": 5,
+    "data_validation_rules": 5,
+    "saved_formula_errors": [],
+    "reconciliations": 6,
+    "native_opened_recalculated_saved": true,
+    "native_scenarios_checked": [
+      "120-minute default",
+      "60 minutes",
+      "zero minutes"
+    ],
+    "all_five_sheets_rendered_and_reviewed": true,
+    "native_pivot_tables_claimed": false
+  },
+  "powerbi": {
+    "file": "<workspace>\\outputs\\Delivery_PowerBI\\Ecommerce_Delivery_Operations.pbix",
+    "bytes": 14522523,
+    "sha256": "a428c9b1e5ca2d20adbeeca9dc45dedb8513596f17b45e1cdda428d868a63246",
+    "loaded_data_model_present": true,
+    "archive_crc_passed": true,
+    "pages": [
+      "Overview",
+      "Delivery patterns",
+      "Review planning",
+      "Model and statistics"
+    ],
+    "tables": 8,
+    "relationships": 5,
+    "dax_measures": 30,
+    "native_visuals": 52,
+    "visual_types": {
+      "card": 16,
+      "textbox": 19,
+      "slicer": 3,
+      "lineChart": 1,
+      "tableEx": 4,
+      "barChart": 5,
+      "pageNavigator": 4
+    },
+    "source_native_visual_ids_and_types_match": true,
+    "native_opened_refreshed_saved": true,
+    "all_four_pages_visually_reviewed": true,
+    "native_ui_scenarios_checked": [
+      "zero capacity",
+      "restored 120 min / 1.00x time"
+    ],
+    "read_only_native_dax_queries_passed": 9,
+    "dax_checked_at": "2026-10-25T14:43:51.7855337+05:30",
+    "source_schema_validation": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "opening_page": "Overview"
+  },
+  "full_project_tests": {
+    "passed": 62,
+    "failed": 0,
+    "skipped": 0
+  },
+  "screenshots": {
+    "Overview.jpg": {
+      "bytes": 205974,
+      "sha256": "1b89531e414b9b5f380ed6b6ff4299f747140e7965610916e872010c4109e706"
+    },
+    "Delivery_Patterns.jpg": {
+      "bytes": 203722,
+      "sha256": "558f686dea71507d1495bc567bdcbdd0c52679a9ec76103960cf57897149a21f"
+    },
+    "Review_Planning.jpg": {
+      "bytes": 219998,
+      "sha256": "9422a495e25fea9dde50be26097dd9af2d57e754895a3a2edad47dbd16359343"
+    },
+    "Model_Statistics.jpg": {
+      "bytes": 212258,
+      "sha256": "09d09cfaf4332e70f84246669a70336aff9c1f9f7e86a20c0f693e30b7c6cb33"
+    }
+  },
+  "limits": [
+    "Offline reporting snapshots; no live Azure/Databricks connector or automatic cloud refresh",
+    "Scenario selectors read executed Python results; neither native artifact reruns the optimizer",
+    "Excel staffing calculator is a separate uniform-time bound, not the constrained solver",
+    "Experimental model ranks; reused August diagnostic and weak absolute probability reliability",
+    "Statistics are exploratory associations; no prevented-delay or savings claim"
+  ],
+  "powerbi_service_publication": false,
+  "extra_cloud_compute": false,
+  "model_retraining": false,
+  "next": "Professional web dashboard, then GitHub/live publication; joint interview practice and resume wording later"
+}
