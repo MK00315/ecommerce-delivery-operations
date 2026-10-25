@@ -1,0 +1,48 @@
+table Calendar
+	lineageTag: 131adeab-1ffb-4be5-8495-8d9b75580d2d
+
+	column Date
+		dataType: dateTime
+		isKey
+		formatString: dd MMM yyyy
+		lineageTag: a74fbccf-aee9-49e5-94ec-4a3fbc5721f1
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Month
+		dataType: string
+		lineageTag: 3e681b67-8739-4fed-8904-f4310dbe86a9
+		summarizeBy: none
+		sourceColumn: Month
+		sortByColumn: 'Month Key'
+
+	column 'Month Key'
+		dataType: int64
+		isHidden
+		formatString: #,##0
+		lineageTag: 23c0990e-1593-4eaf-9034-b64382b3b245
+		summarizeBy: none
+		sourceColumn: Month Key
+
+	column Year
+		dataType: int64
+		formatString: #,##0
+		lineageTag: affc7fe4-2663-404d-92ac-9b675535161c
+		summarizeBy: none
+		sourceColumn: Year
+
+	partition Calendar = m
+		mode: import
+		source =
+				let
+				    Snapshot=Json.Document(Binary.Decompress(Binary.FromText("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",BinaryEncoding.Base64),Compression.Deflate)),
+				    Rows=Table.FromRows(Snapshot,{"Date", "Month", "Month Key", "Year"}),
+				    Typed=Table.TransformColumnTypes(Rows,{{"Date", type date}, {"Month", type text}, {"Month Key", Int64.Type}, {"Year", Int64.Type}},"en-US")
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table

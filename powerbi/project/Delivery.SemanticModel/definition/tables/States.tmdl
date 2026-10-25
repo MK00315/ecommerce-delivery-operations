@@ -1,0 +1,19 @@
+table States
+	lineageTag: 68bd36e5-14d0-4f4c-9c57-70a93fe16dbe
+
+	column State
+		dataType: string
+		isKey
+		lineageTag: 4a2f5648-391b-4ddf-9eaf-cd7ac7cae865
+		summarizeBy: none
+		sourceColumn: State
+
+	partition States = m
+		mode: import
+		source =
+				let
+				    Snapshot=Json.Document(Binary.Decompress(Binary.FromText("Lc5BDoAgDETRu7D2EgWRaEQJsCPc/xqa+axemkzbGcO14uY2XL1ETkxNlCpaEN7EfohIJL0kowhQSOYOa1o3PZw8eoTdPGK9c7OCZaCErbp/s/kB",BinaryEncoding.Base64),Compression.Deflate)),
+				    Rows=Table.FromRows(Snapshot,{"State"}),
+				    Typed=Table.TransformColumnTypes(Rows,{{"State", type text}},"en-US")
+				in
+				    Typed

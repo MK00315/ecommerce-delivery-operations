@@ -1,0 +1,84 @@
+table 'Model Evidence'
+	lineageTag: 57a8d49e-3c75-42d7-8d8a-30f3f484397c
+
+	measure 'Diagnostic AP' = MAX('Model Evidence'[AP])
+		formatString: 0.0000
+		lineageTag: 9430bfec-27df-4f21-893e-a3396cb157c9
+
+	measure 'Constant AP' = MAX('Model Evidence'[Baseline AP])
+		formatString: 0.0000
+		lineageTag: c8fd8f85-d98e-4601-9447-e79786659abe
+
+	measure 'Diagnostic ROC AUC' = MAX('Model Evidence'[ROC AUC])
+		formatString: 0.0000
+		lineageTag: fde63312-9dea-4b46-9eab-4f7e1505c4cb
+
+	measure 'Diagnostic Brier' = MAX('Model Evidence'[Adjusted Brier])
+		formatString: 0.0000
+		lineageTag: 0959771a-9b94-481c-a7d7-4fadf8e0a8ad
+
+	column AP
+		dataType: double
+		formatString: 0.0000
+		lineageTag: 25b5e0d2-dfa4-4c02-92d8-6707bd8100d0
+		summarizeBy: none
+		sourceColumn: AP
+
+	column 'Baseline AP'
+		dataType: double
+		formatString: 0.0000
+		lineageTag: a66eb59b-b718-44d2-9da7-21584d692a38
+		summarizeBy: none
+		sourceColumn: Baseline AP
+
+	column 'ROC AUC'
+		dataType: double
+		formatString: 0.0000
+		lineageTag: 868f03db-b8c9-4e8d-a6c1-404a59ed7a43
+		summarizeBy: none
+		sourceColumn: ROC AUC
+
+	column 'Adjusted Brier'
+		dataType: double
+		formatString: 0.0000
+		lineageTag: 153ca07e-ed6f-489b-98c0-06d25254e7a1
+		summarizeBy: none
+		sourceColumn: Adjusted Brier
+
+	column 'Raw Brier'
+		dataType: double
+		formatString: 0.0000
+		lineageTag: 4481ddaf-1e00-466e-bda3-fb387cd0df7a
+		summarizeBy: none
+		sourceColumn: Raw Brier
+
+	column 'Constant Brier'
+		dataType: double
+		formatString: 0.0000
+		lineageTag: bffc9fb6-6d33-4ef6-8b70-b985b1ffd35d
+		summarizeBy: none
+		sourceColumn: Constant Brier
+
+	column 'Refit Orders'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 1e56d5dd-2539-438f-9068-f6e1bc2cebbd
+		summarizeBy: none
+		sourceColumn: Refit Orders
+
+	column Inputs
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 52d183f2-0f9c-4962-b9f6-60acd8ec0d3e
+		summarizeBy: none
+		sourceColumn: Inputs
+
+	partition 'Model Evidence' = m
+		mode: import
+		source =
+				let
+				    Snapshot=Json.Document(Binary.Decompress(Binary.FromText("JcqBCcQwDEPRhUqR7diSZindf40mdyAQPP7z4IYR0GLC4cbitW2y4cmkhm30tglyoRQlwhW/DGKV9jNSS8faBdjlafvsj0HswimPealOXfG+Hw==",BinaryEncoding.Base64),Compression.Deflate)),
+				    Rows=Table.FromRows(Snapshot,{"AP", "Baseline AP", "ROC AUC", "Adjusted Brier", "Raw Brier", "Constant Brier", "Refit Orders", "Inputs"}),
+				    Typed=Table.TransformColumnTypes(Rows,{{"AP", type number}, {"Baseline AP", type number}, {"ROC AUC", type number}, {"Adjusted Brier", type number}, {"Raw Brier", type number}, {"Constant Brier", type number}, {"Refit Orders", Int64.Type}, {"Inputs", Int64.Type}},"en-US")
+				in
+				    Typed

@@ -1,0 +1,76 @@
+table Statistics
+	lineageTag: 617c93ec-83b1-41c9-8b73-7241e65d9ce9
+
+	measure 'Adjusted Difference pp' = MAX('Statistics'[Adjusted pp])
+		formatString: +0.00;-0.00;0.00
+		lineageTag: a1580ae4-f8a7-4245-8b73-77e43a95ef18
+
+	measure 'CI Low pp' = MAX('Statistics'[Lower Bound pp])
+		formatString: +0.00;-0.00;0.00
+		lineageTag: 35c926f5-ac5f-450d-92e6-d22c5bc6d227
+
+	measure 'CI High pp' = MAX('Statistics'[Upper Bound pp])
+		formatString: +0.00;-0.00;0.00
+		lineageTag: ae84b63b-41b2-4402-b264-4f796f01ac63
+
+	measure 'Holm p Value' = MAX('Statistics'[Holm p])
+		formatString: 0.00E+00
+		lineageTag: ab62f266-e699-41c1-826c-ab041b2e5cb8
+
+	column Comparison
+		dataType: string
+		lineageTag: abe598b4-26a0-43b5-9d3a-52323bc91013
+		summarizeBy: none
+		sourceColumn: Comparison
+
+	column 'Adjusted pp'
+		dataType: double
+		formatString: 0.0000
+		lineageTag: 1e57ddf2-1913-4aa6-9fd8-843479ea1f7d
+		summarizeBy: none
+		sourceColumn: Adjusted pp
+
+	column 'Lower Bound pp'
+		dataType: double
+		formatString: 0.0000
+		lineageTag: 3d9d44e6-7a12-44eb-a598-7b9d54161ddb
+		summarizeBy: none
+		sourceColumn: Lower Bound pp
+
+	column 'Upper Bound pp'
+		dataType: double
+		formatString: 0.0000
+		lineageTag: 89d84672-fc86-4e96-9db5-764e4adbb358
+		summarizeBy: none
+		sourceColumn: Upper Bound pp
+
+	column 'Holm p'
+		dataType: double
+		formatString: 0.0000
+		lineageTag: 79d48111-fa6c-45d6-8644-16be543aaf3f
+		summarizeBy: none
+		sourceColumn: Holm p
+
+	column 'Contrast Orders'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: accfde24-6d7e-4964-9cf9-4e8ff694c6bc
+		summarizeBy: none
+		sourceColumn: Contrast Orders
+
+	column Excluded
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 500d1c31-90cb-4ab7-bdb7-147291f665b0
+		summarizeBy: none
+		sourceColumn: Excluded
+
+	partition Statistics = m
+		mode: import
+		source =
+				let
+				    Snapshot=Json.Document(Binary.Decompress(Binary.FromText("TZDLatxAEEV/pdG61dT7AYnBkA/IwrvBiyHpxZDRCKQhwX/v1tiY7OpFnXvv6TT9uOz38+1XL09YAaD8WcrfvXz7ro96qtIihTnYOV21cmNFYU8xQ4tqbTTEEYDMQuOeHdVF+gxRHVCikjHRaz1NL//Wsm5lWbdeLve+7AdrvX00U52xOamwQGAYZ52pCToCJZiLHQfA7KakloGemXWMYKhxF87B1JomDhUO3s9tXS57H3ZQyu/z24P39FkPHrSkYZoDiUnjeDdzSzcSNsFIHSOv1JCN2ACdRDDTKjRVZDQhCVFx/B/7fHsrl9u9byPaey97v177dqDP12vZz0ufH4tphDl0ax6vLYKGF2c2RA1KBanaiEaYjBxCmoM61NKhD9RzRPFFfX0H",BinaryEncoding.Base64),Compression.Deflate)),
+				    Rows=Table.FromRows(Snapshot,{"Comparison", "Adjusted pp", "Lower Bound pp", "Upper Bound pp", "Holm p", "Contrast Orders", "Excluded"}),
+				    Typed=Table.TransformColumnTypes(Rows,{{"Comparison", type text}, {"Adjusted pp", type number}, {"Lower Bound pp", type number}, {"Upper Bound pp", type number}, {"Holm p", type number}, {"Contrast Orders", Int64.Type}, {"Excluded", Int64.Type}},"en-US")
+				in
+				    Typed

@@ -1,0 +1,19 @@
+relationship 03aa485d-5057-5b69-8e4b-388f042bebac
+	fromColumn: Orders.'Purchase Date'
+	toColumn: Calendar.Date
+
+relationship 81ae0ebb-f99b-584d-afd3-86259a8c85ce
+	fromColumn: Orders.'Customer State'
+	toColumn: States.State
+
+relationship 27699132-b108-5294-9ac6-12e3a29307d2
+	fromColumn: 'Daily Reviews'.'Screening Date'
+	toColumn: Calendar.Date
+
+relationship 943c0e83-5eb6-5b41-8795-70c72d89098c
+	fromColumn: 'Daily Reviews'.'Scenario Key'
+	toColumn: Scenarios.'Scenario Key'
+
+relationship 2e3ad098-3ee5-57dd-a3dd-c728114a7b55
+	fromColumn: 'Daily Reviews'.'Policy Key'
+	toColumn: Policies.'Policy Key'

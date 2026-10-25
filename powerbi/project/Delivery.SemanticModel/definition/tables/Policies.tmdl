@@ -1,0 +1,34 @@
+table Policies
+	lineageTag: 617c6b5d-fdfe-4ce8-b239-d93aa34ad2a0
+
+	column 'Policy Key'
+		dataType: string
+		isHidden
+		isKey
+		lineageTag: 74c0ecae-db4d-46c0-a165-226f0ed644a3
+		summarizeBy: none
+		sourceColumn: Policy Key
+
+	column Policy
+		dataType: string
+		lineageTag: 5306b8aa-5ad4-4d9e-8d80-ac9f602a2e9c
+		summarizeBy: none
+		sourceColumn: Policy
+		sortByColumn: 'Policy Order'
+
+	column 'Policy Order'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 913f232a-d30b-410e-bca5-d59e14e4a316
+		summarizeBy: none
+		sourceColumn: Policy Order
+
+	partition Policies = m
+		mode: import
+		source =
+				let
+				    Snapshot=Json.Document(Binary.Decompress(Binary.FromText("Pcy7CgIxEIXhVxlSp/HyBjZ22ocQApldB3czYTIu6NObyMbyfPwc5wwXpZU+mIw1F85VJVLGBMPF2IO3zgjVZ5hIqrbwSvMDq0JH2PHYqyLEQvoOBSWslF+KLb/vCk1h6Kn3vKT28/+9/SbEUoS3uIzrs/df",BinaryEncoding.Base64),Compression.Deflate)),
+				    Rows=Table.FromRows(Snapshot,{"Policy Key", "Policy", "Policy Order"}),
+				    Typed=Table.TransformColumnTypes(Rows,{{"Policy Key", type text}, {"Policy", type text}, {"Policy Order", Int64.Type}},"en-US")
+				in
+				    Typed

@@ -1,0 +1,142 @@
+table 'Daily Reviews'
+	lineageTag: a9fd301e-ac39-4708-b9c9-2c9b7fb59281
+
+	measure 'Review Count' = VAR s=[Selected Scenario] RETURN CALCULATE(SUM('Daily Reviews'[Selected]),'Scenarios'[Scenario Key]=s)
+		formatString: #,##0
+		lineageTag: e3ff50ce-ecd1-45f9-be90-133773aa3fbb
+
+	measure 'Review Minutes' = VAR s=[Selected Scenario] RETURN CALCULATE(SUM('Daily Reviews'[Used Minutes]),'Scenarios'[Scenario Key]=s)
+		formatString: #,##0
+		lineageTag: fae9aa4b-3c97-4be0-ba2e-e9d56a76259c
+
+	measure 'Unknown Reviews' = VAR s=[Selected Scenario] RETURN CALCULATE(SUM('Daily Reviews'[Unknown Selected]),'Scenarios'[Scenario Key]=s)
+		formatString: #,##0
+		lineageTag: cf8a6c21-1f9d-4050-8672-9c892cdb9b99
+
+	measure 'Known Late Reviewed' = VAR s=[Selected Scenario] RETURN CALCULATE(SUM('Daily Reviews'[Known Late Selected]),'Scenarios'[Scenario Key]=s)
+		formatString: #,##0
+		lineageTag: f49c35df-dac1-4c04-8e39-456f48f28295
+
+	measure 'Review Priority Points' = VAR s=[Selected Scenario] RETURN CALCULATE(SUM('Daily Reviews'[Priority Points]),'Scenarios'[Scenario Key]=s)
+		formatString: #,##0.0
+		lineageTag: 772a73a2-c518-49bf-986f-2fbf9403e740
+
+	measure 'Queue Known Late' = VAR s=[Selected Scenario] RETURN CALCULATE(SUMX(VALUES('Daily Reviews'[Screening Date]),CALCULATE(MAX('Daily Reviews'[Candidate Known Late]))),'Scenarios'[Scenario Key]=s)
+		formatString: #,##0
+		lineageTag: 9558adb6-b869-4b3e-9e75-0caa501d7af7
+
+	measure 'Known Late Capture' = DIVIDE([Known Late Reviewed],[Queue Known Late])
+		formatString: 0.0%
+		lineageTag: 0510bd76-18c0-44ec-9fc0-eaba5b64c53f
+
+	measure 'Optimized Reviews' = CALCULATE([Review Count],'Policies'[Policy Key]="optimized")
+		formatString: #,##0
+		lineageTag: 28122d70-1490-4b33-9539-04a5ff524f95
+
+	measure 'Optimized Known Late' = CALCULATE([Known Late Reviewed],'Policies'[Policy Key]="optimized")
+		formatString: #,##0
+		lineageTag: b5e7778b-0847-478c-b6bd-03af1d5c44c2
+
+	measure 'Optimized Unknown' = CALCULATE([Unknown Reviews],'Policies'[Policy Key]="optimized")
+		formatString: #,##0
+		lineageTag: 9c6df1e9-1ad8-4ca5-82d7-1ae8e248d025
+
+	measure 'Optimized Minutes' = CALCULATE([Review Minutes],'Policies'[Policy Key]="optimized")
+		formatString: #,##0
+		lineageTag: e9eb3661-cbff-4ced-8042-7396ffae297c
+
+	column 'Scenario Key'
+		dataType: string
+		isHidden
+		lineageTag: bc59e1ff-adec-48ac-8380-6d76b824b105
+		summarizeBy: none
+		sourceColumn: Scenario Key
+
+	column 'Policy Key'
+		dataType: string
+		isHidden
+		lineageTag: cc3aca0b-10f7-4279-808f-0327371d5e69
+		summarizeBy: none
+		sourceColumn: Policy Key
+
+	column 'Screening Date'
+		dataType: dateTime
+		formatString: dd MMM yyyy
+		lineageTag: 87dd0f1a-89d3-4563-a288-a2aa6a3c4d33
+		summarizeBy: none
+		sourceColumn: Screening Date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Candidates
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 0378b0e1-cd72-4829-9858-27b5b52dfbc6
+		summarizeBy: none
+		sourceColumn: Candidates
+
+	column 'Candidate Known Late'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 2c3621b2-b40b-4eab-86d9-6653059b04c7
+		summarizeBy: none
+		sourceColumn: Candidate Known Late
+
+	column Selected
+		dataType: int64
+		formatString: #,##0
+		lineageTag: d095fae0-f995-483b-b169-fa4d8af7445a
+		summarizeBy: none
+		sourceColumn: Selected
+
+	column 'Used Minutes'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: e3dad76a-f56d-4ffe-b4ef-ce7e4c671f41
+		summarizeBy: none
+		sourceColumn: Used Minutes
+
+	column 'Unknown Selected'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: ff460c38-624f-45e4-93c5-efdf3f2abdbb
+		summarizeBy: none
+		sourceColumn: Unknown Selected
+
+	column 'Known Late Selected'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 3d3d39a7-59cf-47d2-86c1-ecf7272e487a
+		summarizeBy: none
+		sourceColumn: Known Late Selected
+
+	column 'Priority Points'
+		dataType: double
+		formatString: 0.0000
+		lineageTag: 0d005852-1ca5-4d22-ae45-81ded3a26f01
+		summarizeBy: none
+		sourceColumn: Priority Points
+
+	column 'Selected Known Outcomes'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 7cbeb095-338c-4aac-bf7d-89c72cbd5002
+		summarizeBy: none
+		sourceColumn: Selected Known Outcomes
+
+	column 'Unused Minutes'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: c6344a97-443b-47d3-8b5f-cfe76b48032c
+		summarizeBy: none
+		sourceColumn: Unused Minutes
+
+	partition 'Daily Reviews' = m
+		mode: import
+		source =
+				let
+				    Snapshot=Json.Document(Binary.Decompress(Binary.FromText("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",BinaryEncoding.Base64),Compression.Deflate)),
+				    Rows=Table.FromRows(Snapshot,{"Scenario Key", "Policy Key", "Screening Date", "Candidates", "Candidate Known Late", "Selected", "Used Minutes", "Unknown Selected", "Known Late Selected", "Priority Points", "Selected Known Outcomes", "Unused Minutes"}),
+				    Typed=Table.TransformColumnTypes(Rows,{{"Scenario Key", type text}, {"Policy Key", type text}, {"Screening Date", type date}, {"Candidates", Int64.Type}, {"Candidate Known Late", Int64.Type}, {"Selected", Int64.Type}, {"Used Minutes", Int64.Type}, {"Unknown Selected", Int64.Type}, {"Known Late Selected", Int64.Type}, {"Priority Points", type number}, {"Selected Known Outcomes", Int64.Type}, {"Unused Minutes", Int64.Type}},"en-US")
+				in
+				    Typed

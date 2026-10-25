@@ -1,0 +1,47 @@
+table Scenarios
+	lineageTag: 79543643-8ead-4ff8-bf8e-eaa9e0fc56df
+
+	measure 'Selected Scenario' = SELECTEDVALUE('Scenarios'[Scenario Key],"capacity_120_cost_1")
+		lineageTag: 073ffc87-f88b-4ed9-bfdd-259908ff3a0b
+
+	measure 'Scenario Minutes' = VAR s=[Selected Scenario] RETURN CALCULATE(MAX('Scenarios'[Minutes per Batch]),'Scenarios'[Scenario Key]=s)
+		formatString: #,##0
+		lineageTag: cc590b5b-776d-4022-aa16-9f3a3263cb7a
+
+	column 'Scenario Key'
+		dataType: string
+		isHidden
+		isKey
+		lineageTag: 45b318d9-e6c7-420a-8fa5-3abb07f211ab
+		summarizeBy: none
+		sourceColumn: Scenario Key
+
+	column Scenario
+		dataType: string
+		lineageTag: f2472517-1e65-4691-a758-873952bb3dfc
+		summarizeBy: none
+		sourceColumn: Scenario
+
+	column 'Minutes per Batch'
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 0cdb68d9-184c-4c00-b696-ecfd21cd7c55
+		summarizeBy: none
+		sourceColumn: Minutes per Batch
+
+	column 'Time Multiplier'
+		dataType: double
+		formatString: 0.0000
+		lineageTag: da2151f4-19d3-42ee-848e-229ed00afc39
+		summarizeBy: none
+		sourceColumn: Time Multiplier
+
+	partition Scenarios = m
+		mode: import
+		source =
+				let
+				    Snapshot=Json.Document(Binary.Decompress(Binary.FromText("dc/NCoAgEATgVxHPYuuS5ruESEgHD/1AHurt225b2nEGPpgZR5mmfUq5XBFi2o4SjVQSxJJX0QmjAU5R8jJLBYpSUAw4JlyLuNoYZIhCQ1FbM8+ZbzJfM+wZo9Bg1P6PBD3Y186n4Duf/PNPo/1cRPu+iDaEGw==",BinaryEncoding.Base64),Compression.Deflate)),
+				    Rows=Table.FromRows(Snapshot,{"Scenario Key", "Scenario", "Minutes per Batch", "Time Multiplier"}),
+				    Typed=Table.TransformColumnTypes(Rows,{{"Scenario Key", type text}, {"Scenario", type text}, {"Minutes per Batch", Int64.Type}, {"Time Multiplier", type number}},"en-US")
+				in
+				    Typed
