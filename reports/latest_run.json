@@ -1,0 +1,31 @@
+{
+  "pipeline_version": "1.0.0",
+  "run_id": "20261025T113544652033Z",
+  "completed_at": "2026-10-25T17:05:51.927758+05:30",
+  "duckdb_version": "1.5.6",
+  "database": "data/interim/delivery_operations.duckdb",
+  "run_directory": "reports/runs/20261025T113544652033Z",
+  "source_files_verified": 9,
+  "source_rows": 1550922,
+  "analysis_count": 12,
+  "parquet_exports": 8,
+  "overview": {
+    "orders": 99441,
+    "sla_eligible_orders": 96470,
+    "late_orders": 6534,
+    "late_pct": 6.7730900798175595,
+    "mean_delivery_days": 12.558217098051712,
+    "median_delivery_days": 10.217476851851853,
+    "item_value": "13591643.70",
+    "freight_value": "2251909.54",
+    "recorded_payment_value": "16008872.12",
+    "missing_items": 775,
+    "missing_payments": 1,
+    "missing_reviews": 768,
+    "delivered_missing_timestamp": 8
+  },
+  "data_quality_passed": true,
+  "elapsed_seconds": 7.28,
+  "cloud_execution": false,
+  "model_training": false
+}

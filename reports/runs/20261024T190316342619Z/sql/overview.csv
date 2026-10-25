@@ -1,0 +1,2 @@
+orders,sla_eligible_orders,late_orders,late_pct,mean_delivery_days,median_delivery_days,item_value,freight_value,recorded_payment_value,missing_items,missing_payments,missing_reviews,delivered_missing_timestamp
+99441,96470,6534,6.7730900798175595,12.558217098051712,10.217476851851853,13591643.70,2251909.54,16008872.12,775,1,768,8

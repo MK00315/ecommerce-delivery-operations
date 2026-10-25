@@ -1,0 +1,50 @@
+[
+  {
+    "file": "data/processed/orders.parquet",
+    "table": "gold.orders",
+    "rows": 99441,
+    "sha256": "b90bff391f2834f057a5c577e518509cdc525282682310c5b5b05ecd8f528144"
+  },
+  {
+    "file": "data/processed/order_items.parquet",
+    "table": "gold.order_items",
+    "rows": 112650,
+    "sha256": "9a99a272cac63e09f0ad18ff9284dc95d9277cf40fae8fa3510b7e8239c0bb71"
+  },
+  {
+    "file": "data/processed/order_sellers.parquet",
+    "table": "gold.order_sellers",
+    "rows": 100010,
+    "sha256": "41b6389e5a702ee055b51a74bf26438f1e0665d480d4e11194133de32aefca25"
+  },
+  {
+    "file": "data/processed/customers.parquet",
+    "table": "silver.customers",
+    "rows": 99441,
+    "sha256": "423b7e7f9d794b932b5f921caa83040c3f24f54230a32a29d02a10a94a392531"
+  },
+  {
+    "file": "data/processed/sellers.parquet",
+    "table": "silver.sellers",
+    "rows": 3095,
+    "sha256": "1ab6fed274a6c668ee780d386064304f9c88b7c9da0be577f250744a7b746743"
+  },
+  {
+    "file": "data/processed/products.parquet",
+    "table": "silver.products",
+    "rows": 32951,
+    "sha256": "f2aacb1e2f3d82704e6d5916a10a8d9e98bc396c174f99498fd71adba4921450"
+  },
+  {
+    "file": "data/processed/postcodes.parquet",
+    "table": "silver.postcodes",
+    "rows": 19010,
+    "sha256": "a3c0bf69d9a0f683a7cd77b26e095a2f647fadd76e3ad5e0ee00f38501d62d0d"
+  },
+  {
+    "file": "data/processed/latest_reviews.parquet",
+    "table": "silver.latest_reviews",
+    "rows": 98673,
+    "sha256": "ab22f1d4f323c84aaf034d0bc70a9f283727d21135334c1123dbbe91704ab324"
+  }
+]

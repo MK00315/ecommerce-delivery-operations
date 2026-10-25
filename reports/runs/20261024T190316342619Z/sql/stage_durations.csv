@@ -1,0 +1,2 @@
+eligible_orders,approval_observations,handling_observations,transit_observations,median_approval_days,median_handling_days,median_transit_days,anomalous_stage_orders
+96470,96456,95105,96446,0.014305555555555556,1.849050925925926,7.100312499999999,1373

@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-25T00:44:08.730903+05:30",
+  "stage": "Executed local data-cleaning and SQL foundation",
+  "run_id": "20261024T190316342619Z",
+  "source_files_verified": 9,
+  "source_rows_verified": 1550922,
+  "orders_retained": 99441,
+  "item_lines_retained": 112650,
+  "eligible_deliveries": 96470,
+  "late_orders": 6534,
+  "late_rate_pct": 6.7730900798175595,
+  "sql_analyses_executed": 12,
+  "parquet_exports": 8,
+  "pytest": {
+    "passed": 19,
+    "failed": 0,
+    "skipped": 0
+  },
+  "independent_checks": [
+    "Pandas source-order identity and date comparisons",
+    "Decimal source-money sums",
+    "Pandas postcode medians",
+    "Parquet metadata and hashes",
+    "Calendar-day and missing-value boundaries"
+  ],
+  "python_high_signal_lint": "Passed",
+  "model_training": false,
+  "cloud_data_processing": false,
+  "excel_report_built": false,
+  "powerbi_report_built": false,
+  "web_dashboard_built": false,
+  "evidence_directory": "reports/runs/20261024T190316342619Z"
+}

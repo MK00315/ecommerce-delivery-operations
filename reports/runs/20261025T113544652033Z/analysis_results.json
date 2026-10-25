@@ -1,0 +1,5270 @@
+{
+  "overview": {
+    "rows": 1,
+    "columns": [
+      "orders",
+      "sla_eligible_orders",
+      "late_orders",
+      "late_pct",
+      "mean_delivery_days",
+      "median_delivery_days",
+      "item_value",
+      "freight_value",
+      "recorded_payment_value",
+      "missing_items",
+      "missing_payments",
+      "missing_reviews",
+      "delivered_missing_timestamp"
+    ],
+    "data": [
+      {
+        "orders": 99441,
+        "sla_eligible_orders": 96470,
+        "late_orders": 6534,
+        "late_pct": 6.7730900798175595,
+        "mean_delivery_days": 12.558217098051712,
+        "median_delivery_days": 10.217476851851853,
+        "item_value": "13591643.70",
+        "freight_value": "2251909.54",
+        "recorded_payment_value": "16008872.12",
+        "missing_items": 775,
+        "missing_payments": 1,
+        "missing_reviews": 768,
+        "delivered_missing_timestamp": 8
+      }
+    ]
+  },
+  "order_status": {
+    "rows": 8,
+    "columns": [
+      "order_status",
+      "orders"
+    ],
+    "data": [
+      {
+        "order_status": "delivered",
+        "orders": 96478
+      },
+      {
+        "order_status": "shipped",
+        "orders": 1107
+      },
+      {
+        "order_status": "canceled",
+        "orders": 625
+      },
+      {
+        "order_status": "unavailable",
+        "orders": 609
+      },
+      {
+        "order_status": "invoiced",
+        "orders": 314
+      },
+      {
+        "order_status": "processing",
+        "orders": 301
+      },
+      {
+        "order_status": "created",
+        "orders": 5
+      },
+      {
+        "order_status": "approved",
+        "orders": 2
+      }
+    ]
+  },
+  "monthly_delivery": {
+    "rows": 25,
+    "columns": [
+      "purchase_month",
+      "orders",
+      "eligible_orders",
+      "late_orders",
+      "late_pct",
+      "mean_delivery_days",
+      "item_value",
+      "change_from_prior_month"
+    ],
+    "data": [
+      {
+        "purchase_month": "2016-09-01",
+        "orders": 4,
+        "eligible_orders": 1,
+        "late_orders": 1,
+        "late_pct": 100.0,
+        "mean_delivery_days": 54.81319444444444,
+        "item_value": "267.36",
+        "change_from_prior_month": null
+      },
+      {
+        "purchase_month": "2016-10-01",
+        "orders": 324,
+        "eligible_orders": 265,
+        "late_orders": 2,
+        "late_pct": 0.7547169811320755,
+        "mean_delivery_days": 19.60055878756114,
+        "item_value": "49507.66",
+        "change_from_prior_month": 320
+      },
+      {
+        "purchase_month": "2016-12-01",
+        "orders": 1,
+        "eligible_orders": 1,
+        "late_orders": 0,
+        "late_pct": 0.0,
+        "mean_delivery_days": 4.693020833333334,
+        "item_value": "10.90",
+        "change_from_prior_month": -323
+      },
+      {
+        "purchase_month": "2017-01-01",
+        "orders": 800,
+        "eligible_orders": 750,
+        "late_orders": 22,
+        "late_pct": 2.933333333333333,
+        "mean_delivery_days": 12.647043518518519,
+        "item_value": "120312.87",
+        "change_from_prior_month": 799
+      },
+      {
+        "purchase_month": "2017-02-01",
+        "orders": 1780,
+        "eligible_orders": 1653,
+        "late_orders": 49,
+        "late_pct": 2.9643073200241985,
+        "mean_delivery_days": 13.16882524898613,
+        "item_value": "247303.02",
+        "change_from_prior_month": 980
+      },
+      {
+        "purchase_month": "2017-03-01",
+        "orders": 2682,
+        "eligible_orders": 2546,
+        "late_orders": 116,
+        "late_pct": 4.556166535742341,
+        "mean_delivery_days": 12.95118448783132,
+        "item_value": "374344.30",
+        "change_from_prior_month": 902
+      },
+      {
+        "purchase_month": "2017-04-01",
+        "orders": 2404,
+        "eligible_orders": 2303,
+        "late_orders": 151,
+        "late_pct": 6.556665219279201,
+        "mean_delivery_days": 14.917912500402057,
+        "item_value": "359927.23",
+        "change_from_prior_month": -278
+      },
+      {
+        "purchase_month": "2017-05-01",
+        "orders": 3700,
+        "eligible_orders": 3545,
+        "late_orders": 106,
+        "late_pct": 2.9901269393511987,
+        "mean_delivery_days": 11.322362975369588,
+        "item_value": "506071.14",
+        "change_from_prior_month": 1296
+      },
+      {
+        "purchase_month": "2017-06-01",
+        "orders": 3245,
+        "eligible_orders": 3135,
+        "late_orders": 95,
+        "late_pct": 3.0303030303030303,
+        "mean_delivery_days": 12.011572704383015,
+        "item_value": "433038.60",
+        "change_from_prior_month": -455
+      },
+      {
+        "purchase_month": "2017-07-01",
+        "orders": 4026,
+        "eligible_orders": 3872,
+        "late_orders": 108,
+        "late_pct": 2.7892561983471076,
+        "mean_delivery_days": 11.592732387200602,
+        "item_value": "498031.48",
+        "change_from_prior_month": 781
+      },
+      {
+        "purchase_month": "2017-08-01",
+        "orders": 4331,
+        "eligible_orders": 4193,
+        "late_orders": 122,
+        "late_pct": 2.9096112568566657,
+        "mean_delivery_days": 11.147124655510542,
+        "item_value": "573971.68",
+        "change_from_prior_month": 305
+      },
+      {
+        "purchase_month": "2017-09-01",
+        "orders": 4285,
+        "eligible_orders": 4150,
+        "late_orders": 182,
+        "late_pct": 4.385542168674699,
+        "mean_delivery_days": 11.851006528893322,
+        "item_value": "624401.69",
+        "change_from_prior_month": -46
+      },
+      {
+        "purchase_month": "2017-10-01",
+        "orders": 4631,
+        "eligible_orders": 4478,
+        "late_orders": 187,
+        "late_pct": 4.17597141581063,
+        "mean_delivery_days": 11.856699698526114,
+        "item_value": "664219.43",
+        "change_from_prior_month": 346
+      },
+      {
+        "purchase_month": "2017-11-01",
+        "orders": 7544,
+        "eligible_orders": 7288,
+        "late_orders": 904,
+        "late_pct": 12.403951701427003,
+        "mean_delivery_days": 15.161131699241778,
+        "item_value": "1010271.37",
+        "change_from_prior_month": 2913
+      },
+      {
+        "purchase_month": "2017-12-01",
+        "orders": 5673,
+        "eligible_orders": 5513,
+        "late_orders": 411,
+        "late_pct": 7.455106112824233,
+        "mean_delivery_days": 15.394918530107333,
+        "item_value": "743914.17",
+        "change_from_prior_month": -1871
+      },
+      {
+        "purchase_month": "2018-01-01",
+        "orders": 7269,
+        "eligible_orders": 7069,
+        "late_orders": 403,
+        "late_pct": 5.7009478002546325,
+        "mean_delivery_days": 14.080562613956118,
+        "item_value": "950030.36",
+        "change_from_prior_month": 1596
+      },
+      {
+        "purchase_month": "2018-02-01",
+        "orders": 6728,
+        "eligible_orders": 6555,
+        "late_orders": 926,
+        "late_pct": 14.126620900076277,
+        "mean_delivery_days": 16.945137568155488,
+        "item_value": "844178.71",
+        "change_from_prior_month": -541
+      },
+      {
+        "purchase_month": "2018-03-01",
+        "orders": 7211,
+        "eligible_orders": 7003,
+        "late_orders": 1328,
+        "late_pct": 18.96330144223904,
+        "mean_delivery_days": 16.301410174409366,
+        "item_value": "983213.44",
+        "change_from_prior_month": 483
+      },
+      {
+        "purchase_month": "2018-04-01",
+        "orders": 6939,
+        "eligible_orders": 6798,
+        "late_orders": 306,
+        "late_pct": 4.501323918799647,
+        "mean_delivery_days": 11.49924105367322,
+        "item_value": "996647.75",
+        "change_from_prior_month": -272
+      },
+      {
+        "purchase_month": "2018-05-01",
+        "orders": 6873,
+        "eligible_orders": 6749,
+        "late_orders": 443,
+        "late_pct": 6.563935397836716,
+        "mean_delivery_days": 11.419028935356646,
+        "item_value": "996517.68",
+        "change_from_prior_month": -66
+      },
+      {
+        "purchase_month": "2018-06-01",
+        "orders": 6167,
+        "eligible_orders": 6096,
+        "late_orders": 71,
+        "late_pct": 1.1646981627296589,
+        "mean_delivery_days": 9.239216293167376,
+        "item_value": "865124.31",
+        "change_from_prior_month": -706
+      },
+      {
+        "purchase_month": "2018-07-01",
+        "orders": 6292,
+        "eligible_orders": 6156,
+        "late_orders": 208,
+        "late_pct": 3.378817413905133,
+        "mean_delivery_days": 8.958636237154964,
+        "item_value": "895507.22",
+        "change_from_prior_month": 125
+      },
+      {
+        "purchase_month": "2018-08-01",
+        "orders": 6512,
+        "eligible_orders": 6351,
+        "late_orders": 393,
+        "late_pct": 6.188001889466226,
+        "mean_delivery_days": 7.732779720458142,
+        "item_value": "854686.33",
+        "change_from_prior_month": 220
+      },
+      {
+        "purchase_month": "2018-09-01",
+        "orders": 16,
+        "eligible_orders": 0,
+        "late_orders": 0,
+        "late_pct": null,
+        "mean_delivery_days": null,
+        "item_value": "145.00",
+        "change_from_prior_month": -6496
+      },
+      {
+        "purchase_month": "2018-10-01",
+        "orders": 4,
+        "eligible_orders": 0,
+        "late_orders": 0,
+        "late_pct": null,
+        "mean_delivery_days": null,
+        "item_value": null,
+        "change_from_prior_month": -12
+      }
+    ]
+  },
+  "customer_state": {
+    "rows": 27,
+    "columns": [
+      "customer_state",
+      "eligible_orders",
+      "late_orders",
+      "late_pct",
+      "median_delivery_days",
+      "item_value"
+    ],
+    "data": [
+      {
+        "customer_state": "SP",
+        "eligible_orders": 40494,
+        "late_orders": 1820,
+        "late_pct": 4.494493011310317,
+        "median_delivery_days": 7.210271990740741,
+        "item_value": "5066562.98"
+      },
+      {
+        "customer_state": "RJ",
+        "eligible_orders": 12350,
+        "late_orders": 1495,
+        "late_pct": 12.105263157894736,
+        "median_delivery_days": 12.04164351851852,
+        "item_value": "1759651.13"
+      },
+      {
+        "customer_state": "MG",
+        "eligible_orders": 11354,
+        "late_orders": 519,
+        "late_pct": 4.571076272679232,
+        "median_delivery_days": 10.313512731481481,
+        "item_value": "1552481.83"
+      },
+      {
+        "customer_state": "RS",
+        "eligible_orders": 5344,
+        "late_orders": 325,
+        "late_pct": 6.081586826347305,
+        "median_delivery_days": 13.177488425925926,
+        "item_value": "728718.47"
+      },
+      {
+        "customer_state": "PR",
+        "eligible_orders": 4923,
+        "late_orders": 199,
+        "late_pct": 4.042250660166565,
+        "median_delivery_days": 10.42550925925926,
+        "item_value": "666063.51"
+      },
+      {
+        "customer_state": "SC",
+        "eligible_orders": 3546,
+        "late_orders": 291,
+        "late_pct": 8.20642978003384,
+        "median_delivery_days": 13.014351851851853,
+        "item_value": "507012.13"
+      },
+      {
+        "customer_state": "BA",
+        "eligible_orders": 3256,
+        "late_orders": 396,
+        "late_pct": 12.162162162162161,
+        "median_delivery_days": 16.91396412037037,
+        "item_value": "493584.14"
+      },
+      {
+        "customer_state": "DF",
+        "eligible_orders": 2080,
+        "late_orders": 118,
+        "late_pct": 5.673076923076923,
+        "median_delivery_days": 11.364924768518518,
+        "item_value": "296498.41"
+      },
+      {
+        "customer_state": "ES",
+        "eligible_orders": 1995,
+        "late_orders": 214,
+        "late_pct": 10.726817042606516,
+        "median_delivery_days": 13.636956018518518,
+        "item_value": "268643.45"
+      },
+      {
+        "customer_state": "GO",
+        "eligible_orders": 1957,
+        "late_orders": 128,
+        "late_pct": 6.540623403168114,
+        "median_delivery_days": 13.949606481481482,
+        "item_value": "282836.70"
+      },
+      {
+        "customer_state": "PE",
+        "eligible_orders": 1593,
+        "late_orders": 153,
+        "late_pct": 9.6045197740113,
+        "median_delivery_days": 15.702766203703703,
+        "item_value": "251889.49"
+      },
+      {
+        "customer_state": "CE",
+        "eligible_orders": 1279,
+        "late_orders": 176,
+        "late_pct": 13.760750586395622,
+        "median_delivery_days": 18.20920138888889,
+        "item_value": "219757.38"
+      },
+      {
+        "customer_state": "PA",
+        "eligible_orders": 946,
+        "late_orders": 106,
+        "late_pct": 11.20507399577167,
+        "median_delivery_days": 21.078391203703703,
+        "item_value": "174470.59"
+      },
+      {
+        "customer_state": "MT",
+        "eligible_orders": 886,
+        "late_orders": 53,
+        "late_pct": 5.981941309255079,
+        "median_delivery_days": 16.109050925925924,
+        "item_value": "152191.62"
+      },
+      {
+        "customer_state": "MA",
+        "eligible_orders": 717,
+        "late_orders": 125,
+        "late_pct": 17.433751743375176,
+        "median_delivery_days": 19.190601851851852,
+        "item_value": "117009.38"
+      },
+      {
+        "customer_state": "MS",
+        "eligible_orders": 701,
+        "late_orders": 68,
+        "late_pct": 9.70042796005706,
+        "median_delivery_days": 13.943796296296297,
+        "item_value": "115429.97"
+      },
+      {
+        "customer_state": "PB",
+        "eligible_orders": 517,
+        "late_orders": 54,
+        "late_pct": 10.444874274661508,
+        "median_delivery_days": 18.15244212962963,
+        "item_value": "112586.82"
+      },
+      {
+        "customer_state": "PI",
+        "eligible_orders": 476,
+        "late_orders": 66,
+        "late_pct": 13.865546218487395,
+        "median_delivery_days": 16.29226851851852,
+        "item_value": "84721.00"
+      },
+      {
+        "customer_state": "RN",
+        "eligible_orders": 474,
+        "late_orders": 44,
+        "late_pct": 9.282700421940929,
+        "median_delivery_days": 16.060254629629632,
+        "item_value": "82105.66"
+      },
+      {
+        "customer_state": "AL",
+        "eligible_orders": 397,
+        "late_orders": 85,
+        "late_pct": 21.410579345088163,
+        "median_delivery_days": 22.332916666666666,
+        "item_value": "78855.72"
+      },
+      {
+        "customer_state": "SE",
+        "eligible_orders": 335,
+        "late_orders": 51,
+        "late_pct": 15.223880597014926,
+        "median_delivery_days": 18.014305555555556,
+        "item_value": "56574.19"
+      },
+      {
+        "customer_state": "TO",
+        "eligible_orders": 274,
+        "late_orders": 27,
+        "late_pct": 9.854014598540147,
+        "median_delivery_days": 15.865885416666668,
+        "item_value": "48402.51"
+      },
+      {
+        "customer_state": "RO",
+        "eligible_orders": 243,
+        "late_orders": 7,
+        "late_pct": 2.880658436213992,
+        "median_delivery_days": 17.582361111111112,
+        "item_value": "45682.76"
+      },
+      {
+        "customer_state": "AM",
+        "eligible_orders": 145,
+        "late_orders": 4,
+        "late_pct": 2.7586206896551726,
+        "median_delivery_days": 25.875138888888888,
+        "item_value": "22155.84"
+      },
+      {
+        "customer_state": "AC",
+        "eligible_orders": 80,
+        "late_orders": 3,
+        "late_pct": 3.75,
+        "median_delivery_days": 18.356527777777778,
+        "item_value": "15930.97"
+      },
+      {
+        "customer_state": "AP",
+        "eligible_orders": 67,
+        "late_orders": 2,
+        "late_pct": 2.985074626865672,
+        "median_delivery_days": 24.347025462962964,
+        "item_value": "13374.81"
+      },
+      {
+        "customer_state": "RR",
+        "eligible_orders": 41,
+        "late_orders": 5,
+        "late_pct": 12.195121951219512,
+        "median_delivery_days": 25.00730324074074,
+        "item_value": "7057.47"
+      }
+    ]
+  },
+  "distance_bands": {
+    "rows": 5,
+    "columns": [
+      "distance_band",
+      "eligible_orders",
+      "late_orders",
+      "late_pct",
+      "median_delivery_days"
+    ],
+    "data": [
+      {
+        "distance_band": "0-100 km",
+        "eligible_orders": 17795,
+        "late_orders": 797,
+        "late_pct": 4.478786175892105,
+        "median_delivery_days": 5.090636574074074
+      },
+      {
+        "distance_band": "100-500 km",
+        "eligible_orders": 36967,
+        "late_orders": 2259,
+        "late_pct": 6.1108556279925335,
+        "median_delivery_days": 9.34318287037037
+      },
+      {
+        "distance_band": "500-1000 km",
+        "eligible_orders": 25841,
+        "late_orders": 1834,
+        "late_pct": 7.097248558492319,
+        "median_delivery_days": 12.12917824074074
+      },
+      {
+        "distance_band": "1000+ km",
+        "eligible_orders": 15390,
+        "late_orders": 1599,
+        "late_pct": 10.389863547758285,
+        "median_delivery_days": 16.35787037037037
+      },
+      {
+        "distance_band": "Unknown",
+        "eligible_orders": 477,
+        "late_orders": 45,
+        "late_pct": 9.433962264150944,
+        "median_delivery_days": 11.993148148148148
+      }
+    ]
+  },
+  "seller_watchlist": {
+    "rows": 425,
+    "columns": [
+      "seller_id",
+      "seller_state",
+      "eligible_orders",
+      "orders_with_late_outcome",
+      "item_value",
+      "late_order_pct",
+      "rate_rank"
+    ],
+    "data": [
+      {
+        "seller_id": "54965bbe3e4f07ae045b90b0b8541f52",
+        "seller_state": "PR",
+        "eligible_orders": 73,
+        "orders_with_late_outcome": 22,
+        "item_value": "10961.30",
+        "late_order_pct": 30.136986301369863,
+        "rate_rank": 1
+      },
+      {
+        "seller_id": "beadbee30901a7f61d031b6b686095ad",
+        "seller_state": "SP",
+        "eligible_orders": 64,
+        "orders_with_late_outcome": 15,
+        "item_value": "4373.98",
+        "late_order_pct": 23.4375,
+        "rate_rank": 2
+      },
+      {
+        "seller_id": "a49928bcdf77c55c6d6e05e09a9b4ca5",
+        "seller_state": "SP",
+        "eligible_orders": 96,
+        "orders_with_late_outcome": 21,
+        "item_value": "8816.70",
+        "late_order_pct": 21.875,
+        "rate_rank": 3
+      },
+      {
+        "seller_id": "712e6ed8aa4aa1fa65dab41fed5737e4",
+        "seller_state": "SC",
+        "eligible_orders": 77,
+        "orders_with_late_outcome": 16,
+        "item_value": "39815.00",
+        "late_order_pct": 20.77922077922078,
+        "rate_rank": 4
+      },
+      {
+        "seller_id": "06a2c3af7b3aee5d69171b0e14f0ee87",
+        "seller_state": "MA",
+        "eligible_orders": 389,
+        "orders_with_late_outcome": 74,
+        "item_value": "36408.95",
+        "late_order_pct": 19.02313624678663,
+        "rate_rank": 5
+      },
+      {
+        "seller_id": "ea566164622c6b439516ab18062c42cd",
+        "seller_state": "SP",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 9,
+        "item_value": "10309.42",
+        "late_order_pct": 18.0,
+        "rate_rank": 6
+      },
+      {
+        "seller_id": "002100f778ceb8431b7a1020ff7ab48f",
+        "seller_state": "SP",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 9,
+        "item_value": "1234.50",
+        "late_order_pct": 18.0,
+        "rate_rank": 6
+      },
+      {
+        "seller_id": "cac4c8e7b1ca6252d8f20b2fc1a2e4af",
+        "seller_state": "SP",
+        "eligible_orders": 74,
+        "orders_with_late_outcome": 13,
+        "item_value": "4168.18",
+        "late_order_pct": 17.56756756756757,
+        "rate_rank": 7
+      },
+      {
+        "seller_id": "6039e27294dc75811c0d8a39069f52c0",
+        "seller_state": "SP",
+        "eligible_orders": 63,
+        "orders_with_late_outcome": 11,
+        "item_value": "13670.70",
+        "late_order_pct": 17.46031746031746,
+        "rate_rank": 8
+      },
+      {
+        "seller_id": "88460e8ebdecbfecb5f9601833981930",
+        "seller_state": "PR",
+        "eligible_orders": 246,
+        "orders_with_late_outcome": 42,
+        "item_value": "31546.55",
+        "late_order_pct": 17.073170731707318,
+        "rate_rank": 9
+      },
+      {
+        "seller_id": "1ca7077d890b907f89be8c954a02686a",
+        "seller_state": "SP",
+        "eligible_orders": 108,
+        "orders_with_late_outcome": 18,
+        "item_value": "13341.57",
+        "late_order_pct": 16.666666666666668,
+        "rate_rank": 10
+      },
+      {
+        "seller_id": "d20b021d3efdf267a402c402a48ea64b",
+        "seller_state": "SP",
+        "eligible_orders": 86,
+        "orders_with_late_outcome": 14,
+        "item_value": "4140.17",
+        "late_order_pct": 16.27906976744186,
+        "rate_rank": 11
+      },
+      {
+        "seller_id": "bbad7e518d7af88a0897397ffdca1979",
+        "seller_state": "SP",
+        "eligible_orders": 68,
+        "orders_with_late_outcome": 11,
+        "item_value": "4462.22",
+        "late_order_pct": 16.176470588235293,
+        "rate_rank": 12
+      },
+      {
+        "seller_id": "0b35c634521043bf4b47e21547b99ab5",
+        "seller_state": "PR",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 8,
+        "item_value": "13533.65",
+        "late_order_pct": 16.0,
+        "rate_rank": 13
+      },
+      {
+        "seller_id": "b17b679f4f5ce2e03ce6968c62648246",
+        "seller_state": "SP",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 8,
+        "item_value": "4084.75",
+        "late_order_pct": 16.0,
+        "rate_rank": 13
+      },
+      {
+        "seller_id": "05f51e13da97139648b8125c31e5f51b",
+        "seller_state": "MG",
+        "eligible_orders": 57,
+        "orders_with_late_outcome": 9,
+        "item_value": "13769.01",
+        "late_order_pct": 15.789473684210526,
+        "rate_rank": 14
+      },
+      {
+        "seller_id": "e5a3438891c0bfdb9394643f95273d8e",
+        "seller_state": "SP",
+        "eligible_orders": 216,
+        "orders_with_late_outcome": 34,
+        "item_value": "7738.35",
+        "late_order_pct": 15.74074074074074,
+        "rate_rank": 15
+      },
+      {
+        "seller_id": "2a261b5b644fa05f4f2700eb93544f2c",
+        "seller_state": "SP",
+        "eligible_orders": 51,
+        "orders_with_late_outcome": 8,
+        "item_value": "5355.00",
+        "late_order_pct": 15.686274509803921,
+        "rate_rank": 16
+      },
+      {
+        "seller_id": "cd68562d3f44870c08922d380acae552",
+        "seller_state": "SP",
+        "eligible_orders": 122,
+        "orders_with_late_outcome": 19,
+        "item_value": "18569.70",
+        "late_order_pct": 15.573770491803279,
+        "rate_rank": 17
+      },
+      {
+        "seller_id": "2c9e548be18521d1c43cde1c582c6de8",
+        "seller_state": "SP",
+        "eligible_orders": 124,
+        "orders_with_late_outcome": 19,
+        "item_value": "6109.44",
+        "late_order_pct": 15.32258064516129,
+        "rate_rank": 18
+      },
+      {
+        "seller_id": "6973a06f484aacf400ece213dbf3d946",
+        "seller_state": "SP",
+        "eligible_orders": 89,
+        "orders_with_late_outcome": 13,
+        "item_value": "11011.05",
+        "late_order_pct": 14.606741573033707,
+        "rate_rank": 19
+      },
+      {
+        "seller_id": "11bfa66332777660bd0640ee84d47006",
+        "seller_state": "SP",
+        "eligible_orders": 76,
+        "orders_with_late_outcome": 11,
+        "item_value": "3925.87",
+        "late_order_pct": 14.473684210526315,
+        "rate_rank": 20
+      },
+      {
+        "seller_id": "891071be6ba827b591264c90c2ae8a63",
+        "seller_state": "SP",
+        "eligible_orders": 85,
+        "orders_with_late_outcome": 12,
+        "item_value": "4177.28",
+        "late_order_pct": 14.117647058823529,
+        "rate_rank": 21
+      },
+      {
+        "seller_id": "b561927807645834b59ef0d16ba55a24",
+        "seller_state": "SP",
+        "eligible_orders": 85,
+        "orders_with_late_outcome": 12,
+        "item_value": "4501.99",
+        "late_order_pct": 14.117647058823529,
+        "rate_rank": 21
+      },
+      {
+        "seller_id": "50c9975695009e5e6473912e83a6d1da",
+        "seller_state": "MG",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 7,
+        "item_value": "3964.40",
+        "late_order_pct": 14.0,
+        "rate_rank": 22
+      },
+      {
+        "seller_id": "900ba814c251a692506d7834c1218441",
+        "seller_state": "SP",
+        "eligible_orders": 86,
+        "orders_with_late_outcome": 12,
+        "item_value": "29099.69",
+        "late_order_pct": 13.953488372093023,
+        "rate_rank": 23
+      },
+      {
+        "seller_id": "431af27f296bc6519d890aa5a05fdb11",
+        "seller_state": "SP",
+        "eligible_orders": 116,
+        "orders_with_late_outcome": 16,
+        "item_value": "13109.50",
+        "late_order_pct": 13.793103448275861,
+        "rate_rank": 24
+      },
+      {
+        "seller_id": "f7ba60f8c3f99e7ee4042fdef03b70c4",
+        "seller_state": "SP",
+        "eligible_orders": 218,
+        "orders_with_late_outcome": 30,
+        "item_value": "68395.00",
+        "late_order_pct": 13.761467889908257,
+        "rate_rank": 25
+      },
+      {
+        "seller_id": "8160255418d5aaa7dbdc9f4c64ebda44",
+        "seller_state": "SP",
+        "eligible_orders": 380,
+        "orders_with_late_outcome": 52,
+        "item_value": "47017.69",
+        "late_order_pct": 13.68421052631579,
+        "rate_rank": 26
+      },
+      {
+        "seller_id": "adbc26658d6c7b4b6219f9d934598091",
+        "seller_state": "PR",
+        "eligible_orders": 88,
+        "orders_with_late_outcome": 12,
+        "item_value": "11806.40",
+        "late_order_pct": 13.636363636363637,
+        "rate_rank": 27
+      },
+      {
+        "seller_id": "6fd52c528dcb38be2eea044946b811f8",
+        "seller_state": "SP",
+        "eligible_orders": 67,
+        "orders_with_late_outcome": 9,
+        "item_value": "7743.02",
+        "late_order_pct": 13.432835820895523,
+        "rate_rank": 28
+      },
+      {
+        "seller_id": "440dd6ab244315c632130ecfb63827b1",
+        "seller_state": "SP",
+        "eligible_orders": 91,
+        "orders_with_late_outcome": 12,
+        "item_value": "13696.90",
+        "late_order_pct": 13.186813186813186,
+        "rate_rank": 29
+      },
+      {
+        "seller_id": "8e6d7754bc7e0f22c96d255ebda59eba",
+        "seller_state": "SP",
+        "eligible_orders": 84,
+        "orders_with_late_outcome": 11,
+        "item_value": "14497.27",
+        "late_order_pct": 13.095238095238095,
+        "rate_rank": 30
+      },
+      {
+        "seller_id": "b499c00f28f4b7069ff6550af8c1348a",
+        "seller_state": "SP",
+        "eligible_orders": 147,
+        "orders_with_late_outcome": 19,
+        "item_value": "10327.13",
+        "late_order_pct": 12.92517006802721,
+        "rate_rank": 31
+      },
+      {
+        "seller_id": "7ad32824caee82087b3e2e5f33b1bf32",
+        "seller_state": "SP",
+        "eligible_orders": 147,
+        "orders_with_late_outcome": 19,
+        "item_value": "22505.10",
+        "late_order_pct": 12.92517006802721,
+        "rate_rank": 31
+      },
+      {
+        "seller_id": "855668e0971d4dfd7bef1b6a4133b41b",
+        "seller_state": "SP",
+        "eligible_orders": 300,
+        "orders_with_late_outcome": 38,
+        "item_value": "32208.16",
+        "late_order_pct": 12.666666666666666,
+        "rate_rank": 32
+      },
+      {
+        "seller_id": "2e90cb1677d35cfe24eef47d441b7c87",
+        "seller_state": "SP",
+        "eligible_orders": 127,
+        "orders_with_late_outcome": 16,
+        "item_value": "13894.71",
+        "late_order_pct": 12.598425196850394,
+        "rate_rank": 33
+      },
+      {
+        "seller_id": "8f2ce03f928b567e3d56181ae20ae952",
+        "seller_state": "SP",
+        "eligible_orders": 151,
+        "orders_with_late_outcome": 19,
+        "item_value": "21712.90",
+        "late_order_pct": 12.582781456953642,
+        "rate_rank": 34
+      },
+      {
+        "seller_id": "dd7ddc04e1b6c2c614352b383efe2d36",
+        "seller_state": "SP",
+        "eligible_orders": 121,
+        "orders_with_late_outcome": 15,
+        "item_value": "9178.51",
+        "late_order_pct": 12.396694214876034,
+        "rate_rank": 35
+      },
+      {
+        "seller_id": "75d34ebb1bd0bd7dde40dd507b8169c3",
+        "seller_state": "BA",
+        "eligible_orders": 57,
+        "orders_with_late_outcome": 7,
+        "item_value": "15048.28",
+        "late_order_pct": 12.280701754385966,
+        "rate_rank": 36
+      },
+      {
+        "seller_id": "fffd5413c0700ac820c7069d66d98c89",
+        "seller_state": "SP",
+        "eligible_orders": 57,
+        "orders_with_late_outcome": 7,
+        "item_value": "9062.30",
+        "late_order_pct": 12.280701754385966,
+        "rate_rank": 36
+      },
+      {
+        "seller_id": "b1fc4f64df5a0e8b6913ab38803c57a9",
+        "seller_state": "RJ",
+        "eligible_orders": 107,
+        "orders_with_late_outcome": 13,
+        "item_value": "7994.74",
+        "late_order_pct": 12.149532710280374,
+        "rate_rank": 37
+      },
+      {
+        "seller_id": "1eade46fba20122dc4aefb379f8c636b",
+        "seller_state": "SP",
+        "eligible_orders": 58,
+        "orders_with_late_outcome": 7,
+        "item_value": "3635.37",
+        "late_order_pct": 12.068965517241379,
+        "rate_rank": 38
+      },
+      {
+        "seller_id": "ba143b05f0110f0dc71ad71b4466ce92",
+        "seller_state": "SP",
+        "eligible_orders": 83,
+        "orders_with_late_outcome": 10,
+        "item_value": "6110.58",
+        "late_order_pct": 12.048192771084338,
+        "rate_rank": 39
+      },
+      {
+        "seller_id": "048c2757535328e0d7dac690ad3c0aae",
+        "seller_state": "SP",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 6,
+        "item_value": "9264.78",
+        "late_order_pct": 12.0,
+        "rate_rank": 40
+      },
+      {
+        "seller_id": "a6fe7de3d16f6149ffe280349a8535a0",
+        "seller_state": "SP",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 6,
+        "item_value": "2904.80",
+        "late_order_pct": 12.0,
+        "rate_rank": 40
+      },
+      {
+        "seller_id": "b2479f944e1b90cf8a5de1bbfde284d6",
+        "seller_state": "SP",
+        "eligible_orders": 101,
+        "orders_with_late_outcome": 12,
+        "item_value": "4752.51",
+        "late_order_pct": 11.881188118811881,
+        "rate_rank": 41
+      },
+      {
+        "seller_id": "0d85bbda9889ce1f7e63778d24f346eb",
+        "seller_state": "MG",
+        "eligible_orders": 51,
+        "orders_with_late_outcome": 6,
+        "item_value": "4845.20",
+        "late_order_pct": 11.764705882352942,
+        "rate_rank": 42
+      },
+      {
+        "seller_id": "f3da5b2ff499efb8d4a6d371d175d7dd",
+        "seller_state": "SP",
+        "eligible_orders": 77,
+        "orders_with_late_outcome": 9,
+        "item_value": "3702.29",
+        "late_order_pct": 11.688311688311689,
+        "rate_rank": 43
+      },
+      {
+        "seller_id": "34056b8b55c1775a22af2331670a799c",
+        "seller_state": "SP",
+        "eligible_orders": 77,
+        "orders_with_late_outcome": 9,
+        "item_value": "6455.40",
+        "late_order_pct": 11.688311688311689,
+        "rate_rank": 43
+      },
+      {
+        "seller_id": "7aa4334be125fcdd2ba64b3180029f14",
+        "seller_state": "SP",
+        "eligible_orders": 214,
+        "orders_with_late_outcome": 25,
+        "item_value": "16234.81",
+        "late_order_pct": 11.682242990654206,
+        "rate_rank": 44
+      },
+      {
+        "seller_id": "c31eff8334d6b3047ed34bebd4d62c36",
+        "seller_state": "SP",
+        "eligible_orders": 120,
+        "orders_with_late_outcome": 14,
+        "item_value": "13191.50",
+        "late_order_pct": 11.666666666666666,
+        "rate_rank": 45
+      },
+      {
+        "seller_id": "7e1fb0a3ebfb01ffb3a7dae98bf3238d",
+        "seller_state": "SP",
+        "eligible_orders": 155,
+        "orders_with_late_outcome": 18,
+        "item_value": "27349.53",
+        "late_order_pct": 11.612903225806452,
+        "rate_rank": 46
+      },
+      {
+        "seller_id": "7d13fca15225358621be4086e1eb0964",
+        "seller_state": "SP",
+        "eligible_orders": 558,
+        "orders_with_late_outcome": 64,
+        "item_value": "113628.97",
+        "late_order_pct": 11.469534050179211,
+        "rate_rank": 47
+      },
+      {
+        "seller_id": "b33e7c55446eabf8fe1a42d037ac7d6d",
+        "seller_state": "SP",
+        "eligible_orders": 149,
+        "orders_with_late_outcome": 17,
+        "item_value": "44985.17",
+        "late_order_pct": 11.409395973154362,
+        "rate_rank": 48
+      },
+      {
+        "seller_id": "e62b2d6ac10570a035a30bafcf01d263",
+        "seller_state": "SP",
+        "eligible_orders": 62,
+        "orders_with_late_outcome": 7,
+        "item_value": "5340.39",
+        "late_order_pct": 11.290322580645162,
+        "rate_rank": 49
+      },
+      {
+        "seller_id": "5058e8c1e82653974541e83690655b4a",
+        "seller_state": "SP",
+        "eligible_orders": 62,
+        "orders_with_late_outcome": 7,
+        "item_value": "10022.82",
+        "late_order_pct": 11.290322580645162,
+        "rate_rank": 49
+      },
+      {
+        "seller_id": "f46490624488d3ff7ce78613913a7711",
+        "seller_state": "SP",
+        "eligible_orders": 80,
+        "orders_with_late_outcome": 9,
+        "item_value": "5802.85",
+        "late_order_pct": 11.25,
+        "rate_rank": 50
+      },
+      {
+        "seller_id": "2eb70248d66e0e3ef83659f71b244378",
+        "seller_state": "SP",
+        "eligible_orders": 187,
+        "orders_with_late_outcome": 21,
+        "item_value": "42628.61",
+        "late_order_pct": 11.229946524064172,
+        "rate_rank": 51
+      },
+      {
+        "seller_id": "59b22a78efb79a4797979612b885db36",
+        "seller_state": "MG",
+        "eligible_orders": 125,
+        "orders_with_late_outcome": 14,
+        "item_value": "27184.50",
+        "late_order_pct": 11.2,
+        "rate_rank": 52
+      },
+      {
+        "seller_id": "972d0f9cf61b499a4812cf0bfa3ad3c4",
+        "seller_state": "SC",
+        "eligible_orders": 81,
+        "orders_with_late_outcome": 9,
+        "item_value": "8089.29",
+        "late_order_pct": 11.11111111111111,
+        "rate_rank": 53
+      },
+      {
+        "seller_id": "99eaacc9e6046db1c82b163c5f84869f",
+        "seller_state": "SP",
+        "eligible_orders": 63,
+        "orders_with_late_outcome": 7,
+        "item_value": "13139.17",
+        "late_order_pct": 11.11111111111111,
+        "rate_rank": 53
+      },
+      {
+        "seller_id": "c3867b4666c7d76867627c2f7fb22e21",
+        "seller_state": "SP",
+        "eligible_orders": 228,
+        "orders_with_late_outcome": 25,
+        "item_value": "37153.40",
+        "late_order_pct": 10.964912280701755,
+        "rate_rank": 54
+      },
+      {
+        "seller_id": "056b4ada5bbc2c50cc7842547dda6b51",
+        "seller_state": "RJ",
+        "eligible_orders": 64,
+        "orders_with_late_outcome": 7,
+        "item_value": "12333.39",
+        "late_order_pct": 10.9375,
+        "rate_rank": 55
+      },
+      {
+        "seller_id": "a416b6a846a11724393025641d4edd5e",
+        "seller_state": "SP",
+        "eligible_orders": 157,
+        "orders_with_late_outcome": 17,
+        "item_value": "25670.72",
+        "late_order_pct": 10.828025477707007,
+        "rate_rank": 56
+      },
+      {
+        "seller_id": "8b28d096634035667e8263d57ba3368c",
+        "seller_state": "SP",
+        "eligible_orders": 139,
+        "orders_with_late_outcome": 15,
+        "item_value": "9375.70",
+        "late_order_pct": 10.79136690647482,
+        "rate_rank": 57
+      },
+      {
+        "seller_id": "643214e62b870443ccbe55ab29a4dccf",
+        "seller_state": "SP",
+        "eligible_orders": 65,
+        "orders_with_late_outcome": 7,
+        "item_value": "3270.13",
+        "late_order_pct": 10.76923076923077,
+        "rate_rank": 58
+      },
+      {
+        "seller_id": "3db66a856d18a9cba7c9241fc5221c50",
+        "seller_state": "MG",
+        "eligible_orders": 94,
+        "orders_with_late_outcome": 10,
+        "item_value": "9478.30",
+        "late_order_pct": 10.638297872340425,
+        "rate_rank": 59
+      },
+      {
+        "seller_id": "0dd184061fb0eaa7ca37932c68ab91c5",
+        "seller_state": "SP",
+        "eligible_orders": 161,
+        "orders_with_late_outcome": 17,
+        "item_value": "18446.92",
+        "late_order_pct": 10.559006211180124,
+        "rate_rank": 60
+      },
+      {
+        "seller_id": "897060da8b9a21f655304d50fd935913",
+        "seller_state": "SP",
+        "eligible_orders": 304,
+        "orders_with_late_outcome": 32,
+        "item_value": "23023.92",
+        "late_order_pct": 10.526315789473685,
+        "rate_rank": 61
+      },
+      {
+        "seller_id": "4869f7a5dfa277a7dca6462dcf3b52b2",
+        "seller_state": "SP",
+        "eligible_orders": 1124,
+        "orders_with_late_outcome": 118,
+        "item_value": "229472.63",
+        "late_order_pct": 10.498220640569395,
+        "rate_rank": 62
+      },
+      {
+        "seller_id": "f0b47fbbc6dee9aafe415a6e33051b3f",
+        "seller_state": "SP",
+        "eligible_orders": 67,
+        "orders_with_late_outcome": 7,
+        "item_value": "3795.91",
+        "late_order_pct": 10.447761194029852,
+        "rate_rank": 63
+      },
+      {
+        "seller_id": "a673821011d0cec28146ea42f5ab767f",
+        "seller_state": "SP",
+        "eligible_orders": 125,
+        "orders_with_late_outcome": 13,
+        "item_value": "13863.69",
+        "late_order_pct": 10.4,
+        "rate_rank": 64
+      },
+      {
+        "seller_id": "1835b56ce799e6a4dc4eddc053f04066",
+        "seller_state": "SP",
+        "eligible_orders": 417,
+        "orders_with_late_outcome": 43,
+        "item_value": "33344.21",
+        "late_order_pct": 10.311750599520384,
+        "rate_rank": 65
+      },
+      {
+        "seller_id": "b14db04aa7881970e83ffa9426897925",
+        "seller_state": "SP",
+        "eligible_orders": 78,
+        "orders_with_late_outcome": 8,
+        "item_value": "5898.60",
+        "late_order_pct": 10.256410256410257,
+        "rate_rank": 66
+      },
+      {
+        "seller_id": "f84a00e60c73a49e7e851c9bdca3a5bb",
+        "seller_state": "RJ",
+        "eligible_orders": 88,
+        "orders_with_late_outcome": 9,
+        "item_value": "5949.94",
+        "late_order_pct": 10.227272727272727,
+        "rate_rank": 67
+      },
+      {
+        "seller_id": "fd386aa7bed2af3c7035c65506c9b4a3",
+        "seller_state": "SP",
+        "eligible_orders": 69,
+        "orders_with_late_outcome": 7,
+        "item_value": "2304.15",
+        "late_order_pct": 10.144927536231885,
+        "rate_rank": 68
+      },
+      {
+        "seller_id": "f84fa566034f5e8e880a07ec624c56af",
+        "seller_state": "SP",
+        "eligible_orders": 89,
+        "orders_with_late_outcome": 9,
+        "item_value": "5093.79",
+        "late_order_pct": 10.112359550561798,
+        "rate_rank": 69
+      },
+      {
+        "seller_id": "e9d99831abad74458942f21e16f33f92",
+        "seller_state": "SP",
+        "eligible_orders": 130,
+        "orders_with_late_outcome": 13,
+        "item_value": "4922.48",
+        "late_order_pct": 10.0,
+        "rate_rank": 70
+      },
+      {
+        "seller_id": "527801b552d0077ffd170872eb49683b",
+        "seller_state": "SP",
+        "eligible_orders": 90,
+        "orders_with_late_outcome": 9,
+        "item_value": "17942.80",
+        "late_order_pct": 10.0,
+        "rate_rank": 70
+      },
+      {
+        "seller_id": "5343d0649eca2a983820bfe93fc4d17e",
+        "seller_state": "SP",
+        "eligible_orders": 70,
+        "orders_with_late_outcome": 7,
+        "item_value": "10000.64",
+        "late_order_pct": 10.0,
+        "rate_rank": 70
+      },
+      {
+        "seller_id": "23d7c96d4a1160db1c726b248601b25a",
+        "seller_state": "SP",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 5,
+        "item_value": "11766.94",
+        "late_order_pct": 10.0,
+        "rate_rank": 70
+      },
+      {
+        "seller_id": "318f287a62ab7ac10b703ac37435a231",
+        "seller_state": "SP",
+        "eligible_orders": 51,
+        "orders_with_late_outcome": 5,
+        "item_value": "2517.48",
+        "late_order_pct": 9.803921568627452,
+        "rate_rank": 71
+      },
+      {
+        "seller_id": "cfb1a033743668a192316f3c6d1d2671",
+        "seller_state": "SP",
+        "eligible_orders": 143,
+        "orders_with_late_outcome": 14,
+        "item_value": "12803.64",
+        "late_order_pct": 9.79020979020979,
+        "rate_rank": 72
+      },
+      {
+        "seller_id": "4a3ca9315b744ce9f8e9374361493884",
+        "seller_state": "SP",
+        "eligible_orders": 1772,
+        "orders_with_late_outcome": 172,
+        "item_value": "200472.92",
+        "late_order_pct": 9.706546275395034,
+        "rate_rank": 73
+      },
+      {
+        "seller_id": "8648b1e89e9b349e32d3741b30ec737e",
+        "seller_state": "SP",
+        "eligible_orders": 93,
+        "orders_with_late_outcome": 9,
+        "item_value": "7442.55",
+        "late_order_pct": 9.67741935483871,
+        "rate_rank": 74
+      },
+      {
+        "seller_id": "aac29b1b99776be73c3049939652091d",
+        "seller_state": "MG",
+        "eligible_orders": 94,
+        "orders_with_late_outcome": 9,
+        "item_value": "6755.91",
+        "late_order_pct": 9.574468085106384,
+        "rate_rank": 75
+      },
+      {
+        "seller_id": "729f06993dac8e860d4f02d7088ca48a",
+        "seller_state": "SP",
+        "eligible_orders": 94,
+        "orders_with_late_outcome": 9,
+        "item_value": "20485.08",
+        "late_order_pct": 9.574468085106384,
+        "rate_rank": 75
+      },
+      {
+        "seller_id": "634964b17796e64304cadf1ad3050fb7",
+        "seller_state": "RJ",
+        "eligible_orders": 265,
+        "orders_with_late_outcome": 25,
+        "item_value": "39465.10",
+        "late_order_pct": 9.433962264150944,
+        "rate_rank": 76
+      },
+      {
+        "seller_id": "a888faf2d1baececa6baf9c3d603ee1f",
+        "seller_state": "PR",
+        "eligible_orders": 53,
+        "orders_with_late_outcome": 5,
+        "item_value": "17765.80",
+        "late_order_pct": 9.433962264150944,
+        "rate_rank": 76
+      },
+      {
+        "seller_id": "76d5af76d0271110f9af36c92573f765",
+        "seller_state": "SP",
+        "eligible_orders": 128,
+        "orders_with_late_outcome": 12,
+        "item_value": "33461.60",
+        "late_order_pct": 9.375,
+        "rate_rank": 77
+      },
+      {
+        "seller_id": "4c2b230173bb36f9b240f2b8ac11786e",
+        "seller_state": "SP",
+        "eligible_orders": 258,
+        "orders_with_late_outcome": 24,
+        "item_value": "14592.27",
+        "late_order_pct": 9.30232558139535,
+        "rate_rank": 78
+      },
+      {
+        "seller_id": "7d76b645482be4a332374e8223836592",
+        "seller_state": "SP",
+        "eligible_orders": 172,
+        "orders_with_late_outcome": 16,
+        "item_value": "3843.93",
+        "late_order_pct": 9.30232558139535,
+        "rate_rank": 78
+      },
+      {
+        "seller_id": "a3e9a2c700480d9bb01fba070ba80a0e",
+        "seller_state": "SP",
+        "eligible_orders": 129,
+        "orders_with_late_outcome": 12,
+        "item_value": "13440.80",
+        "late_order_pct": 9.30232558139535,
+        "rate_rank": 78
+      },
+      {
+        "seller_id": "77530e9772f57a62c906e1c21538ab82",
+        "seller_state": "PR",
+        "eligible_orders": 312,
+        "orders_with_late_outcome": 29,
+        "item_value": "46610.40",
+        "late_order_pct": 9.294871794871796,
+        "rate_rank": 79
+      },
+      {
+        "seller_id": "70a12e78e608ac31179aea7f8422044b",
+        "seller_state": "SP",
+        "eligible_orders": 312,
+        "orders_with_late_outcome": 29,
+        "item_value": "30858.53",
+        "late_order_pct": 9.294871794871796,
+        "rate_rank": 79
+      },
+      {
+        "seller_id": "ececbfcff9804a2d6b40f589df8eef2b",
+        "seller_state": "SP",
+        "eligible_orders": 97,
+        "orders_with_late_outcome": 9,
+        "item_value": "6792.40",
+        "late_order_pct": 9.278350515463918,
+        "rate_rank": 80
+      },
+      {
+        "seller_id": "fa1c13f2614d7b5c4749cbc52fecda94",
+        "seller_state": "SP",
+        "eligible_orders": 578,
+        "orders_with_late_outcome": 53,
+        "item_value": "194042.03",
+        "late_order_pct": 9.16955017301038,
+        "rate_rank": 81
+      },
+      {
+        "seller_id": "7c67e1448b00f6e969d365cea6b010ab",
+        "seller_state": "SP",
+        "eligible_orders": 973,
+        "orders_with_late_outcome": 89,
+        "item_value": "187923.89",
+        "late_order_pct": 9.146968139773895,
+        "rate_rank": 82
+      },
+      {
+        "seller_id": "d13e50eaa47b4cbe9eb81465865d8cfc",
+        "seller_state": "SP",
+        "eligible_orders": 66,
+        "orders_with_late_outcome": 6,
+        "item_value": "7155.05",
+        "late_order_pct": 9.090909090909092,
+        "rate_rank": 83
+      },
+      {
+        "seller_id": "3df020b72d3d44b3af9d110fa3940b65",
+        "seller_state": "SP",
+        "eligible_orders": 55,
+        "orders_with_late_outcome": 5,
+        "item_value": "5039.90",
+        "late_order_pct": 9.090909090909092,
+        "rate_rank": 83
+      },
+      {
+        "seller_id": "4e922959ae960d389249c378d1c939f5",
+        "seller_state": "SP",
+        "eligible_orders": 412,
+        "orders_with_late_outcome": 37,
+        "item_value": "46030.37",
+        "late_order_pct": 8.980582524271844,
+        "rate_rank": 84
+      },
+      {
+        "seller_id": "ce7d1888639e6fb06b2749cbfdac1ff7",
+        "seller_state": "MG",
+        "eligible_orders": 78,
+        "orders_with_late_outcome": 7,
+        "item_value": "11793.89",
+        "late_order_pct": 8.974358974358974,
+        "rate_rank": 85
+      },
+      {
+        "seller_id": "17f51e7198701186712e53a39c564617",
+        "seller_state": "SP",
+        "eligible_orders": 56,
+        "orders_with_late_outcome": 5,
+        "item_value": "48019.00",
+        "late_order_pct": 8.928571428571429,
+        "rate_rank": 86
+      },
+      {
+        "seller_id": "fe2032dab1a61af8794248c8196565c9",
+        "seller_state": "SP",
+        "eligible_orders": 293,
+        "orders_with_late_outcome": 26,
+        "item_value": "65959.61",
+        "late_order_pct": 8.873720136518772,
+        "rate_rank": 87
+      },
+      {
+        "seller_id": "1f50f920176fa81dab994f9023523100",
+        "seller_state": "SP",
+        "eligible_orders": 1399,
+        "orders_with_late_outcome": 124,
+        "item_value": "106939.21",
+        "late_order_pct": 8.863473909935669,
+        "rate_rank": 88
+      },
+      {
+        "seller_id": "1d8dbc4f32378d715c717c1c1fc57bae",
+        "seller_state": "PR",
+        "eligible_orders": 91,
+        "orders_with_late_outcome": 8,
+        "item_value": "11315.89",
+        "late_order_pct": 8.791208791208792,
+        "rate_rank": 89
+      },
+      {
+        "seller_id": "620c87c171fb2a6dd6e8bb4dec959fc6",
+        "seller_state": "RJ",
+        "eligible_orders": 722,
+        "orders_with_late_outcome": 63,
+        "item_value": "114774.50",
+        "late_order_pct": 8.725761772853186,
+        "rate_rank": 90
+      },
+      {
+        "seller_id": "522620dcb18a6b31cd7bdf73665113a9",
+        "seller_state": "PR",
+        "eligible_orders": 172,
+        "orders_with_late_outcome": 15,
+        "item_value": "57168.49",
+        "late_order_pct": 8.720930232558139,
+        "rate_rank": 91
+      },
+      {
+        "seller_id": "8b321bb669392f5163d04c59e235e066",
+        "seller_state": "SP",
+        "eligible_orders": 930,
+        "orders_with_late_outcome": 81,
+        "item_value": "17535.69",
+        "late_order_pct": 8.709677419354838,
+        "rate_rank": 92
+      },
+      {
+        "seller_id": "23613d49c3ac2bd302259e55c06c050c",
+        "seller_state": "SP",
+        "eligible_orders": 69,
+        "orders_with_late_outcome": 6,
+        "item_value": "4293.00",
+        "late_order_pct": 8.695652173913043,
+        "rate_rank": 93
+      },
+      {
+        "seller_id": "e59aa562b9f8076dd550fcddf0e73491",
+        "seller_state": "PR",
+        "eligible_orders": 69,
+        "orders_with_late_outcome": 6,
+        "item_value": "31574.30",
+        "late_order_pct": 8.695652173913043,
+        "rate_rank": 93
+      },
+      {
+        "seller_id": "218d46b86c1881d022bce9c68a7d4b15",
+        "seller_state": "SP",
+        "eligible_orders": 382,
+        "orders_with_late_outcome": 33,
+        "item_value": "55093.28",
+        "late_order_pct": 8.638743455497382,
+        "rate_rank": 94
+      },
+      {
+        "seller_id": "391fc6631aebcf3004804e51b40bcf1e",
+        "seller_state": "SP",
+        "eligible_orders": 521,
+        "orders_with_late_outcome": 45,
+        "item_value": "39951.95",
+        "late_order_pct": 8.637236084452976,
+        "rate_rank": 95
+      },
+      {
+        "seller_id": "7681ef142fd2c19048da7430856b5588",
+        "seller_state": "SP",
+        "eligible_orders": 58,
+        "orders_with_late_outcome": 5,
+        "item_value": "31941.81",
+        "late_order_pct": 8.620689655172415,
+        "rate_rank": 96
+      },
+      {
+        "seller_id": "9c0e69c7bf2619675bbadf47b43f655a",
+        "seller_state": "SP",
+        "eligible_orders": 151,
+        "orders_with_late_outcome": 13,
+        "item_value": "33702.78",
+        "late_order_pct": 8.609271523178808,
+        "rate_rank": 97
+      },
+      {
+        "seller_id": "5d0363b33554b373851fc1622e4d5f3c",
+        "seller_state": "SP",
+        "eligible_orders": 93,
+        "orders_with_late_outcome": 8,
+        "item_value": "6610.79",
+        "late_order_pct": 8.602150537634408,
+        "rate_rank": 98
+      },
+      {
+        "seller_id": "f27e33c6d29b5138fa9967bcd445b6d5",
+        "seller_state": "SP",
+        "eligible_orders": 93,
+        "orders_with_late_outcome": 8,
+        "item_value": "8888.30",
+        "late_order_pct": 8.602150537634408,
+        "rate_rank": 98
+      },
+      {
+        "seller_id": "ea8482cd71df3c1969d7b9473ff13abc",
+        "seller_state": "SP",
+        "eligible_orders": 1132,
+        "orders_with_late_outcome": 96,
+        "item_value": "37177.52",
+        "late_order_pct": 8.480565371024735,
+        "rate_rank": 99
+      },
+      {
+        "seller_id": "7ddcbb64b5bc1ef36ca8c151f6ec77df",
+        "seller_state": "SP",
+        "eligible_orders": 325,
+        "orders_with_late_outcome": 27,
+        "item_value": "55578.57",
+        "late_order_pct": 8.307692307692308,
+        "rate_rank": 100
+      },
+      {
+        "seller_id": "8581055ce74af1daba164fdbd55a40de",
+        "seller_state": "SP",
+        "eligible_orders": 379,
+        "orders_with_late_outcome": 31,
+        "item_value": "64925.30",
+        "late_order_pct": 8.179419525065963,
+        "rate_rank": 101
+      },
+      {
+        "seller_id": "1900267e848ceeba8fa32d80c1a5f5a8",
+        "seller_state": "SP",
+        "eligible_orders": 406,
+        "orders_with_late_outcome": 33,
+        "item_value": "24982.53",
+        "late_order_pct": 8.12807881773399,
+        "rate_rank": 102
+      },
+      {
+        "seller_id": "cbd996ad3c1b7dc71fd0e5f5df9087e2",
+        "seller_state": "SP",
+        "eligible_orders": 160,
+        "orders_with_late_outcome": 13,
+        "item_value": "8411.04",
+        "late_order_pct": 8.125,
+        "rate_rank": 103
+      },
+      {
+        "seller_id": "1336efc61c316ddf92c899eb817f7cae",
+        "seller_state": "SP",
+        "eligible_orders": 74,
+        "orders_with_late_outcome": 6,
+        "item_value": "4837.31",
+        "late_order_pct": 8.108108108108109,
+        "rate_rank": 104
+      },
+      {
+        "seller_id": "6860153b69cc696d5dcfe1cdaaafcf62",
+        "seller_state": "SP",
+        "eligible_orders": 74,
+        "orders_with_late_outcome": 6,
+        "item_value": "3827.63",
+        "late_order_pct": 8.108108108108109,
+        "rate_rank": 104
+      },
+      {
+        "seller_id": "715bbd5ba4e6b74cb0d2f29eb45058b0",
+        "seller_state": "SP",
+        "eligible_orders": 62,
+        "orders_with_late_outcome": 5,
+        "item_value": "4043.30",
+        "late_order_pct": 8.064516129032258,
+        "rate_rank": 105
+      },
+      {
+        "seller_id": "16090f2ca825584b5a147ab24aa30c86",
+        "seller_state": "SP",
+        "eligible_orders": 398,
+        "orders_with_late_outcome": 32,
+        "item_value": "25716.44",
+        "late_order_pct": 8.040201005025125,
+        "rate_rank": 106
+      },
+      {
+        "seller_id": "6a8b085f816a1f75f92dbac6eb545f8f",
+        "seller_state": "SP",
+        "eligible_orders": 125,
+        "orders_with_late_outcome": 10,
+        "item_value": "6018.97",
+        "late_order_pct": 8.0,
+        "rate_rank": 107
+      },
+      {
+        "seller_id": "165fc07beebdcb6190fba8a06db2a449",
+        "seller_state": "PR",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 4,
+        "item_value": "17481.40",
+        "late_order_pct": 8.0,
+        "rate_rank": 107
+      },
+      {
+        "seller_id": "37515688008a7a40ac93e3b2e4ab203f",
+        "seller_state": "SP",
+        "eligible_orders": 227,
+        "orders_with_late_outcome": 18,
+        "item_value": "5986.60",
+        "late_order_pct": 7.929515418502203,
+        "rate_rank": 108
+      },
+      {
+        "seller_id": "1025f0e2d44d7041d6cf58b6550e0bfa",
+        "seller_state": "SP",
+        "eligible_orders": 910,
+        "orders_with_late_outcome": 72,
+        "item_value": "138968.55",
+        "late_order_pct": 7.912087912087912,
+        "rate_rank": 109
+      },
+      {
+        "seller_id": "ef506c96320abeedfb894c34db06f478",
+        "seller_state": "SP",
+        "eligible_orders": 316,
+        "orders_with_late_outcome": 25,
+        "item_value": "9771.43",
+        "late_order_pct": 7.9113924050632916,
+        "rate_rank": 110
+      },
+      {
+        "seller_id": "c9c7905cffc4ef9ff9f113554423e671",
+        "seller_state": "SP",
+        "eligible_orders": 127,
+        "orders_with_late_outcome": 10,
+        "item_value": "10657.18",
+        "late_order_pct": 7.874015748031496,
+        "rate_rank": 111
+      },
+      {
+        "seller_id": "e24fc9fcd865784fb25705606fe3dfe7",
+        "seller_state": "SP",
+        "eligible_orders": 51,
+        "orders_with_late_outcome": 4,
+        "item_value": "12936.00",
+        "late_order_pct": 7.8431372549019605,
+        "rate_rank": 112
+      },
+      {
+        "seller_id": "ef0ace09169ac090589d85746e3e036f",
+        "seller_state": "RJ",
+        "eligible_orders": 128,
+        "orders_with_late_outcome": 10,
+        "item_value": "16223.30",
+        "late_order_pct": 7.8125,
+        "rate_rank": 113
+      },
+      {
+        "seller_id": "ce248b21cb2adc36282ede306b7660e5",
+        "seller_state": "SC",
+        "eligible_orders": 64,
+        "orders_with_late_outcome": 5,
+        "item_value": "15230.06",
+        "late_order_pct": 7.8125,
+        "rate_rank": 113
+      },
+      {
+        "seller_id": "42b729f859728f5079499127a9c2ef37",
+        "seller_state": "SP",
+        "eligible_orders": 103,
+        "orders_with_late_outcome": 8,
+        "item_value": "4118.86",
+        "late_order_pct": 7.766990291262136,
+        "rate_rank": 114
+      },
+      {
+        "seller_id": "17e34d8224d27a541263c4c64b11a56b",
+        "seller_state": "SP",
+        "eligible_orders": 247,
+        "orders_with_late_outcome": 19,
+        "item_value": "56363.24",
+        "late_order_pct": 7.6923076923076925,
+        "rate_rank": 115
+      },
+      {
+        "seller_id": "7040e82f899a04d1b434b795a43b4617",
+        "seller_state": "SP",
+        "eligible_orders": 208,
+        "orders_with_late_outcome": 16,
+        "item_value": "9738.20",
+        "late_order_pct": 7.6923076923076925,
+        "rate_rank": 115
+      },
+      {
+        "seller_id": "624f4ece8da4aafb77699233d480f8ef",
+        "seller_state": "SP",
+        "eligible_orders": 52,
+        "orders_with_late_outcome": 4,
+        "item_value": "9205.00",
+        "late_order_pct": 7.6923076923076925,
+        "rate_rank": 115
+      },
+      {
+        "seller_id": "f214d28e8d8e3ef068748498ccc2f813",
+        "seller_state": "SP",
+        "eligible_orders": 52,
+        "orders_with_late_outcome": 4,
+        "item_value": "2212.41",
+        "late_order_pct": 7.6923076923076925,
+        "rate_rank": 115
+      },
+      {
+        "seller_id": "e9bc59e7b60fc3063eb2290deda4cced",
+        "seller_state": "PR",
+        "eligible_orders": 209,
+        "orders_with_late_outcome": 16,
+        "item_value": "34343.06",
+        "late_order_pct": 7.655502392344498,
+        "rate_rank": 116
+      },
+      {
+        "seller_id": "04308b1ee57b6625f47df1d56f00eedf",
+        "seller_state": "SC",
+        "eligible_orders": 92,
+        "orders_with_late_outcome": 7,
+        "item_value": "60130.60",
+        "late_order_pct": 7.608695652173913,
+        "rate_rank": 117
+      },
+      {
+        "seller_id": "d673a59aac7a70d8b01e6902bf090a11",
+        "seller_state": "SP",
+        "eligible_orders": 79,
+        "orders_with_late_outcome": 6,
+        "item_value": "3908.94",
+        "late_order_pct": 7.594936708860759,
+        "rate_rank": 118
+      },
+      {
+        "seller_id": "54a1852d1b8f10312c55e906355666ee",
+        "seller_state": "SP",
+        "eligible_orders": 198,
+        "orders_with_late_outcome": 15,
+        "item_value": "17226.44",
+        "late_order_pct": 7.575757575757576,
+        "rate_rank": 119
+      },
+      {
+        "seller_id": "c826c40d7b19f62a09e2d7c5e7295ee2",
+        "seller_state": "SP",
+        "eligible_orders": 346,
+        "orders_with_late_outcome": 26,
+        "item_value": "45643.74",
+        "late_order_pct": 7.514450867052023,
+        "rate_rank": 120
+      },
+      {
+        "seller_id": "e5a38146df062edaf55c38afa99e42dc",
+        "seller_state": "SP",
+        "eligible_orders": 120,
+        "orders_with_late_outcome": 9,
+        "item_value": "15360.07",
+        "late_order_pct": 7.5,
+        "rate_rank": 121
+      },
+      {
+        "seller_id": "3be634553519fb6536a03e1358e9fdc7",
+        "seller_state": "SP",
+        "eligible_orders": 80,
+        "orders_with_late_outcome": 6,
+        "item_value": "5370.95",
+        "late_order_pct": 7.5,
+        "rate_rank": 121
+      },
+      {
+        "seller_id": "48436dade18ac8b2bce089ec2a041202",
+        "seller_state": "SP",
+        "eligible_orders": 134,
+        "orders_with_late_outcome": 10,
+        "item_value": "12271.71",
+        "late_order_pct": 7.462686567164179,
+        "rate_rank": 122
+      },
+      {
+        "seller_id": "a420f60ff1aa9acc80d0e42959f2b313",
+        "seller_state": "SP",
+        "eligible_orders": 67,
+        "orders_with_late_outcome": 5,
+        "item_value": "7443.30",
+        "late_order_pct": 7.462686567164179,
+        "rate_rank": 122
+      },
+      {
+        "seller_id": "de23c3b98a88888289c6f5cc1209054a",
+        "seller_state": "SP",
+        "eligible_orders": 161,
+        "orders_with_late_outcome": 12,
+        "item_value": "26399.67",
+        "late_order_pct": 7.453416149068323,
+        "rate_rank": 123
+      },
+      {
+        "seller_id": "f262cbc1c910c83959f849465454ddd3",
+        "seller_state": "SP",
+        "eligible_orders": 189,
+        "orders_with_late_outcome": 14,
+        "item_value": "10482.83",
+        "late_order_pct": 7.407407407407407,
+        "rate_rank": 124
+      },
+      {
+        "seller_id": "00ee68308b45bc5e2660cd833c3f81cc",
+        "seller_state": "SP",
+        "eligible_orders": 135,
+        "orders_with_late_outcome": 10,
+        "item_value": "20260.00",
+        "late_order_pct": 7.407407407407407,
+        "rate_rank": 124
+      },
+      {
+        "seller_id": "e067ad2c1c0b48758eb1b5228bcf7a68",
+        "seller_state": "SP",
+        "eligible_orders": 54,
+        "orders_with_late_outcome": 4,
+        "item_value": "5042.55",
+        "late_order_pct": 7.407407407407407,
+        "rate_rank": 124
+      },
+      {
+        "seller_id": "66922902710d126a0e7d26b0e3805106",
+        "seller_state": "MG",
+        "eligible_orders": 150,
+        "orders_with_late_outcome": 11,
+        "item_value": "14362.30",
+        "late_order_pct": 7.333333333333333,
+        "rate_rank": 125
+      },
+      {
+        "seller_id": "7142540dd4c91e2237acb7e911c4eba2",
+        "seller_state": "SP",
+        "eligible_orders": 316,
+        "orders_with_late_outcome": 23,
+        "item_value": "37373.56",
+        "late_order_pct": 7.2784810126582276,
+        "rate_rank": 126
+      },
+      {
+        "seller_id": "edb1ef5e36e0c8cd84eb3c9b003e486d",
+        "seller_state": "RJ",
+        "eligible_orders": 165,
+        "orders_with_late_outcome": 12,
+        "item_value": "79284.55",
+        "late_order_pct": 7.2727272727272725,
+        "rate_rank": 127
+      },
+      {
+        "seller_id": "f7ccf836d21b2fb1de37564105216cc1",
+        "seller_state": "SP",
+        "eligible_orders": 69,
+        "orders_with_late_outcome": 5,
+        "item_value": "2787.40",
+        "late_order_pct": 7.246376811594203,
+        "rate_rank": 128
+      },
+      {
+        "seller_id": "aba1721a889e04decc910aa13b768ef4",
+        "seller_state": "SP",
+        "eligible_orders": 83,
+        "orders_with_late_outcome": 6,
+        "item_value": "14103.30",
+        "late_order_pct": 7.228915662650603,
+        "rate_rank": 129
+      },
+      {
+        "seller_id": "c8b0e2b0a7095e5d8219575d5e7e1181",
+        "seller_state": "SP",
+        "eligible_orders": 84,
+        "orders_with_late_outcome": 6,
+        "item_value": "12170.21",
+        "late_order_pct": 7.142857142857143,
+        "rate_rank": 130
+      },
+      {
+        "seller_id": "7a241947449cc45dbfda4f9d0798d9d0",
+        "seller_state": "MG",
+        "eligible_orders": 56,
+        "orders_with_late_outcome": 4,
+        "item_value": "8027.63",
+        "late_order_pct": 7.142857142857143,
+        "rate_rank": 130
+      },
+      {
+        "seller_id": "8a130737016f838139d31878787a39c9",
+        "seller_state": "SP",
+        "eligible_orders": 56,
+        "orders_with_late_outcome": 4,
+        "item_value": "4222.03",
+        "late_order_pct": 7.142857142857143,
+        "rate_rank": 130
+      },
+      {
+        "seller_id": "f5a590cf36251cf1162ea35bef76fe84",
+        "seller_state": "SP",
+        "eligible_orders": 113,
+        "orders_with_late_outcome": 8,
+        "item_value": "53201.78",
+        "late_order_pct": 7.079646017699115,
+        "rate_rank": 131
+      },
+      {
+        "seller_id": "f45122a9ab94eb4f3f8953578bc0c560",
+        "seller_state": "SP",
+        "eligible_orders": 184,
+        "orders_with_late_outcome": 13,
+        "item_value": "22078.29",
+        "late_order_pct": 7.065217391304348,
+        "rate_rank": 132
+      },
+      {
+        "seller_id": "25c5c91f63607446a97b143d2d535d31",
+        "seller_state": "MG",
+        "eligible_orders": 156,
+        "orders_with_late_outcome": 11,
+        "item_value": "54679.22",
+        "late_order_pct": 7.051282051282051,
+        "rate_rank": 133
+      },
+      {
+        "seller_id": "4371b634e0efc0e22b09b52907d9d469",
+        "seller_state": "SP",
+        "eligible_orders": 101,
+        "orders_with_late_outcome": 7,
+        "item_value": "8194.00",
+        "late_order_pct": 6.930693069306931,
+        "rate_rank": 134
+      },
+      {
+        "seller_id": "3b15288545f8928d3e65a8f949a28291",
+        "seller_state": "SP",
+        "eligible_orders": 101,
+        "orders_with_late_outcome": 7,
+        "item_value": "14061.79",
+        "late_order_pct": 6.930693069306931,
+        "rate_rank": 134
+      },
+      {
+        "seller_id": "bd0389da23d89b726abf911cccc54596",
+        "seller_state": "DF",
+        "eligible_orders": 87,
+        "orders_with_late_outcome": 6,
+        "item_value": "7472.16",
+        "late_order_pct": 6.896551724137931,
+        "rate_rank": 135
+      },
+      {
+        "seller_id": "6d803cb79cc31c41c4c789a75933b3c7",
+        "seller_state": "SP",
+        "eligible_orders": 58,
+        "orders_with_late_outcome": 4,
+        "item_value": "8711.40",
+        "late_order_pct": 6.896551724137931,
+        "rate_rank": 135
+      },
+      {
+        "seller_id": "b2ba3715d723d245138f291a6fe42594",
+        "seller_state": "SP",
+        "eligible_orders": 324,
+        "orders_with_late_outcome": 22,
+        "item_value": "51676.88",
+        "late_order_pct": 6.790123456790123,
+        "rate_rank": 136
+      },
+      {
+        "seller_id": "dc4a0fc896dc34b0d5bfec8438291c80",
+        "seller_state": "SP",
+        "eligible_orders": 225,
+        "orders_with_late_outcome": 15,
+        "item_value": "24180.77",
+        "late_order_pct": 6.666666666666667,
+        "rate_rank": 137
+      },
+      {
+        "seller_id": "058fd0aa2bfdb2274e05e1ae971dabb6",
+        "seller_state": "SP",
+        "eligible_orders": 60,
+        "orders_with_late_outcome": 4,
+        "item_value": "7667.90",
+        "late_order_pct": 6.666666666666667,
+        "rate_rank": 137
+      },
+      {
+        "seller_id": "da8622b14eb17ae2831f4ac5b9dab84a",
+        "seller_state": "SP",
+        "eligible_orders": 1311,
+        "orders_with_late_outcome": 87,
+        "item_value": "160236.57",
+        "late_order_pct": 6.636155606407323,
+        "rate_rank": 138
+      },
+      {
+        "seller_id": "70eea00b476a314817cefde4aad4f89a",
+        "seller_state": "SP",
+        "eligible_orders": 106,
+        "orders_with_late_outcome": 7,
+        "item_value": "31994.65",
+        "late_order_pct": 6.60377358490566,
+        "rate_rank": 139
+      },
+      {
+        "seller_id": "827f8f69dfa529c561901c4f2e0f332f",
+        "seller_state": "PR",
+        "eligible_orders": 91,
+        "orders_with_late_outcome": 6,
+        "item_value": "3408.39",
+        "late_order_pct": 6.593406593406593,
+        "rate_rank": 140
+      },
+      {
+        "seller_id": "7e3f87d16fb353f408d467e74fbd8014",
+        "seller_state": "SP",
+        "eligible_orders": 91,
+        "orders_with_late_outcome": 6,
+        "item_value": "4754.99",
+        "late_order_pct": 6.593406593406593,
+        "rate_rank": 140
+      },
+      {
+        "seller_id": "213b25e6f54661939f11710a6fddb871",
+        "seller_state": "SP",
+        "eligible_orders": 152,
+        "orders_with_late_outcome": 10,
+        "item_value": "15379.50",
+        "late_order_pct": 6.578947368421052,
+        "rate_rank": 141
+      },
+      {
+        "seller_id": "b6d44737c043328708f6749c2dbe50bd",
+        "seller_state": "SP",
+        "eligible_orders": 61,
+        "orders_with_late_outcome": 4,
+        "item_value": "5369.60",
+        "late_order_pct": 6.557377049180328,
+        "rate_rank": 142
+      },
+      {
+        "seller_id": "06579cb253ecd5a3a12a9e6eb6bf8f47",
+        "seller_state": "SP",
+        "eligible_orders": 61,
+        "orders_with_late_outcome": 4,
+        "item_value": "4727.20",
+        "late_order_pct": 6.557377049180328,
+        "rate_rank": 142
+      },
+      {
+        "seller_id": "d1c281d3ae149232351cd8c8cc885f0d",
+        "seller_state": "SP",
+        "eligible_orders": 214,
+        "orders_with_late_outcome": 14,
+        "item_value": "26942.60",
+        "late_order_pct": 6.542056074766355,
+        "rate_rank": 143
+      },
+      {
+        "seller_id": "ccc4bbb5f32a6ab2b7066a4130f114e3",
+        "seller_state": "PR",
+        "eligible_orders": 184,
+        "orders_with_late_outcome": 12,
+        "item_value": "74004.62",
+        "late_order_pct": 6.521739130434782,
+        "rate_rank": 144
+      },
+      {
+        "seller_id": "8444e55c1f13cd5c179851e5ca5ebd00",
+        "seller_state": "MG",
+        "eligible_orders": 92,
+        "orders_with_late_outcome": 6,
+        "item_value": "22873.21",
+        "late_order_pct": 6.521739130434782,
+        "rate_rank": 144
+      },
+      {
+        "seller_id": "70c27847eca8195c983ed7e798c56743",
+        "seller_state": "RJ",
+        "eligible_orders": 77,
+        "orders_with_late_outcome": 5,
+        "item_value": "12077.52",
+        "late_order_pct": 6.4935064935064934,
+        "rate_rank": 145
+      },
+      {
+        "seller_id": "d05ae8f7a5bd1d2a690a44cd079e4e27",
+        "seller_state": "RJ",
+        "eligible_orders": 77,
+        "orders_with_late_outcome": 5,
+        "item_value": "13436.00",
+        "late_order_pct": 6.4935064935064934,
+        "rate_rank": 145
+      },
+      {
+        "seller_id": "951e8cef368f09bb3f3d03c00ca4702c",
+        "seller_state": "SP",
+        "eligible_orders": 62,
+        "orders_with_late_outcome": 4,
+        "item_value": "4092.29",
+        "late_order_pct": 6.451612903225806,
+        "rate_rank": 146
+      },
+      {
+        "seller_id": "004c9cd9d87a3c30c522c48c4fc07416",
+        "seller_state": "SP",
+        "eligible_orders": 156,
+        "orders_with_late_outcome": 10,
+        "item_value": "19712.71",
+        "late_order_pct": 6.410256410256411,
+        "rate_rank": 147
+      },
+      {
+        "seller_id": "0be8ff43f22e456b4e0371b2245e4d01",
+        "seller_state": "SP",
+        "eligible_orders": 156,
+        "orders_with_late_outcome": 10,
+        "item_value": "11805.50",
+        "late_order_pct": 6.410256410256411,
+        "rate_rank": 147
+      },
+      {
+        "seller_id": "96493fab2fbb13a14d0c0e8772eef5c3",
+        "seller_state": "SP",
+        "eligible_orders": 63,
+        "orders_with_late_outcome": 4,
+        "item_value": "18969.00",
+        "late_order_pct": 6.349206349206349,
+        "rate_rank": 148
+      },
+      {
+        "seller_id": "a17f621c590ea0fab3d5d883e1630ec6",
+        "seller_state": "SP",
+        "eligible_orders": 63,
+        "orders_with_late_outcome": 4,
+        "item_value": "2778.58",
+        "late_order_pct": 6.349206349206349,
+        "rate_rank": 148
+      },
+      {
+        "seller_id": "5b925e1d006e9476d738aa200751b73b",
+        "seller_state": "SP",
+        "eligible_orders": 63,
+        "orders_with_late_outcome": 4,
+        "item_value": "7748.50",
+        "late_order_pct": 6.349206349206349,
+        "rate_rank": 148
+      },
+      {
+        "seller_id": "8e8a7ce9f2f970dc00e2acf6f6e199f6",
+        "seller_state": "RJ",
+        "eligible_orders": 63,
+        "orders_with_late_outcome": 4,
+        "item_value": "9101.00",
+        "late_order_pct": 6.349206349206349,
+        "rate_rank": 148
+      },
+      {
+        "seller_id": "4c18691b6037662be2df78a765d98ab5",
+        "seller_state": "SP",
+        "eligible_orders": 63,
+        "orders_with_late_outcome": 4,
+        "item_value": "3195.52",
+        "late_order_pct": 6.349206349206349,
+        "rate_rank": 148
+      },
+      {
+        "seller_id": "1bb2bdb95f4841f1bba2c0d2cd83d3c9",
+        "seller_state": "SP",
+        "eligible_orders": 79,
+        "orders_with_late_outcome": 5,
+        "item_value": "5002.71",
+        "late_order_pct": 6.329113924050633,
+        "rate_rank": 149
+      },
+      {
+        "seller_id": "7ea5bfa6c340f58f8e71fc1f0412b0d6",
+        "seller_state": "MG",
+        "eligible_orders": 96,
+        "orders_with_late_outcome": 6,
+        "item_value": "11002.89",
+        "late_order_pct": 6.25,
+        "rate_rank": 150
+      },
+      {
+        "seller_id": "4a3ccda38b2129705f3fb522db62ca31",
+        "seller_state": "SP",
+        "eligible_orders": 64,
+        "orders_with_late_outcome": 4,
+        "item_value": "17062.59",
+        "late_order_pct": 6.25,
+        "rate_rank": 150
+      },
+      {
+        "seller_id": "2e1c9f22be269ef4643f826c9e650a52",
+        "seller_state": "SP",
+        "eligible_orders": 161,
+        "orders_with_late_outcome": 10,
+        "item_value": "12687.68",
+        "late_order_pct": 6.211180124223603,
+        "rate_rank": 151
+      },
+      {
+        "seller_id": "8d956fec2e4337affcb520f56fd8cbfd",
+        "seller_state": "SP",
+        "eligible_orders": 210,
+        "orders_with_late_outcome": 13,
+        "item_value": "11015.19",
+        "late_order_pct": 6.190476190476191,
+        "rate_rank": 152
+      },
+      {
+        "seller_id": "001cca7ae9ae17fb1caed9dfb1094831",
+        "seller_state": "ES",
+        "eligible_orders": 195,
+        "orders_with_late_outcome": 12,
+        "item_value": "25080.03",
+        "late_order_pct": 6.153846153846154,
+        "rate_rank": 153
+      },
+      {
+        "seller_id": "955fee9216a65b617aa5c0531780ce60",
+        "seller_state": "SP",
+        "eligible_orders": 1261,
+        "orders_with_late_outcome": 77,
+        "item_value": "135171.70",
+        "late_order_pct": 6.106264869151467,
+        "rate_rank": 154
+      },
+      {
+        "seller_id": "1554a68530182680ad5c8b042c3ab563",
+        "seller_state": "MG",
+        "eligible_orders": 246,
+        "orders_with_late_outcome": 15,
+        "item_value": "29052.53",
+        "late_order_pct": 6.097560975609756,
+        "rate_rank": 155
+      },
+      {
+        "seller_id": "834f3294fba9f932f56edc879193f925",
+        "seller_state": "SP",
+        "eligible_orders": 66,
+        "orders_with_late_outcome": 4,
+        "item_value": "39907.50",
+        "late_order_pct": 6.0606060606060606,
+        "rate_rank": 156
+      },
+      {
+        "seller_id": "8cbac7e12637ed9cffa18c7875207478",
+        "seller_state": "SC",
+        "eligible_orders": 66,
+        "orders_with_late_outcome": 4,
+        "item_value": "2990.98",
+        "late_order_pct": 6.0606060606060606,
+        "rate_rank": 156
+      },
+      {
+        "seller_id": "e9779976487b77c6d4ac45f75ec7afe9",
+        "seller_state": "SP",
+        "eligible_orders": 645,
+        "orders_with_late_outcome": 39,
+        "item_value": "43162.95",
+        "late_order_pct": 6.046511627906977,
+        "rate_rank": 157
+      },
+      {
+        "seller_id": "8e6cc767478edae941d9bd9eb778d77a",
+        "seller_state": "MG",
+        "eligible_orders": 100,
+        "orders_with_late_outcome": 6,
+        "item_value": "6830.58",
+        "late_order_pct": 6.0,
+        "rate_rank": 158
+      },
+      {
+        "seller_id": "09f952a5f58d2285b0372551ae8f9b01",
+        "seller_state": "SP",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 3,
+        "item_value": "11821.50",
+        "late_order_pct": 6.0,
+        "rate_rank": 158
+      },
+      {
+        "seller_id": "4b9750c8ad28220fe6702d4ecb7c898f",
+        "seller_state": "SP",
+        "eligible_orders": 217,
+        "orders_with_late_outcome": 13,
+        "item_value": "15915.30",
+        "late_order_pct": 5.990783410138249,
+        "rate_rank": 159
+      },
+      {
+        "seller_id": "5f2684dab12e59f83bef73ae57724e45",
+        "seller_state": "SP",
+        "eligible_orders": 67,
+        "orders_with_late_outcome": 4,
+        "item_value": "9000.87",
+        "late_order_pct": 5.970149253731344,
+        "rate_rank": 160
+      },
+      {
+        "seller_id": "5656537e588803a555b8eb41f07a944b",
+        "seller_state": "DF",
+        "eligible_orders": 171,
+        "orders_with_late_outcome": 10,
+        "item_value": "8065.93",
+        "late_order_pct": 5.847953216374269,
+        "rate_rank": 161
+      },
+      {
+        "seller_id": "2a7dc43cecabf23403078e2188437d1d",
+        "seller_state": "SP",
+        "eligible_orders": 52,
+        "orders_with_late_outcome": 3,
+        "item_value": "4795.91",
+        "late_order_pct": 5.769230769230769,
+        "rate_rank": 162
+      },
+      {
+        "seller_id": "46dc3b2cc0980fb8ec44634e21d2718e",
+        "seller_state": "RJ",
+        "eligible_orders": 503,
+        "orders_with_late_outcome": 29,
+        "item_value": "128111.19",
+        "late_order_pct": 5.7654075546719685,
+        "rate_rank": 163
+      },
+      {
+        "seller_id": "3c7c4a49ec3c6550809089c6a2ca9370",
+        "seller_state": "SP",
+        "eligible_orders": 139,
+        "orders_with_late_outcome": 8,
+        "item_value": "4033.64",
+        "late_order_pct": 5.755395683453237,
+        "rate_rank": 164
+      },
+      {
+        "seller_id": "dd2bdf855a9172734fbc3744021ae9b9",
+        "seller_state": "MG",
+        "eligible_orders": 105,
+        "orders_with_late_outcome": 6,
+        "item_value": "10816.70",
+        "late_order_pct": 5.714285714285714,
+        "rate_rank": 165
+      },
+      {
+        "seller_id": "59fb871bf6f4522a87ba567b42dafecf",
+        "seller_state": "SP",
+        "eligible_orders": 123,
+        "orders_with_late_outcome": 7,
+        "item_value": "21708.57",
+        "late_order_pct": 5.691056910569106,
+        "rate_rank": 166
+      },
+      {
+        "seller_id": "0adac9fbd9a2b63cccaac4f8756c1ca8",
+        "seller_state": "SP",
+        "eligible_orders": 106,
+        "orders_with_late_outcome": 6,
+        "item_value": "15960.95",
+        "late_order_pct": 5.660377358490566,
+        "rate_rank": 167
+      },
+      {
+        "seller_id": "d9a84e1403de8da0c3aa531d6d108ba6",
+        "seller_state": "SP",
+        "eligible_orders": 53,
+        "orders_with_late_outcome": 3,
+        "item_value": "1425.20",
+        "late_order_pct": 5.660377358490566,
+        "rate_rank": 167
+      },
+      {
+        "seller_id": "17a053fcb14bd219540cbde0df490be0",
+        "seller_state": "SP",
+        "eligible_orders": 124,
+        "orders_with_late_outcome": 7,
+        "item_value": "40703.14",
+        "late_order_pct": 5.645161290322581,
+        "rate_rank": 168
+      },
+      {
+        "seller_id": "f457c46070d02cadd8a68551231220dd",
+        "seller_state": "PR",
+        "eligible_orders": 195,
+        "orders_with_late_outcome": 11,
+        "item_value": "19093.00",
+        "late_order_pct": 5.641025641025641,
+        "rate_rank": 169
+      },
+      {
+        "seller_id": "5dceca129747e92ff8ef7a997dc4f8ca",
+        "seller_state": "SP",
+        "eligible_orders": 322,
+        "orders_with_late_outcome": 18,
+        "item_value": "112155.53",
+        "late_order_pct": 5.590062111801243,
+        "rate_rank": 170
+      },
+      {
+        "seller_id": "f4aba7c0bca51484c30ab7bdc34bcdd1",
+        "seller_state": "SP",
+        "eligible_orders": 108,
+        "orders_with_late_outcome": 6,
+        "item_value": "3009.79",
+        "late_order_pct": 5.555555555555555,
+        "rate_rank": 171
+      },
+      {
+        "seller_id": "d9bd94811c3338dceb4181f3dbc0c73e",
+        "seller_state": "SP",
+        "eligible_orders": 54,
+        "orders_with_late_outcome": 3,
+        "item_value": "6911.02",
+        "late_order_pct": 5.555555555555555,
+        "rate_rank": 171
+      },
+      {
+        "seller_id": "18a349e75d307f4b4cc646a691ed4216",
+        "seller_state": "SP",
+        "eligible_orders": 109,
+        "orders_with_late_outcome": 6,
+        "item_value": "8711.53",
+        "late_order_pct": 5.504587155963303,
+        "rate_rank": 172
+      },
+      {
+        "seller_id": "6d66611d7c44cc30ce351abc49a68421",
+        "seller_state": "SP",
+        "eligible_orders": 164,
+        "orders_with_late_outcome": 9,
+        "item_value": "13593.40",
+        "late_order_pct": 5.487804878048781,
+        "rate_rank": 173
+      },
+      {
+        "seller_id": "01fdefa7697d26ad920e9e0346d4bd1b",
+        "seller_state": "PR",
+        "eligible_orders": 128,
+        "orders_with_late_outcome": 7,
+        "item_value": "14921.43",
+        "late_order_pct": 5.46875,
+        "rate_rank": 174
+      },
+      {
+        "seller_id": "dc317f341ab0e22f39acbd9dbf9b4a1f",
+        "seller_state": "RS",
+        "eligible_orders": 55,
+        "orders_with_late_outcome": 3,
+        "item_value": "18988.40",
+        "late_order_pct": 5.454545454545454,
+        "rate_rank": 175
+      },
+      {
+        "seller_id": "3d871de0142ce09b7081e2b9d1733cb1",
+        "seller_state": "SP",
+        "eligible_orders": 1064,
+        "orders_with_late_outcome": 58,
+        "item_value": "94914.20",
+        "late_order_pct": 5.451127819548872,
+        "rate_rank": 176
+      },
+      {
+        "seller_id": "d6b1ce66b035a475f00c017792ff9769",
+        "seller_state": "SP",
+        "eligible_orders": 92,
+        "orders_with_late_outcome": 5,
+        "item_value": "12277.40",
+        "late_order_pct": 5.434782608695652,
+        "rate_rank": 177
+      },
+      {
+        "seller_id": "08633c14ef2db992c11f840f04fad4cd",
+        "seller_state": "SP",
+        "eligible_orders": 74,
+        "orders_with_late_outcome": 4,
+        "item_value": "7644.30",
+        "late_order_pct": 5.405405405405405,
+        "rate_rank": 178
+      },
+      {
+        "seller_id": "c70c1b0d8ca86052f45a432a38b73958",
+        "seller_state": "SP",
+        "eligible_orders": 260,
+        "orders_with_late_outcome": 14,
+        "item_value": "36537.37",
+        "late_order_pct": 5.384615384615385,
+        "rate_rank": 179
+      },
+      {
+        "seller_id": "4992e76a42cb3aad7a7047e0d3d7e729",
+        "seller_state": "SP",
+        "eligible_orders": 56,
+        "orders_with_late_outcome": 3,
+        "item_value": "2211.10",
+        "late_order_pct": 5.357142857142857,
+        "rate_rank": 180
+      },
+      {
+        "seller_id": "45d33f715e24d15a6ccf5c17b3a23e3c",
+        "seller_state": "SP",
+        "eligible_orders": 56,
+        "orders_with_late_outcome": 3,
+        "item_value": "4838.23",
+        "late_order_pct": 5.357142857142857,
+        "rate_rank": 180
+      },
+      {
+        "seller_id": "6560211a19b47992c3666cc44a7e94c0",
+        "seller_state": "SP",
+        "eligible_orders": 1819,
+        "orders_with_late_outcome": 96,
+        "item_value": "123304.83",
+        "late_order_pct": 5.277625068719076,
+        "rate_rank": 181
+      },
+      {
+        "seller_id": "cc419e0650a3c5ba77189a1882b7556a",
+        "seller_state": "SP",
+        "eligible_orders": 1651,
+        "orders_with_late_outcome": 87,
+        "item_value": "104288.42",
+        "late_order_pct": 5.269533615990309,
+        "rate_rank": 182
+      },
+      {
+        "seller_id": "fa40cc5b934574b62717c68f3d678b6d",
+        "seller_state": "SP",
+        "eligible_orders": 304,
+        "orders_with_late_outcome": 16,
+        "item_value": "16055.87",
+        "late_order_pct": 5.2631578947368425,
+        "rate_rank": 183
+      },
+      {
+        "seller_id": "bfd27a966d91cfaafdb25d076585f0da",
+        "seller_state": "SP",
+        "eligible_orders": 114,
+        "orders_with_late_outcome": 6,
+        "item_value": "19921.00",
+        "late_order_pct": 5.2631578947368425,
+        "rate_rank": 183
+      },
+      {
+        "seller_id": "1f9ab4708f3056ede07124aad39a2554",
+        "seller_state": "SP",
+        "eligible_orders": 76,
+        "orders_with_late_outcome": 4,
+        "item_value": "13602.73",
+        "late_order_pct": 5.2631578947368425,
+        "rate_rank": 183
+      },
+      {
+        "seller_id": "d650b663c3b5f6fb392b6326366efa9a",
+        "seller_state": "SP",
+        "eligible_orders": 57,
+        "orders_with_late_outcome": 3,
+        "item_value": "19242.90",
+        "late_order_pct": 5.2631578947368425,
+        "rate_rank": 183
+      },
+      {
+        "seller_id": "d2374cbcbb3ca4ab1086534108cc3ab7",
+        "seller_state": "SP",
+        "eligible_orders": 514,
+        "orders_with_late_outcome": 27,
+        "item_value": "21223.92",
+        "late_order_pct": 5.252918287937743,
+        "rate_rank": 184
+      },
+      {
+        "seller_id": "7a67c85e85bb2ce8582c35f2203ad736",
+        "seller_state": "SP",
+        "eligible_orders": 1145,
+        "orders_with_late_outcome": 60,
+        "item_value": "141745.53",
+        "late_order_pct": 5.240174672489083,
+        "rate_rank": 185
+      },
+      {
+        "seller_id": "670c26e0f1bf8d0576271d5cfaec6d2b",
+        "seller_state": "PR",
+        "eligible_orders": 77,
+        "orders_with_late_outcome": 4,
+        "item_value": "6341.60",
+        "late_order_pct": 5.194805194805195,
+        "rate_rank": 186
+      },
+      {
+        "seller_id": "f80edd2c5aaa505cc4b0a3b219abf4b8",
+        "seller_state": "SP",
+        "eligible_orders": 116,
+        "orders_with_late_outcome": 6,
+        "item_value": "9108.20",
+        "late_order_pct": 5.172413793103448,
+        "rate_rank": 187
+      },
+      {
+        "seller_id": "c003204e1ab016dfa150abc119207b24",
+        "seller_state": "SP",
+        "eligible_orders": 195,
+        "orders_with_late_outcome": 10,
+        "item_value": "25108.09",
+        "late_order_pct": 5.128205128205129,
+        "rate_rank": 188
+      },
+      {
+        "seller_id": "01cf7e3d21494c41fb86034f2e714fa1",
+        "seller_state": "PR",
+        "eligible_orders": 59,
+        "orders_with_late_outcome": 3,
+        "item_value": "9729.36",
+        "late_order_pct": 5.084745762711864,
+        "rate_rank": 189
+      },
+      {
+        "seller_id": "f7720c4fa8e3aba4546301ab80ea1f1b",
+        "seller_state": "PR",
+        "eligible_orders": 59,
+        "orders_with_late_outcome": 3,
+        "item_value": "2083.45",
+        "late_order_pct": 5.084745762711864,
+        "rate_rank": 189
+      },
+      {
+        "seller_id": "ceaec5548eefc6e23e6607c5435102e7",
+        "seller_state": "SP",
+        "eligible_orders": 198,
+        "orders_with_late_outcome": 10,
+        "item_value": "52917.18",
+        "late_order_pct": 5.05050505050505,
+        "rate_rank": 190
+      },
+      {
+        "seller_id": "0c8380b62e38e8a1e6adbeba7eb9688c",
+        "seller_state": "MG",
+        "eligible_orders": 180,
+        "orders_with_late_outcome": 9,
+        "item_value": "17348.79",
+        "late_order_pct": 5.0,
+        "rate_rank": 191
+      },
+      {
+        "seller_id": "a1043bafd471dff536d0c462352beb48",
+        "seller_state": "MG",
+        "eligible_orders": 702,
+        "orders_with_late_outcome": 35,
+        "item_value": "101901.16",
+        "late_order_pct": 4.985754985754986,
+        "rate_rank": 192
+      },
+      {
+        "seller_id": "0c7533c71df861ec58ad7ff999ed0e8d",
+        "seller_state": "SP",
+        "eligible_orders": 61,
+        "orders_with_late_outcome": 3,
+        "item_value": "2989.30",
+        "late_order_pct": 4.918032786885246,
+        "rate_rank": 193
+      },
+      {
+        "seller_id": "4e17c65a516f69d023a2ae78b84f28d6",
+        "seller_state": "SP",
+        "eligible_orders": 61,
+        "orders_with_late_outcome": 3,
+        "item_value": "7639.26",
+        "late_order_pct": 4.918032786885246,
+        "rate_rank": 193
+      },
+      {
+        "seller_id": "4830e40640734fc1c52cd21127c341d4",
+        "seller_state": "SP",
+        "eligible_orders": 204,
+        "orders_with_late_outcome": 10,
+        "item_value": "9843.47",
+        "late_order_pct": 4.901960784313726,
+        "rate_rank": 194
+      },
+      {
+        "seller_id": "7008613ea464bad5cb9b83456e1e6a8f",
+        "seller_state": "SC",
+        "eligible_orders": 123,
+        "orders_with_late_outcome": 6,
+        "item_value": "7777.00",
+        "late_order_pct": 4.878048780487805,
+        "rate_rank": 195
+      },
+      {
+        "seller_id": "cca3071e3e9bb7d12640c9fbe2301306",
+        "seller_state": "SP",
+        "eligible_orders": 699,
+        "orders_with_late_outcome": 34,
+        "item_value": "64009.89",
+        "late_order_pct": 4.86409155937053,
+        "rate_rank": 196
+      },
+      {
+        "seller_id": "850f4f8af5ea87287ac68de36e29107f",
+        "seller_state": "SP",
+        "eligible_orders": 186,
+        "orders_with_late_outcome": 9,
+        "item_value": "45355.36",
+        "late_order_pct": 4.838709677419355,
+        "rate_rank": 197
+      },
+      {
+        "seller_id": "05d2173d43ea568aa0540eba70d2ca76",
+        "seller_state": "MG",
+        "eligible_orders": 62,
+        "orders_with_late_outcome": 3,
+        "item_value": "5759.66",
+        "late_order_pct": 4.838709677419355,
+        "rate_rank": 197
+      },
+      {
+        "seller_id": "41b39e28db005d9731d9d485a83b4c38",
+        "seller_state": "SP",
+        "eligible_orders": 187,
+        "orders_with_late_outcome": 9,
+        "item_value": "17112.55",
+        "late_order_pct": 4.81283422459893,
+        "rate_rank": 198
+      },
+      {
+        "seller_id": "92eb0f42c21942b6552362b9b114707d",
+        "seller_state": "SP",
+        "eligible_orders": 334,
+        "orders_with_late_outcome": 16,
+        "item_value": "6548.63",
+        "late_order_pct": 4.790419161676646,
+        "rate_rank": 199
+      },
+      {
+        "seller_id": "53e4c6e0f4312d4d2107a8c9cddf45cd",
+        "seller_state": "SP",
+        "eligible_orders": 463,
+        "orders_with_late_outcome": 22,
+        "item_value": "30148.95",
+        "late_order_pct": 4.751619870410368,
+        "rate_rank": 200
+      },
+      {
+        "seller_id": "7e93a43ef30c4f03f38b393420bc753a",
+        "seller_state": "SP",
+        "eligible_orders": 319,
+        "orders_with_late_outcome": 15,
+        "item_value": "176431.87",
+        "late_order_pct": 4.702194357366771,
+        "rate_rank": 201
+      },
+      {
+        "seller_id": "813348c996469b40f2e028d5429d3495",
+        "seller_state": "SP",
+        "eligible_orders": 172,
+        "orders_with_late_outcome": 8,
+        "item_value": "11205.83",
+        "late_order_pct": 4.651162790697675,
+        "rate_rank": 202
+      },
+      {
+        "seller_id": "2138ccb85b11a4ec1e37afbd1c8eda1f",
+        "seller_state": "SP",
+        "eligible_orders": 388,
+        "orders_with_late_outcome": 18,
+        "item_value": "12357.03",
+        "late_order_pct": 4.639175257731959,
+        "rate_rank": 203
+      },
+      {
+        "seller_id": "0241d4d5d36f10f80c644447315af0bd",
+        "seller_state": "PR",
+        "eligible_orders": 238,
+        "orders_with_late_outcome": 11,
+        "item_value": "31397.70",
+        "late_order_pct": 4.621848739495798,
+        "rate_rank": 204
+      },
+      {
+        "seller_id": "1da3aeb70d7989d1e6d9b0e887f97c23",
+        "seller_state": "SP",
+        "eligible_orders": 261,
+        "orders_with_late_outcome": 12,
+        "item_value": "8823.52",
+        "late_order_pct": 4.597701149425287,
+        "rate_rank": 205
+      },
+      {
+        "seller_id": "0509040ea3fe50071181bbc359eb7738",
+        "seller_state": "MG",
+        "eligible_orders": 87,
+        "orders_with_late_outcome": 4,
+        "item_value": "3737.95",
+        "late_order_pct": 4.597701149425287,
+        "rate_rank": 205
+      },
+      {
+        "seller_id": "79ebd9a61bac3eaf882805ed4ecfa12a",
+        "seller_state": "PR",
+        "eligible_orders": 133,
+        "orders_with_late_outcome": 6,
+        "item_value": "15092.79",
+        "late_order_pct": 4.511278195488722,
+        "rate_rank": 206
+      },
+      {
+        "seller_id": "1b4c3a6f53068f0b6944d2d005c9fc89",
+        "seller_state": "SC",
+        "eligible_orders": 111,
+        "orders_with_late_outcome": 5,
+        "item_value": "14760.30",
+        "late_order_pct": 4.504504504504505,
+        "rate_rank": 207
+      },
+      {
+        "seller_id": "1c129092bf23f28a5930387c980c0dfc",
+        "seller_state": "SP",
+        "eligible_orders": 200,
+        "orders_with_late_outcome": 9,
+        "item_value": "9553.62",
+        "late_order_pct": 4.5,
+        "rate_rank": 208
+      },
+      {
+        "seller_id": "98dac6635aee4995d501a3972e047414",
+        "seller_state": "SP",
+        "eligible_orders": 89,
+        "orders_with_late_outcome": 4,
+        "item_value": "4235.85",
+        "late_order_pct": 4.49438202247191,
+        "rate_rank": 209
+      },
+      {
+        "seller_id": "94144541854e298c2d976cb893b81343",
+        "seller_state": "RS",
+        "eligible_orders": 68,
+        "orders_with_late_outcome": 3,
+        "item_value": "17286.28",
+        "late_order_pct": 4.411764705882353,
+        "rate_rank": 210
+      },
+      {
+        "seller_id": "e333046ce6517bd8bb510291d44f0130",
+        "seller_state": "SP",
+        "eligible_orders": 68,
+        "orders_with_late_outcome": 3,
+        "item_value": "7268.00",
+        "late_order_pct": 4.411764705882353,
+        "rate_rank": 210
+      },
+      {
+        "seller_id": "7b07b3c7487f0ea825fc6df75abd658b",
+        "seller_state": "SP",
+        "eligible_orders": 91,
+        "orders_with_late_outcome": 4,
+        "item_value": "9731.85",
+        "late_order_pct": 4.395604395604396,
+        "rate_rank": 211
+      },
+      {
+        "seller_id": "6edacfd9f9074789dad6d62ba7950b9c",
+        "seller_state": "SP",
+        "eligible_orders": 205,
+        "orders_with_late_outcome": 9,
+        "item_value": "13147.10",
+        "late_order_pct": 4.390243902439025,
+        "rate_rank": 212
+      },
+      {
+        "seller_id": "a3a38f4affed601eb87a97788c949667",
+        "seller_state": "SC",
+        "eligible_orders": 251,
+        "orders_with_late_outcome": 11,
+        "item_value": "26533.32",
+        "late_order_pct": 4.382470119521912,
+        "rate_rank": 213
+      },
+      {
+        "seller_id": "669ae81880e08f269a64487cfb287169",
+        "seller_state": "SC",
+        "eligible_orders": 161,
+        "orders_with_late_outcome": 7,
+        "item_value": "13248.87",
+        "late_order_pct": 4.3478260869565215,
+        "rate_rank": 214
+      },
+      {
+        "seller_id": "640e21a7d01df7614a3b4923e990d40c",
+        "seller_state": "SP",
+        "eligible_orders": 115,
+        "orders_with_late_outcome": 5,
+        "item_value": "7598.88",
+        "late_order_pct": 4.3478260869565215,
+        "rate_rank": 214
+      },
+      {
+        "seller_id": "dee656f0f566ed1aa85bd137c943f08f",
+        "seller_state": "SP",
+        "eligible_orders": 92,
+        "orders_with_late_outcome": 4,
+        "item_value": "6271.98",
+        "late_order_pct": 4.3478260869565215,
+        "rate_rank": 214
+      },
+      {
+        "seller_id": "d50d79cb34e38265a8649c383dcffd48",
+        "seller_state": "SP",
+        "eligible_orders": 70,
+        "orders_with_late_outcome": 3,
+        "item_value": "13012.42",
+        "late_order_pct": 4.285714285714286,
+        "rate_rank": 215
+      },
+      {
+        "seller_id": "f8db351d8c4c4c22c6835c19a46f01b0",
+        "seller_state": "SP",
+        "eligible_orders": 659,
+        "orders_with_late_outcome": 28,
+        "item_value": "50525.60",
+        "late_order_pct": 4.24886191198786,
+        "rate_rank": 216
+      },
+      {
+        "seller_id": "7299e27ed73d2ad986de7f7c77d919fa",
+        "seller_state": "MG",
+        "eligible_orders": 335,
+        "orders_with_late_outcome": 14,
+        "item_value": "34725.43",
+        "late_order_pct": 4.17910447761194,
+        "rate_rank": 217
+      },
+      {
+        "seller_id": "128639473a139ac0f3e5f5ade55873a5",
+        "seller_state": "PR",
+        "eligible_orders": 527,
+        "orders_with_late_outcome": 22,
+        "item_value": "11908.85",
+        "late_order_pct": 4.174573055028463,
+        "rate_rank": 218
+      },
+      {
+        "seller_id": "81a1104df0f08b59c68aa5b03cfe398e",
+        "seller_state": "PR",
+        "eligible_orders": 72,
+        "orders_with_late_outcome": 3,
+        "item_value": "9420.88",
+        "late_order_pct": 4.166666666666667,
+        "rate_rank": 219
+      },
+      {
+        "seller_id": "9d4db00d65d7760644ac0c14edb5fd86",
+        "seller_state": "SP",
+        "eligible_orders": 97,
+        "orders_with_late_outcome": 4,
+        "item_value": "9979.70",
+        "late_order_pct": 4.123711340206185,
+        "rate_rank": 220
+      },
+      {
+        "seller_id": "9b013e03b2ab786505a1d3b5c0756754",
+        "seller_state": "SP",
+        "eligible_orders": 170,
+        "orders_with_late_outcome": 7,
+        "item_value": "9027.40",
+        "late_order_pct": 4.117647058823529,
+        "rate_rank": 221
+      },
+      {
+        "seller_id": "a7f13822ceb966b076af67121f87b063",
+        "seller_state": "SP",
+        "eligible_orders": 73,
+        "orders_with_late_outcome": 3,
+        "item_value": "12477.64",
+        "late_order_pct": 4.109589041095891,
+        "rate_rank": 222
+      },
+      {
+        "seller_id": "080102cd0a76b09e0dcf55fcacc60e05",
+        "seller_state": "MG",
+        "eligible_orders": 122,
+        "orders_with_late_outcome": 5,
+        "item_value": "5716.78",
+        "late_order_pct": 4.098360655737705,
+        "rate_rank": 223
+      },
+      {
+        "seller_id": "282f23a9769b2690c5dda22e316f9941",
+        "seller_state": "MG",
+        "eligible_orders": 98,
+        "orders_with_late_outcome": 4,
+        "item_value": "6505.08",
+        "late_order_pct": 4.081632653061225,
+        "rate_rank": 224
+      },
+      {
+        "seller_id": "9f505651f4a6abe901a56cdc21508025",
+        "seller_state": "SP",
+        "eligible_orders": 393,
+        "orders_with_late_outcome": 16,
+        "item_value": "26361.82",
+        "late_order_pct": 4.071246819338422,
+        "rate_rank": 225
+      },
+      {
+        "seller_id": "701938c450705b8ae65fc923b70f35c7",
+        "seller_state": "SP",
+        "eligible_orders": 74,
+        "orders_with_late_outcome": 3,
+        "item_value": "11983.28",
+        "late_order_pct": 4.054054054054054,
+        "rate_rank": 226
+      },
+      {
+        "seller_id": "8f119a0aee85c0c8fc534629734e94fd",
+        "seller_state": "SP",
+        "eligible_orders": 75,
+        "orders_with_late_outcome": 3,
+        "item_value": "3733.68",
+        "late_order_pct": 4.0,
+        "rate_rank": 227
+      },
+      {
+        "seller_id": "95f83f51203c626648c875dd41874c7f",
+        "seller_state": "MG",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 2,
+        "item_value": "3217.46",
+        "late_order_pct": 4.0,
+        "rate_rank": 227
+      },
+      {
+        "seller_id": "25cf099de44674fde97473224f9d59ab",
+        "seller_state": "SP",
+        "eligible_orders": 50,
+        "orders_with_late_outcome": 2,
+        "item_value": "1654.36",
+        "late_order_pct": 4.0,
+        "rate_rank": 227
+      },
+      {
+        "seller_id": "87142160b41353c4e5fca2360caf6f92",
+        "seller_state": "RS",
+        "eligible_orders": 305,
+        "orders_with_late_outcome": 12,
+        "item_value": "31095.98",
+        "late_order_pct": 3.9344262295081966,
+        "rate_rank": 228
+      },
+      {
+        "seller_id": "7202e2ba20579a9bd1acb29e61fe71f6",
+        "seller_state": "SP",
+        "eligible_orders": 51,
+        "orders_with_late_outcome": 2,
+        "item_value": "12750.50",
+        "late_order_pct": 3.9215686274509802,
+        "rate_rank": 229
+      },
+      {
+        "seller_id": "00fc707aaaad2d31347cf883cd2dfe10",
+        "seller_state": "PR",
+        "eligible_orders": 103,
+        "orders_with_late_outcome": 4,
+        "item_value": "12684.90",
+        "late_order_pct": 3.883495145631068,
+        "rate_rank": 230
+      },
+      {
+        "seller_id": "aafe36600ce604f205b86b5084d3d767",
+        "seller_state": "SC",
+        "eligible_orders": 129,
+        "orders_with_late_outcome": 5,
+        "item_value": "9251.40",
+        "late_order_pct": 3.875968992248062,
+        "rate_rank": 231
+      },
+      {
+        "seller_id": "4d6d651bd7684af3fffabd5f08d12e5a",
+        "seller_state": "SP",
+        "eligible_orders": 363,
+        "orders_with_late_outcome": 14,
+        "item_value": "43587.40",
+        "late_order_pct": 3.8567493112947657,
+        "rate_rank": 232
+      },
+      {
+        "seller_id": "d91fb3b7d041e83b64a00a3edfb37e4f",
+        "seller_state": "SP",
+        "eligible_orders": 524,
+        "orders_with_late_outcome": 20,
+        "item_value": "40889.74",
+        "late_order_pct": 3.816793893129771,
+        "rate_rank": 233
+      },
+      {
+        "seller_id": "710e3548e02bc1d2831dfc4f1b5b14d4",
+        "seller_state": "PR",
+        "eligible_orders": 131,
+        "orders_with_late_outcome": 5,
+        "item_value": "23979.11",
+        "late_order_pct": 3.816793893129771,
+        "rate_rank": 233
+      },
+      {
+        "seller_id": "537eb890efff034a88679788b647c564",
+        "seller_state": "RJ",
+        "eligible_orders": 158,
+        "orders_with_late_outcome": 6,
+        "item_value": "4679.70",
+        "late_order_pct": 3.7974683544303796,
+        "rate_rank": 234
+      },
+      {
+        "seller_id": "6b243f80ed07b10f0e8aa0f21a205f3c",
+        "seller_state": "PR",
+        "eligible_orders": 79,
+        "orders_with_late_outcome": 3,
+        "item_value": "6260.10",
+        "late_order_pct": 3.7974683544303796,
+        "rate_rank": 234
+      },
+      {
+        "seller_id": "0db783cfcd3b73998abc6e10e59a102f",
+        "seller_state": "SP",
+        "eligible_orders": 132,
+        "orders_with_late_outcome": 5,
+        "item_value": "9077.40",
+        "late_order_pct": 3.787878787878788,
+        "rate_rank": 235
+      },
+      {
+        "seller_id": "febab0275244b9a49a623f0bd613ca2f",
+        "seller_state": "SP",
+        "eligible_orders": 106,
+        "orders_with_late_outcome": 4,
+        "item_value": "7272.42",
+        "late_order_pct": 3.7735849056603774,
+        "rate_rank": 236
+      },
+      {
+        "seller_id": "750303a20e9c56b2a6bc45cdce0b897d",
+        "seller_state": "GO",
+        "eligible_orders": 53,
+        "orders_with_late_outcome": 2,
+        "item_value": "8085.00",
+        "late_order_pct": 3.7735849056603774,
+        "rate_rank": 236
+      },
+      {
+        "seller_id": "1a3df491d1c4f1589fc2b934ada68bf2",
+        "seller_state": "SC",
+        "eligible_orders": 160,
+        "orders_with_late_outcome": 6,
+        "item_value": "23302.70",
+        "late_order_pct": 3.75,
+        "rate_rank": 237
+      },
+      {
+        "seller_id": "2528513dd95219a6013d4d05176e391a",
+        "seller_state": "SP",
+        "eligible_orders": 160,
+        "orders_with_late_outcome": 6,
+        "item_value": "32689.10",
+        "late_order_pct": 3.75,
+        "rate_rank": 237
+      },
+      {
+        "seller_id": "e8b3a3a38279a82f0e5d006d5e5b7d2c",
+        "seller_state": "PR",
+        "eligible_orders": 80,
+        "orders_with_late_outcome": 3,
+        "item_value": "13154.70",
+        "late_order_pct": 3.75,
+        "rate_rank": 237
+      },
+      {
+        "seller_id": "dbb9b48c841a0e39e21f98e1a6b2ec3e",
+        "seller_state": "SP",
+        "eligible_orders": 108,
+        "orders_with_late_outcome": 4,
+        "item_value": "7186.85",
+        "late_order_pct": 3.7037037037037037,
+        "rate_rank": 238
+      },
+      {
+        "seller_id": "688756f717c462a206ad854c5027a64a",
+        "seller_state": "SP",
+        "eligible_orders": 81,
+        "orders_with_late_outcome": 3,
+        "item_value": "5966.54",
+        "late_order_pct": 3.7037037037037037,
+        "rate_rank": 238
+      },
+      {
+        "seller_id": "4e7c18b98d84e05cbae3ff0ff03846c2",
+        "seller_state": "SP",
+        "eligible_orders": 81,
+        "orders_with_late_outcome": 3,
+        "item_value": "9177.90",
+        "late_order_pct": 3.7037037037037037,
+        "rate_rank": 238
+      },
+      {
+        "seller_id": "062ce95fa2ad4dfaedfc79260130565f",
+        "seller_state": "RS",
+        "eligible_orders": 54,
+        "orders_with_late_outcome": 2,
+        "item_value": "7521.00",
+        "late_order_pct": 3.7037037037037037,
+        "rate_rank": 238
+      },
+      {
+        "seller_id": "0b90b6df587eb83608a64ea8b390cf07",
+        "seller_state": "PR",
+        "eligible_orders": 163,
+        "orders_with_late_outcome": 6,
+        "item_value": "28592.32",
+        "late_order_pct": 3.6809815950920246,
+        "rate_rank": 239
+      },
+      {
+        "seller_id": "db4350fd57ae30082dec7acbaacc17f9",
+        "seller_state": "SP",
+        "eligible_orders": 136,
+        "orders_with_late_outcome": 5,
+        "item_value": "3331.31",
+        "late_order_pct": 3.676470588235294,
+        "rate_rank": 240
+      },
+      {
+        "seller_id": "ebd2d60905fb58271facef5596b620d3",
+        "seller_state": "SP",
+        "eligible_orders": 82,
+        "orders_with_late_outcome": 3,
+        "item_value": "7941.72",
+        "late_order_pct": 3.658536585365854,
+        "rate_rank": 241
+      },
+      {
+        "seller_id": "eeb6de78f79159600292e314a77cbd18",
+        "seller_state": "SC",
+        "eligible_orders": 82,
+        "orders_with_late_outcome": 3,
+        "item_value": "43739.84",
+        "late_order_pct": 3.658536585365854,
+        "rate_rank": 241
+      },
+      {
+        "seller_id": "5a8e7d5003a1f221f9e1d6e411de7c23",
+        "seller_state": "SP",
+        "eligible_orders": 137,
+        "orders_with_late_outcome": 5,
+        "item_value": "11171.90",
+        "late_order_pct": 3.6496350364963503,
+        "rate_rank": 242
+      },
+      {
+        "seller_id": "7d456afc660226829370f3173d14520c",
+        "seller_state": "SP",
+        "eligible_orders": 55,
+        "orders_with_late_outcome": 2,
+        "item_value": "8338.25",
+        "late_order_pct": 3.6363636363636362,
+        "rate_rank": 243
+      },
+      {
+        "seller_id": "3078096983cf766a32a06257648502d1",
+        "seller_state": "SP",
+        "eligible_orders": 56,
+        "orders_with_late_outcome": 2,
+        "item_value": "8285.42",
+        "late_order_pct": 3.5714285714285716,
+        "rate_rank": 244
+      },
+      {
+        "seller_id": "de722cd6dad950a92b7d4f82673f8833",
+        "seller_state": "PE",
+        "eligible_orders": 337,
+        "orders_with_late_outcome": 12,
+        "item_value": "55426.10",
+        "late_order_pct": 3.5608308605341246,
+        "rate_rank": 245
+      },
+      {
+        "seller_id": "dbd66278cbfe1aa1000f90a217ca4695",
+        "seller_state": "SP",
+        "eligible_orders": 85,
+        "orders_with_late_outcome": 3,
+        "item_value": "4928.90",
+        "late_order_pct": 3.5294117647058822,
+        "rate_rank": 246
+      },
+      {
+        "seller_id": "44073f8b7e41514de3b7815dd0237f4f",
+        "seller_state": "DF",
+        "eligible_orders": 142,
+        "orders_with_late_outcome": 5,
+        "item_value": "18729.64",
+        "late_order_pct": 3.5211267605633805,
+        "rate_rank": 247
+      },
+      {
+        "seller_id": "1c68394e931a64f90ea236c5ea590300",
+        "seller_state": "PR",
+        "eligible_orders": 142,
+        "orders_with_late_outcome": 5,
+        "item_value": "24832.75",
+        "late_order_pct": 3.5211267605633805,
+        "rate_rank": 247
+      },
+      {
+        "seller_id": "c33847515fa6305ce6feb1e818569f13",
+        "seller_state": "SC",
+        "eligible_orders": 114,
+        "orders_with_late_outcome": 4,
+        "item_value": "15519.85",
+        "late_order_pct": 3.508771929824561,
+        "rate_rank": 248
+      },
+      {
+        "seller_id": "05ff92fedb5be47920fea08e501238b9",
+        "seller_state": "RS",
+        "eligible_orders": 57,
+        "orders_with_late_outcome": 2,
+        "item_value": "21992.78",
+        "late_order_pct": 3.508771929824561,
+        "rate_rank": 248
+      },
+      {
+        "seller_id": "376a891762bbdecbc02b4b6adec3fdda",
+        "seller_state": "GO",
+        "eligible_orders": 57,
+        "orders_with_late_outcome": 2,
+        "item_value": "6406.23",
+        "late_order_pct": 3.508771929824561,
+        "rate_rank": 248
+      },
+      {
+        "seller_id": "95e03ca3d4146e4011985981aeb959b9",
+        "seller_state": "RJ",
+        "eligible_orders": 172,
+        "orders_with_late_outcome": 6,
+        "item_value": "11009.96",
+        "late_order_pct": 3.488372093023256,
+        "rate_rank": 249
+      },
+      {
+        "seller_id": "7178f9f4dd81dcef02f62acdf8151e01",
+        "seller_state": "SC",
+        "eligible_orders": 202,
+        "orders_with_late_outcome": 7,
+        "item_value": "37070.40",
+        "late_order_pct": 3.4653465346534653,
+        "rate_rank": 250
+      },
+      {
+        "seller_id": "53243585a1d6dc2643021fd1853d8905",
+        "seller_state": "BA",
+        "eligible_orders": 348,
+        "orders_with_late_outcome": 12,
+        "item_value": "222776.05",
+        "late_order_pct": 3.4482758620689653,
+        "rate_rank": 251
+      },
+      {
+        "seller_id": "2ff97219cb8622eaf3cd89b7d9c09824",
+        "seller_state": "SP",
+        "eligible_orders": 87,
+        "orders_with_late_outcome": 3,
+        "item_value": "4476.90",
+        "late_order_pct": 3.4482758620689653,
+        "rate_rank": 251
+      },
+      {
+        "seller_id": "c864036feaab8c1659f65ea4faebe1da",
+        "seller_state": "PR",
+        "eligible_orders": 58,
+        "orders_with_late_outcome": 2,
+        "item_value": "10454.20",
+        "late_order_pct": 3.4482758620689653,
+        "rate_rank": 251
+      },
+      {
+        "seller_id": "fcb5ace8bcc92f75707dc0f01a27d269",
+        "seller_state": "SP",
+        "eligible_orders": 59,
+        "orders_with_late_outcome": 2,
+        "item_value": "8318.63",
+        "late_order_pct": 3.389830508474576,
+        "rate_rank": 252
+      },
+      {
+        "seller_id": "c6bda72e4dbf5c5866b13cb1810c6d03",
+        "seller_state": "SP",
+        "eligible_orders": 59,
+        "orders_with_late_outcome": 2,
+        "item_value": "14059.38",
+        "late_order_pct": 3.389830508474576,
+        "rate_rank": 252
+      },
+      {
+        "seller_id": "36a968b544695394e4e9d7572688598f",
+        "seller_state": "SP",
+        "eligible_orders": 148,
+        "orders_with_late_outcome": 5,
+        "item_value": "9482.87",
+        "late_order_pct": 3.3783783783783785,
+        "rate_rank": 253
+      },
+      {
+        "seller_id": "709e16e2b25c7474d980076c6bfc4806",
+        "seller_state": "SP",
+        "eligible_orders": 60,
+        "orders_with_late_outcome": 2,
+        "item_value": "5151.90",
+        "late_order_pct": 3.3333333333333335,
+        "rate_rank": 254
+      },
+      {
+        "seller_id": "1e8b33f18b4f7598d87f5cbee2282cc2",
+        "seller_state": "SP",
+        "eligible_orders": 122,
+        "orders_with_late_outcome": 4,
+        "item_value": "17309.06",
+        "late_order_pct": 3.278688524590164,
+        "rate_rank": 255
+      },
+      {
+        "seller_id": "cce6ab8d1682639fe45ab70234f1665f",
+        "seller_state": "SP",
+        "eligible_orders": 61,
+        "orders_with_late_outcome": 2,
+        "item_value": "2522.70",
+        "late_order_pct": 3.278688524590164,
+        "rate_rank": 255
+      },
+      {
+        "seller_id": "aced59e9b31ef866a94f9e7f29d8d418",
+        "seller_state": "SP",
+        "eligible_orders": 61,
+        "orders_with_late_outcome": 2,
+        "item_value": "7268.50",
+        "late_order_pct": 3.278688524590164,
+        "rate_rank": 255
+      },
+      {
+        "seller_id": "116ccb1a1604bc88e4d234a8c23f33de",
+        "seller_state": "SP",
+        "eligible_orders": 61,
+        "orders_with_late_outcome": 2,
+        "item_value": "2004.89",
+        "late_order_pct": 3.278688524590164,
+        "rate_rank": 255
+      },
+      {
+        "seller_id": "1838dd9b8977065acf51d95e0053ea7a",
+        "seller_state": "MG",
+        "eligible_orders": 62,
+        "orders_with_late_outcome": 2,
+        "item_value": "2820.30",
+        "late_order_pct": 3.225806451612903,
+        "rate_rank": 256
+      },
+      {
+        "seller_id": "b92e3c8f9738272ff7c59e111e108d7c",
+        "seller_state": "MG",
+        "eligible_orders": 62,
+        "orders_with_late_outcome": 2,
+        "item_value": "8231.09",
+        "late_order_pct": 3.225806451612903,
+        "rate_rank": 256
+      },
+      {
+        "seller_id": "ff063b022a9a0aab91bad2c9088760b7",
+        "seller_state": "SP",
+        "eligible_orders": 94,
+        "orders_with_late_outcome": 3,
+        "item_value": "12076.50",
+        "late_order_pct": 3.1914893617021276,
+        "rate_rank": 257
+      },
+      {
+        "seller_id": "b76dba6c951ab00dc4edf0a1aa88037e",
+        "seller_state": "SP",
+        "eligible_orders": 157,
+        "orders_with_late_outcome": 5,
+        "item_value": "2574.78",
+        "late_order_pct": 3.1847133757961785,
+        "rate_rank": 258
+      },
+      {
+        "seller_id": "8a32e327fe2c1b3511609d81aaf9f042",
+        "seller_state": "SP",
+        "eligible_orders": 126,
+        "orders_with_late_outcome": 4,
+        "item_value": "6429.01",
+        "late_order_pct": 3.1746031746031744,
+        "rate_rank": 259
+      },
+      {
+        "seller_id": "562fc2f2c2863ab7e79a9e4388a58a14",
+        "seller_state": "SP",
+        "eligible_orders": 255,
+        "orders_with_late_outcome": 8,
+        "item_value": "8814.20",
+        "late_order_pct": 3.1372549019607843,
+        "rate_rank": 260
+      },
+      {
+        "seller_id": "80e6699fe29150b372a0c8a1ebf7dcc8",
+        "seller_state": "PR",
+        "eligible_orders": 96,
+        "orders_with_late_outcome": 3,
+        "item_value": "11441.56",
+        "late_order_pct": 3.125,
+        "rate_rank": 261
+      },
+      {
+        "seller_id": "76d64c4aca3a7baf218bf93ef7fa768d",
+        "seller_state": "PR",
+        "eligible_orders": 64,
+        "orders_with_late_outcome": 2,
+        "item_value": "16911.80",
+        "late_order_pct": 3.125,
+        "rate_rank": 261
+      },
+      {
+        "seller_id": "066a6914e1ebf3ea95a216c73a986b91",
+        "seller_state": "PR",
+        "eligible_orders": 66,
+        "orders_with_late_outcome": 2,
+        "item_value": "9410.38",
+        "late_order_pct": 3.0303030303030303,
+        "rate_rank": 262
+      },
+      {
+        "seller_id": "7722b1df1b0e383e000397b2c11e3e19",
+        "seller_state": "SP",
+        "eligible_orders": 133,
+        "orders_with_late_outcome": 4,
+        "item_value": "7094.09",
+        "late_order_pct": 3.007518796992481,
+        "rate_rank": 263
+      },
+      {
+        "seller_id": "d94a40fd42351c259927028d163af842",
+        "seller_state": "MG",
+        "eligible_orders": 100,
+        "orders_with_late_outcome": 3,
+        "item_value": "13823.80",
+        "late_order_pct": 3.0,
+        "rate_rank": 264
+      },
+      {
+        "seller_id": "966cb4760537b1404caedd472cc610a5",
+        "seller_state": "SP",
+        "eligible_orders": 67,
+        "orders_with_late_outcome": 2,
+        "item_value": "51286.05",
+        "late_order_pct": 2.985074626865672,
+        "rate_rank": 265
+      },
+      {
+        "seller_id": "9646c3513289980f17226a2fc4720dbd",
+        "seller_state": "SP",
+        "eligible_orders": 69,
+        "orders_with_late_outcome": 2,
+        "item_value": "3039.30",
+        "late_order_pct": 2.898550724637681,
+        "rate_rank": 266
+      },
+      {
+        "seller_id": "aaed1309374718fdd995ee4c58c9dfcd",
+        "seller_state": "SC",
+        "eligible_orders": 104,
+        "orders_with_late_outcome": 3,
+        "item_value": "9376.95",
+        "late_order_pct": 2.8846153846153846,
+        "rate_rank": 267
+      },
+      {
+        "seller_id": "25e6ffe976bd75618accfe16cefcbd0d",
+        "seller_state": "SP",
+        "eligible_orders": 106,
+        "orders_with_late_outcome": 3,
+        "item_value": "11691.61",
+        "late_order_pct": 2.830188679245283,
+        "rate_rank": 268
+      },
+      {
+        "seller_id": "30a2f535bb48308f991d0b9ad4a8c4bb",
+        "seller_state": "SP",
+        "eligible_orders": 71,
+        "orders_with_late_outcome": 2,
+        "item_value": "4731.30",
+        "late_order_pct": 2.816901408450704,
+        "rate_rank": 269
+      },
+      {
+        "seller_id": "9de4643a8dbde634fe55621059d92273",
+        "seller_state": "SC",
+        "eligible_orders": 72,
+        "orders_with_late_outcome": 2,
+        "item_value": "17560.34",
+        "late_order_pct": 2.7777777777777777,
+        "rate_rank": 270
+      },
+      {
+        "seller_id": "9e6229250fedbe05838fef417b74e7fb",
+        "seller_state": "SP",
+        "eligible_orders": 73,
+        "orders_with_late_outcome": 2,
+        "item_value": "13132.20",
+        "late_order_pct": 2.73972602739726,
+        "rate_rank": 271
+      },
+      {
+        "seller_id": "516e7738bd8f735ac19a010ee5450d8d",
+        "seller_state": "RJ",
+        "eligible_orders": 74,
+        "orders_with_late_outcome": 2,
+        "item_value": "6643.09",
+        "late_order_pct": 2.7027027027027026,
+        "rate_rank": 272
+      },
+      {
+        "seller_id": "37be5a7c751166fbc5f8ccba4119e043",
+        "seller_state": "SP",
+        "eligible_orders": 269,
+        "orders_with_late_outcome": 7,
+        "item_value": "55350.55",
+        "late_order_pct": 2.6022304832713754,
+        "rate_rank": 273
+      },
+      {
+        "seller_id": "2a84855fd20af891be03bc5924d2b453",
+        "seller_state": "MG",
+        "eligible_orders": 155,
+        "orders_with_late_outcome": 4,
+        "item_value": "15819.10",
+        "late_order_pct": 2.5806451612903225,
+        "rate_rank": 274
+      },
+      {
+        "seller_id": "dbc22125167c298ef99da25668e1011f",
+        "seller_state": "MG",
+        "eligible_orders": 394,
+        "orders_with_late_outcome": 10,
+        "item_value": "33776.78",
+        "late_order_pct": 2.5380710659898478,
+        "rate_rank": 275
+      },
+      {
+        "seller_id": "8bb48dc19fccaa8613b6229bf7f452a2",
+        "seller_state": "SP",
+        "eligible_orders": 82,
+        "orders_with_late_outcome": 2,
+        "item_value": "4190.72",
+        "late_order_pct": 2.4390243902439024,
+        "rate_rank": 276
+      },
+      {
+        "seller_id": "0432ead42b6c8a0bdf68154add917fdf",
+        "seller_state": "SP",
+        "eligible_orders": 82,
+        "orders_with_late_outcome": 2,
+        "item_value": "7792.10",
+        "late_order_pct": 2.4390243902439024,
+        "rate_rank": 276
+      },
+      {
+        "seller_id": "d98eec89afa3380e14463da2aabaea72",
+        "seller_state": "RS",
+        "eligible_orders": 168,
+        "orders_with_late_outcome": 4,
+        "item_value": "6968.53",
+        "late_order_pct": 2.380952380952381,
+        "rate_rank": 277
+      },
+      {
+        "seller_id": "9674754b5a0cb32b638cec001178f799",
+        "seller_state": "SP",
+        "eligible_orders": 84,
+        "orders_with_late_outcome": 2,
+        "item_value": "5069.92",
+        "late_order_pct": 2.380952380952381,
+        "rate_rank": 277
+      },
+      {
+        "seller_id": "bd23da7354813347129d751591d1a6e2",
+        "seller_state": "SP",
+        "eligible_orders": 86,
+        "orders_with_late_outcome": 2,
+        "item_value": "10544.30",
+        "late_order_pct": 2.3255813953488373,
+        "rate_rank": 278
+      },
+      {
+        "seller_id": "86ccac0b835037332a596a33b6949ee1",
+        "seller_state": "SC",
+        "eligible_orders": 178,
+        "orders_with_late_outcome": 4,
+        "item_value": "16619.93",
+        "late_order_pct": 2.247191011235955,
+        "rate_rank": 279
+      },
+      {
+        "seller_id": "85d9eb9ddc5d00ca9336a2219c97bb13",
+        "seller_state": "MG",
+        "eligible_orders": 499,
+        "orders_with_late_outcome": 11,
+        "item_value": "15415.24",
+        "late_order_pct": 2.2044088176352705,
+        "rate_rank": 280
+      },
+      {
+        "seller_id": "8a432f4e5b471f8da497d7dc517666e2",
+        "seller_state": "SP",
+        "eligible_orders": 95,
+        "orders_with_late_outcome": 2,
+        "item_value": "7555.00",
+        "late_order_pct": 2.1052631578947367,
+        "rate_rank": 281
+      },
+      {
+        "seller_id": "b4ffb71f0cb1b1c3d63fad021ecf93e1",
+        "seller_state": "SP",
+        "eligible_orders": 143,
+        "orders_with_late_outcome": 3,
+        "item_value": "6656.09",
+        "late_order_pct": 2.097902097902098,
+        "rate_rank": 282
+      },
+      {
+        "seller_id": "5cf13accae3222c70a9cac40818ae839",
+        "seller_state": "MG",
+        "eligible_orders": 148,
+        "orders_with_late_outcome": 3,
+        "item_value": "14383.20",
+        "late_order_pct": 2.027027027027027,
+        "rate_rank": 283
+      },
+      {
+        "seller_id": "cab85505710c7cb9b720bceb52b01cee",
+        "seller_state": "SP",
+        "eligible_orders": 201,
+        "orders_with_late_outcome": 4,
+        "item_value": "11389.10",
+        "late_order_pct": 1.9900497512437811,
+        "rate_rank": 284
+      },
+      {
+        "seller_id": "ac3508719a1d8f5b7614b798f70af136",
+        "seller_state": "RS",
+        "eligible_orders": 101,
+        "orders_with_late_outcome": 2,
+        "item_value": "12775.84",
+        "late_order_pct": 1.9801980198019802,
+        "rate_rank": 285
+      },
+      {
+        "seller_id": "751bdc4d83a466c7206cd42e8f426b03",
+        "seller_state": "SP",
+        "eligible_orders": 51,
+        "orders_with_late_outcome": 1,
+        "item_value": "6648.93",
+        "late_order_pct": 1.9607843137254901,
+        "rate_rank": 286
+      },
+      {
+        "seller_id": "33a6f4b1e7cdc205511e76ba1b6e0186",
+        "seller_state": "SP",
+        "eligible_orders": 105,
+        "orders_with_late_outcome": 2,
+        "item_value": "10295.01",
+        "late_order_pct": 1.9047619047619047,
+        "rate_rank": 287
+      },
+      {
+        "seller_id": "a5cba26a62b8b4d0145b68b841e62e7f",
+        "seller_state": "PR",
+        "eligible_orders": 53,
+        "orders_with_late_outcome": 1,
+        "item_value": "14737.84",
+        "late_order_pct": 1.8867924528301887,
+        "rate_rank": 288
+      },
+      {
+        "seller_id": "6c177e38df6d3f34182b1f1d427231bf",
+        "seller_state": "PR",
+        "eligible_orders": 53,
+        "orders_with_late_outcome": 1,
+        "item_value": "8341.89",
+        "late_order_pct": 1.8867924528301887,
+        "rate_rank": 288
+      },
+      {
+        "seller_id": "2dee2ce60de9709b1a24083217181a1f",
+        "seller_state": "MT",
+        "eligible_orders": 54,
+        "orders_with_late_outcome": 1,
+        "item_value": "7784.50",
+        "late_order_pct": 1.8518518518518519,
+        "rate_rank": 289
+      },
+      {
+        "seller_id": "289cdb325fb7e7f891c38608bf9e0962",
+        "seller_state": "SP",
+        "eligible_orders": 109,
+        "orders_with_late_outcome": 2,
+        "item_value": "13544.95",
+        "late_order_pct": 1.834862385321101,
+        "rate_rank": 290
+      },
+      {
+        "seller_id": "1127b7f2594683f2510f1c2c834a486b",
+        "seller_state": "SP",
+        "eligible_orders": 110,
+        "orders_with_late_outcome": 2,
+        "item_value": "6851.33",
+        "late_order_pct": 1.8181818181818181,
+        "rate_rank": 291
+      },
+      {
+        "seller_id": "1b8356dabde1d35e17cef975c3f82730",
+        "seller_state": "SP",
+        "eligible_orders": 55,
+        "orders_with_late_outcome": 1,
+        "item_value": "3426.39",
+        "late_order_pct": 1.8181818181818181,
+        "rate_rank": 291
+      },
+      {
+        "seller_id": "6c7d50c24b3ccd2fd83b44d8bb34e073",
+        "seller_state": "SP",
+        "eligible_orders": 112,
+        "orders_with_late_outcome": 2,
+        "item_value": "8699.34",
+        "late_order_pct": 1.7857142857142858,
+        "rate_rank": 292
+      },
+      {
+        "seller_id": "3bdff180c7e1f6551a643b99c265a120",
+        "seller_state": "SP",
+        "eligible_orders": 56,
+        "orders_with_late_outcome": 1,
+        "item_value": "3114.90",
+        "late_order_pct": 1.7857142857142858,
+        "rate_rank": 292
+      },
+      {
+        "seller_id": "229c3efbfb0ea2058de4ccdfbc3d784a",
+        "seller_state": "MG",
+        "eligible_orders": 118,
+        "orders_with_late_outcome": 2,
+        "item_value": "15744.00",
+        "late_order_pct": 1.694915254237288,
+        "rate_rank": 293
+      },
+      {
+        "seller_id": "582d4f8675b945722eda7c0cb61ba4c7",
+        "seller_state": "SP",
+        "eligible_orders": 59,
+        "orders_with_late_outcome": 1,
+        "item_value": "4702.96",
+        "late_order_pct": 1.694915254237288,
+        "rate_rank": 293
+      },
+      {
+        "seller_id": "91f848e9f4be368f4318775aac733370",
+        "seller_state": "SP",
+        "eligible_orders": 60,
+        "orders_with_late_outcome": 1,
+        "item_value": "5932.60",
+        "late_order_pct": 1.6666666666666667,
+        "rate_rank": 294
+      },
+      {
+        "seller_id": "ce27a3cc3c8cc1ea79d11e561e9bebb6",
+        "seller_state": "SP",
+        "eligible_orders": 122,
+        "orders_with_late_outcome": 2,
+        "item_value": "10682.65",
+        "late_order_pct": 1.639344262295082,
+        "rate_rank": 295
+      },
+      {
+        "seller_id": "5f1dc28029d2c244352a68107ec2b542",
+        "seller_state": "SP",
+        "eligible_orders": 62,
+        "orders_with_late_outcome": 1,
+        "item_value": "2807.30",
+        "late_order_pct": 1.6129032258064515,
+        "rate_rank": 296
+      },
+      {
+        "seller_id": "520b493b57809f446cb0a233bb3e25c7",
+        "seller_state": "SP",
+        "eligible_orders": 63,
+        "orders_with_late_outcome": 1,
+        "item_value": "3698.90",
+        "late_order_pct": 1.5873015873015872,
+        "rate_rank": 297
+      },
+      {
+        "seller_id": "e26901d5ab434ce92fd9b5c256820a4e",
+        "seller_state": "SP",
+        "eligible_orders": 197,
+        "orders_with_late_outcome": 3,
+        "item_value": "11990.90",
+        "late_order_pct": 1.5228426395939085,
+        "rate_rank": 298
+      },
+      {
+        "seller_id": "48162d548f5b1b11b9d29d1e01f75a61",
+        "seller_state": "SP",
+        "eligible_orders": 66,
+        "orders_with_late_outcome": 1,
+        "item_value": "20510.14",
+        "late_order_pct": 1.5151515151515151,
+        "rate_rank": 299
+      },
+      {
+        "seller_id": "cb8bcce248bb1fb274ba762d8b971456",
+        "seller_state": "MG",
+        "eligible_orders": 66,
+        "orders_with_late_outcome": 1,
+        "item_value": "9402.20",
+        "late_order_pct": 1.5151515151515151,
+        "rate_rank": 299
+      },
+      {
+        "seller_id": "9d5a9018aee56acb367ba9c3f05d1d6a",
+        "seller_state": "GO",
+        "eligible_orders": 66,
+        "orders_with_late_outcome": 1,
+        "item_value": "10292.31",
+        "late_order_pct": 1.5151515151515151,
+        "rate_rank": 299
+      },
+      {
+        "seller_id": "259f7b5e6e482c230e5bfaa670b6bb8f",
+        "seller_state": "SP",
+        "eligible_orders": 136,
+        "orders_with_late_outcome": 2,
+        "item_value": "8526.04",
+        "late_order_pct": 1.4705882352941178,
+        "rate_rank": 300
+      },
+      {
+        "seller_id": "ca3bd7cd9f149df75950150d010fe4a2",
+        "seller_state": "SP",
+        "eligible_orders": 68,
+        "orders_with_late_outcome": 1,
+        "item_value": "9731.85",
+        "late_order_pct": 1.4705882352941178,
+        "rate_rank": 300
+      },
+      {
+        "seller_id": "822166ed1e47908f7cfb49946d03c726",
+        "seller_state": "RJ",
+        "eligible_orders": 69,
+        "orders_with_late_outcome": 1,
+        "item_value": "3714.83",
+        "late_order_pct": 1.4492753623188406,
+        "rate_rank": 301
+      },
+      {
+        "seller_id": "c3cfdc648177fdbbbb35635a37472c53",
+        "seller_state": "PR",
+        "eligible_orders": 278,
+        "orders_with_late_outcome": 4,
+        "item_value": "43048.18",
+        "late_order_pct": 1.4388489208633093,
+        "rate_rank": 302
+      },
+      {
+        "seller_id": "6cd68b3ed6d59aaa9fece558ad360c0a",
+        "seller_state": "MG",
+        "eligible_orders": 149,
+        "orders_with_late_outcome": 2,
+        "item_value": "11188.57",
+        "late_order_pct": 1.342281879194631,
+        "rate_rank": 303
+      },
+      {
+        "seller_id": "d12c926d74ceff0a90a21184466ce161",
+        "seller_state": "SP",
+        "eligible_orders": 76,
+        "orders_with_late_outcome": 1,
+        "item_value": "3944.18",
+        "late_order_pct": 1.3157894736842106,
+        "rate_rank": 304
+      },
+      {
+        "seller_id": "d921b68bf747894be13a97ae52b0f386",
+        "seller_state": "MG",
+        "eligible_orders": 77,
+        "orders_with_late_outcome": 1,
+        "item_value": "15645.80",
+        "late_order_pct": 1.2987012987012987,
+        "rate_rank": 305
+      },
+      {
+        "seller_id": "dfa0c4c6229ab200a4a1336b4d7128ff",
+        "seller_state": "SC",
+        "eligible_orders": 77,
+        "orders_with_late_outcome": 1,
+        "item_value": "4777.10",
+        "late_order_pct": 1.2987012987012987,
+        "rate_rank": 305
+      },
+      {
+        "seller_id": "744dac408745240a2c2528fb1b6028f3",
+        "seller_state": "PR",
+        "eligible_orders": 78,
+        "orders_with_late_outcome": 1,
+        "item_value": "22490.60",
+        "late_order_pct": 1.2820512820512822,
+        "rate_rank": 306
+      },
+      {
+        "seller_id": "080199a181c46c657dc5aa235411be3b",
+        "seller_state": "SP",
+        "eligible_orders": 79,
+        "orders_with_late_outcome": 1,
+        "item_value": "14504.20",
+        "late_order_pct": 1.2658227848101267,
+        "rate_rank": 307
+      },
+      {
+        "seller_id": "0df3984f9dfb3d49ac6366acbd3bbb85",
+        "seller_state": "MG",
+        "eligible_orders": 86,
+        "orders_with_late_outcome": 1,
+        "item_value": "10021.49",
+        "late_order_pct": 1.1627906976744187,
+        "rate_rank": 308
+      },
+      {
+        "seller_id": "609e1a9a6c2539919b8205cf7c4e6ff0",
+        "seller_state": "SC",
+        "eligible_orders": 87,
+        "orders_with_late_outcome": 1,
+        "item_value": "6595.23",
+        "late_order_pct": 1.1494252873563218,
+        "rate_rank": 309
+      },
+      {
+        "seller_id": "725c32fa80c2faacc4fc88450d27314e",
+        "seller_state": "SP",
+        "eligible_orders": 89,
+        "orders_with_late_outcome": 1,
+        "item_value": "7838.88",
+        "late_order_pct": 1.1235955056179776,
+        "rate_rank": 310
+      },
+      {
+        "seller_id": "530ec6109d11eaaf87999465c6afee01",
+        "seller_state": "PR",
+        "eligible_orders": 94,
+        "orders_with_late_outcome": 1,
+        "item_value": "12983.81",
+        "late_order_pct": 1.0638297872340425,
+        "rate_rank": 311
+      },
+      {
+        "seller_id": "5c243662ce92d84573bfaff24c3e3700",
+        "seller_state": "SP",
+        "eligible_orders": 98,
+        "orders_with_late_outcome": 1,
+        "item_value": "32862.02",
+        "late_order_pct": 1.0204081632653061,
+        "rate_rank": 312
+      },
+      {
+        "seller_id": "612170e34b97004b3ba37eae81836b4c",
+        "seller_state": "RS",
+        "eligible_orders": 107,
+        "orders_with_late_outcome": 1,
+        "item_value": "23065.02",
+        "late_order_pct": 0.9345794392523364,
+        "rate_rank": 313
+      },
+      {
+        "seller_id": "8c16d1f32a54d92897cc437244442e1b",
+        "seller_state": "SC",
+        "eligible_orders": 108,
+        "orders_with_late_outcome": 1,
+        "item_value": "5642.60",
+        "late_order_pct": 0.9259259259259259,
+        "rate_rank": 314
+      },
+      {
+        "seller_id": "17ca9b9e9b9ef8fdb529001b49ebb50f",
+        "seller_state": "MG",
+        "eligible_orders": 115,
+        "orders_with_late_outcome": 1,
+        "item_value": "9754.83",
+        "late_order_pct": 0.8695652173913043,
+        "rate_rank": 315
+      },
+      {
+        "seller_id": "0ea22c1cfbdc755f86b9b54b39c16043",
+        "seller_state": "MG",
+        "eligible_orders": 234,
+        "orders_with_late_outcome": 2,
+        "item_value": "10711.70",
+        "late_order_pct": 0.8547008547008547,
+        "rate_rank": 316
+      },
+      {
+        "seller_id": "12b9676b00f60f3b700e83af21824c0e",
+        "seller_state": "RS",
+        "eligible_orders": 133,
+        "orders_with_late_outcome": 1,
+        "item_value": "26774.00",
+        "late_order_pct": 0.7518796992481203,
+        "rate_rank": 317
+      },
+      {
+        "seller_id": "0bae85eb84b9fb3bd773911e89288d54",
+        "seller_state": "SP",
+        "eligible_orders": 136,
+        "orders_with_late_outcome": 1,
+        "item_value": "7482.21",
+        "late_order_pct": 0.7352941176470589,
+        "rate_rank": 318
+      },
+      {
+        "seller_id": "fc906263ca5083d09dce42fe02247800",
+        "seller_state": "MG",
+        "eligible_orders": 112,
+        "orders_with_late_outcome": 0,
+        "item_value": "4497.70",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "9616352088dcf83a7c06637f4ebf1c80",
+        "seller_state": "PR",
+        "eligible_orders": 91,
+        "orders_with_late_outcome": 0,
+        "item_value": "5703.00",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "06e5eefc71ec47ae763c5c6f8db7064f",
+        "seller_state": "RS",
+        "eligible_orders": 90,
+        "orders_with_late_outcome": 0,
+        "item_value": "22188.56",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "f3b80352b986ab4d1057a4b724be19d0",
+        "seller_state": "DF",
+        "eligible_orders": 86,
+        "orders_with_late_outcome": 0,
+        "item_value": "10505.10",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "d566c37fa119d5e66c4e9052e83ee4ea",
+        "seller_state": "SP",
+        "eligible_orders": 65,
+        "orders_with_late_outcome": 0,
+        "item_value": "5145.70",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "8ae520247981aa06bc94abddf5f46d34",
+        "seller_state": "SC",
+        "eligible_orders": 65,
+        "orders_with_late_outcome": 0,
+        "item_value": "16320.99",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "b372ee768ed69e46ca8cdbd267aa7a38",
+        "seller_state": "SP",
+        "eligible_orders": 63,
+        "orders_with_late_outcome": 0,
+        "item_value": "12630.00",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "57e632711dec9ec14ca7546769483e7e",
+        "seller_state": "SC",
+        "eligible_orders": 62,
+        "orders_with_late_outcome": 0,
+        "item_value": "6350.06",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "d57e18d5f73c7ccb7f7339b61166898d",
+        "seller_state": "SP",
+        "eligible_orders": 61,
+        "orders_with_late_outcome": 0,
+        "item_value": "3187.70",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "e882b2a25a10b9c057cc49695f222c19",
+        "seller_state": "RJ",
+        "eligible_orders": 57,
+        "orders_with_late_outcome": 0,
+        "item_value": "51057.54",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "fa1a9dec3a9940c072684a46728bf1fc",
+        "seller_state": "SC",
+        "eligible_orders": 55,
+        "orders_with_late_outcome": 0,
+        "item_value": "6674.00",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "cc63f0dd2acba93ffed4fe9f8e0321fa",
+        "seller_state": "SP",
+        "eligible_orders": 55,
+        "orders_with_late_outcome": 0,
+        "item_value": "7096.71",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "3504c0cb71d7fa48d967e0e4c94d59d9",
+        "seller_state": "SP",
+        "eligible_orders": 53,
+        "orders_with_late_outcome": 0,
+        "item_value": "2349.94",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "2b3e4a2a3ea8e01938cabda2a3e5cc79",
+        "seller_state": "SP",
+        "eligible_orders": 52,
+        "orders_with_late_outcome": 0,
+        "item_value": "23629.15",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      },
+      {
+        "seller_id": "b1a81260566c1bac3114a6d124413f27",
+        "seller_state": "RS",
+        "eligible_orders": 51,
+        "orders_with_late_outcome": 0,
+        "item_value": "8684.69",
+        "late_order_pct": 0.0,
+        "rate_rank": 319
+      }
+    ]
+  },
+  "product_categories": {
+    "rows": 74,
+    "columns": [
+      "category",
+      "item_lines",
+      "orders",
+      "eligible_item_lines",
+      "item_lines_on_late_orders",
+      "late_item_pct",
+      "item_value"
+    ],
+    "data": [
+      {
+        "category": "bed_bath_table",
+        "item_lines": 11115,
+        "orders": 9417,
+        "eligible_item_lines": 10953,
+        "item_lines_on_late_orders": 770,
+        "late_item_pct": 7.030037432666849,
+        "item_value": "1036988.68"
+      },
+      {
+        "category": "health_beauty",
+        "item_lines": 9670,
+        "orders": 8836,
+        "eligible_item_lines": 9465,
+        "item_lines_on_late_orders": 716,
+        "late_item_pct": 7.5647120972002115,
+        "item_value": "1258681.34"
+      },
+      {
+        "category": "sports_leisure",
+        "item_lines": 8641,
+        "orders": 7720,
+        "eligible_item_lines": 8430,
+        "item_lines_on_late_orders": 532,
+        "late_item_pct": 6.31079478054567,
+        "item_value": "988048.97"
+      },
+      {
+        "category": "furniture_decor",
+        "item_lines": 8334,
+        "orders": 6449,
+        "eligible_item_lines": 8160,
+        "item_lines_on_late_orders": 574,
+        "late_item_pct": 7.034313725490196,
+        "item_value": "729762.49"
+      },
+      {
+        "category": "computers_accessories",
+        "item_lines": 7827,
+        "orders": 6689,
+        "eligible_item_lines": 7643,
+        "item_lines_on_late_orders": 496,
+        "late_item_pct": 6.489598325264948,
+        "item_value": "911954.32"
+      },
+      {
+        "category": "housewares",
+        "item_lines": 6964,
+        "orders": 5884,
+        "eligible_item_lines": 6795,
+        "item_lines_on_late_orders": 340,
+        "late_item_pct": 5.003679175864606,
+        "item_value": "632248.66"
+      },
+      {
+        "category": "watches_gifts",
+        "item_lines": 5991,
+        "orders": 5624,
+        "eligible_item_lines": 5857,
+        "item_lines_on_late_orders": 422,
+        "late_item_pct": 7.205053781799556,
+        "item_value": "1205005.68"
+      },
+      {
+        "category": "telephony",
+        "item_lines": 4545,
+        "orders": 4199,
+        "eligible_item_lines": 4430,
+        "item_lines_on_late_orders": 308,
+        "late_item_pct": 6.952595936794582,
+        "item_value": "323667.53"
+      },
+      {
+        "category": "garden_tools",
+        "item_lines": 4347,
+        "orders": 3518,
+        "eligible_item_lines": 4268,
+        "item_lines_on_late_orders": 280,
+        "late_item_pct": 6.560449859418932,
+        "item_value": "485256.46"
+      },
+      {
+        "category": "auto",
+        "item_lines": 4235,
+        "orders": 3897,
+        "eligible_item_lines": 4139,
+        "item_lines_on_late_orders": 291,
+        "late_item_pct": 7.030683740033824,
+        "item_value": "592720.11"
+      },
+      {
+        "category": "toys",
+        "item_lines": 4117,
+        "orders": 3886,
+        "eligible_item_lines": 4029,
+        "item_lines_on_late_orders": 256,
+        "late_item_pct": 6.353933978654753,
+        "item_value": "483946.60"
+      },
+      {
+        "category": "cool_stuff",
+        "item_lines": 3796,
+        "orders": 3632,
+        "eligible_item_lines": 3718,
+        "item_lines_on_late_orders": 217,
+        "late_item_pct": 5.836471221086605,
+        "item_value": "635290.85"
+      },
+      {
+        "category": "perfumery",
+        "item_lines": 3419,
+        "orders": 3162,
+        "eligible_item_lines": 3340,
+        "item_lines_on_late_orders": 217,
+        "late_item_pct": 6.497005988023952,
+        "item_value": "399124.87"
+      },
+      {
+        "category": "baby",
+        "item_lines": 3065,
+        "orders": 2885,
+        "eligible_item_lines": 2982,
+        "item_lines_on_late_orders": 229,
+        "late_item_pct": 7.679409792085848,
+        "item_value": "411764.89"
+      },
+      {
+        "category": "electronics",
+        "item_lines": 2767,
+        "orders": 2550,
+        "eligible_item_lines": 2729,
+        "item_lines_on_late_orders": 207,
+        "late_item_pct": 7.585196042506412,
+        "item_value": "160246.74"
+      },
+      {
+        "category": "stationery",
+        "item_lines": 2517,
+        "orders": 2311,
+        "eligible_item_lines": 2466,
+        "item_lines_on_late_orders": 167,
+        "late_item_pct": 6.772100567721005,
+        "item_value": "230943.23"
+      },
+      {
+        "category": "fashion_bags_accessories",
+        "item_lines": 2031,
+        "orders": 1864,
+        "eligible_item_lines": 1985,
+        "item_lines_on_late_orders": 105,
+        "late_item_pct": 5.289672544080605,
+        "item_value": "152823.54"
+      },
+      {
+        "category": "pet_shop",
+        "item_lines": 1947,
+        "orders": 1710,
+        "eligible_item_lines": 1924,
+        "item_lines_on_late_orders": 95,
+        "late_item_pct": 4.9376299376299375,
+        "item_value": "214315.41"
+      },
+      {
+        "category": "office_furniture",
+        "item_lines": 1691,
+        "orders": 1273,
+        "eligible_item_lines": 1668,
+        "item_lines_on_late_orders": 133,
+        "late_item_pct": 7.973621103117506,
+        "item_value": "273960.70"
+      },
+      {
+        "category": "unknown",
+        "item_lines": 1603,
+        "orders": 1451,
+        "eligible_item_lines": 1537,
+        "item_lines_on_late_orders": 115,
+        "late_item_pct": 7.482108002602472,
+        "item_value": "179535.28"
+      },
+      {
+        "category": "consoles_games",
+        "item_lines": 1137,
+        "orders": 1062,
+        "eligible_item_lines": 1089,
+        "item_lines_on_late_orders": 64,
+        "late_item_pct": 5.876951331496786,
+        "item_value": "157465.22"
+      },
+      {
+        "category": "luggage_accessories",
+        "item_lines": 1092,
+        "orders": 1034,
+        "eligible_item_lines": 1077,
+        "item_lines_on_late_orders": 45,
+        "late_item_pct": 4.178272980501393,
+        "item_value": "140429.98"
+      },
+      {
+        "category": "construction_tools_construction",
+        "item_lines": 929,
+        "orders": 748,
+        "eligible_item_lines": 916,
+        "item_lines_on_late_orders": 58,
+        "late_item_pct": 6.331877729257642,
+        "item_value": "144677.59"
+      },
+      {
+        "category": "home_appliances",
+        "item_lines": 771,
+        "orders": 764,
+        "eligible_item_lines": 754,
+        "item_lines_on_late_orders": 34,
+        "late_item_pct": 4.5092838196286475,
+        "item_value": "80171.53"
+      },
+      {
+        "category": "musical_instruments",
+        "item_lines": 680,
+        "orders": 628,
+        "eligible_item_lines": 651,
+        "item_lines_on_late_orders": 48,
+        "late_item_pct": 7.373271889400922,
+        "item_value": "191498.88"
+      },
+      {
+        "category": "small_appliances",
+        "item_lines": 679,
+        "orders": 630,
+        "eligible_item_lines": 658,
+        "item_lines_on_late_orders": 30,
+        "late_item_pct": 4.5592705167173255,
+        "item_value": "190648.58"
+      },
+      {
+        "category": "home_construction",
+        "item_lines": 604,
+        "orders": 490,
+        "eligible_item_lines": 596,
+        "item_lines_on_late_orders": 35,
+        "late_item_pct": 5.87248322147651,
+        "item_value": "83088.12"
+      },
+      {
+        "category": "books_general_interest",
+        "item_lines": 553,
+        "orders": 512,
+        "eligible_item_lines": 536,
+        "item_lines_on_late_orders": 33,
+        "late_item_pct": 6.156716417910448,
+        "item_value": "46856.88"
+      },
+      {
+        "category": "food",
+        "item_lines": 510,
+        "orders": 450,
+        "eligible_item_lines": 499,
+        "item_lines_on_late_orders": 35,
+        "late_item_pct": 7.014028056112225,
+        "item_value": "29393.41"
+      },
+      {
+        "category": "furniture_living_room",
+        "item_lines": 503,
+        "orders": 422,
+        "eligible_item_lines": 495,
+        "item_lines_on_late_orders": 35,
+        "late_item_pct": 7.070707070707071,
+        "item_value": "68916.56"
+      },
+      {
+        "category": "home_confort",
+        "item_lines": 434,
+        "orders": 397,
+        "eligible_item_lines": 429,
+        "item_lines_on_late_orders": 40,
+        "late_item_pct": 9.324009324009324,
+        "item_value": "58572.04"
+      },
+      {
+        "category": "drinks",
+        "item_lines": 379,
+        "orders": 297,
+        "eligible_item_lines": 361,
+        "item_lines_on_late_orders": 16,
+        "late_item_pct": 4.43213296398892,
+        "item_value": "22428.70"
+      },
+      {
+        "category": "audio",
+        "item_lines": 364,
+        "orders": 350,
+        "eligible_item_lines": 362,
+        "item_lines_on_late_orders": 42,
+        "late_item_pct": 11.602209944751381,
+        "item_value": "50688.50"
+      },
+      {
+        "category": "market_place",
+        "item_lines": 311,
+        "orders": 280,
+        "eligible_item_lines": 305,
+        "item_lines_on_late_orders": 11,
+        "late_item_pct": 3.6065573770491803,
+        "item_value": "28378.47"
+      },
+      {
+        "category": "construction_tools_lights",
+        "item_lines": 304,
+        "orders": 244,
+        "eligible_item_lines": 301,
+        "item_lines_on_late_orders": 22,
+        "late_item_pct": 7.308970099667774,
+        "item_value": "41080.00"
+      },
+      {
+        "category": "air_conditioning",
+        "item_lines": 297,
+        "orders": 253,
+        "eligible_item_lines": 289,
+        "item_lines_on_late_orders": 11,
+        "late_item_pct": 3.8062283737024223,
+        "item_value": "55024.96"
+      },
+      {
+        "category": "kitchen_dining_laundry_garden_furniture",
+        "item_lines": 281,
+        "orders": 248,
+        "eligible_item_lines": 274,
+        "item_lines_on_late_orders": 12,
+        "late_item_pct": 4.37956204379562,
+        "item_value": "46328.37"
+      },
+      {
+        "category": "food_drink",
+        "item_lines": 278,
+        "orders": 227,
+        "eligible_item_lines": 269,
+        "item_lines_on_late_orders": 11,
+        "late_item_pct": 4.089219330855019,
+        "item_value": "15179.48"
+      },
+      {
+        "category": "industry_commerce_and_business",
+        "item_lines": 268,
+        "orders": 235,
+        "eligible_item_lines": 264,
+        "item_lines_on_late_orders": 17,
+        "late_item_pct": 6.4393939393939394,
+        "item_value": "39669.61"
+      },
+      {
+        "category": "books_technical",
+        "item_lines": 267,
+        "orders": 260,
+        "eligible_item_lines": 263,
+        "item_lines_on_late_orders": 21,
+        "late_item_pct": 7.984790874524715,
+        "item_value": "19096.06"
+      },
+      {
+        "category": "fixed_telephony",
+        "item_lines": 264,
+        "orders": 217,
+        "eligible_item_lines": 255,
+        "item_lines_on_late_orders": 10,
+        "late_item_pct": 3.9215686274509802,
+        "item_value": "59583.00"
+      },
+      {
+        "category": "fashion_shoes",
+        "item_lines": 262,
+        "orders": 240,
+        "eligible_item_lines": 257,
+        "item_lines_on_late_orders": 11,
+        "late_item_pct": 4.280155642023346,
+        "item_value": "23562.77"
+      },
+      {
+        "category": "costruction_tools_garden",
+        "item_lines": 238,
+        "orders": 194,
+        "eligible_item_lines": 232,
+        "item_lines_on_late_orders": 13,
+        "late_item_pct": 5.603448275862069,
+        "item_value": "25715.89"
+      },
+      {
+        "category": "home_appliances_2",
+        "item_lines": 238,
+        "orders": 234,
+        "eligible_item_lines": 231,
+        "item_lines_on_late_orders": 14,
+        "late_item_pct": 6.0606060606060606,
+        "item_value": "113317.74"
+      },
+      {
+        "category": "agro_industry_and_commerce",
+        "item_lines": 212,
+        "orders": 182,
+        "eligible_item_lines": 206,
+        "item_lines_on_late_orders": 7,
+        "late_item_pct": 3.3980582524271843,
+        "item_value": "72530.47"
+      },
+      {
+        "category": "art",
+        "item_lines": 209,
+        "orders": 202,
+        "eligible_item_lines": 197,
+        "item_lines_on_late_orders": 12,
+        "late_item_pct": 6.091370558375634,
+        "item_value": "24202.64"
+      },
+      {
+        "category": "computers",
+        "item_lines": 203,
+        "orders": 181,
+        "eligible_item_lines": 199,
+        "item_lines_on_late_orders": 10,
+        "late_item_pct": 5.025125628140704,
+        "item_value": "222963.13"
+      },
+      {
+        "category": "signaling_and_security",
+        "item_lines": 199,
+        "orders": 140,
+        "eligible_item_lines": 197,
+        "item_lines_on_late_orders": 8,
+        "late_item_pct": 4.060913705583756,
+        "item_value": "21509.23"
+      },
+      {
+        "category": "construction_tools_safety",
+        "item_lines": 194,
+        "orders": 167,
+        "eligible_item_lines": 183,
+        "item_lines_on_late_orders": 5,
+        "late_item_pct": 2.73224043715847,
+        "item_value": "40544.52"
+      },
+      {
+        "category": "christmas_supplies",
+        "item_lines": 153,
+        "orders": 128,
+        "eligible_item_lines": 150,
+        "item_lines_on_late_orders": 15,
+        "late_item_pct": 10.0,
+        "item_value": "8800.82"
+      },
+      {
+        "category": "fashion_male_clothing",
+        "item_lines": 132,
+        "orders": 112,
+        "eligible_item_lines": 125,
+        "item_lines_on_late_orders": 7,
+        "late_item_pct": 5.6,
+        "item_value": "10797.82"
+      },
+      {
+        "category": "fashion_underwear_beach",
+        "item_lines": 131,
+        "orders": 121,
+        "eligible_item_lines": 127,
+        "item_lines_on_late_orders": 12,
+        "late_item_pct": 9.448818897637794,
+        "item_value": "9541.55"
+      },
+      {
+        "category": "furniture_bedroom",
+        "item_lines": 109,
+        "orders": 95,
+        "eligible_item_lines": 103,
+        "item_lines_on_late_orders": 7,
+        "late_item_pct": 6.796116504854369,
+        "item_value": "20028.78"
+      },
+      {
+        "category": "costruction_tools_tools",
+        "item_lines": 103,
+        "orders": 97,
+        "eligible_item_lines": 103,
+        "item_lines_on_late_orders": 6,
+        "late_item_pct": 5.825242718446602,
+        "item_value": "15903.95"
+      },
+      {
+        "category": "tablets_printing_image",
+        "item_lines": 83,
+        "orders": 79,
+        "eligible_item_lines": 83,
+        "item_lines_on_late_orders": 5,
+        "late_item_pct": 6.024096385542169,
+        "item_value": "7528.41"
+      },
+      {
+        "category": "small_appliances_home_oven_and_coffee",
+        "item_lines": 76,
+        "orders": 75,
+        "eligible_item_lines": 73,
+        "item_lines_on_late_orders": 4,
+        "late_item_pct": 5.47945205479452,
+        "item_value": "47445.71"
+      },
+      {
+        "category": "cine_photo",
+        "item_lines": 72,
+        "orders": 65,
+        "eligible_item_lines": 70,
+        "item_lines_on_late_orders": 4,
+        "late_item_pct": 5.714285714285714,
+        "item_value": "6933.46"
+      },
+      {
+        "category": "dvds_blu_ray",
+        "item_lines": 64,
+        "orders": 59,
+        "eligible_item_lines": 61,
+        "item_lines_on_late_orders": 4,
+        "late_item_pct": 6.557377049180328,
+        "item_value": "5999.39"
+      },
+      {
+        "category": "books_imported",
+        "item_lines": 60,
+        "orders": 53,
+        "eligible_item_lines": 57,
+        "item_lines_on_late_orders": 2,
+        "late_item_pct": 3.508771929824561,
+        "item_value": "4639.85"
+      },
+      {
+        "category": "fashio_female_clothing",
+        "item_lines": 48,
+        "orders": 39,
+        "eligible_item_lines": 45,
+        "item_lines_on_late_orders": 3,
+        "late_item_pct": 6.666666666666667,
+        "item_value": "2803.64"
+      },
+      {
+        "category": "party_supplies",
+        "item_lines": 43,
+        "orders": 39,
+        "eligible_item_lines": 42,
+        "item_lines_on_late_orders": 0,
+        "late_item_pct": 0.0,
+        "item_value": "4485.18"
+      },
+      {
+        "category": "diapers_and_hygiene",
+        "item_lines": 39,
+        "orders": 27,
+        "eligible_item_lines": 37,
+        "item_lines_on_late_orders": 0,
+        "late_item_pct": 0.0,
+        "item_value": "1567.59"
+      },
+      {
+        "category": "music",
+        "item_lines": 38,
+        "orders": 38,
+        "eligible_item_lines": 38,
+        "item_lines_on_late_orders": 2,
+        "late_item_pct": 5.2631578947368425,
+        "item_value": "6034.35"
+      },
+      {
+        "category": "furniture_mattress_and_upholstery",
+        "item_lines": 38,
+        "orders": 38,
+        "eligible_item_lines": 37,
+        "item_lines_on_late_orders": 5,
+        "late_item_pct": 13.513513513513514,
+        "item_value": "4368.08"
+      },
+      {
+        "category": "flowers",
+        "item_lines": 33,
+        "orders": 29,
+        "eligible_item_lines": 33,
+        "item_lines_on_late_orders": 1,
+        "late_item_pct": 3.0303030303030303,
+        "item_value": "1110.04"
+      },
+      {
+        "category": "home_comfort_2",
+        "item_lines": 30,
+        "orders": 24,
+        "eligible_item_lines": 30,
+        "item_lines_on_late_orders": 4,
+        "late_item_pct": 13.333333333333334,
+        "item_value": "760.27"
+      },
+      {
+        "category": "fashion_sport",
+        "item_lines": 30,
+        "orders": 27,
+        "eligible_item_lines": 29,
+        "item_lines_on_late_orders": 1,
+        "late_item_pct": 3.4482758620689653,
+        "item_value": "2119.51"
+      },
+      {
+        "category": "arts_and_craftmanship",
+        "item_lines": 24,
+        "orders": 23,
+        "eligible_item_lines": 24,
+        "item_lines_on_late_orders": 1,
+        "late_item_pct": 4.166666666666667,
+        "item_value": "1814.01"
+      },
+      {
+        "category": "portateis_cozinha_e_preparadores_de_alimentos",
+        "item_lines": 15,
+        "orders": 14,
+        "eligible_item_lines": 14,
+        "item_lines_on_late_orders": 1,
+        "late_item_pct": 7.142857142857143,
+        "item_value": "3968.53"
+      },
+      {
+        "category": "cds_dvds_musicals",
+        "item_lines": 14,
+        "orders": 12,
+        "eligible_item_lines": 14,
+        "item_lines_on_late_orders": 0,
+        "late_item_pct": 0.0,
+        "item_value": "730.00"
+      },
+      {
+        "category": "la_cuisine",
+        "item_lines": 14,
+        "orders": 13,
+        "eligible_item_lines": 14,
+        "item_lines_on_late_orders": 0,
+        "late_item_pct": 0.0,
+        "item_value": "2054.99"
+      },
+      {
+        "category": "pc_gamer",
+        "item_lines": 9,
+        "orders": 8,
+        "eligible_item_lines": 8,
+        "item_lines_on_late_orders": 0,
+        "late_item_pct": 0.0,
+        "item_value": "1545.95"
+      },
+      {
+        "category": "fashion_childrens_clothes",
+        "item_lines": 8,
+        "orders": 8,
+        "eligible_item_lines": 7,
+        "item_lines_on_late_orders": 0,
+        "late_item_pct": 0.0,
+        "item_value": "569.85"
+      },
+      {
+        "category": "security_and_services",
+        "item_lines": 2,
+        "orders": 2,
+        "eligible_item_lines": 2,
+        "item_lines_on_late_orders": 0,
+        "late_item_pct": 0.0,
+        "item_value": "283.29"
+      }
+    ]
+  },
+  "basket_complexity": {
+    "rows": 2,
+    "columns": [
+      "multi_seller",
+      "eligible_orders",
+      "late_orders",
+      "late_pct",
+      "median_delivery_days"
+    ],
+    "data": [
+      {
+        "multi_seller": true,
+        "eligible_orders": 1275,
+        "late_orders": 13,
+        "late_pct": 1.0196078431372548,
+        "median_delivery_days": 7.927650462962963
+      },
+      {
+        "multi_seller": false,
+        "eligible_orders": 95195,
+        "late_orders": 6521,
+        "late_pct": 6.850149692735963,
+        "median_delivery_days": 10.25173611111111
+      }
+    ]
+  },
+  "review_association": {
+    "rows": 2,
+    "columns": [
+      "is_late",
+      "eligible_orders",
+      "reviewed_orders",
+      "mean_latest_score",
+      "low_review_orders",
+      "low_review_pct"
+    ],
+    "data": [
+      {
+        "is_late": false,
+        "eligible_orders": 89936,
+        "reviewed_orders": 89443,
+        "mean_latest_score": 4.290386055923885,
+        "low_review_orders": 8289,
+        "low_review_pct": 9.267354628087162
+      },
+      {
+        "is_late": true,
+        "eligible_orders": 6534,
+        "reviewed_orders": 6381,
+        "mean_latest_score": 2.270490518727472,
+        "low_review_orders": 3983,
+        "low_review_pct": 62.419683435198245
+      }
+    ]
+  },
+  "stage_durations": {
+    "rows": 1,
+    "columns": [
+      "eligible_orders",
+      "approval_observations",
+      "handling_observations",
+      "transit_observations",
+      "median_approval_days",
+      "median_handling_days",
+      "median_transit_days",
+      "anomalous_stage_orders"
+    ],
+    "data": [
+      {
+        "eligible_orders": 96470,
+        "approval_observations": 96456,
+        "handling_observations": 95105,
+        "transit_observations": 96446,
+        "median_approval_days": 0.014305555555555556,
+        "median_handling_days": 1.849050925925926,
+        "median_transit_days": 7.100312499999999,
+        "anomalous_stage_orders": 1373
+      }
+    ]
+  },
+  "promised_windows": {
+    "rows": 4,
+    "columns": [
+      "promised_window",
+      "eligible_orders",
+      "late_orders",
+      "late_pct"
+    ],
+    "data": [
+      {
+        "promised_window": "Under 7 days",
+        "eligible_orders": 954,
+        "late_orders": 167,
+        "late_pct": 17.50524109014675
+      },
+      {
+        "promised_window": "7-13 days",
+        "eligible_orders": 8542,
+        "late_orders": 474,
+        "late_pct": 5.549051744322173
+      },
+      {
+        "promised_window": "14-20 days",
+        "eligible_orders": 21168,
+        "late_orders": 1371,
+        "late_pct": 6.476757369614512
+      },
+      {
+        "promised_window": "21+ days",
+        "eligible_orders": 65806,
+        "late_orders": 4522,
+        "late_pct": 6.871713825487038
+      }
+    ]
+  },
+  "timestamp_definition_comparison": {
+    "rows": 1,
+    "columns": [
+      "eligible_orders",
+      "late_by_timestamp",
+      "late_by_promised_date",
+      "same_promised_date_deliveries"
+    ],
+    "data": [
+      {
+        "eligible_orders": 96470,
+        "late_by_timestamp": 7826,
+        "late_by_promised_date": 6534,
+        "same_promised_date_deliveries": 1292
+      }
+    ]
+  }
+}

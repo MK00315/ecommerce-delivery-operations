@@ -1,0 +1,104 @@
+{
+  "key_controls": [
+    {
+      "table": "silver.customers",
+      "keys": [
+        "customer_id"
+      ],
+      "duplicate_groups": 0,
+      "null_keys": 0
+    },
+    {
+      "table": "silver.sellers",
+      "keys": [
+        "seller_id"
+      ],
+      "duplicate_groups": 0,
+      "null_keys": 0
+    },
+    {
+      "table": "silver.products",
+      "keys": [
+        "product_id"
+      ],
+      "duplicate_groups": 0,
+      "null_keys": 0
+    },
+    {
+      "table": "silver.orders",
+      "keys": [
+        "order_id"
+      ],
+      "duplicate_groups": 0,
+      "null_keys": 0
+    },
+    {
+      "table": "silver.items",
+      "keys": [
+        "order_id",
+        "item_number"
+      ],
+      "duplicate_groups": 0,
+      "null_keys": 0
+    },
+    {
+      "table": "silver.payments",
+      "keys": [
+        "order_id",
+        "payment_number"
+      ],
+      "duplicate_groups": 0,
+      "null_keys": 0
+    },
+    {
+      "table": "silver.reviews",
+      "keys": [
+        "order_id",
+        "review_id"
+      ],
+      "duplicate_groups": 0,
+      "null_keys": 0
+    },
+    {
+      "table": "silver.postcodes",
+      "keys": [
+        "postcode_prefix"
+      ],
+      "duplicate_groups": 0,
+      "null_keys": 0
+    },
+    {
+      "table": "silver.latest_reviews",
+      "keys": [
+        "order_id"
+      ],
+      "duplicate_groups": 0,
+      "null_keys": 0
+    }
+  ],
+  "marts": {
+    "orders_rows_preserved": 99441,
+    "order_items_rows_preserved": 112650,
+    "item_value_reconciled": "13591643.70",
+    "freight_value_reconciled": "2251909.54",
+    "recorded_payment_value_reconciled": "16008872.12",
+    "unknown_outcomes_not_treated_as_on_time": true
+  },
+  "orphan_rows": {
+    "orders_without_customer": 0,
+    "items_without_order": 0,
+    "items_without_product": 0,
+    "items_without_seller": 0,
+    "payments_without_order": 0,
+    "reviews_without_order": 0
+  },
+  "review_rows_retained": 99224,
+  "review_id_reuse_excess_rows": 814,
+  "additional_reviews_on_same_order": 551,
+  "geolocation_rows_outside_broad_brazil_bounds": 42,
+  "geolocation_rows_used": 1000121,
+  "orders_without_known_distance": 1265,
+  "orders_with_invalid_stage_sequence": 1382,
+  "negative_or_missing_product_weights": 6,
+  "passed": true
+}

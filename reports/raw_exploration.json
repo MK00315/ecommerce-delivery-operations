@@ -1,0 +1,150 @@
+{
+  "source_files": {
+    "customers": {
+      "rows": 99441
+    },
+    "geolocation": {
+      "rows": 1000163
+    },
+    "items": {
+      "rows": 112650
+    },
+    "payments": {
+      "rows": 103886
+    },
+    "reviews": {
+      "rows": 99224
+    },
+    "orders": {
+      "rows": 99441
+    },
+    "products": {
+      "rows": 32951
+    },
+    "sellers": {
+      "rows": 3095
+    },
+    "categories": {
+      "rows": 71
+    }
+  },
+  "queries": {
+    "statuses": [
+      [
+        "delivered",
+        96478
+      ],
+      [
+        "shipped",
+        1107
+      ],
+      [
+        "canceled",
+        625
+      ],
+      [
+        "unavailable",
+        609
+      ],
+      [
+        "invoiced",
+        314
+      ],
+      [
+        "processing",
+        301
+      ],
+      [
+        "created",
+        5
+      ],
+      [
+        "approved",
+        2
+      ]
+    ],
+    "duplicate_keys": [
+      [
+        "orders",
+        0
+      ],
+      [
+        "customers",
+        0
+      ],
+      [
+        "items",
+        0
+      ],
+      [
+        "payments",
+        0
+      ],
+      [
+        "reviews_id",
+        814
+      ],
+      [
+        "reviews_order",
+        551
+      ],
+      [
+        "reviews_pair",
+        0
+      ]
+    ],
+    "order_dates": [
+      [
+        "2016-09-04 21:15:19",
+        "2018-10-17 17:30:18",
+        96478,
+        8,
+        7826,
+        6534,
+        0,
+        0
+      ]
+    ],
+    "missing_order_links": [
+      [
+        775,
+        1,
+        768
+      ]
+    ],
+    "geography": [
+      [
+        1000163,
+        19015,
+        42,
+        -36.6053744107061,
+        45.06593318269697,
+        -101.46676644931476,
+        121.10539381057764
+      ]
+    ],
+    "fanout": [
+      [
+        119143,
+        "14273699.65"
+      ]
+    ],
+    "item_totals": [
+      [
+        "13591643.70",
+        "2251909.54"
+      ]
+    ],
+    "payments": [
+      [
+        "16008872.12"
+      ]
+    ],
+    "bad_reviews": [
+      [
+        0,
+        0
+      ]
+    ]
+  }
+}
