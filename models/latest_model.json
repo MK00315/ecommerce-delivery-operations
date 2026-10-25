@@ -1,0 +1,9 @@
+{
+  "run_id": "20261024T205105365739Z_rolling",
+  "model": "models/20261024T205105365739Z_rolling/delivery_risk.joblib",
+  "model_sha256": "157982e44a788bd57eb4d23f77693a64c54a06633a6242058be155f67dd1d5d5",
+  "report": "reports/modeling/20261024T205105365739Z_rolling/model_results.json",
+  "feature_version": "1.0.0",
+  "status": "Portfolio research model with forward validation; August is a reused diagnostic",
+  "production_qualified": false
+}
